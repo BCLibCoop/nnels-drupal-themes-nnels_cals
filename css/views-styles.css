@@ -1,0 +1,1022 @@
+/* NNELS_CALS_v001 */ /* views.css */
+
+/* @group views admin tabs */
+
+.views-displays .secondary li {
+	float: none;
+	margin: 0 6px 0;
+}
+
+.views-displays .secondary a:link,
+.views-displays .secondary a:visited {
+	text-shadow: none;
+	padding: 2px 7px 3px;
+}
+
+.views-displays .secondary .open > a {
+	-webkit-border-radius: 7px 7px 0 0;
+	-moz-border-radius: 7px 7px 0 0;
+	-ms-border-radius: 7px 7px 0 0;
+	-o-border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0 0;
+}
+
+.views-displays .secondary .open > a:hover {
+	color: #333;
+}
+
+.views-displays .secondary .action-list li {
+	margin: 0;
+}
+
+.views-displays .secondary .action-list li:first-child {
+	-webkit-border-radius: 0 7px 0 0;
+	-moz-border-radius: 0 7px 0 0;
+	-ms-border-radius: 0 7px 0 0;
+	-o-border-radius: 0 7px 0 0;
+	border-radius: 0 7px 0 0;
+}
+
+.views-displays .secondary .action-list li:last-child {
+	-webkit-border-radius: 0 0 7px 7px;
+	-moz-border-radius: 0 0 7px 7px;
+	-ms-border-radius: 0 0 7px 7px;
+	-o-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px;
+}
+
+
+
+/* @end */
+
+/* @group global views overrides */
+
+.views-exposed-form label {
+	font: normal normal normal 16px/24px 'open_sans_condensedbold';
+}
+
+.block-views {
+	/*background-color: orange;*/
+}
+
+.views-table {
+/* 	background-color: lawngreen; */
+	float: left;
+}
+
+
+/* @end */
+
+/* @group faq-list */
+
+.faq-list {
+	/*background-color: fuchsia;*/
+	margin: 20px 0 0;
+	padding: 0;
+}
+
+.faq-list .item-list ul {
+	/*background-color: orange;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.faq-list .item-list ul li {
+	/*background-color: navy;*/
+	margin: 0 0 20px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border-bottom: 1px dotted #333333;
+}
+
+.faq-list .views-field-title {
+	/*background-color: fuchsia;*/
+	margin: 0;
+	padding: 0;
+	font: normal normal 16px/18px 'open_sans_condensedbold';
+	text-decoration: none;
+}
+
+.faq-list .views-field-body {
+	/*background-color: goldenrod;*/
+	margin: 0;
+	padding: 0;
+}
+
+.faq-list .views-field-body ul,
+.faq-list .views-field-body ol {
+	/*background-color: green;*/
+	margin: 10px 0 10px 10px;
+	padding: 0 0 0 30px;
+}
+
+.faq-list .views-field-body ul li {
+	/*background-color: goldenrod;*/
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style-type: disc;
+	border-style: none;
+}
+
+.faq-list .views-field-body ol li {
+	/*background-color: rosybrown;*/
+	margin: 0;
+	padding: 0 0 10px;
+	list-style-type: decimal;
+	border-style: none;
+}
+
+.faq-list .views-field-view-node {
+	/*background-color: forestgreen;*/
+	margin: 0;
+	padding: 0 10px 0 0;
+	text-align: right;
+}
+
+.faq-list .views-field-clone-node,
+.faq-list .views-field-edit-node {
+	/*background-color: floralwhite;*/
+	margin: 0;
+	padding: 5px;
+}
+
+/* @end */
+
+/* @group tutorials-landing */
+
+.tutorials-landing {
+	float: left;
+	/*background-color: lime;*/
+}
+
+.tutorials-landing .item-list ul {
+	/*background-color: orange;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.tutorials-landing .item-list ul li {
+	/*background-color: navy;*/
+	float: left;
+	width: 100%;
+	margin: 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.tutorials-landing .views-field-field-external-video,
+.tutorials-landing .views-field-field-image {
+	/*background-color: rosybrown;*/
+	float: left;
+	width: 30%;
+	margin: 0;
+	padding: 10px;
+}
+
+.tutorials-landing .views-field-title {
+	/*background-color: fuchsia;*/
+	float: right;
+	width: 70%;
+	margin: 0;
+	padding: 10px 5px 5px;
+	font: normal normal 16px/18px 'open_sans_condensedbold';
+	text-decoration: none;
+}
+
+.tutorials-landing .views-field-created {
+	/*background-color: green;*/
+	float: right;
+	width: 70%;
+	margin: 0;
+	padding: 5px;
+	font: normal normal 16px/18px 'open_sans_condensedbold';
+	text-decoration: none;
+}
+
+.tutorials-landing .views-field-body {
+	/*background-color: goldenrod;*/
+	float: right;
+	width: 70%;
+	margin: 0;
+	padding: 5px;
+}
+
+.tutorials-landing .views-field-view-node {
+	/*background-color: forestgreen;*/
+	float: right;
+	width: 70%;
+	margin: 0;
+	padding: 0 10px 0 0;
+	text-align: right;
+}
+
+.tutorials-landing .views-field-clone-node,
+.tutorials-landing .views-field-edit-node {
+	/*background-color: floralwhite;*/
+	float: right;
+	width: 70%;
+	margin: 0;
+	padding: 5px;
+}
+
+
+/* @end */
+
+/* @group partners-listing */
+
+.partners-listing {
+/* 	background-color: fuchsia; */
+	/*float: left;*/
+	clear: both;
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+.partners-listing thead {
+/* 	background-color: rosybrown; */
+	border-bottom: 1px solid #333333;
+	margin: 0;
+	padding: 0;
+}
+
+/*.partners-listing tbody {
+	background-color: teal;
+	margin: 0;
+	padding: 0;
+}*/
+
+.partners-listing th {
+/* 	background-color: goldenrod; */
+	margin: 0;
+	padding: 5px 10px 5px 0;
+}
+
+.partners-listing .views-row-first td {
+/* 	background-color: forestgreen; */
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+/* @end */
+
+/* @group block-views-repository-items-front-page-bra */
+
+#block-views-repository-items-front-page-bra {
+	/*background-color: purple;*/
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dotted #333333;
+}
+
+#block-views-repository-items-front-page-bra .block-title {
+	font-size: 20px;
+	line-height: 28px;
+	/*background-color: teal;*/
+	border-bottom: 1px dotted #333333;
+}
+
+.recently-added {
+	/*background-color: thistle;*/
+	overflow: hidden;
+}
+
+.recently-added .view-title {
+	/*background-color: teal;*/
+	margin: 0 0 5px;
+	padding: 0;
+	font: normal normal 20px/28px 'open_sans_condensedbold';
+	text-decoration: none;
+	border-bottom: 1px dotted #333333;
+}
+
+.recently-added .item-list ul {
+	/*background-color: orange;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.recently-added .item-list ul li {
+	/*background-color: navy;*/
+	float: left;
+	width: 32.5%;
+	min-height: 140px;
+	margin: 5px 10px 0 0;
+	padding: 5px;
+	list-style-type: none;
+	list-style-image: none;
+	border: 1px dotted #333333;
+}
+
+.recently-added .item-list ul li.views-row-last {
+	margin: 5px 0 0;
+}
+
+.recently-added .views-field-delta {
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
+}
+
+.recently-added .views-field-title {
+	/*background-color: forestgreen;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+	font: normal normal normal 16px/20px 'open_sans_condensedbold';
+}
+
+/*.recently-added .views-field-field-dc-description {
+	background-color: hotpink;
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}*/
+
+.recently-added .views-field-body {
+	/*background-color: hotpink;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}
+
+.recently-added .views-field-nothing {
+	/*background-color: sandybrown;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}
+
+.recently-added .views-field-php {
+/* 	background-color: aqua; */
+	height: 40px;
+	margin: 0 0 0 65px;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group block-views-repository-items-front-page-bmd */
+
+#block-views-repository-items-front-page-bmd {
+	/*background-color: gold;*/
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px dotted #333333;
+}
+
+#block-views-repository-items-front-page-bmd .block-title {
+	font-size: 20px;
+	line-height: 28px;
+	/*background-color: teal;*/
+	border-bottom: 1px dotted #333333;
+}
+
+.most-downloaded {
+	/*background-color: thistle;*/
+}
+
+.most-downloaded .item-list ul {
+	/*background-color: orange;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.most-downloaded .item-list ul li {
+	/*background-color: navy;*/
+	float: left;
+	width: 32.5%;
+	min-height: 140px;
+	margin: 5px 10px 0 0;
+	padding: 5px;
+	list-style-type: none;
+	list-style-image: none;
+	border: 1px dotted #333333;
+}
+
+.most-downloaded .item-list ul li.views-row-last {
+	margin: 5px 0 0;
+}
+
+.most-downloaded .views-field-delta {
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
+}
+
+.most-downloaded .views-field-title {
+	/*background-color: forestgreen;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+	font: normal normal normal 16px/20px 'open_sans_condensedbold';
+}
+
+.most-downloaded .views-field-field-dc-description {
+	/*background-color: hotpink;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}
+
+.most-downloaded .views-field-body {
+	/*background-color: hotpink;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}
+
+/*.most-downloaded .views-field-field-daisy-2-file {
+	background-color: sandybrown;
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}*/
+
+.most-downloaded .views-field-nothing {
+	/*background-color: sandybrown;*/
+	margin: 0;
+	padding: 5px 5px 5px 65px;
+}
+
+.most-downloaded .views-field-php {
+/* 	background-color: aqua; */
+	height: 40px;
+	margin: 0 0 0 65px;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group search-repository */
+
+.search-repository {
+	/*background-color: lightblue;*/
+	margin: 0;
+	padding: 5px 5px 10px;
+	overflow: hidden;
+}
+
+.search-repository .block-title {
+	/*background-color: magenta;*/
+	border-bottom: 1px dotted #333333;
+}
+
+.not-front .search-repository .block-title {
+	/*background-color: lawngreen;*/
+	border-bottom: 0px dotted #333333;
+	float: left;
+	margin: 0;
+	padding: 25px 10px 0 0;
+}
+
+.search-repository #views-exposed-form-repository-search-page {
+	/*background-color: navy;*/
+}
+
+.not-front .search-repository #views-exposed-form-repository-search-page {
+	/*background-color: violet;*/
+	float: left;
+}
+
+.search-repository .views-widget-filter-search_api_views_fulltext_2 {
+	/*background-color: rosybrown;*/
+}
+
+.search-repository #edit-search-api-views-fulltext-2 {
+	width: 300px;
+	background-color: #EEEEEE;
+	border: 1px dotted #333333;
+}
+
+.front .search-repository #edit-search-api-views-fulltext-2 {
+	/*background-color: forestgreen;*/
+	width: 250px;
+}
+
+.search-repository .views-widget-sort-by {
+	/*background-color: darkcyan;*/
+}
+
+.search-repository .views-widget-sort-by select {
+	width: 100px;
+	background: #EEEEEE;
+}
+
+.search-repository .views-widget-sort-order {
+	/*background-color: navy;*/
+	display: none;
+}
+
+.search-repository .views-submit-button {
+÷	margin: 0;
+	padding: 0;
+}
+
+.search-repository #edit-submit-repository-search {
+	color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;
+	margin: 30px 0 0;
+	padding: 3px 5px;
+}
+
+.search-repository #edit-submit-repository-search:hover {
+	color: #EC1C24;
+	background-color: #BBBBBB;
+}
+
+.search-repository .views-reset-button {
+	/*background-color: wheat;*/
+	display: none;
+}
+
+
+/* @end */
+
+/* @group search-results - page */
+
+.search-results {
+	/*background-color: fuchsia;*/
+}
+
+.search-results .views-label {
+	/*background-color: fuchsia;*/
+	font: normal normal normal 16px/22px 'open_sans_condensedbold';
+}
+
+.search-results .item-list ul {
+	/*background-color: navy;*/
+	margin: 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.search-results .item-list ul li {
+	/*background-color: yellowgreen;*/
+	float: left;
+	margin: 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border-bottom: 1px dotted #333333;
+}
+
+.search-results .views-field-nothing {
+	/*background-color: fuchsia;*/
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.search-results .views-field-field-isbn {
+	/*background-color: lightblue;*/
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 0;
+	text-align: center;
+	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
+}
+
+.search-results .views-field-field-isbn img {
+/* 	background-color: lightblue; */
+	width: 50px;
+	height: 75px;
+}
+
+.search-results .views-field-title-field {
+	/*background-color: forestgreen;*/
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+	font: normal normal normal 18px/24px 'open_sans_condensedbold';
+}
+
+.search-results .views-field-field-dc-creator {
+	/*background-color: bisque;*/
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.search-results .views-field-body-value {
+	/*background-color: navy;*/
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.search-results .views-field-field-keyword-index {
+	/*background-color: salmon;*/
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.search-results .views-field-field-genre {
+	/*background-color: aqua;*/
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.search-results .views-field-php {
+/* 	background-color: aqua; */
+	height: 40px;
+	margin: 5px 5px 5px 65px;
+	padding: 0;
+}
+
+/* @group external-search */
+
+.search-results h1.no-results-title { /*page title*/
+	clear: both;
+	width: 100%;
+	margin: 0 0 10px;
+	padding: 10px 10px 10px 5px;
+	font-family: 'open_sans_condensedbold';
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	border-bottom: 1px dotted #333333;
+	/*background-color: fuchsia;*/
+}
+
+.search-results .field-label {
+	/*background-color: fuchsia;*/
+	font: normal normal normal 16px/22px 'open_sans_condensedbold';
+}
+
+.search-results .field-title {
+	/*background-color: forestgreen;*/
+	margin: 5px;
+	padding: 5px 5px 0;
+	font: normal normal normal 18px/24px 'open_sans_condensedbold';
+}
+
+.search-results .field-authors,
+.search-results .field-publisher,
+.search-results .field-isbn,
+.search-results .field-description,
+.search-results .field-link {
+	/*background-color: bisque;*/
+	margin: 5px;
+	padding: 5px 5px 0;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group browse-results - page */
+
+.browse-results {
+/* 	background-color: fuchsia; */
+}
+
+.browse-results .views-exposed-form {
+/* 	background-color: seagreen; */
+}
+
+.browse-results .views-label {
+/* 	background-color: gold; */
+	font: normal normal normal 16px/22px 'open_sans_condensedbold';
+}
+
+.browse-results .item-list.author {
+/* 	background-color: firebrick; */
+	float: left;
+	width: 100%;
+	margin: 0 0 20px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+.browse-results .item-list h3 {
+/* 	background-color: orangered; */
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 5px 5px 5px 0;
+}
+
+.browse-results .item-list ul {
+/* 	background-color: navy; */
+	margin: 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.browse-results .item-list ul.author-titles {
+	margin: 10px 0 0 10px;
+	padding: 0;
+}
+
+.browse-results .item-list ul li {
+/* 	background-color: yellowgreen; */
+	float: left;
+	width: 100%;
+	margin: 0 0 10px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border-bottom: 1px dotted #333333;
+}
+
+.browse-results .views-field-nothing {
+/* 	background-color: fuchsia; */
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 5px;
+}
+
+.browse-results .views-field-field-isbn {
+/* 	background-color: lightblue; */
+	float: left;
+	width: 50px;
+	height: 75px;
+	margin: 5px;
+	padding: 0;
+	text-align: center;
+	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
+}
+
+.browse-results .views-field-field-isbn img {
+/* 	background-color: lightblue; */
+	width: 50px;
+	height: 75px;
+}
+
+.browse-results .views-field-title {
+/* 	background-color: forestgreen; */
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+	font: normal normal normal 18px/24px 'open_sans_condensedbold';
+}
+
+.browse-results .views-field-field-dc-creator {
+/* 	background-color: bisque; */
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.browse-results .views-field-body {
+/* 	background-color: navy; */
+	margin: 5px;
+	padding: 5px 5px 5px 60px;
+}
+
+.browse-results .views-field-php {
+/* 	background-color: salmon; */
+	height: 40px;
+	margin: 0 0 5px 65px;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group repository-item */
+
+.repo-item {
+/* 	background-color: fuchsia; */
+}
+
+.repo-item h2.block-title {
+/* 	background-color: limegreen; */
+}
+
+.repo-item.daisy-url {
+/* 	background-color: navy; */
+	margin: 5px 0 20px;
+	padding: 0;
+}
+
+.repo-item.detail {
+/* 	background-color: orangered; */
+}
+
+.repo-item.detail .views-label {
+ 	/*background-color: fuchsia;*/ 
+	font: normal normal normal 16px/22px 'open_sans_condensedbold';
+}
+
+.repo-item.detail .views-field-field-dc-creator {
+ 	/*background-color: blanchedalmond;*/ 
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+/*.repo-item.detail .views-label-field-dc-creator {
+ 	background-color: orangered;
+	display: inline;
+}*/
+
+/*.repo-item.detail .views-field-field-dc-creator .field-content {
+ 	background-color: navy; 
+	display: inline;
+}*/
+
+.repo-item.detail .views-field-field-date {
+/* 	background-color: blanchedalmond; */
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-date {
+ 	/*background-color: orangered;*/
+	clear: both;
+	overflow: hidden;
+}
+
+.repo-item.detail .views-field-field-date .item-list ul {
+ 	/*background-color: lime;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.detail .views-field-field-date .item-list ul li {
+ 	/*background-color: peachpuff;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.detail .field-collection-item-field-date {
+ 	/*background-color: magenta;*/ 
+}
+
+.repo-item.detail .field-name-field-qualifier-date {
+ 	/*background-color: olive;*/
+	float: left;
+	margin: 0;
+	padding: 5px;
+	font-family: 'open_sans_condensedbold';
+}
+
+.repo-item.detail .field-name-field-dc-date {
+ 	/*background-color: palegoldenrod;*/
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-body {
+/* 	background-color: salmon; */
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-genre {
+/* 	background-color: rosybrown; */
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-dc-subject {
+ 	/*background-color: yellowgreen;*/ 
+	margin: 0 0 5px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.repo-item.detail .views-field-field-dc-subject .item-list ul {
+ 	/*background-color: mediumaquamarine;*/ 
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.detail .views-field-field-dc-subject .item-list ul li {
+ 	/*background-color: tomato;*/ 
+	float: left;
+	margin: 0;
+	padding: 0 10px;
+	list-style-type: none;
+	list-style-image: none;
+	border-left: 1px solid #333333;
+	line-height: 16px;
+}
+
+.repo-item.detail .views-field-field-dc-subject .item-list ul li.views-row-first {
+	border-left: 0px solid #333333;
+}
+
+.repo-item.detail .views-field-field-publisher {
+/* 	background-color: khaki; */
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+/*.repo-item.detail .views-field-field-uri {
+ 	background-color: tomato; 
+	margin: 0 0 5px;
+	padding: 5px;
+}*/
+
+.repo-item.detail .views-field-field-uri .field-content {
+/* 	background-color: olive; */
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.marc-xml {
+ 	background-color: forestgreen;
+	height: 200px;
+	margin: 0 5px;
+	padding: 0 10px;
+	color: #000000;
+	font: 14px/18px "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	border-top: 10px solid #CCCCCC;
+	border-bottom: 10px solid #CCCCCC;
+ 	background-color: #CCCCCC;
+}
+
+/* @end */
+
+/* @group pager */
+
+.view .item-list .pager {
+	clear: both;
+	float: right;
+    margin: 0;
+	padding: 10px;
+	/*background-color: fuchsia;*/
+	font: normal normal normal 12px/18px 'open_sanslight';
+	overflow: hidden;
+}
+
+.view .item-list .pager li {
+	width: auto;
+	margin: 0;
+	padding: 0 10px;
+	/*background-color: lime;*/
+	border-style: none;
+}
+
+.pager-current {
+	text-decoration: none;
+	font: normal normal normal 12px/18px 'open_sanssemibold';
+}
+
+
+/* @end */
+
+/* @group daisy-icon */
+
+span.daisy-icon { 
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: /*orange*/ url(../images/daisy-icon.png) no-repeat left center;
+}
+
+span.daisy-icon a { 
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 8px 0 0 50px;
+	/*background-color: lime;*/
+}
+
+span.daisy-icon-na {
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 8px 0 0 50px;
+	background: /*green*/ url(../images/daisy-icon-na.png) no-repeat left center;
+}
+
+span.daisy-icon-login {
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 8px 0 0 50px;
+	background: /*maroon*/ url(../images/daisy-icon-login.png) no-repeat left center;
+}
+
+/* @end */

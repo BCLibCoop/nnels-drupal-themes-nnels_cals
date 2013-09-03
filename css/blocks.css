@@ -1,0 +1,178 @@
+/* NNELS_CALS_v001 */ /* blocks.css */
+
+/* @group generic */
+
+.block {
+}
+
+/* @end */
+
+/* @group header-logo - logo-wordmark */
+
+.header-logo {
+	float: left;
+	width: 630px;
+	height: 160px;
+	margin: 0;
+	padding: 0;
+	background: /*fuchsia*/ url(../images/NNELS-header-logo.png) no-repeat 5px center;
+}
+
+.header-logo a.home-link {
+	/*background: lemonchiffon;*/
+	float: left;
+	width: 235px;
+	height: 0px;
+	margin: 0;
+	padding: 160px 0 0;
+	overflow: hidden;
+}
+
+.header-logo h1.site-title {
+	/*background: orangered;*/
+	float: right;
+	width: 380px;
+	margin: 5px;
+	padding: 0;
+	font: normal 36px/40px 'open_sans_condensedbold';
+	text-decoration: none;
+}
+
+.header-logo h2.site-subtitle {
+	/*background: navy;*/
+	float: right;
+	width: 380px;
+	margin: 5px;
+	padding: 0;
+	font: normal 24px/28px 'open_sans_condensedbold';
+	text-decoration: none;
+}
+
+/* @end */
+
+/* @group user-login */
+
+.user-login {
+	/*background-color: aqua;*/
+	float: right;
+	margin: 0;
+	padding: 0;
+	border-left: 1px solid #333333;
+}
+
+.user-login a {
+	/*background-color: gold;*/
+	margin: 0;
+	padding: 2px 10px 3px 15px;
+	color: #666666;
+}
+
+.user-login a:hover {
+	/*background-color: limegreen;*/
+	color: #EC1C24;
+}
+
+/* @end */
+
+/* @group user-logged-in */
+
+.user-logged-in {
+	/*background-color: aqua;*/
+	float: right;
+	margin: 0 10px 0 0;
+	padding: 10px;
+}
+
+/*.user-logged-in:before {
+	background-color: orangered;
+	content: "Hello!...  ";
+	color: #666666;
+}*/
+
+/* @end */
+
+/* @group browse-repository */
+
+.browse-repository {
+	/*background-color: lightblue;*/
+	margin: 0;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.browse-repository .block-title {
+	/*background-color: magenta;*/
+	border-bottom: 1px dotted #333333;
+}
+
+
+
+/* @end */
+
+/* @group social-media */
+
+.social-media {
+	/*background-color: fuchsia;*/
+	/*border: 1px dotted #333333;*/
+	margin: 10px 0 0;
+	padding: 5px 5px 5px 10px;
+}
+
+.social-media .block-title {
+	/*background-color: magenta;*/
+	border-bottom: 1px dotted #333333;
+}
+
+/* @end */
+
+/* @group node-cover-art */
+
+.node-cover-art {
+	/*background-color: fuchsia;*/
+	text-align: center;
+}
+
+
+/* @end */
+
+/* @group facet searches */
+
+.facet-search {
+	/*background-color: orangered;*/
+	/*background-color: #DDDDDD;*/
+	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px dotted #333333;
+}
+
+.facet-search h2.block-title {
+	/*background-color: paleturquoise;*/
+	margin: 0;
+	padding: 0 5px;
+	font-size: 20px;
+	line-height: 28px;
+	border-bottom: 1px dotted #333333;
+}
+
+.facet-search.creator {
+	
+}
+
+.facet-search.genre {
+	
+}
+
+/* @end */
+
+/* @group block-block-2 - copyright/contact */
+
+#block-block-2 {
+	float: right;
+	width: 380px;
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+	border: 1px dotted #333333;
+	/*background: fuchsia;*/
+}
+
+/* @end */

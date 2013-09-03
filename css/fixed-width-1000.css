@@ -1,0 +1,311 @@
+/* NNELS_CALS_v001 */ /* fixed-width-1000.css */
+
+/* @group body-modifications */
+
+body {
+	/*background: fuchsia;*/
+	background: #F2F2F2;
+	background: #444444;
+}
+
+/* @end */
+
+/* @group skip-link */
+
+#skip-link {
+	margin: 0;
+}
+
+#skip-link a,
+#skip-link a:visited {
+	display: block;
+	width: 100%;
+	padding: 2px 0 3px 0;
+	/*text-align: center;*/
+	background-color: #666;
+	color: #fff;
+}
+
+#skip-link a:hover,
+#skip-link a:visited:hover {
+	color: orangered;
+}
+
+
+
+/* @end */
+
+/* @group page-alignment */
+
+#page {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	/*background-color: orangered;*/
+	background: #F2F2F2;
+}
+
+.region-bottom {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	/*background-color: blanchedalmond;*/
+}
+
+
+
+/* @end */
+
+/* @group shared-properties */
+
+#header,
+#navigation,
+#content,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+	border: 0 !important;
+	word-wrap: break-word;
+	_display: inline;
+	_overflow: hidden;
+	_overflow-y: visible;
+}
+
+#header,
+#navigation,
+#main,
+#footer {
+	*position: relative;
+	*zoom: 1;
+}
+
+#header:before, #header:after,
+#main:before, #main:after,
+#footer:before, #footer:after {
+	content: "";
+	display: table;
+}
+
+#header:after,
+#main:after,
+#footer:after {
+	clear: both;
+}
+
+
+
+/* @end */
+
+/* @group header */
+
+#header {
+	width: 1000px;
+	height: 180px;
+	margin: 0;
+	padding: 0;
+	background: #F2F2F2;
+	/*background-color: aqua;*/
+}
+
+#header .region-header {
+	width: 1000px;
+	margin: 0;
+	padding: 10px;
+	/*background-color: forestgreen;*/
+	overflow: hidden; 
+}
+
+
+/* @end */
+
+/* @group main-navigation */
+
+#navigation {
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: violet;
+	background: #CCCCCC;
+	/* overflow: hidden; */
+}
+
+
+
+/* @end */
+
+/* @group main-search */
+
+#search {
+	width: 100%;
+	/*height: 100px;*/
+	margin: 0;
+	padding: 0 0 0 15px;
+	background: #DDDDDD;
+	/* overflow: hidden; */
+}
+
+.front #search {
+	width: 480px;
+	margin: 10px;
+	padding: 10px;
+	background: none;
+	/*background: violet;*/
+	float: left;
+	border: 1px dotted #333333;
+}
+
+
+
+/* @end */
+
+/* @group main */
+
+#main {
+	position: relative;
+	margin: 0;
+	padding: 0 0 30px;
+}
+
+#front-main-views {
+	/*background: navajowhite;*/
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	margin: 0;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.region-content {
+	
+}
+
+.region-content-bottom {
+	clear: both;
+	/*background-color: orange;*/
+	overflow: hidden;
+	margin: 0;
+	padding: 10px 0;
+}
+
+.region-highlighted {
+	clear: both;
+	/*background-color: aqua;*/
+}
+
+/* @group front content */
+
+.front #content {
+	/*background-color: palegreen;*/
+	float: left;
+	width: 500px;
+}
+
+
+
+/* @end */
+
+/* @group no-sidebars */
+
+.no-sidebars #content {
+	/*background-color: orange;*/
+}
+
+
+
+/* @end */
+
+/* @group sidebar-first */
+
+.sidebar-first #content {
+	float: left;
+	width: 750px;
+	margin-left: 250px;
+	margin-right: -1000px;
+	/*background-color: mediumaquamarine;*/
+}
+
+.sidebar-first .region-sidebar-first {
+	float: left;
+	width: 250px;
+	margin: 0 -250px 0 0px;
+	padding: 10px;
+	/*background-color: lightcoral;*/
+}
+
+
+
+/* @end */
+
+/* @group sidebar-second */
+
+/*.sidebar-second #content {
+	float: left;
+	width: 700px;
+	margin: 0 -700px 0 0px;
+	padding: 10px;
+	background-color: yellow;
+}*/
+
+/*.sidebar-second .region-sidebar-second {
+	float: left;
+	width: 300px;
+	margin: 0 -1000px 0 700px;
+	padding: 10px;
+	background-color: aqua;
+}*/
+
+/* @end */
+
+/* @group two-sidebars */
+
+/*.two-sidebars #content {
+	float: left;
+	width: 568px;
+	margin-left: 196px;
+	margin-right: -784px;
+}*/
+
+/*.two-sidebars .region-sidebar-first {
+	float: left;
+	width: 176px;
+	margin-left: 0px;
+	margin-right: -196px;
+}*/
+
+/*.two-sidebars .region-sidebar-second {
+	 Span 1 column, starting in 5th column from left. 
+	float: left;
+	width: 176px;
+	margin-left: 784px;
+	margin-right: -980px;
+}*/
+
+
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group footer */
+
+#footer {
+	width: 1000px;
+	/*height: 180px;*/
+	margin: 0;
+	padding: 10px;
+	/*background: #F2F2F2;*/
+	background: #CCCCCC;
+	/*background-color: aqua;*/
+}
+
+
+/* @end */

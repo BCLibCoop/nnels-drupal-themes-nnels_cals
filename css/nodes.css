@@ -1,0 +1,100 @@
+/* NNELS_CALS_v001 */ /* nodes.css */
+
+/* @group page-level */
+
+.node {
+}
+
+.node-page {
+	float: left;
+	/*background-color: forestgreen;*/
+	margin: 0;
+	padding: 0 5px 5px;
+}
+
+div.field-name-body h2:first-child {
+	/*background-color: firebrick;*/
+	margin-top: 10px;
+}
+
+/* @end */
+
+/* @group front */
+
+.front #page-title {
+	/*background-color: teal;*/
+	float: left;
+}
+
+.front .node-page {
+	/*background-color: orangered;*/
+	float: left;
+}
+
+/* @end */
+
+/* @group unpublished */
+
+.node-unpublished {
+	 background-color: #CCCCCC; 
+}
+
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+	height: 0;
+	overflow: visible;
+	color: #d8d8d8;
+	font-size: 75px;
+	line-height: 1;
+	font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.lt-ie8 .node-unpublished p.unpublished > *,
+.lt-ie8 .comment-unpublished > * {
+	position: relative;
+}
+
+
+
+/* @end */
+
+/* @group forum */
+
+.page-forum {
+	/*background-color: gold;*/
+	
+}
+
+#forum {
+	/*background-color: aqua;*/
+	float: left;
+	clear: both;
+	width: 100%;
+}
+
+#forum-0 {
+	margin: 0;
+	padding: 0;
+}
+
+/* @end */
+
+/* @group repository-item */
+
+.node-type-repository-item {
+/* 	background-color: fuchsia; */
+}
+
+/* @end */
+
+/* @group tutorial-item */
+
+.node-type-tutorial-video {
+	/*background-color: lime;*/
+}
+
+/* @end */

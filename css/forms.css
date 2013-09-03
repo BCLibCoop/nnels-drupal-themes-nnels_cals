@@ -1,0 +1,146 @@
+/* NNELS_CALS_v001 */ /* forms.css */
+
+/* @group Drupal Admin Tables */
+
+form th {
+	text-align: left; /* LTR */
+	padding-right: 1em; /* LTR */
+	border-bottom: 3px solid #ccc;
+}
+
+form tbody {
+	border-top: 1px solid #ccc;
+}
+
+form tr.even {
+	background-color: #fff;
+}
+
+form table .item-list ul {
+	margin: 0;
+}
+
+.lt-ie8 tr.even th,
+.lt-ie8 tr.even td,
+.lt-ie8 tr.odd th,
+.lt-ie8 tr.odd td {
+	border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+}
+
+
+
+/* @end */
+
+/* @group generic */
+
+.form-item {
+	margin: 1.5em 0;
+}
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+	border: 1px solid #c00;
+}
+
+.form-item label {
+	display: block;
+	font: normal normal normal 16px/24px 'open_sans_condensedbold';
+}
+
+.form-item label.option {
+	display: inline;
+	font-weight: normal;
+}
+
+.form-required {
+	color: #C00C00;
+}
+
+.form-item .description {
+	font-size: 11px;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+	margin: 5px;
+}
+
+.form-submit {
+}
+
+.container-inline div,
+.container-inline label {
+	display: inline;
+}
+
+.tips {
+}
+
+td.menu-disabled {
+	background: #ccc;
+}
+
+
+
+/* @end */
+
+/* @group login */
+
+#user-login {
+	/*text-align: left;*/
+	/*background-color: maroon;*/
+	clear: both;
+	margin: 0;
+	padding: 10px;
+}
+
+
+
+/* @end */
+
+/* @group webform-client-form-320 */
+
+#webform-client-form-320 {
+	/*background-color: orange;*/
+	float: left;
+	width: 90%;
+}
+
+/* @end */
+
+/* @group cals-external-search-request-new-title-form */
+
+#cals-external-search-request-new-title-form {
+	/*background-color: lime;*/
+	margin: 0;
+	padding: 10px;
+}
+
+#cals-external-search-request-new-title-form .field-label {
+	/*background-color: orange;*/
+	margin: 0;
+	padding: 0;
+	font: normal normal normal 18px/24px 'open_sans_condensedbold';
+	text-transform: capitalize;
+}
+
+#cals-external-search-request-new-title-form .content {
+	/*background-color: blue;*/
+	margin: 0;
+	padding: 10px;
+}
+
+#cals-external-search-request-new-title-form #edit-submit {
+	background-color: peachpuff;
+	margin: 5px 0 0;
+	padding: 5px 10px;
+	background-color: #DDDDDD;
+	color: #666666;
+}
+
+#cals-external-search-request-new-title-form #edit-submit:hover {
+	color: #EC1C24;
+}
+
+/* @end */

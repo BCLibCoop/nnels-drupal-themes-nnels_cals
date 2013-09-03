@@ -1,0 +1,172 @@
+/* tabs.css */
+
+/* @group primary-node-edit-tabs */
+
+ul.primary,
+ul.secondary {
+	/*overflow: hidden;*/
+	/**zoom: 1;*/
+	/*height: 20px;*/
+	/*display: block;*/
+	float: left;
+	width: 60%;
+	margin: 0 0 20px;
+	padding: 4px 10px 0;
+	list-style: none;
+	white-space: nowrap;
+	line-height: normal;
+	font-size: 12px;
+	text-transform: lowercase;
+	border-bottom: 1px dotted #333333;
+	/*background-color: fuchsia;*/
+}
+
+ul.secondary {
+	background: palegreen;
+}
+
+ul.primary li,
+ul.secondary li {
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	/*margin: 0;*/
+	padding: 0;
+	/*background: lavender;*/
+	background: none;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+ul.primary a,
+ul.secondary a {
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	border: 1px solid #333333;
+	border-bottom: 0;
+	text-decoration: none;
+	color: #333333;
+	/*background: transparent;*/
+	background: #f2f2f2;
+}
+
+ul.primary a:hover,
+ul.primary a:focus {
+	margin: 0;
+	padding: 5px 10px;
+	/*background: transparent;*/
+	background: #999999;
+	color: #ffffff;
+}
+
+
+
+/* @end */
+
+/* @group action-links */
+
+ul.action-links {
+	float: right;
+	width: 30%;
+	margin: 0 0 20px;
+	padding: 4px 10px 0;
+	list-style: none;
+	white-space: nowrap;
+	line-height: normal;
+	font-size: 12px;
+	text-transform: lowercase;
+	border-bottom: 1px dotted #333333;
+	/*background-color: fuchsia;*/
+}
+
+ul.action-links li {
+	display: block;
+	float: right;
+	margin: 0 5px 0 0;
+	/*margin: 0;*/
+	padding: 0;
+	/*background: lavender;*/
+	background: none;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+ul.action-links a {
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	border: 1px solid #333333;
+	border-bottom: 0;
+	text-decoration: none;
+	color: #333333;
+	/*background: transparent;*/
+	background: #f2f2f2;
+}
+
+ul.action-links a:hover,
+ul.action-links a:focus {
+	margin: 0;
+	padding: 5px 10px;
+	/*background: transparent;*/
+	background: #999999;
+	color: #ffffff;
+}
+
+
+
+/* @end */
+
+/* @group action-links - forum pages */
+
+.page-forum ul.action-links {
+	float: right;
+	clear: both;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 4px 10px 0;
+	list-style: none;
+	white-space: nowrap;
+	line-height: normal;
+	font-size: 12px;
+	text-transform: lowercase;
+	border-bottom: 0px dotted #333333;
+	/*background-color: fuchsia;*/
+}
+
+.page-forum ul.action-links li {
+	display: block;
+	float: right;
+	margin: 0 5px 0 0;
+	/*margin: 0;*/
+	padding: 0;
+	/*background: lavender;*/
+	background: none;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.page-forum ul.action-links a {
+	display: block;
+	margin: 0;
+	padding: 5px 10px;
+	border: 1px solid #333333;
+	/*border-bottom: 0;*/
+	text-decoration: none;
+	color: #333333;
+	/*background: transparent;*/
+	background: #f2f2f2;
+}
+
+.page-forum ul.action-links a:hover,
+ul.action-links a:focus {
+	margin: 0;
+	padding: 5px 10px;
+	/*background: transparent;*/
+	background: #999999;
+	color: #ffffff;
+}
+
+
+
+/* @end */
