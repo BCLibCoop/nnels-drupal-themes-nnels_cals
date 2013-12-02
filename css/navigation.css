@@ -10,7 +10,7 @@
 /* @group language-switcher */
 
 .language-switcher {
-	background-color: orange;
+	/*background-color: orange;*/
 	float: right;
 	width: 350px;
 	margin: 0 0 105px;
@@ -18,7 +18,7 @@
 }
 
 .language-switcher ul.language-switcher-locale-url {
-	background-color: pink;
+	/*background-color: pink;*/
 	display: block;
 	float: right;
 	margin: 0;
