@@ -462,7 +462,7 @@
 /* @group search-repository */
 
 .search-repository {
-	/*background-color: lightblue;*/
+	background-color: lightblue;
 	margin: 0;
 	padding: 5px 5px 10px;
 	overflow: hidden;
@@ -520,7 +520,7 @@
 }
 
 .search-repository .views-submit-button {
-÷	margin: 0;
+	margin: 0;
 	padding: 0;
 }
 
