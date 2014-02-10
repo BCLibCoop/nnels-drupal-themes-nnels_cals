@@ -146,9 +146,19 @@ function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function */
 function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  //$variables['sample_variable'] = t('Lorem ipsum.');
+  switch($_SERVER['HTTP_HOST']) {
+    case "dev.nnels.ca":
+    	drupal_set_message(t("NB: DEV server!"), "error");
+    	break;
+    case "staging.nnels.ca":
+    	drupal_set_message(t("NB: STAGING server!"), "error");
+    	break;
+  
+  }
+  //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
 }
 // */
 
