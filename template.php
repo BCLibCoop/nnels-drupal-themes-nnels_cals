@@ -151,10 +151,13 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   //$variables['sample_variable'] = t('Lorem ipsum.');
   switch($_SERVER['HTTP_HOST']) {
     case "dev.nnels.ca":
-    	drupal_set_message(t("NB: DEV server!"), "error");
+    	drupal_set_message(t("NB: DEV server!"), "error");	
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
+    	
     case "staging.nnels.ca":
     	drupal_set_message(t("NB: STAGING server!"), "error");
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
   
   }
