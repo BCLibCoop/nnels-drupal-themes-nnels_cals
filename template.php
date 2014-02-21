@@ -163,6 +163,24 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
 }
+
+
+function NNELS_CALS_v001_preprocess_block(&$vars) {
+
+  if($vars['block']->module == 'facetapi') {
+    $vars['theme_hook_suggestions'][] = 'block__facetapi_skiplinks';  
+	  //dpm($vars['block']);
+  }
+
+}
+
+function NNELS_CALS_v001_block_view_alter(&$data, $block) {
+  if ($block->module == 'facetapi') {
+  
+    //dpm($data);
+  }
+}
+
 // */
 
 /**
