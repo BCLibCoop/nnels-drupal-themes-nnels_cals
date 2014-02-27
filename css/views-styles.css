@@ -550,7 +550,11 @@
 /* @group search-results - page */
 
 .search-results {
-	/*background-color: fuchsia;*/
+	background-color: fuchsia;
+}
+
+.search-results .view-header {
+	background-color: limegreen;
 }
 
 .search-results .views-label {

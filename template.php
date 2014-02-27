@@ -130,7 +130,9 @@ function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
  */
 /* -- Delete this line if you want to use this function
 function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  //$variables['sample_variable'] = t('Lorem ipsum.');
+  //drupal_add_css("rubik-overrides.css")
+  	//drupal_add_css(path_to_theme() . '/css/rubik-overrides.css');
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
