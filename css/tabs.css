@@ -5,7 +5,7 @@
 ul.primary,
 ul.secondary {
 	/*overflow: hidden;*/
-	/**zoom: 1;*/
+	/*zoom: 1;*/
 	/*height: 20px;*/
 	/*display: block;*/
 	float: left;
@@ -60,8 +60,6 @@ ul.primary a:focus {
 	color: #ffffff;
 }
 
-
-
 /* @end */
 
 /* @group action-links */
@@ -113,8 +111,6 @@ ul.action-links a:focus {
 	color: #ffffff;
 }
 
-
-
 /* @end */
 
 /* @group action-links - forum pages */
@@ -159,12 +155,78 @@ ul.action-links a:focus {
 }
 
 .page-forum ul.action-links a:hover,
-ul.action-links a:focus {
+.page-forum ul.action-links a:focus {
 	margin: 0;
 	padding: 5px 10px;
 	/*background: transparent;*/
 	background: #999999;
 	color: #ffffff;
+}
+
+/* @end */
+
+/* @group quicktabs */
+
+.quicktabs-wrapper {
+	background-color: fuchsia;
+	float: left;
+	clear: both;
+}
+
+.quicktabs_main.quicktabs-style-zen {
+	clear: both;
+	background-color: yellow;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen {
+	display: block;
+	height: 35px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	background: indianred none;
+}
+
+/**html ul.quicktabs-tabs.quicktabs-style-zen li {
+	margin-bottom: 0px;
+}*/
+
+ul.quicktabs-tabs.quicktabs-style-zen li {
+	float: left;
+	list-style: none;
+	margin: 0 10px 0 0;
+	padding: 0;
+	background: orangered none;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen li a {
+	font-size-adjust: none;
+	display: block;
+	margin: 0;
+	padding: 5px;
+	font: 14px/16px 'open_sansregular';
+	text-decoration: none;
+	border: 0;
+	background: limegreen none;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen li:hover a {
+	border: 0;
+	background: pink none;
+}
+
+quicktabs-tabs.quicktabs-style-zen li:hover {
+	background: olive none;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen li.active a,
+ul.quicktabs-tabs.quicktabs-style-zen li.active a:hover {
+	text-decoration: none;
+	border: 0;
+	background: violet none;
+}
+
+ul.quicktabs-tabs.quicktabs-style-zen li.active {
+	background: khaki none;
 }
 
 

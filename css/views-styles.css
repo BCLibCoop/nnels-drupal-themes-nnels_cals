@@ -1026,3 +1026,89 @@ span.daisy-icon-login {
 }
 
 /* @end */
+
+/* @group OG-discussion */
+
+.tab-block.og-discussion {
+	background-color: aqua;
+	display: block;
+	float: left;
+	clear: both;
+}
+
+.group.list {
+	background-color: orangered;
+}
+
+.group.list table.views-table {
+	background-color: orangered;
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.group.list table.views-table th {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+	border-bottom: 1px dotted #333333;
+}
+
+.group.list table.views-table tr.even,
+.group.list table.views-table tr.odd {
+	margin: 0;
+	padding: 0;
+	background: none;
+	border-bottom: 1px dotted #333333;
+}
+
+.group.list table.views-table td {
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	border: 1px solid lime;
+}
+
+.group.list table.views-table td.views-field-sticky {
+	width: 4%;
+	background-color: lime;
+	margin: 0;
+	padding: 5px;
+}
+
+.group.list table.views-table td.views-field-sticky .sticky-yes,
+.group.list table.views-table td.views-field-sticky .sticky-no {
+	background-color: orangered;
+	display: block;
+	width: 20px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.group.list table.views-table td.views-field-sticky .sticky-no {
+	background-color: cadetblue;
+}
+
+.group.list table.views-table td.views-field-nothing {
+	width: 55%;
+	background-color: rosybrown;
+	margin: 0;
+	padding: 5px;
+}
+
+.group.list table.views-table td.views-field-nothing-1 {
+	width: 40%;
+	background-color: aquamarine;
+	margin: 0;
+	padding: 5px;
+}
+
+.group.list table.views-table td.views-field-edit-node {
+	background-color: violet;
+	margin: 0;
+	padding: 5px;
+}
+
+/* @end */
