@@ -98,3 +98,90 @@ div.field-name-body h2:first-child {
 }
 
 /* @end */
+
+/* @group posts */
+
+.node-type-post {
+	/*background-color: yellow;*/
+}
+
+article.node-post {
+	background-color: orangered;
+}
+
+article.node-post .submitted {
+	background-color: lightcoral;
+	margin: 0;
+	padding: 5px;
+}
+
+article.node-post .field-name-og-group-ref {
+	background-color: gold;
+}
+
+article.node-post .field-name-body {
+	background-color: indianred;
+	margin: 5px;
+	padding: 5px;
+}
+
+article.node-post ul.links.inline {
+	background-color: violet;
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+article.node-post ul.links.inline li {
+	background-color: yellowgreen;
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+article.node-post ul.links.inline li a {
+	background-color: olive;
+	display: block;
+	margin: 0;
+	padding: 5px;
+}
+
+section.comments {
+	background-color: limegreen;
+}
+
+section.comments h2.title {
+	background-color: palegreen;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+section.comments h3.comment-title {
+	background-color: palegreen;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+section.comments article.comment {
+	background-color: magenta;
+	margin: 5px;
+	padding: 5px;
+}
+
+section.comments .field-name-comment-body {
+	background-color: orange;
+	margin: 0;
+	padding: 5px;
+}
+
+/* @end */

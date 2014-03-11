@@ -238,7 +238,7 @@
 /* @group discussions-groups */
 
 .discussion-groups {
-	background-color: fuchsia;
+	/*background-color: fuchsia;*/
 	margin: 0 0 10px;
 	padding: 0px;
 	border: 1px dotted #333333;
@@ -253,13 +253,7 @@
 	line-height: 28px;
 	border-bottom: 1px dotted #333333;
 	background-color: #CCCCCC;
-	border-style: none;
-}
-
-.discussion-groups.listing-all {
-	background-color: fuchsia;
-	margin: 0 0 10px;
-	padding: 0px;
+	/*border-style: none;*/
 }
 
 

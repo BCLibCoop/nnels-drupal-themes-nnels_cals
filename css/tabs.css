@@ -172,15 +172,20 @@ ul.action-links a:focus {
 	float: left;
 	clear: both;
 	border: 1px dotted #333333;
+	margin: 0;
+	padding: 0 0 10px;
 }
 
 .quicktabs_main.quicktabs-style-zen {
 	clear: both;
+	margin: 0;
+	padding: 10px;
 	/*background-color: yellow;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen {
 	display: block;
+	width: 720px;
 	height: 35px;
 	margin: 0 0 10px 0;
 	padding: 5px;

@@ -1,7 +1,5 @@
 /* NNELS_CALS_v001 */ /* views.css */
 
-/* GIT COMMENT */
-
 /* @group views admin tabs */
 
 .views-displays .secondary li {
@@ -1036,30 +1034,26 @@ span.daisy-icon-login {
 	clear: both;
 }
 
+/* @group generic */
+
 .group.list {
-	background-color: orangered;
-}
-
-.group.list.discussion {
-	background-color: indianred;
-}
-
-.group.list.recent-discussions {
-	background-color: salmon;
+	/*background-color: orangered;*/
 }
 
 .group.list table.views-table {
 	background-color: orangered;
+	background-color: #EEEEEE;
 	border-collapse: collapse;
 	border-spacing: 0;
 	margin: 0;
 	padding: 0;
+	border: 1px dotted #333333;
 }
 
 .group.list table.views-table th {
 	text-align: left;
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	vertical-align: bottom;
 	border-bottom: 1px dotted #333333;
 }
@@ -1074,14 +1068,14 @@ span.daisy-icon-login {
 
 .group.list table.views-table td {
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 	vertical-align: top;
-	border: 1px solid lime;
+	/*border: 1px solid lime;*/
 }
 
 .group.list table.views-table td.views-field-sticky {
 	width: 4%;
-	background-color: lime;
+	/*background-color: lime;*/
 	margin: 0;
 	padding: 5px;
 }
@@ -1089,34 +1083,137 @@ span.daisy-icon-login {
 .group.list table.views-table td.views-field-sticky .sticky-yes,
 .group.list table.views-table td.views-field-sticky .sticky-no {
 	background-color: orangered;
+	background-color: #CCCCCC;
 	display: block;
-	width: 20px;
-	height: 30px;
+	width: 24px;
+	height: 0px;
+	margin: 0;
+	padding: 24px 0 0;
 	overflow: hidden;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
 }
 
 .group.list table.views-table td.views-field-sticky .sticky-no {
-	background-color: cadetblue;
+	/*background-color: cadetblue;*/
+	display: none;
 }
 
 .group.list table.views-table td.views-field-nothing {
 	width: 55%;
-	background-color: rosybrown;
+	/*background-color: rosybrown;*/
 	margin: 0;
 	padding: 5px;
 }
 
 .group.list table.views-table td.views-field-nothing-1 {
 	width: 40%;
-	background-color: aquamarine;
+	/*background-color: aquamarine;*/
 	margin: 0;
 	padding: 5px;
 }
 
 .group.list table.views-table td.views-field-edit-node {
-	background-color: violet;
+	/*background-color: violet;*/
 	margin: 0;
 	padding: 5px;
 }
+
+.group.list table.views-table .views-field-lable {
+	/*background-color: violet;*/
+	font-family: 'open_sanssemibold';
+}
+
+.group.list table.views-table .comment-title {
+	/*background-color: violet;*/
+	font-family: 'open_sanssemibold';
+}
+
+
+
+/* @end */
+
+/* @group all groups */
+
+.discussion-groups.listing-all {
+	/*background-color: orangered;*/
+	margin: 0 0 10px;
+	padding: 0px;
+}
+
+.group.list.all-groups {
+	/*background-color: violet;*/
+}
+
+.group.list.all-groups .view-list-ul {
+	background-color: palegreen;
+	background: #EEEEEE;
+	margin: 0;
+	padding: 10px;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+.group.list.all-groups .view-list-ul li {
+	background-color: mediumaquamarine;
+	background: #CCCCCC;
+	margin: 0 0 5px;
+	padding: 5px 10px;
+	list-style-image: none;
+	list-style-type: none;
+	border: 1px dotted #333333;
+}
+
+.group.list.all-groups .views-field-title {
+	/*background-color: mediumaquamarine;*/
+	font-family: 'open_sanssemibold';
+}
+
+/* @end */
+
+/* @group recent discussions */
+
+.discussion-groups.listing-recent {
+	/*background-color: orangered;*/
+	margin: 0 0 10px;
+	padding: 0px;
+}
+
+.group.list.recent-discussions {
+	/*background-color: salmon;*/
+	margin: 0;
+	padding: 10px;
+}
+
+.group.list.recent-discussions {
+	/*background-color: salmon;*/
+	margin: 0;
+	padding: 10px;
+}
+
+
+
+/* @end */
+
+/* @group discussion, files */
+
+.group.list.discussion {
+	/*background-color: pink;*/
+}
+
+.group.list.files {
+	/*background-color: rosybrown;*/
+}
+
+.group.list.files .view-header {
+	/*background-color: forestgreen;*/
+	margin: 0;
+	padding: 5px;
+}
+
+
+
+/* @end */
 
 /* @end */
