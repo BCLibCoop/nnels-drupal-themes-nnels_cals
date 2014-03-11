@@ -235,6 +235,37 @@
 
 /* @end */
 
+/* @group discussions-groups */
+
+.discussion-groups {
+	background-color: fuchsia;
+	margin: 0 0 10px;
+	padding: 0px;
+	border: 1px dotted #333333;
+	overflow: hidden;
+}
+
+.discussion-groups h2.block-title {
+	/*background-color: paleturquoise;*/
+	margin: 0;
+	padding: 5px 5px 5px 15px;
+	font-size: 20px;
+	line-height: 28px;
+	border-bottom: 1px dotted #333333;
+	background-color: #CCCCCC;
+	border-style: none;
+}
+
+.discussion-groups.listing-all {
+	background-color: fuchsia;
+	margin: 0 0 10px;
+	padding: 0px;
+}
+
+
+
+/* @end */
+
 /* @group admin-toolbar */
 
 .admin-toolbar {
@@ -264,7 +295,8 @@
 .admin-toolbar .block-content {
 }
 
-#superfish-1 {
+#superfish-1,
+#superfish-3 {
 	background-color: lime;
 	background-color: #EEEEEE;
 	width: 215px;
@@ -292,6 +324,7 @@
 	width: 100%;
 	background-color: aqua;
 	background-color: #9FC9FF;
+	background-color: #CCCCCC;
 }
 
 
@@ -306,6 +339,7 @@
 	background-color: yellow;
 	background-color: #3E90FF;
 	background-color: #9FC9FF;
+	background-color: #CCCCCC;
 }
 
 /*.sf-menu.sf-style-white a.sf-with-ul {
@@ -320,6 +354,7 @@
 	padding: 0;
 	border-right: 0px solid #666666;
 	border-bottom: none;
+	background-color: #CCCCCC;
 }
 
 .sf-menu.sf-style-white li.sf-depth-1 {
@@ -350,6 +385,7 @@
 .sf-menu.sf-style-white a.active {
 	background: #e9e9e9;
 	background: #3E90FF;
+	background: #9FC9FF;
 	color: #FFFFFF;
 }
 

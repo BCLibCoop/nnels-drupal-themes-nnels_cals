@@ -358,7 +358,7 @@
 }
 
 .recently-added .views-field-php {
-/* 	background-color: aqua; */
+	/*background-color: aqua;*/
 	height: 40px;
 	margin: 0 0 0 65px;
 	padding: 0;
@@ -1030,7 +1030,7 @@ span.daisy-icon-login {
 /* @group OG-discussion */
 
 .tab-block.og-discussion {
-	background-color: aqua;
+	/*background-color: aqua;*/
 	display: block;
 	float: left;
 	clear: both;
@@ -1038,6 +1038,14 @@ span.daisy-icon-login {
 
 .group.list {
 	background-color: orangered;
+}
+
+.group.list.discussion {
+	background-color: indianred;
+}
+
+.group.list.recent-discussions {
+	background-color: salmon;
 }
 
 .group.list table.views-table {

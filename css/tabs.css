@@ -165,17 +165,18 @@ ul.action-links a:focus {
 
 /* @end */
 
-/* @group quicktabs */
+/* @group quicktabs-discussion-groups */
 
 .quicktabs-wrapper {
-	background-color: fuchsia;
+	/*background-color: fuchsia;*/
 	float: left;
 	clear: both;
+	border: 1px dotted #333333;
 }
 
 .quicktabs_main.quicktabs-style-zen {
 	clear: both;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen {
@@ -184,18 +185,15 @@ ul.quicktabs-tabs.quicktabs-style-zen {
 	margin: 0 0 10px 0;
 	padding: 5px;
 	background: indianred none;
+	background: #EEEEEE none;
 }
-
-/**html ul.quicktabs-tabs.quicktabs-style-zen li {
-	margin-bottom: 0px;
-}*/
 
 ul.quicktabs-tabs.quicktabs-style-zen li {
 	float: left;
 	list-style: none;
 	margin: 0 10px 0 0;
 	padding: 0;
-	background: orangered none;
+	background: /*orangered*/ none;
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen li a {
@@ -207,15 +205,19 @@ ul.quicktabs-tabs.quicktabs-style-zen li a {
 	text-decoration: none;
 	border: 0;
 	background: limegreen none;
+	background: #CCCCCC none;
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen li:hover a {
 	border: 0;
 	background: pink none;
+	background: #666666 none;
+	color: #FFFFFF;
 }
 
 quicktabs-tabs.quicktabs-style-zen li:hover {
 	background: olive none;
+	background: #666666 none;
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen li.active a,
@@ -223,10 +225,13 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active a:hover {
 	text-decoration: none;
 	border: 0;
 	background: violet none;
+	background: #666666 none;
+	color: #FFFFFF;
 }
 
 ul.quicktabs-tabs.quicktabs-style-zen li.active {
 	background: khaki none;
+	background: #666666 none;
 }
 
 
