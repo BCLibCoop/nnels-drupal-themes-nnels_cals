@@ -106,27 +106,27 @@ div.field-name-body h2:first-child {
 }
 
 article.node-post {
-	background-color: orangered;
+	/*background-color: orangered;*/
 }
 
 article.node-post .submitted {
-	background-color: lightcoral;
+	/*background-color: lightcoral;*/
 	margin: 0;
 	padding: 5px;
 }
 
 article.node-post .field-name-og-group-ref {
-	background-color: gold;
+	/*background-color: gold;*/
 }
 
 article.node-post .field-name-body {
-	background-color: indianred;
+	/*background-color: indianred;*/
 	margin: 5px;
 	padding: 5px;
 }
 
 article.node-post ul.links.inline {
-	background-color: violet;
+	/*background-color: violet;*/
 	float: left;
 	clear: both;
 	width: 100%;
@@ -137,7 +137,7 @@ article.node-post ul.links.inline {
 }
 
 article.node-post ul.links.inline li {
-	background-color: yellowgreen;
+	/*background-color: yellowgreen;*/
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -147,25 +147,28 @@ article.node-post ul.links.inline li {
 
 article.node-post ul.links.inline li a {
 	background-color: olive;
+	background-color: #CCCCCC;
 	display: block;
-	margin: 0;
-	padding: 5px;
+	margin: 5px 10px 5px 5px;
+	padding: 5px 10px;
 }
 
 section.comments {
-	background-color: limegreen;
+	/*background-color: limegreen;*/
 }
 
 section.comments h2.title {
-	background-color: palegreen;
+	/*background-color: palegreen;*/
 	float: left;
 	width: 100%;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 5px;
+	border:  none;
+	border-bottom: 1px dotted #333333;
 }
 
 section.comments h3.comment-title {
-	background-color: palegreen;
+	/*background-color: violet;*/
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -173,15 +176,70 @@ section.comments h3.comment-title {
 }
 
 section.comments article.comment {
-	background-color: magenta;
+	/*background-color: magenta;*/
+	float: left;
+	clear: both;
+	width: 99%;
 	margin: 5px;
 	padding: 5px;
+	border: 1px dotted #333333;
 }
 
 section.comments .field-name-comment-body {
-	background-color: orange;
+	/*background-color: orange;*/
+	float: left;
+	width: 100%;
 	margin: 0;
 	padding: 5px;
+}
+
+.comment-form {
+	/*background-color: forestgreen;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	border: 1px dotted #333333;
+}
+
+.comment-form .form-item {
+	/*background-color: indigo;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .form-actions {
+	/*background-color: pink;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .filter-wrapper {
+	/*background-color: orangered;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .form-actions input {
+	background-color: #CCCCCC;
+	/*display: block;*/
+	margin: 5px 10px 5px 5px;
+	padding: 5px 10px;
+	border-style: none;
+}
+
+.comment-form .form-actions input:hover {
+	background-color: #CCCCCC;
+	color: #EC1C24;
 }
 
 /* @end */
