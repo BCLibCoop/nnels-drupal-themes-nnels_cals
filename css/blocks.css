@@ -290,7 +290,8 @@
 }
 
 #superfish-1,
-#superfish-3 {
+#superfish-3,
+#superfish-4 {
 	background-color: lime;
 	background-color: #EEEEEE;
 	width: 215px;
@@ -308,8 +309,6 @@
 	top: 0;
 }
 
-
-
 .sf-menu.sf-style-white {
 	float: left;
 	display: block;
@@ -320,7 +319,6 @@
 	background-color: #9FC9FF;
 	background-color: #CCCCCC;
 }
-
 
 .sf-menu.sf-style-white ul {
 	padding-left: 0;
@@ -382,8 +380,6 @@
 	background: #9FC9FF;
 	color: #FFFFFF;
 }
-
-
 
 /* @end */
 
