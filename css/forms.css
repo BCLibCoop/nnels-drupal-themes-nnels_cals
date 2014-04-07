@@ -34,13 +34,13 @@ form table .item-list ul {
 /* @group generic */
 
 .form-item {
-	margin: 1.5em 0;
+	margin: 10px 0;
 }
 
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error {
-	border: 1px solid #c00;
+	border: 1px solid #C00C00;
 }
 
 .form-item label {
@@ -64,6 +64,7 @@ form table .item-list ul {
 .form-checkboxes .form-item,
 .form-radios .form-item {
 	margin: 5px;
+	padding: 0;
 }
 
 .form-submit {
@@ -89,7 +90,7 @@ td.menu-disabled {
 
 #user-login {
 	/*text-align: left;*/
-	/*background-color: maroon;*/
+	background-color: maroon;
 	clear: both;
 	margin: 0;
 	padding: 10px;
@@ -141,6 +142,22 @@ td.menu-disabled {
 
 #cals-external-search-request-new-title-form #edit-submit:hover {
 	color: #EC1C24;
+}
+
+/* @end */
+
+/* @group detail-library-registration */
+
+.detail-library-registration {
+	background-color: orange;
+}
+
+/* @end */
+
+/* @group detail-library-login */
+
+.detail-library-login {
+	background-color: lawngreen;
 }
 
 /* @end */
