@@ -159,7 +159,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     	
     case "staging.nnels.ca":
     	drupal_set_message(t("NB: STAGING server!"), "error");
-    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
   
   }
