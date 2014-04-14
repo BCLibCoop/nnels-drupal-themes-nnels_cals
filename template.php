@@ -130,7 +130,9 @@ function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
  */
 /* -- Delete this line if you want to use this function
 function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  //$variables['sample_variable'] = t('Lorem ipsum.');
+  //drupal_add_css("rubik-overrides.css")
+  	//drupal_add_css(path_to_theme() . '/css/rubik-overrides.css');
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
@@ -146,10 +148,36 @@ function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function */
 function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+  //$variables['sample_variable'] = t('Lorem ipsum.');
+  switch($_SERVER['HTTP_HOST']) {
+    case "dev.nnels.ca":
+    	drupal_set_message(t("NB: DEV server!"), "error");	
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	break;
+    	
+    case "staging.nnels.ca":
+    	drupal_set_message(t("NB: STAGING server!"), "error");
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	break;
+  
+  }
+  //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
 }
+
+
+function NNELS_CALS_v001_preprocess_block(&$vars) {
+
+  if($vars['block']->module == 'facetapi') {
+  	
+    $vars['theme_hook_suggestions'][] = 'block__facetapi_skiplinks';  
+	  //dpm($vars);
+  }
+
+}
+
+
 // */
 
 /**

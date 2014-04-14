@@ -45,9 +45,6 @@
 .comment-by-viewer { /* A comment created by the current user */
 }
 
-h3.comment-title { /* Comment title */
-}
-
 .comment .new { /* "New" marker for comments that are new for the current user */
   color: #c00;
 }
@@ -59,8 +56,8 @@ h3.comment-title { /* Comment title */
 }
 
 .comment .permalink { /* Comment's permalink wrapper */
-  text-transform: uppercase;
-  font-size: 75%;
+	/*text-transform: uppercase;*/
+	/*font-size: 75%;*/
 }
 
 .comment .user-signature { /* The user's signature */
