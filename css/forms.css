@@ -92,9 +92,29 @@ td.menu-disabled {
 #user-login {
 	/*text-align: left;*/
 	/*background-color: maroon;*/
-	clear: both;
+	/*clear: both;*/
 	margin: 0;
 	padding: 10px;
+}
+
+#user-login .form-actions {
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+}
+
+#user-login .form-submit {
+	/*background-color: lime;*/
+	color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;
+	margin: 10px 0 0;
+	padding: 3px 5px;
+}
+
+#user-login .form-submit:hover {
+	color: #EC1C24;
+	background-color: #BBBBBB;
 }
 
 
@@ -151,14 +171,6 @@ td.menu-disabled {
 
 .detail-library-registration {
 	/*background-color: orange;*/
-}
-
-/* @end */
-
-/* @group detail-library-login */
-
-.detail-library-login {
-	/*background-color: lawngreen;*/
 }
 
 /* @end */

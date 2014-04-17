@@ -1116,6 +1116,13 @@ span.daisy-icon-login {
 	border: 0px dotted #333333;
 }
 
+.library-search-block.non-participating {
+	/*background-color: pink;*/
+	margin: 5px 0 0;
+	padding: 10px 10px 0;
+	border: 0px dotted #333333;
+}
+
 .library-search-block .views-widget-filter-search_api_views_fulltext label {
 	/*background-color: sandybrown;*/
 	margin: 0 0 5px;
@@ -1164,6 +1171,12 @@ span.daisy-icon-login {
 }
 
 .library-search.page .views-field-nothing {
+ 	/*background-color: olive;*/
+    margin: 0 0 5px;
+    padding: 5px 5px 5px 10px;
+}
+
+.library-search.page .views-field-php {
  	/*background-color: olive;*/
     margin: 0 0 5px;
     padding: 5px 5px 5px 10px;
@@ -1245,7 +1258,7 @@ span.daisy-icon-login {
 .organization-details .view-list-ul {
 	/*background-color: orangered;*/
 	margin: 0;
-	padding: 10px;
+	padding: 5px 10px 10px;
 	list-style-type: none;
 	list-style-image: none;
 }
