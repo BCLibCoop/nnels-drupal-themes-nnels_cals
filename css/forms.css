@@ -1,4 +1,5 @@
-/* NNELS_CALS_v001 */ /* forms.css */
+/** NNELS_CALS_v001 **/
+/** forms.css **/
 
 /* @group Drupal Admin Tables */
 
@@ -90,7 +91,7 @@ td.menu-disabled {
 
 #user-login {
 	/*text-align: left;*/
-	background-color: maroon;
+	/*background-color: maroon;*/
 	clear: both;
 	margin: 0;
 	padding: 10px;
@@ -149,7 +150,7 @@ td.menu-disabled {
 /* @group detail-library-registration */
 
 .detail-library-registration {
-	background-color: orange;
+	/*background-color: orange;*/
 }
 
 /* @end */
@@ -157,7 +158,7 @@ td.menu-disabled {
 /* @group detail-library-login */
 
 .detail-library-login {
-	background-color: lawngreen;
+	/*background-color: lawngreen;*/
 }
 
 /* @end */

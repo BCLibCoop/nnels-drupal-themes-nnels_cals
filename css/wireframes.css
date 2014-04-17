@@ -1,9 +1,4 @@
-/**
- * @file
- * Wireframes Styling
- *
- * Add wireframes to the basic layout elements.
- */
+/** wireframes.css **/
 
 
 .with-wireframes #header,
@@ -14,7 +9,7 @@
 .with-wireframes .region-sidebar-second,
 .with-wireframes #footer,
 .with-wireframes .region-bottom {
-  outline: 1px solid #ccc;
+	outline: 1px solid #ccc;
 }
 
 .lt-ie8 .with-wireframes #header,
@@ -25,5 +20,6 @@
 .lt-ie8 .with-wireframes .region-sidebar-second,
 .lt-ie8 .with-wireframes #footer,
 .lt-ie8 .with-wireframes .region-bottom {
-  border: 1px solid #ccc; /* IE6/7 do not support the outline property. */
+	border: 1px solid #ccc;
+	/* IE6/7 do not support the outline property. */
 }

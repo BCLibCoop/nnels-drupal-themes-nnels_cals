@@ -1,4 +1,6 @@
-/* tabs.css */
+/** NNELS_CALS_v001 **/
+
+/** tabs.css **/
 
 /* @group primary-node-edit-tabs */
 
@@ -9,7 +11,7 @@ ul.secondary {
 	/*height: 20px;*/
 	/*display: block;*/
 	float: left;
-	width: 60%;
+	width: 100%;
 	margin: 0 0 20px;
 	padding: 4px 10px 0;
 	list-style: none;
@@ -22,7 +24,7 @@ ul.secondary {
 }
 
 ul.secondary {
-	background: palegreen;
+	/*background: palegreen;*/
 }
 
 ul.primary li,
@@ -65,8 +67,8 @@ ul.primary a:focus {
 /* @group action-links */
 
 ul.action-links {
-	float: right;
-	width: 30%;
+	float: left;
+	width: 100%;
 	margin: 0 0 20px;
 	padding: 4px 10px 0;
 	list-style: none;
@@ -80,7 +82,7 @@ ul.action-links {
 
 ul.action-links li {
 	display: block;
-	float: right;
+	float: left;
 	margin: 0 5px 0 0;
 	/*margin: 0;*/
 	padding: 0;
