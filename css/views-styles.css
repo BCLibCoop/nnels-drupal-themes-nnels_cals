@@ -364,8 +364,7 @@
 	width: 50px;
 	height: 75px;
 	margin: 5px;
-	/*causes alignment issues with open library cover rewrite
-	padding: 5px; */
+	padding: 5px;
 	text-align: center;
 	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
 }
@@ -454,8 +453,7 @@
 	width: 50px;
 	height: 75px;
 	margin: 5px;
-	/*causes alignment issues with open library cover rewrite
-	padding: 5px; */
+	padding: 5px;
 	text-align: center;
 	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
 }
