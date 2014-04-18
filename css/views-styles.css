@@ -369,6 +369,11 @@
 	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
 }
 
+.recently-added .views-field-field-isbn img {
+	height: 75px;
+	width: 50px;
+}
+
 .recently-added .views-field-title {
 	/*background-color: forestgreen;*/
 	margin: 0;
@@ -456,6 +461,11 @@
 	padding: 5px;
 	text-align: center;
 	background: #F2F2F2 url(../images/default-image-S.png) no-repeat center center;
+}
+
+.most-downloaded .views-field-field-isbn img {
+	height: 75px;
+	width: 50px;
 }
 
 .most-downloaded .views-field-title {
