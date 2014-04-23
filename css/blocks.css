@@ -1,4 +1,5 @@
-/* NNELS_CALS_v001 */ /* blocks.css */
+/** NNELS_CALS_v001 **/
+/** blocks.css **/
 
 /* @group generic */
 
@@ -61,11 +62,6 @@
 	/*border-right: 1px dotted #333333;*/
 }
 
-/*.user-login.staff {
-	margin: 0 10px 0 0;
-	padding: 0;
-}*/
-
 .user-login.library {
 	margin: 0 10px 0 0;
 	padding: 0;
@@ -83,6 +79,37 @@
 .user-login a:hover {
 	color: #EC1C24;
 	background-color: #BBBBBB;
+}
+
+.block-calsauthen {
+	/*background-color: aqua;*/
+	float: right;
+	margin: 0;
+	padding: 0;
+	/*border-left: 1px solid #333333;*/
+	/*border-right: 1px dotted #333333;*/
+}
+
+.block-calsauthen a {
+	/*background-color: gold;*/
+	color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;
+	margin: 30px 0 0;
+	padding: 3px 5px;
+}
+
+.block-calsauthen a:hover {
+	color: #EC1C24;
+	background-color: #BBBBBB;
+}
+
+.block-calsauthen.detail-library-login {
+	/*background-color: lime;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 1px dotted #333333;
 }
 
 /* @end */

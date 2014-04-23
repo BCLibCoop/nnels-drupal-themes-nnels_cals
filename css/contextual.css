@@ -1,22 +1,23 @@
-/**
- * @file
- * Stylesheet for the Contextual module.
- */
+/** NNELS_CALS_v001 **/
+/** contextual.css */
 
-/**
- * Contextual links regions.
- */
+/* @group contextual links regions */
+
 .contextual-links-region {
 	outline: none;
 	position: relative;
 }
+
 .contextual-links-region-active {
 	outline: #999 dashed 1px;
 }
 
-/**
- * Contextual links.
- */
+
+
+/* @end */
+
+/* @group contextual links */
+
 div.contextual-links-wrapper {
 	display: none;
 	font-size: 90%;
@@ -25,9 +26,11 @@ div.contextual-links-wrapper {
 	top: 2px;
 	z-index: 999;
 }
+
 html.js div.contextual-links-wrapper {
 	display: block;
 }
+
 a.contextual-links-trigger {
 	background: transparent url(../images/gear-select.png) no-repeat 2px 0;
 	border: 1px solid transparent;
@@ -44,10 +47,12 @@ a.contextual-links-trigger {
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
 }
+
 a.contextual-links-trigger:hover,
 div.contextual-links-active a.contextual-links-trigger {
 	background-position: 2px -18px;
 }
+
 div.contextual-links-active a.contextual-links-trigger {
 	background-color: #fff;
 	border-color: #ccc;
@@ -59,6 +64,7 @@ div.contextual-links-active a.contextual-links-trigger {
 	-webkit-border-bottom-right-radius: 0;
 	border-radius: 4px 4px 0 0;
 }
+
 div.contextual-links-wrapper ul.contextual-links {
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -77,11 +83,13 @@ div.contextual-links-wrapper ul.contextual-links {
 	-webkit-border-top-left-radius: 4px; /* LTR */
 	border-radius: 4px 0 4px 4px; /* LTR */
 }
+
 .contextual-links-region:hover a.contextual-links-trigger,
 div.contextual-links-active a.contextual-links-trigger,
 div.contextual-links-active ul.contextual-links {
 	display: block;
 }
+
 ul.contextual-links li {
 	line-height: 100%;
 	list-style: none;
@@ -89,9 +97,11 @@ ul.contextual-links li {
 	margin: 0;
 	padding: 0;
 }
+
 div.contextual-links-wrapper a {
 	text-decoration: none;
 }
+
 ul.contextual-links li a {
 	color: #333 !important;
 	display: block;
@@ -99,6 +109,11 @@ ul.contextual-links li a {
 	padding: 0.25em 1em 0.25em 0.5em;
 	border-style: none;
 }
+
 ul.contextual-links li a:hover {
 	background-color: #bfdcee;
 }
+
+
+
+/* @end */

@@ -18,9 +18,9 @@
 .region-bottom {
   /* If you want to make the page a fixed width and centered in the viewport,
    * this is the standards-compliant way to do that. */
-  margin-left: auto;
-  margin-right: auto;
-  width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
 	background-color: orange;
 }
 
