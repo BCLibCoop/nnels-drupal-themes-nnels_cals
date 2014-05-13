@@ -231,6 +231,11 @@
 	color: #EC1C24;
 }
 
+/* staff login button for footer */
+
+.block-cals-external-search-cals-staff-login {
+	float:left;
+}
 
 
 /* @end */
