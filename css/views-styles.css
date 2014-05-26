@@ -1080,6 +1080,21 @@ span.daisy-icon-login {
 	/*background-color: pink;*/
 }
 
+.group.list.discussion .view-header {
+	/*background-color: blue;*/
+}
+
+.group.list.discussion .form-text {
+	/*background-color: fuchsia;*/
+	width: 400px;
+}
+
+.group.list.discussion .views-submit-button {
+	/*background-color: lime;*/
+	margin: 0;
+	padding: 5px 0 0 10px;
+}
+
 .group.list.files {
 	/*background-color: rosybrown;*/
 }
