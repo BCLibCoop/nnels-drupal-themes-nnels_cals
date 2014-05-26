@@ -32,8 +32,7 @@
 .header-logo h1.site-title {
 	/*background: orangered;*/
 	float: left;
-	/*width: 380px;*/
-	margin: 5px;
+	margin: 20px 5px 5px;
 	padding: 0;
 	font: normal 36px/40px 'open_sans_condensedbold';
 	text-decoration: none;
