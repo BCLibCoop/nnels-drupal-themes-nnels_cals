@@ -41,10 +41,10 @@
 .header-logo h2.site-subtitle {
 	/*background: navy;*/
 	float: left;
-	/*width: 380px;*/
+	width: 425px;
 	margin: 5px;
 	padding: 0;
-	font: normal 24px/28px 'open_sans_condensedbold';
+	font: normal 22px/28px 'open_sans_condensedbold';
 	text-decoration: none;
 }
 
