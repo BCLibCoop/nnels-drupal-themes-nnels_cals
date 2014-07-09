@@ -22,4 +22,13 @@
  * the view is modified.
  */
 ?>
+<?php
+  $hrs = substr($output, 0, 2);
+  $mins = substr($output, 2, 2);
+  $secs = substr($output, 4, 0);
+  $output = $mins . " " . t("mins");
+  if($hrs > 0) {
+    $output = $hrs . " " . t("hours") . ", " . $output;
+  }
+?>
 <?php print $output; ?>
