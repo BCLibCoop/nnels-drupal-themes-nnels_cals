@@ -22,14 +22,15 @@
  * the view is modified.
  */
 ?>
+
 <?php
-  $hrs = substr($output, 0, 2);
-  $mins = substr($output, 2, 2);
-  $secs = substr($output, 4, 0);
-  $output = t("not known");
-  $output = 0;
-  if($mins > 0) $output = $mins . " " . t("mins");
-  if($hrs > 0) $output = $hrs . " " . t("hours") . ", " . $output;
- 
+	//append to as new patterns emerge
+	$replacements = array(
+	  "Narrator: ",
+	  "Read by ",
+	);
+  $output = str_replace($replacements, "", $output);
+  //dpm($output);
 ?>
-<?php print $output; ?>
+
+<?php if(!empty($output)) print $output; ?>

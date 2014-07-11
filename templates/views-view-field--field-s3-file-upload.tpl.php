@@ -23,13 +23,8 @@
  */
 ?>
 <?php
-  $hrs = substr($output, 0, 2);
-  $mins = substr($output, 2, 2);
-  $secs = substr($output, 4, 0);
-  $output = t("not known");
-  $output = 0;
-  if($mins > 0) $output = $mins . " " . t("mins");
-  if($hrs > 0) $output = $hrs . " " . t("hours") . ", " . $output;
- 
+	//dpm($output);
+	if($output != 'File not yet available') 
+	  $output = '<span class="daisy-icon">' . l(t("Download the Daisy File"), $output) . '</span>';
 ?>
 <?php print $output; ?>
