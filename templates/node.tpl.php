@@ -31,6 +31,12 @@
 		// We hide the comments and links now so that we can render them later.
 		hide($content['comments']);
 		hide($content['links']);
+		
+		//output view which includes File Download links. See NNELS_CALS_v001_preprocess_node_repository_item()
+		//function in template.php
+		if(!empty($view_download_files) ) {
+			print $view_download_files;
+		}	
 		print render($content);
 	?>
 

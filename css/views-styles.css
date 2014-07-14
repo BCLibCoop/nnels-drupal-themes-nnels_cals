@@ -305,30 +305,30 @@
 
 /* @end*/
 
-/* @group block-views-repository-items-front-page-bra*/
+/* @group recently added - front */
 
-#block-views-repository-items-front-page-bra {
-	/*background-color: purple;*/
+.recently-added-block.front {
+	background-color: purple;
 	margin: 10px;
 	padding: 10px;
-	overflow: hidden;
 	border: 1px dotted #333333;
+	overflow: hidden;
 }
 
-#block-views-repository-items-front-page-bra .block-title {
+.recently-added-block.front .block-title {
 	font-size: 20px;
 	line-height: 28px;
-	/*background-color: teal;*/
+	background-color: orchid;
 	border-bottom: 1px dotted #333333;
 }
 
 .recently-added {
 	/*background-color: thistle;*/
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .recently-added .view-title {
-	/*background-color: teal;*/
+	background-color: teal;
 	margin: 0 0 5px;
 	padding: 0;
 	font: normal normal 20px/28px 'open_sans_condensedbold';
@@ -336,16 +336,16 @@
 	border-bottom: 1px dotted #333333;
 }
 
-.recently-added .item-list ul {
-	/*background-color: orange;*/
+.recently-added .view-list-ul {
+	background-color: orange;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
 }
 
-.recently-added .item-list ul li {
-	/*background-color: navy;*/
+.recently-added .view-list-ul li {
+	background-color: peachpuff;
 	float: left;
 	width: 32.5%;
 	min-height: 140px;
@@ -356,7 +356,7 @@
 	border: 1px dotted #333333;
 }
 
-.recently-added .item-list ul li.views-row-last {
+.recently-added .view-list-ul li.views-row-last {
 	margin: 5px 0 0;
 }
 
@@ -382,12 +382,6 @@
 	font: normal normal normal 16px/20px 'open_sans_condensedbold';
 }
 
-/*.recently-added .views-field-field-dc-description {
-	background-color: hotpink;
-	margin: 0;
-	padding: 5px 5px 5px 65px;
-}*/
-
 .recently-added .views-field-body {
 	/*background-color: hotpink;*/
 	margin: 0;
@@ -407,30 +401,64 @@
 	padding: 0;
 }
 
-/* @end*/
-
-/* @group block-views-repository-items-front-page-bmd*/
-
-#block-views-repository-items-front-page-bmd {
-	/*background-color: gold;*/
-	margin: 10px;
-	padding: 10px;
-	overflow: hidden;
-	border: 1px dotted #333333;
+.recently-added .views-field-field-file-resource {
+	background-color: limegreen;
+	margin: 0 0 0 65px;
+	padding: 0;
 }
 
-#block-views-repository-items-front-page-bmd .block-title {
+.recently-added .views-field-field-file-resource .multi-file-embed {
+	background-color: aqua;
+	width: 100%;
+	/*height: auto;*/
+	margin: 0;
+	padding: 0;
+}
+
+.recently-added .views-field-field-file-resource .multi-file-embed .view-embed-list-ul {
+	background-color: orange;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.recently-added .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li {
+	background-color: hotpink;
+	float: left;
+	width: 100%;
+	min-height: 0;
+	margin: 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border: 0px dotted #333333;
+}
+
+/* @end*/
+
+/* @group most downloaded - front */
+
+.most-downloaded-block.front {
+	background-color: gold;
+	margin: 10px;
+	padding: 10px;
+	border: 1px dotted #333333;
+	overflow: hidden;
+}
+
+.most-downloaded-block.front .block-title {
 	font-size: 20px;
 	line-height: 28px;
-	/*background-color: teal;*/
+	background-color: teal;
 	border-bottom: 1px dotted #333333;
 }
 
 .most-downloaded {
-	/*background-color: thistle;*/
+	background-color: thistle;
 }
 
-.most-downloaded .item-list ul {
+.most-downloaded .view-list-ul {
 	/*background-color: orange;*/
 	margin: 0;
 	padding: 0;
@@ -438,8 +466,8 @@
 	list-style-image: none;
 }
 
-.most-downloaded .item-list ul li {
-	/*background-color: navy;*/
+.most-downloaded .view-list-ul li {
+	background-color: pink;
 	float: left;
 	width: 32.5%;
 	min-height: 140px;
@@ -450,7 +478,7 @@
 	border: 1px dotted #333333;
 }
 
-.most-downloaded .item-list ul li.views-row-last {
+.most-downloaded .view-list-ul li.views-row-last {
 	margin: 5px 0 0;
 }
 
@@ -476,23 +504,17 @@
 	font: normal normal normal 16px/20px 'open_sans_condensedbold';
 }
 
-.most-downloaded .views-field-field-dc-description {
-	/*background-color: hotpink;*/
+/*.most-downloaded .views-field-field-dc-description {
+	background-color: hotpink;
 	margin: 0;
 	padding: 5px 5px 5px 65px;
-}
+}*/
 
 .most-downloaded .views-field-body {
 	/*background-color: hotpink;*/
 	margin: 0;
 	padding: 5px 5px 5px 65px;
 }
-
-/*.most-downloaded .views-field-field-daisy-2-file {
-	background-color: sandybrown;
-	margin: 0;
-	padding: 5px 5px 5px 65px;
-}*/
 
 .most-downloaded .views-field-nothing {
 	/*background-color: sandybrown;*/
@@ -505,6 +527,40 @@
 	height: 40px;
 	margin: 0 0 0 65px;
 	padding: 0;
+}
+
+.most-downloaded .views-field-field-file-resource {
+	background-color: limegreen;
+	margin: 0 0 0 65px;
+	padding: 0;
+}
+
+.most-downloaded .views-field-field-file-resource .multi-file-embed {
+	background-color: aqua;
+	width: 100%;
+	/*height: auto;*/
+	margin: 0;
+	padding: 0;
+}
+
+.most-downloaded .views-field-field-file-resource .multi-file-embed .view-embed-list-ul {
+	background-color: orange;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.most-downloaded .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li {
+	background-color: hotpink;
+	float: left;
+	width: 100%;
+	min-height: 0;
+	margin: 0 0 5px;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border: 0px dotted #333333;
 }
 
 /* @end*/
@@ -732,11 +788,11 @@
 /* @group browse-results - page*/
 
 .browse-results {
- 	/*background-color: fuchsia;*/ 
+ 	background-color: fuchsia; 
 }
 
 .browse-results .views-exposed-form {
- 	/*background-color: seagreen;*/ 
+ 	background-color: seagreen; 
 }
 
 .browse-results .views-label {
@@ -744,8 +800,8 @@
 	/*font: normal normal normal 16px/22px 'open_sans_condensedbold';*/
 }
 
-.browse-results .item-list.author {
- 	/*background-color: firebrick;*/ 
+.browse-results .view-list-ul .author {
+ 	background-color: firebrick; 
 	float: left;
 	width: 100%;
 	margin: 0 0 20px;
@@ -754,28 +810,29 @@
 }
 
 .browse-results .item-list h3 {
- 	/*background-color: orangered;*/ 
+ 	background-color: orangered; 
 	float: left;
 	width: 100%;
 	margin: 0 0 5px;
 	padding: 5px 5px 5px 0;
 }
 
-.browse-results .item-list ul {
- 	/*background-color: navy;*/ 
+.browse-results .view-list-ul {
+ 	background-color: navy; 
 	margin: 10px 0 0;
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
 }
 
-.browse-results .item-list ul.author-titles {
+.browse-results .view-list-ul .author-titles {
 	margin: 10px 0 0 10px;
 	padding: 0;
+	background-color: fuchsia;
 }
 
-.browse-results .item-list ul li {
- 	/*background-color: yellowgreen;*/ 
+.browse-results .view-list-ul li {
+ 	background-color: yellowgreen; 
 	float: left;
 	width: 100%;
 	margin: 0 0 10px;
@@ -1343,26 +1400,110 @@ span.daisy-icon-login {
 /* @group repository-item*/
 
 .repository-detail {
-	/*background-color: fuchsia;*/
+	background-color: fuchsia;
+}
+
+.repo-item-block {
+	background-color: khaki;
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item-block h2.block-title {
+	background-color: limegreen;
 }
 
 .repo-item {
-	/*background-color: fuchsia;*/
+	background-color: fuchsia;
 }
 
-.repo-item h2.block-title {
-	/*background-color: limegreen;*/
+.repo-item.available-formats {
+	background-color: limegreen;
 }
+
+/* @group repo-item - available-formats */
+
+/*.repo-item.available-formats {
+	background-color: limegreen;
+	float: left;
+	width: 100%;
+}*/
+
+.repo-item.available-formats .view-content {
+	background-color: pink;
+	/*float: left;*/
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item.available-formats .view-list-ul {
+	background-color: orange;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.available-formats .view-list-ul li {
+	background-color: hotpink;
+	float: left;
+	width: 98%;
+	margin: 5px;
+	padding: 5px 5px 5px 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.available-formats .view-footer {
+	background-color: orange;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	text-align: right;
+}
+
+.repo-item.available-formats .view-footer a {
+	/*margin: 0;
+	padding: 0;*/
+	margin: 30px 0 0;
+	margin: 0;
+	padding: 3px 5px;
+	background-color: palegoldenrod;
+	color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;
+}
+
+.repo-item.available-formats .view-footer a:hover {
+	color: #EC1C24;
+	background-color: #BBBBBB;
+}
+
+
+
+/* @end */
 
 .repo-item.daisy-url {
-	/*background-color: navy;*/
-	margin: 5px 0 20px;
+	background-color: navy;
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
 	padding: 0;
 }
 
 .repo-item.detail {
-	/*background-color: orangered;*/
+	background-color: orangered;
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
 }
+
+/* @group repo-item - detail */
 
 .repo-item.detail .views-label {
  	/*background-color: fuchsia;*/ 
@@ -1473,12 +1614,20 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
+
+
+/* @end */
+
 .marc-xml-data {
- 	/*background-color: olive;*/
-	margin: 10px 0 0;
+ 	background-color: olive;
+	float: left;
+	width: 100%;
+	margin: 0;
 	padding: 0;
  	/*background-color: #CCCCCC;*/
 }
+
+/* @group repo-item - data */
 
 .marc-xml-data h2.block-title {
 	/*background-color: limegreen;*/
@@ -1500,5 +1649,9 @@ span.daisy-icon-login {
 	border-bottom: 10px solid #CCCCCC;
  	background-color: #CCCCCC;
 }
+
+
+
+/* @end */
 
 /* @end*/

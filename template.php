@@ -155,7 +155,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     case "dev.nnels.ca":
     	global $language;
     	//dpm($language->name);
-    	drupal_set_message(t("NB: DEV server!"), "error");	
+    	drupal_set_message(t("NB: DEVEL server!"), "error");	
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
     	
@@ -190,17 +190,23 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-/* -- Delete this line if you want to use this function
+/* -- Delete this line if you want to use this function */
 function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // NNELS_CALS_v001_preprocess_node_page() or NNELS_CALS_v001_preprocess_node_story().
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
   }
+  
 }
+
+function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
+	global $user;
+  //printAndDie($user->roles);
+  
+  $display = ($user->uid == 1) ? "embed_4" : "embed_5";
+  $variables['view_download_files'] = views_embed_view("field_collection_view_repo_files", $display, $variables['nid']);
+}
+
 // */
 
 /**
