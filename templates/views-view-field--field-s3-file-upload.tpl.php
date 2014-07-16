@@ -32,35 +32,7 @@
 	$access =  $row->field_field_access_restrictions[0]['raw']['value'];
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = $row->file_managed_field_data_field_s3_file_upload_fid;
-	if($item_id == 56551) dpm($row);
-	//if($item_id) == {}
-	//dpm($row);
-	//$...->field_file_resource_field_collection_item_nid
-	//printAndDie($row);
-	/*
-		$node = node_load($nid);
-	$access_file = _cals_s3_check_permissions($node);
-	switch($access_file) {
-		case 0:
-			//check the current NID to see what type of redirect we need.
-			$dest = array("destination" => "node/" . $nid);
-			$link = l(t('Login to access this item'), "user/login", array("query" => $dest) );
-			return '<span class="daisy-icon-login">' . $link . '</span>';
-			break;
-		case 3:
-			return '<span class="daisy-icon-na">' . t('No file available') . '</span>';
-			break;
-		default: //probably 1?
-			return '<span class="daisy-icon">' . l(t('Download the Daisy File'), "node/{$nid}/download" ) . '</span>';
-			break;	
-	
-	}
-	
-	
-	*/
-	
 
-	
 	if($access == 0 || $user->uid > 0) {
 	  $link = l(t("Download the Daisy File"), $output);
 		$class = "daisy-icon";

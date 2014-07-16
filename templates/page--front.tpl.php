@@ -11,15 +11,19 @@
 		<nav id="main-navigation" role="navigation">
 			<?php print render($page['navigation']); ?>
 		</nav>
-	</div><!-- /#navigation -->
+	</div>
+	<!-- /#navigation -->
 
 	<div id="main">
 
 		<div id="search">
 			<nav id="search-navigation" role="navigation">
+				<?php print $messages; ?>
+				<?php print render($page['admin_nav']); ?>
 				<?php print render($page['search']); ?>
 			</nav>
-		</div><!-- /#search -->
+		</div>
+		<!-- /#search -->
 
 		<div id="content" class="column" role="main">
 
@@ -30,8 +34,6 @@
 					<?php print render($action_links); ?>
 				</ul>
 			<?php endif; ?>
-
-			<?php print $messages; ?>
 
 			<?php print render($page['help']); ?>
 

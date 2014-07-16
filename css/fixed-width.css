@@ -1,3 +1,5 @@
+/** NNELS_CALS_v001 16-07-14**/
+
 /**
  * @file
  * Positioning for a fixed-width, desktop-centric layout.
@@ -21,7 +23,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
-	background-color: orange;
+	/*background-color: orange;*/
 }
 
 /*@media screen and (max-width: 480px) {

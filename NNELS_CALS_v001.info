@@ -93,6 +93,7 @@ stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 regions[header]         = Header
 regions[navigation]     = Navigation Bar
 regions[search]     = Search Bar
+regions[admin_nav]    = Admin Navigation
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content

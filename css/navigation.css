@@ -1,9 +1,13 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001 16-07-14**/
 /** navigation.css **/
 
-/* @group generic */
+/* @group admin-jump-menu */
 
-
+.admin-jump-menu {
+	/*background-color: orange;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
 
 /* @end */
 

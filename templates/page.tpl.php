@@ -24,6 +24,8 @@
 
 			<?php print $breadcrumb; ?>
 
+			<?php print render($page['admin_nav']); ?>
+
 			<?php print render($tabs); ?>
 
 			<?php if ($action_links): ?>

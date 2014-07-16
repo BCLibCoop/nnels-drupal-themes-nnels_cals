@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001 16-07-14**/
 
 /** staging-overrides.css **/
 
@@ -10,7 +10,7 @@
 	height: 160px;
 	margin: 0;
 	padding: 0;
-	background: lime url(../images/NNELS-header-logo.png) no-repeat 5px center;
+	/*background: lime url(../images/NNELS-header-logo.png) no-repeat 5px center;*/
 	background: pink url(../images/NNELS-header-logo.png) no-repeat 5px center;
 }
 

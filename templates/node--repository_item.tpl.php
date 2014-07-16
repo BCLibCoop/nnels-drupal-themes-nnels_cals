@@ -14,28 +14,23 @@
 			<?php endif; ?>
 			<?php print render($title_suffix); ?>
 
-			<?php if ($display_submitted): ?>
-				<div class="submitted">
-					<?php print $user_picture; ?>
-					<?php print $submitted; ?>
-				</div>
-			<?php endif; ?>
-
 			<?php if ($unpublished): ?>
 				<p class="unpublished"><?php print t('Unpublished'); ?></p>
 			<?php endif; ?>
 		</section>
 	<?php endif; ?>
+	
+	<?php
+	  //view downloaded files - called from NNELS_CALS_v001_preprocess_node_repository_item()
+	  //in template.php
+	?>
+	<?php if ($view_download_files): ?>
+		<?php print $view_download_files; ?>
+	<?php endif; ?>
 
 	<?php
-		// We hide the comments and links now so that we can render them later.
-		hide($content['comments']);
-		hide($content['links']);
 		print render($content);
 	?>
 
-	<?php print render($content['links']); ?>
-
-	<?php print render($content['comments']); ?>
 
 </article><!-- /.node -->

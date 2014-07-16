@@ -30,7 +30,8 @@
 	  "Read by ",
 	);
   $output = str_replace($replacements, "", $output);
-  //dpm($output);
+	//dpm($output);
+	if(strlen($output)) $output = '<span class="views-label">' . t("Performed / Narrated by") . ': </span>' . $output;
 ?>
 
-<?php if(!empty($output)) print $output; ?>
+<?php  print $output; ?>

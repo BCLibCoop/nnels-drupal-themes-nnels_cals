@@ -201,9 +201,12 @@ function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
 
 function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	global $user;
-  //printAndDie($user->roles);
+  //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
+  $roles_allowed = array('site editor', 'site manager', 'contributor', 'administrator');
   
-  $display = ($user->uid == 1) ? "embed_4" : "embed_5";
+  //printAndDie($result);
+  
+  $display = array_intersect($roles_allowed, $user->roles) ? "embed_4" : "embed_5";
   $variables['view_download_files'] = views_embed_view("field_collection_view_repo_files", $display, $variables['nid']);
 }
 
