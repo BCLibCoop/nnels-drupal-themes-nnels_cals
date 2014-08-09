@@ -1330,9 +1330,21 @@ span.daisy-icon-login {
     margin: 0 0 5px;
     padding: 5px;
 }
+.library-search.page .views-field-field-headquarters {
+        /*background-color: aquamarine;*/
+    font: 18px/24px 'open_sans_condensedbold';
+    margin: 0 0 5px;
+    padding: 5px;
+}
 
 .library-search.page .views-field-nothing {
- 	/*background-color: olive;*/
+        /*background-color: olive;*/
+    margin: 0 0 5px;
+    padding: 5px 5px 5px 10px;
+}
+
+.library-search.page .views-field-field-consortial-partner {
+        /*background-color: cyan;*/
     margin: 0 0 5px;
     padding: 5px 5px 5px 10px;
 }
@@ -1412,65 +1424,79 @@ span.daisy-icon-login {
 
 /* @group organization details */
 
-.organization-details {
-	/*background-color: aqua;*/
-}
-
-.organization-details .view-list-ul {
-	/*background-color: orangered;*/
-	margin: 0;
-	padding: 5px 10px 10px;
-	list-style-type: none;
-	list-style-image: none;
-}
-
-.organization-details .view-list-ul li.views-row {
-	/*background-color: lightcoral;*/
-	margin: 0 0 5px;
-	padding: 0;
-	list-style-type: none;
-	list-style-image: none;
 }
 
 .organization-details .views-field-field-logo {
-	/*background-color: aqua;*/
-	float: right;
-	margin: 5px;
-	padding: 5px;
+        /*background-color: aqua;*/
+        float: right;
+        margin: 5px;
+        padding: 5px;
 }
 
+.organization-details .views-field-field-consortium {
+        /*background-color: aquamarine;*/
+        margin: 5px;
+        padding: 5px;
+}
+
+.organization-details .views-field-field-consortium .field-content {
+        display: inline;
+}
+
+.organization-details .views-field-field-headquarters {
+        /*background-color: forestgreen;*/
+        margin: 5px;
+        padding: 5px;
+}
+
+.organization-details .views-field-field-headquarters .field-content {
+        display: inline;
+}
+
+
 .organization-details .views-field-field-telephone {
-	/*background-color: rosybrown;*/
-	margin: 5px;
-	padding: 5px;
+        /*background-color: rosybrown;*/
+        margin: 5px;
+        padding: 5px;
 }
 
 .organization-details .views-field-field-address {
-	/*background-color: violet;*/
-	margin: 5px;
-	padding: 5px;
+        /*background-color: violet;*/
+        margin: 5px;
+        padding: 5px;
 }
 
 .organization-details .views-field-field-address .views-label-field-address {
-	/*background-color: palegreen;*/
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	vertical-align: top;
+        /*background-color: palegreen;*/
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        vertical-align: top;
 }
 
 .organization-details .views-field-field-address .field-content {
-	/*background-color: orange;*/
-	display: inline-block;
-	margin: 0;
-	padding: 0;
+        /*background-color: orange;*/
+        display: inline-block;
+        margin: 0;
+        padding: 0;
 }
 
 .organization-details .views-field-field-partner-library- {
-	/*background-color: khaki;*/
-	margin: 5px;
-	padding: 5px;
+        /*background-color: khaki;*/
+        margin: 5px;
+        padding: 5px;
 }
+
+.organization-details .views-field-field-url-library {
+        /*background-color: olivedrab;*/
+        margin: 5px;
+        padding: 5px;
+}
+
+.organization-details .views-field-field-url-library .field-content {
+        display: inline;
+}
+
 
 /* @end */
 
