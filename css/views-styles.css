@@ -1424,6 +1424,24 @@ span.daisy-icon-login {
 
 /* @group organization details */
 
+.organization-details {
+		/*background-color: aqua;*/
+}
+
+.organization-details .view-list-ul {
+		/*background-color: orangered;*/
+		margin: 0;
+		padding: 5px 10px 10px;
+		list-style-type: none;
+		list-style-image: none;
+}
+
+.organization-details .view-list-ul li.views-row {
+		/*background-color: lightcoral;*/
+		margin: 0 0 5px;
+		padding: 0;
+		list-style-type: none;
+		list-style-image: none;
 }
 
 .organization-details .views-field-field-logo {
