@@ -5,11 +5,11 @@
 /* @group header-logo - logo-wordmark */
 
 .header-logo {
-	float: left;
+	/*float: left;
 	width: 700px;
 	height: 160px;
 	margin: 0;
-	padding: 0;
+	padding: 0;*/
 	/*background: lime url(../images/NNELS-header-logo.png) no-repeat 5px center;*/
 	background: pink url(../images/NNELS-header-logo.png) no-repeat 5px center;
 }
