@@ -6,6 +6,13 @@
 .block {
 }
 
+.spacer-block {
+	background-color: fuchsia;
+	width: 240px;
+	margin: 10px 0 0;
+	padding: 5px 5px 5px 10px;
+}
+
 /* @end */
 
 /* @group header-logo - logo-wordmark */
@@ -41,7 +48,6 @@
 .header-logo h2.site-subtitle {
 	/*background: navy;*/
 	float: left;
-	width: 425px;
 	margin: 5px;
 	padding: 0;
 	font: normal 22px/28px 'open_sans_condensedbold';
