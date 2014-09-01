@@ -36,23 +36,12 @@
 	foreach(array_keys($blocks) as $name) {
 		if(strpos($name, "facetapi_") !== FALSE) {
 			$label = str_replace(":", "", $blocks[$name]->title);		
-			//printAndDie($blocks[$name]);
 		  $skip_links[] = l($label, $path, array('fragment' => $name, 'external' => TRUE)); 
-		  
-			//printPre($blocks[$name]);
-
 		}
 		
 	}
-	
-	//printAndDie($blocks);
-	
-  //$skip_links[] = l("Filter by Availability???", $path, array('fragment' => 'block-facetapi-m0xbt2plkszcq7ydu4whplcebcevnz1i', 'external' => TRUE)); 
+	if(count($skip_links)) $header = theme_item_list(array('items' => $skip_links, 'title' => "", 'type' => "ul", 'attributes' => array('id' => 'search-skip-link'))); 
 
- 
-	if(count($skip_links)) $header = theme_item_list(array('items' => $skip_links, 'title' => "new skip links " . count($skip_links), 'type' => "ul", 'attributes' => array('id' => 'search-skip-link'))); 
- 
-   
   
 ?>
 <div class="<?php print $classes; ?>">
