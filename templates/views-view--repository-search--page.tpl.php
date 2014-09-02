@@ -32,11 +32,28 @@
   $skip_links = array();
 	$path = request_uri();
 	$blocks = block_list('sidebar_first');
-	$header = '';
+	$header = '<ul id="search-skip-link">
+	<li><a href="#block-facetapi-m0xbt2plkszcq7ydu4whplcebcevnz1i">
+		Filter by Availability</a>
+	</li>
+	<li><a href="#block-facetapi-gg3bl1hccorojvwrv0hdxs3gcnghgakm">
+		Filter by creator</a>
+	</li>
+	<li><a href="#block-facetapi-2sjcr0oglhj79v3xreaxpenbxoy61l3b">
+		Filter by genre</a>
+	</li>
+</ul>';
+ 
+ 	
+	
 	foreach(array_keys($blocks) as $name) {
 		if(strpos($name, "facetapi_") !== FALSE) {
 			$label = str_replace(":", "", $blocks[$name]->title);		
-		  $skip_links[] = l($label, $path, array('fragment' => $name, 'external' => TRUE)); 
+			//dpm($name);
+			//dpm($blocks[$name]);
+			$id = "block-" . strtolower(str_replace("_", "-", $name));
+			//dpm($label . ": " . $id);
+		  $skip_links[] = l($label, '', array('fragment' => $id, 'external' => TRUE)); 
 		}
 		
 	}
