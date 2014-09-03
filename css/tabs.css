@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001 16-07-14**/
+/** NNELS_CALS_v001 **/
 
 /** tabs.css **/
 
@@ -45,7 +45,7 @@ ul.secondary a {
 	display: block;
 	margin: 0;
 	padding: 5px 10px;
-	border: 1px solid #333333;
+	border: 1px dotted #333333;
 	border-bottom: 0;
 	text-decoration: none;
 	color: #333333;
@@ -96,7 +96,7 @@ ul.action-links a {
 	display: block;
 	margin: 0;
 	padding: 5px 10px;
-	border: 1px solid #333333;
+	border: 1px dotted #333333;
 	border-bottom: 0;
 	text-decoration: none;
 	color: #333333;
@@ -148,7 +148,7 @@ ul.action-links a:focus {
 	display: block;
 	margin: 0;
 	padding: 5px 10px;
-	border: 1px solid #333333;
+	border: 1px dotted #333333;
 	/*border-bottom: 0;*/
 	text-decoration: none;
 	color: #333333;

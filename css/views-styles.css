@@ -60,10 +60,10 @@
 }
 
 .views-exposed-form .views-exposed-widget.views-submit-button {
-    float: left;
+ 	/*background-color: lemonchiffon;*/
+   float: left;
 	margin: 0;
     padding: 25px 0 0 10px;
-	background-color: lemonchiffon;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
@@ -182,6 +182,60 @@
 }
 
 /* @end*/
+
+/* @group faq - NEW */
+
+.faq-listing-block.landing {
+	/*background-color: orange;*/
+	float: left;
+	width: 98%;
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.faq-listing-block.secondary {
+	/*background-color: pink;*/
+	float: left;
+	width: 98%;
+	margin: 15px 0 0;
+	padding: 0;
+}
+
+.faq-listing-block.admin {
+	/*background-color: limegreen;*/
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 0;
+}
+
+.faq-listing {
+	/*background-color: purple;*/
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 0;
+}
+
+.faq-listing .view-list-ul {
+	/*background-color: lawngreen;*/
+	float: left;
+	width: 98%;
+	margin: 0 0 0 10px;
+	padding: 0 0 0 20px;
+	list-style-type: decimal;
+}
+
+.faq-listing .view-list-ul li {
+	/*background-color: fuchsia;*/
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 0 0 5px;
+}
+
+
+/* @end */
 
 /* @group tutorials-landing*/
 
@@ -590,7 +644,7 @@
 }
 
 .not-front .search-repository .block-title {
-	background-color: fuchsia;
+	/*background-color: fuchsia;*/
 	border-bottom: 0px dotted #333333;
 	float: left;
 	margin: 0;
@@ -626,9 +680,9 @@
 }
 
 .search-repository .views-widget-sort-by select {
+	/*background: lime;*/
 	width: 110px;
 	background: #EEEEEE;
-	background: lime;
 }
 
 .search-repository .views-widget-sort-order {
@@ -671,7 +725,7 @@
 }
 
 .search-results .view-list-ul {
-	background-color: navy;
+	/*background-color: navy;*/
 	width: 100%;
 	margin: 10px 0 0;
 	padding: 0;
@@ -681,7 +735,7 @@
 }
 
 .search-results .view-list-ul li {
-	background-color: yellowgreen;
+	/*background-color: yellowgreen;*/
 	float: left;
 	width: 100%;
 	margin: 0 0 10px;
