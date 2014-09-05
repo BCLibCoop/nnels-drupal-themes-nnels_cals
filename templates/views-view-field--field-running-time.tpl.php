@@ -23,9 +23,26 @@
  */
 ?>
 <?php
-  $hrs = substr($output, 0, 2);
-  $mins = substr($output, 2, 2);
-  $secs = substr($output, 4, 0);
+	$l = strlen($output);
+	
+	switch($l) {
+	  case 7:
+		  $hrs = substr($output, 0, 3);
+		  $mins = substr($output, 2, 2);
+		  break;
+	  case 6:
+		  $hrs = substr($output, 0, 2);
+		  $mins = substr($output, 2, 2);
+		  break;
+	  case 5: //e.g. 61443
+		  $hrs = substr($output, 0, 1);
+		  $mins = substr($output, 2, 2);
+		  break;
+	  case 4: //e.g. 1443
+		  $hrs = 0; //substr($output, 0, 1);
+		  $mins = substr($output, 0, 2);
+		  break;
+	}
   $output = t("not known");
   $output = 0;
   if($mins > 0) $output = $mins . " " . t("mins");
