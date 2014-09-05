@@ -23,26 +23,18 @@
  */
 ?>
 <?php
-	$l = strlen($output);
+	global $user;
+	$hrs = 0;
+	$mins = 0;
+  $l = strlen($output);
+  if($l == 4) $mins = substr($output, 0, 2);
+  if($l == 3) $mins = substr($output, 0, 1);
+  
+  if($l >= 4) $mins = substr($output, $l-4, 2);
+
+  if($l >= 5) $hrs = substr($output, 0, $l-4);
 	
-	switch($l) {
-	  case 7:
-		  $hrs = substr($output, 0, 3);
-		  $mins = substr($output, 3, 2);
-		  break;
-	  case 6:
-		  $hrs = substr($output, 0, 2);
-		  $mins = substr($output, 2, 2);
-		  break;
-	  case 5: //e.g. 61443
-		  $hrs = substr($output, 0, 1);
-		  $mins = substr($output, 1, 2);
-		  break;
-	  case 4: //e.g. 1443
-		  $hrs = 0; //substr($output, 0, 1);
-		  $mins = substr($output, 0, 2);
-		  break;
-	}
+
   $output = t("not known");
   $output = 0;
   if($mins > 0) $output = $mins . " " . t("mins");
