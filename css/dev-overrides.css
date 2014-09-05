@@ -13,4 +13,14 @@
 	background: lime url(../images/NNELS-header-logo.png) no-repeat 5px center;
 }
 
+.block-masquerade {
+	background-color: orange;
+	float: left;
+}
+
+.block-switchtheme {
+	background-color: red;
+	float: right;
+}
+
 /* @end */

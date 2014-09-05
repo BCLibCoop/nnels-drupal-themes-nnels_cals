@@ -166,6 +166,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
+  
 }
 
 

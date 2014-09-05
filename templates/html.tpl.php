@@ -48,9 +48,12 @@
 			<li><a href="#main-content" class="element-invisible element-focusable">
 				skip to main content</a>
 			</li>
-			<li><a href="#secondary-navigation" class="element-invisible element-focusable">
-				skip to secondary navigation</a>
-			</li>
+			<?php if ( count(block_list('sidebar_first')) ): ?>
+			<!-- include secondary links if there are sidebar blocks -->
+			  <li><a href="#secondary-navigation" class="element-invisible element-focusable">
+				  skip to secondary navigation</a>
+			  </li>
+			<?php endif; ?>
 		</ul>
 	<?php endif; ?>
 
