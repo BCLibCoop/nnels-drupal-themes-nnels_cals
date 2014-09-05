@@ -57,7 +57,7 @@
 		}
 		
 	}
-	if(count($skip_links)) $header = theme_item_list(array('items' => $skip_links, 'title' => "", 'type' => "ul", 'attributes' => array('id' => 'search-skip-link'))); 
+	if(count($skip_links)) $header = theme_item_list(array('items' => $skip_links, 'title' => "", 'type' => "ul", 'attributes' => array('class' => 'search-skip-links element-invisible'))); 
 
   
 ?>
