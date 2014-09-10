@@ -321,6 +321,10 @@
 .admin-toolbar .block-content {
 }
 
+.admin-toolbar.discussion-help > p#email {
+        padding: 10px;
+}
+
 #superfish-1,
 #superfish-2,
 #superfish-3,
