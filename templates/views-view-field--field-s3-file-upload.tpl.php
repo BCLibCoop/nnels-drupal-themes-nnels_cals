@@ -32,13 +32,15 @@
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = $row->file_managed_field_data_field_s3_file_upload_fid;
 	
+	//new
 	$format = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) $format = $row->field_field_file_format[0]['rendered']['#markup'];
 
 
 	if($access == 0 || $user->uid > 0) {
-	  $link = l(t("Download the $format File"), $output);
-		$class = "daisy-icon";
+	  $link = l(t("Download this $format"), $output);
+		//$class = "daisy-icon";
+		$class = "generic-file-icon";
 	}
 	else { // access = 1, restrict to logged in users
 	  $dest = array("destination" => "node/" . $nid);
