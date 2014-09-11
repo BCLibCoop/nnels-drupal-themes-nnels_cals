@@ -25,16 +25,19 @@
 <?php
 	//dpm($output);
 	//dpm($row);
-	//dpm($field);
 	global $user;
 	$nid = $row->field_file_resource_field_collection_item_nid;
 	$item_id = $row->field_collection_item_item_id;
 	$access =  $row->field_field_access_restrictions[0]['raw']['value'];
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = $row->file_managed_field_data_field_s3_file_upload_fid;
+	
+	$format = '';
+	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) $format = $row->field_field_file_format[0]['rendered']['#markup'];
+
 
 	if($access == 0 || $user->uid > 0) {
-	  $link = l(t("Download the Daisy File"), $output);
+	  $link = l(t("Download the $format File"), $output);
 		$class = "daisy-icon";
 	}
 	else { // access = 1, restrict to logged in users
