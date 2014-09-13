@@ -36,8 +36,8 @@
 	$format = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
 		$format = $row->field_field_file_format[0]['rendered']['#markup'];
-		$format = str_replace(array(" 2", " 3"), "", $format); // strip out 2 and 3 from Daisy
-		$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
+		//$format = str_replace(array(" 2", " 3"), "", $format); // strip out 2 and 3 from Daisy
+		//$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
 	}
 
 	if($access == 0 || $user->uid > 0) {
