@@ -40,7 +40,7 @@
 	}
 
 	if($access == 0 || $user->uid > 0) {
-	  $link = l(t("Download this $format"), $output);
+	  $link = l(t("Download (@format)", array("@format" => $format)));
 		//$class = "daisy-icon";
 		$class = "generic-file-icon";
 	}
