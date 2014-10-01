@@ -1,11 +1,9 @@
 /** NNELS_CALS_v001A **/
 
-/**
- * @file
- * Print styling
- *
- * We provide some sane print styling for Drupal using Zen's layout method.
- */
+/* 01/10/2014 */
+
+
+/** print.css **/
 
 @media print {
 
