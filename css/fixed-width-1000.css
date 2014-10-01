@@ -1,11 +1,10 @@
-/** NNELS_CALS_v001 16-07-14**/
+/** NNELS_CALS_v001A **/
 /** fixed-width-1000.css **/
 
 /* @group body-modifications */
 
 body {
 	/*background: fuchsia;*/
-	/*background: #F2F2F2;*/
 	background: #444444;
 }
 
@@ -43,7 +42,7 @@ body {
 	margin-right: auto;
 	width: 1000px;
 	/*background-color: orangered;*/
-	background: #F2F2F2;
+	background: #FFFFFF;
 }
 
 .region-bottom {
@@ -65,7 +64,7 @@ body {
 .region-sidebar-first,
 .region-sidebar-second,
 #footer {
-	border: 0 !important;
+	border: 0;
 	word-wrap: break-word;
 	_display: inline;
 	_overflow: hidden;
@@ -80,9 +79,12 @@ body {
 	*zoom: 1;
 }
 
-#header:before, #header:after,
-#main:before, #main:after,
-#footer:before, #footer:after {
+#header:before,
+#header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
 	content: "";
 	display: table;
 }
@@ -100,12 +102,11 @@ body {
 /* @group header */
 
 #header {
+	/*background-color: aqua;*/
 	width: 1000px;
-	height: 180px;
+	height: 170px;
 	margin: 0;
 	padding: 0;
-	background: #F2F2F2;
-	/*background-color: aqua;*/
 }
 
 #header .region-header {
@@ -122,13 +123,12 @@ body {
 /* @group main-navigation */
 
 #navigation {
+	/*background: violet;*/
 	width: 100%;
-	height: 40px;
+	height: 45px;
 	margin: 0;
 	padding: 0;
-	background: violet;
-	background: #CCCCCC;
-	/* overflow: hidden; */
+	border-bottom: 2px solid #336699;
 }
 
 
@@ -139,21 +139,20 @@ body {
 
 #search {
 	width: 100%;
-	/*height: 100px;*/
 	margin: 0;
 	padding: 0 0 0 15px;
-	background: #DDDDDD;
-	/* overflow: hidden; */
+	background: #EEEEEE;
+	border-bottom: 2px solid #336699;
 }
 
 .front #search {
+	float: left;
 	width: 480px;
 	margin: 10px;
 	padding: 10px;
 	background: none;
-	/*background: violet;*/
-	float: left;
-	border: 1px dotted #333333;
+	background: #EEEEEE;
+	border: 1px solid #336699;
 }
 
 
@@ -200,18 +199,6 @@ body {
 	/*background-color: aqua;*/
 }
 
-/* @group front content */
-
-.front #content {
-	/*background-color: palegreen;*/
-	float: left;
-	width: 500px;
-}
-
-
-
-/* @end */
-
 /* @group no-sidebars */
 
 .no-sidebars #content {
@@ -238,6 +225,18 @@ body {
 	margin: 0 -250px 0 0px;
 	padding: 10px;
 	/*background-color: lightcoral;*/
+}
+
+
+
+/* @end */
+
+/* @group front content */
+
+.front #content {
+	/*background-color: palegreen;*/
+	float: left;
+	width: 500px;
 }
 
 
@@ -299,13 +298,11 @@ body {
 /* @group footer */
 
 #footer {
+	/*background-color: aqua;*/
 	width: 1000px;
-	/*height: 180px;*/
 	margin: 0;
 	padding: 10px;
-	/*background: #F2F2F2;*/
-	background: #CCCCCC;
-	/*background-color: aqua;*/
+	border-top: 2px solid #336699;
 }
 
 

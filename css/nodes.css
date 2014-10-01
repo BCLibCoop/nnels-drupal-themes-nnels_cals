@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001A **/
 /** nodes.css **/
 
 /* @group page-level */
@@ -37,7 +37,7 @@ div.field-name-body h2:first-child {
 /* @group unpublished */
 
 .node-unpublished {
-	 background-color: #CCCCCC; 
+	 background-color: #EEEEEE; 
 }
 
 .node-unpublished p.unpublished,
@@ -60,27 +60,6 @@ div.field-name-body h2:first-child {
 }
 
 
-
-/* @end */
-
-/* @group forum */
-
-.page-forum {
-	/*background-color: gold;*/
-	
-}
-
-#forum {
-	/*background-color: aqua;*/
-	float: left;
-	clear: both;
-	width: 100%;
-}
-
-#forum-0 {
-	margin: 0;
-	padding: 0;
-}
 
 /* @end */
 
@@ -152,95 +131,6 @@ article.node-post ul.links.inline li a {
 	display: block;
 	margin: 5px 10px 5px 5px;
 	padding: 5px 10px;
-}
-
-section.comments {
-	/*background-color: limegreen;*/
-}
-
-section.comments h2.title {
-	/*background-color: palegreen;*/
-	float: left;
-	width: 100%;
-	margin: 0 0 5px;
-	padding: 5px;
-	border:  none;
-	border-bottom: 1px dotted #333333;
-}
-
-section.comments h3.comment-title {
-	/*background-color: violet;*/
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 5px;
-}
-
-section.comments article.comment {
-	/*background-color: magenta;*/
-	float: left;
-	clear: both;
-	width: 99%;
-	margin: 5px;
-	padding: 5px;
-	border: 1px dotted #333333;
-}
-
-section.comments .field-name-comment-body {
-	/*background-color: orange;*/
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 5px;
-}
-
-.comment-form {
-	/*background-color: forestgreen;*/
-	float: left;
-	width: 100%;
-	margin: 0;
-	padding: 10px;
-	border: 1px dotted #333333;
-}
-
-.comment-form .form-item {
-	/*background-color: indigo;*/
-	float: left;
-	clear: both;
-	width: 99%;
-	margin: 0 0 5px;
-	padding: 10px;
-}
-
-.comment-form .form-actions {
-	/*background-color: pink;*/
-	float: left;
-	clear: both;
-	width: 99%;
-	margin: 0 0 5px;
-	padding: 10px;
-}
-
-.comment-form .filter-wrapper {
-	/*background-color: orangered;*/
-	float: left;
-	clear: both;
-	width: 99%;
-	margin: 0 0 5px;
-	padding: 10px;
-}
-
-.comment-form .form-actions input {
-	background-color: #CCCCCC;
-	/*display: block;*/
-	margin: 5px 10px 5px 5px;
-	padding: 5px 10px;
-	border-style: none;
-}
-
-.comment-form .form-actions input:hover {
-	background-color: #CCCCCC;
-	color: #EC1C24;
 }
 
 /* @end */

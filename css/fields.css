@@ -1,11 +1,34 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001A **/
 /** fields.css **/
 
-/* @group generic */
+/* @group resets */
 
-.field { /* Wrapper for any field. */
+.field {
 }
 
+.field .field-label {
+	font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;
+}
+
+.field-name-body {
+	/*background-color: red;*/
+}
+
+.field-collection-container {
+	margin: 5px 0;
+	padding: 0;
+	border-style: none;
+}
+
+.field-name-field-external-video {
+	margin: 5px 0;
+	padding: 0;
+}
+
+.field-name-field-file-attachment {
+	margin: 5px 0;
+	padding: 0;
+}
 
 
 /* @end */

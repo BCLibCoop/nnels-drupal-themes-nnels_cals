@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001 16-07-14**/
+/** NNELS_CALS_v001A **/
 /** normalize.css **/
 
 /* @group natural box layout model */
@@ -52,11 +52,9 @@ audio:not([controls]) {
 html {
 	font-size: 100%;
 	font-size: 14px;
-	/*Prevents iOS text size adjust*/
+	line-height: 20px;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	/* Establish a vertical rhythm. */
-	line-height: 24px;
 
 }
 
@@ -83,7 +81,8 @@ var {
 
 body {
 	margin: 0;
-	padding: 30px 0 0; /*For DEV only - set to ZERO on Final*/
+	/*padding: 30px 0 0;*/ /*For DEV only - set to ZERO on Final*/
+	padding: 0;
 	/*background-color: fuchsia;*/
 }
 
@@ -118,7 +117,7 @@ a {
 	font-style: normal;
 	text-decoration: none;
 	color: lime;
-	color: #666666;
+	color: #0E3E6C;
 	outline: 0;
 }
 
@@ -126,7 +125,7 @@ a:link {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #666666;
+	color: #0E3E6C;
 	outline: 0;
 }
 
@@ -134,7 +133,7 @@ a:visited {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #666666;
+	color: #0E3E6C;
 	outline: 0;
 }
 
@@ -143,7 +142,7 @@ a:focus {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #EC1C24;
+	color: #CC6600;
 	outline: 0;
 }
 
@@ -152,14 +151,14 @@ a.active {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #EC1C24;
+	color: #CC6600;
 	outline: 0;
 }
 
 a:focus { /*fixes issue in CHROME*/
 	/*outline: thin dotted;*/
 	outline: 0;
-	outline: #EC1C24 solid 1px;
+	outline: #0E3E6C solid 1px;
 	/*background-color: fuchsia;*/
 }
 
@@ -167,6 +166,15 @@ a:hover,
 a:active {
 	outline: 0;
 }
+
+.feed-icon {
+	/*background-color: maroon;*/
+	display: block;
+	margin: 5px;
+	padding: 5px;
+	clear: both;
+}
+
 
 /* @end */
 
@@ -223,12 +231,12 @@ h1.title { /*page title*/
 	width: 100%;
 	margin: 0;
 	padding: 10px 10px 10px 5px;
-	font-family: 'open_sans_condensedbold';
+	font-family: 'open_sans_condensedbold', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
 	font-variant: normal;
-	border-bottom: 1px dotted #333333;
+	border-bottom: 1px solid #336699;
 	/*background-color: fuchsia;*/
 }
 
@@ -238,7 +246,7 @@ h1.title { /*page title*/
 
 hr {
 	height: 1px;
-	border: 1px solid #666;
+	border: 1px solid #666666;
 	padding-bottom: -1px;
 	margin: 24px 0;
 }
@@ -255,7 +263,7 @@ abbr[title] {
 
 b,
 strong { /*override browser*/
-	font-family: 'open_sanssemibold';
+	font-family: 'open_sanssemibold', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -387,16 +395,17 @@ form {
 }
 
 fieldset {
-	border: 1px solid #eeeeee;
-	margin: 0 5px;
+	border: 1px solid #CCCCCC;
+	margin: 10px 5px 5px;
 	padding: 10px;
 }
 
 legend {
 	border: 0;
-	padding: 0;
+	padding: 0 5px;
 	white-space: normal;
 	*margin-left: -10px;
+	font: 18px/18px 'open_sans_condensedbold', sans-serif;
 }
 
 /* @group button, input */
@@ -490,10 +499,18 @@ tbody {
 
 tr.even {
 	 background-color: #EEEEEE; 
+	 background-color: transparent; 
 }
 
 tr.odd {
 	 background-color: #EEEEEE; 
+	 background-color: transparent; 
+}
+
+tr.even, tr.odd {
+	margin: 0;
+    padding: 0;
+	border-style: none;
 }
 
 td {
