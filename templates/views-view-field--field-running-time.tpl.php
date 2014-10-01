@@ -29,12 +29,8 @@
   $l = strlen($output);
   if($l == 4) $mins = substr($output, 0, 2);
   if($l == 3) $mins = substr($output, 0, 1);
-  
   if($l >= 4) $mins = substr($output, $l-4, 2);
-
   if($l >= 5) $hrs = substr($output, 0, $l-4);
-	
-
   $output = t("not known");
   $output = 0;
   if($mins > 0) $output = $mins . " " . t("mins");

@@ -43,9 +43,6 @@
 		Filter by genre</a>
 	</li>
 </ul>';
- 
- 	
-	
 	foreach(array_keys($blocks) as $name) {
 		if(strpos($name, "facetapi_") !== FALSE) {
 			$label = str_replace(":", "", $blocks[$name]->title);		
