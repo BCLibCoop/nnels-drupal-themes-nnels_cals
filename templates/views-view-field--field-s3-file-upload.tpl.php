@@ -52,7 +52,7 @@
 	//if no file produced yet...
 	if($availability != 1 || $file_id === NULL) {
 	  $link = t("No file available");
-	  $class = "daisy-icon-na";
+	  //$class = "daisy-icon-na";
 	  $class = "no-file-avai-icon";
 	}
 	$output = '<span class="' . $class . '">' . $link . '</span>';
