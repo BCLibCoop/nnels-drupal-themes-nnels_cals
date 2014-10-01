@@ -1,76 +1,171 @@
-/** NNELS_CALS_v001 **/
-/** comment **/
+/** NNELS_CALS_v001A **/
+/** comments.css **/
 
-
-.comments { /* Wrapper for the list of comments and its title */
-  margin: 1.5em 0;
+.comments {
 }
 
-.comments h2.title { /* Heading for the list of comments */
+.comments {
+	/*background-color: limegreen;*/
+	margin: 20px 0;
+	padding: 0;
 }
 
-.comments h2.comment-form { /* Heading for the comment form */
+.comments h2.title {
 }
 
-.comment { /* Wrapper for a single comment */
+.comments h2.title {
+	/*background-color: palegreen;*/
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 5px;
+	border:  none;
+	border-bottom: 1px dotted #333333;
 }
 
-.comment-preview { /* Preview of the comment before submitting new or updated comment */
-  background-color: #ffffea; /* Drupal core will use a #ffffea background. See #1110842 */
+.comments h2.comment-form {
 }
 
-.comment.new { /* A new comment since the user last viewed the page. */
+section.comments h3.comment-title {
+	/*background-color: violet;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
 }
 
-.comment.first { /* The first comment in the list of comments */
+.comment {
+	/*background-color: lemonchiffon;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 5px;
+	padding: 5px;
+	border: 1px dotted #333333;
 }
 
-.comment.last { /* The last comment in the list of comments */
+.comments .field-name-comment-body {
+	/*background-color: hotpink;*/
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 5px;
 }
 
-.comment.odd { /* An odd-numbered comment in the list of comments */
+.comment-preview {
+	background-color: #EEEEEE;
 }
 
-.comment.even { /* An even-numbered comment in the list of comments */
+.comment.new {
 }
 
-.comment-by-anonymous { /* A comment created by an anonymous user */
+.comment.first {
 }
 
-.comment-by-node-author { /* A comment created by the node's author */
+.comment.last {
 }
 
-.comment-by-viewer { /* A comment created by the current user */
+.comment.odd {
 }
 
-.comment .new { /* "New" marker for comments that are new for the current user */
-  color: #c00;
+.comment.even {
 }
 
-.comment .user-picture { /* The picture of the comment author */
+.comment-by-anonymous {
 }
 
-.comment .submitted { /* The "posted by" information */
+.comment-by-node-author {
 }
 
-.comment .permalink { /* Comment's permalink wrapper */
-	/*text-transform: uppercase;*/
-	/*font-size: 75%;*/
+.comment-by-viewer {
 }
 
-.comment .user-signature { /* The user's signature */
+.comment .new {
+	color: #C00C00;
 }
 
-.comment ul.links { /* Comment links. See also the ul.links declaration in the pages.css. */
+.comment .user-picture {
 }
 
-.indented { /* Nested comments are indented */
-  margin-left: 30px; /* Drupal core uses a 25px left margin */
+.comment .submitted {
 }
 
-.comment-unpublished { /* Unpublished comments */
-  /* background-color: #fff4f4; */ /* Drupal core uses a #fff4f4 background */
+.comment .submitted .permalink {
+	/*background-color: red;*/
+	float: right;
+	margin: 0 20px 0 0;
+	padding: 0;
 }
 
-.comment-unpublished p.unpublished { /* The word "Unpublished" displayed underneath the content. See also the div.unpublished declaration in the nodes.css. */
+.comment .user-signature {
 }
+
+.comment ul.links {
+}
+
+.indented {
+	margin-left: 30px;
+}
+
+.comment-unpublished {
+	/* Unpublished comments */
+}
+
+.comment-unpublished p.unpublished {
+	/* The word "Unpublished" displayed underneath the content. See also the div.unpublished declaration in the nodes.css. */
+}
+
+/* @group comment form */
+
+.comment-form {
+	/*background-color: forestgreen;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+	border: 1px dotted #333333;
+}
+
+.comment-form .form-item {
+	/*background-color: indigo;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .form-actions {
+	/*background-color: pink;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .filter-wrapper {
+	/*background-color: orangered;*/
+	float: left;
+	clear: both;
+	width: 99%;
+	margin: 0 0 5px;
+	padding: 10px;
+}
+
+.comment-form .form-actions input {
+	margin: 5px 10px 5px 5px;
+	padding: 5px 10px;
+	border: 1px solid #336699;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.comment-form .form-actions input:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+
+
+/* @end */

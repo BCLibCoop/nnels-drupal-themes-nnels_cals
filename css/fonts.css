@@ -1,7 +1,8 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001A **/
 /** fonts.css **/
 
 /* @group open-sans */
+
 @font-face {
 	font-family: 'open_sansbold';
 	src: url("../fonts/opensans-bold-webfont.eot");
@@ -101,7 +102,9 @@
 }
 
 /* @end */
+
 /* @group open-sans-condensed */
+
 @font-face {
 	font-family: 'open_sans_condensedbold';
 	src: url("../fonts/opensans-condbold-webfont.eot");

@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001 **/
+/** NNELS_CALS_v001A **/
 /** forms.css **/
 
 /* @group Drupal Admin Tables */
@@ -46,7 +46,7 @@ form table .item-list ul {
 
 .form-item label {
 	display: block;
-	font: normal normal normal 16px/24px 'open_sans_condensedbold';
+	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
 }
 
 .form-item label.option {
@@ -60,6 +60,9 @@ form table .item-list ul {
 
 .form-item .description {
 	font-size: 11px;
+	line-height: 12px;
+	margin: 0;
+	padding: 8px 5px 5px;
 }
 
 .form-checkboxes .form-item,
@@ -87,7 +90,15 @@ td.menu-disabled {
 
 /* @end */
 
-/* @group login */
+/* @group registered user login */
+
+.block-calsauthen.detail-library-login {
+	/*background-color: lime;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #336699;
+}
 
 #user-login {
 	/*text-align: left;*/
@@ -105,16 +116,21 @@ td.menu-disabled {
 
 #user-login .form-submit {
 	/*background-color: lime;*/
-	color: #FFFFFF;
-	background-color: #666666;
-	border: 1px dotted #333333;
 	margin: 10px 0 0;
 	padding: 3px 5px;
+	/*color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;*/
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
 }
 
 #user-login .form-submit:hover {
-	color: #EC1C24;
-	background-color: #BBBBBB;
+	/*color: #EC1C24;
+	background-color: #BBBBBB;*/
+	color: #CC6600;
+	background-color: #EEEEEE;
 }
 
 
@@ -143,7 +159,7 @@ td.menu-disabled {
 	/*background-color: orange;*/
 	margin: 0;
 	padding: 0;
-	font: normal normal normal 18px/24px 'open_sans_condensedbold';
+	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
 	text-transform: capitalize;
 }
 
@@ -157,12 +173,13 @@ td.menu-disabled {
 	background-color: peachpuff;
 	margin: 5px 0 0;
 	padding: 5px 10px;
-	background-color: #DDDDDD;
-	color: #666666;
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
 }
 
 #cals-external-search-request-new-title-form #edit-submit:hover {
-	color: #EC1C24;
+	color: #CC6600;
 }
 
 /* @end */
@@ -171,6 +188,46 @@ td.menu-disabled {
 
 .detail-library-registration {
 	/*background-color: orange;*/
+	margin: 0;
+	padding: 10px;
+}
+
+.detail-library-registration .form-type-textfield {
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 5px;
+}
+
+.detail-library-registration .form-item-legal-accept {
+	/*background-color: violet;*/
+	margin: 0;
+	padding: 0;
+	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+}
+
+.detail-library-registration .form-item-legal-accept strong {
+	/*background-color: firebrick;*/
+	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+}
+
+.detail-library-registration #edit-actions {
+	/*background-color: palegreen;*/
+	margin: 0;
+	padding: 10px 10px 10px 15px;
+}
+
+.detail-library-registration .form-submit {
+	margin: 0;
+	padding: 3px 5px;
+	background-color: palegoldenrod;
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.detail-library-registration .form-submit:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
 }
 
 /* @end */

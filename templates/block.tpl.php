@@ -9,6 +9,8 @@
 		<?php endif; ?>
 	<?php print render($title_suffix); ?>
 
-	<?php print $content; ?>
+	<div class="block-content">
+		<?php print $content; ?>
+	</div>
 
 </div><!-- /.block -->
