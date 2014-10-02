@@ -205,6 +205,15 @@
 	list-style-image: none;
 }
 
+.node-forum ul.links.inline li {
+	/*background-color: coral;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	display: inline;
+}
+
 .node-forum ul.links.inline a {
 	/*background-color: violet;*/
 	display: inline-block;
