@@ -38,9 +38,10 @@
 		$format = $row->field_field_file_format[0]['rendered']['#markup'];
 		//$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
 	}
+	//printPre($row);
 
 	if($access == 0 || $user->uid > 0) {
-	  $link = l(t("Download (@format)", array("@format" => $format)));
+	  $link = l(t("Download (@format)", array("@format" => $format)), $output);
 		//$class = "daisy-icon";
 		$class = "generic-file-icon";
 	}
@@ -55,6 +56,7 @@
 	  //$class = "daisy-icon-na";
 	  $class = "no-file-avai-icon";
 	}
+	
 	$output = '<span class="' . $class . '">' . $link . '</span>';
 
 	
