@@ -50,10 +50,10 @@
 	  $link = l(t('Login to access this item'), "user/login", array("query" => $dest) );
 		$class = 'daisy-icon-login';
 	}
-	//if no file produced yet...
+	//if no file produced yet.....
 	if($availability != 1 || $file_id === NULL) {
 		$link = t("No file available");
-		if(function_exists("_cals_importer_s3path_to_file_updater")) {
+		if (user_access('parse s3 paths') ) {
 			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
 		  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
 		}
