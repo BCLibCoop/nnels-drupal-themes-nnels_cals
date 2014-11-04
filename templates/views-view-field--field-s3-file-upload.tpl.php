@@ -31,7 +31,7 @@
 	$access =  $row->field_field_access_restrictions[0]['raw']['value'];
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = $row->file_managed_field_data_field_s3_file_upload_fid;
-	
+	//if($user->uid == 1) dpm($row);
 	//new
 	$format = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
@@ -52,7 +52,12 @@
 	}
 	//if no file produced yet...
 	if($availability != 1 || $file_id === NULL) {
-	  $link = t("No file available");
+		$link = t("No file available");
+		if(function_exists("_cals_importer_s3path_to_file_updater")) {
+			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
+		  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
+		}
+	  
 	  //$class = "daisy-icon-na";
 	  $class = "no-file-avai-icon";
 	}
