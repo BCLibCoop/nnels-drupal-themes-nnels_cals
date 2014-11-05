@@ -33,7 +33,7 @@
 	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
 	
 	//printAndDie($file_id, is_numeric($file_id));
-	dpm("Availability = $availability | file_id is_numeric = " . is_numeric($file_id));
+	dpm("Availability = $availability | file_id empty = " . empty($file_id));
 	dpm($row);
 
 	//if($user->uid == 1) dpm($row);
