@@ -31,14 +31,8 @@
 	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
 	$s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
 	
-<<<<<<< HEAD
-	//printAndDie($file_id, is_numeric($file_id));
-	dpm("Availability = $availability | file_id empty = " . empty($file_id));
-	dpm($row);
-=======
 	//dpm("Availability = $availability | file_id empty = " . empty($file_id) . " S3 path: $s3_path ");
 	//dpm($row);
->>>>>>> dk
 
 	$format = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
