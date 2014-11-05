@@ -49,6 +49,7 @@
 		$class = "generic-file-icon";
 		//provide format specific class
 		$class = str_replace(" ", "", strtolower($format));
+		if($class == 'pdf') $class = "file-pdf";
 	}
 	else { // access = 1, restrict to logged in users
 	  $dest = array("destination" => "node/" . $nid);
