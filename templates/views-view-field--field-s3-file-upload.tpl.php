@@ -31,13 +31,17 @@
 	$access =  $row->field_field_access_restrictions[0]['raw']['value'];
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
+	$s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
 	
+<<<<<<< HEAD
 	//printAndDie($file_id, is_numeric($file_id));
 	dpm("Availability = $availability | file_id empty = " . empty($file_id));
 	dpm($row);
+=======
+	//dpm("Availability = $availability | file_id empty = " . empty($file_id) . " S3 path: $s3_path ");
+	//dpm($row);
+>>>>>>> dk
 
-	//if($user->uid == 1) dpm($row);
-	//new
 	$format = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
 		$format = $row->field_field_file_format[0]['rendered']['#markup'];
@@ -60,7 +64,7 @@
 	  //$class = "daisy-icon-na";
 	  $class = "no-file-avai-icon";
 
-		if (empty($file_id) && user_access('parse s3 paths') ) {
+		if (empty($file_id) && !empty($s3_path) && user_access('parse s3 paths') ) {
 			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
 		  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
 		  
