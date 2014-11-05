@@ -30,9 +30,10 @@
 	$item_id = $row->field_collection_item_item_id;
 	$access =  $row->field_field_access_restrictions[0]['raw']['value'];
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
-	$file_id = $row->file_managed_field_data_field_s3_file_upload_fid;
+	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
 	
-	dpm("Availability = $availability | file_id = $file_id");
+	//printAndDie($file_id, is_numeric($file_id));
+	dpm("Availability = $availability | file_id is_numeric = " . is_numeric($file_id));
 	dpm($row);
 
 	//if($user->uid == 1) dpm($row);
@@ -55,7 +56,7 @@
 		$class = 'daisy-icon-login';
 	}
 	//if no file produced yet.....
-	if($availability != 1 || $file_id === NULL) {
+	if($availability != 1 || empty($file_id)) {
 		$link = t("No file available");
 		if (user_access('parse s3 paths') ) {
 			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
