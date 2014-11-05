@@ -31,10 +31,12 @@
 	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
 	$s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
 	
+	//printAndDie($row);
 	//dpm("Availability = $availability | file_id empty = " . empty($file_id) . " S3 path: $s3_path ");
-	//dpm($row);
+	dpm($row);
 
 	$format = '';
+	$class = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
 		$format = $row->field_field_file_format[0]['rendered']['#markup'];
 		//$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
@@ -43,7 +45,10 @@
 	if($access == 0 || $user->uid > 0) {
 	  $link = l(t("Download (@format)", array("@format" => $format)), $output);
 		//$class = "daisy-icon";
+		
 		$class = "generic-file-icon";
+		//provide format specific class
+		$class = str_replace(" ", "", strtolower($format));
 	}
 	else { // access = 1, restrict to logged in users
 	  $dest = array("destination" => "node/" . $nid);
