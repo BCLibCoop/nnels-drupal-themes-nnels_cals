@@ -23,8 +23,6 @@
  */
 ?>
 <?php
-	//dpm($output);
-	//dpm($row);
 	global $user;
 	$nid = $row->field_file_resource_field_collection_item_nid;
 	$item_id = $row->field_collection_item_item_id;
