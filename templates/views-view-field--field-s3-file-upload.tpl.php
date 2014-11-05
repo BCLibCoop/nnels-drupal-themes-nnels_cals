@@ -43,8 +43,7 @@
 		$format = $row->field_field_file_format[0]['rendered']['#markup'];
 		//$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
 	}
-	//printPre($row);
-
+	
 	if($access == 0 || $user->uid > 0) {
 	  $link = l(t("Download (@format)", array("@format" => $format)), $output);
 		//$class = "daisy-icon";
@@ -58,16 +57,15 @@
 	//if no file produced yet.....
 	if($availability != 1 || empty($file_id)) {
 		$link = t("No file available");
-		if (user_access('parse s3 paths') ) {
+	  //$class = "daisy-icon-na";
+	  $class = "no-file-avai-icon";
+
+		if (empty($file_id) && user_access('parse s3 paths') ) {
 			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
 		  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
 		  
 		}
-	  
-	  //$class = "daisy-icon-na";
-	  $class = "no-file-avai-icon";
-	}
-	
+  }
 	$output = '<span class="' . $class . '">' . $link . '</span>';
 
 	
