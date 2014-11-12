@@ -843,58 +843,73 @@
 }
 
 .search-results .views-field-title-field {
-	/*background-color: forestgreen;*/
+	background-color: forestgreen;
+	float: right;
+	width: 90%;
 	margin: 5px;
-	padding: 5px 5px 5px 60px;
+	padding: 5px;
 	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
 }
 
 .search-results .views-field-field-dc-creator {
-	/*background-color: bisque;*/
+	background-color: bisque;
+	float: right;
+	width: 90%;
 	margin: 5px;
-	padding: 5px 5px 5px 60px;
+	padding: 5px;
 }
 
 .search-results .views-field-body-value {
-	/*background-color: navy;*/
+	background-color: navy;
+	float: right;
+	width: 90%;
 	margin: 5px;
-	padding: 5px 5px 5px 60px;
+	padding: 5px;
 }
 
 .search-results .views-field-field-keyword-index {
-	/*background-color: salmon;*/
+	background-color: salmon;
+	float: right;
+	width: 90%;
 	margin: 5px;
-	padding: 5px 5px 5px 60px;
+	padding: 5px;
 }
 
 .search-results .views-field-field-genre {
-	/*background-color: aqua;*/
+	background-color: aqua;
+	float: right;
+	width: 90%;
 	margin: 5px;
-	padding: 5px 5px 5px 60px;
+	padding: 5px;
 }
 
-.search-results .views-field-php {
-	/*background-color: fuchsia;*/
+/*.search-results .views-field-php {
+	background-color: fuchsia;
+	float: left;
+	width: 98%;
 	height: 40px;
 	margin: 5px 5px 5px 65px;
 	padding: 0;
-}
+}*/
 
 .search-results .views-field-view {
-	/*background-color: salmon;*/
-	margin: 0 0 5px 65px;
-	padding: 0;
+	background-color: salmon;
+	float: left;
+	float: right;
+	width: 90%;
+	margin: 5px;
+	padding: 5px;
 }
 
 .search-results .views-field-view .multi-file-embed {
-	/*background-color: aqua;*/
+	background-color: aqua;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul {
-	/*background-color: orange;*/
+	background-color: orange;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -902,8 +917,9 @@
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li {
-	/*background-color: hotpink;*/
+	background-color: hotpink;
 	float: left;
+	display: block;
 	width: 100%;
 	min-height: 0;
 	margin: 0 0 5px;
@@ -912,6 +928,57 @@
 	list-style-image: none;
 	border: 0px solid #336699;
 }
+
+/* @group file icons */
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content {
+	float: left;
+	display: block;
+	/*height: 40px;*/
+	margin: 0;
+	padding: 0;
+	background: pink;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202,
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy3 {
+	float: left;
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: orangered url(../images/icon_download.png) no-repeat left top;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	/*background: limegreen;*/
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon {
+	float: left;
+	display: block;
+	min-height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	background: palegoldenrod url(../images/icon_nofile-available.png) no-repeat left top;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon a {
+	display: block;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: olive;
+}
+
+
+
+/* @end */
 
 /* @group external-search*/
 
@@ -1147,20 +1214,53 @@ span.daisy-icon a {
 	/*background-color: lime;*/
 }
 
-span.daisy-icon-na {
+/*span.daisy-icon-na {
 	display: block;
 	height: 40px;
 	margin: 0;
 	padding: 8px 0 0 50px;
-	background: /*green*/ url(../images/daisy-icon-na.png) no-repeat left center;
+	background: green url(../images/daisy-icon-na.png) no-repeat left center;
+}*/
+
+span.daisy-icon-na {
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	background: /*green*/ url(../images/icon_nofile-available.png) no-repeat left center;
 }
+
+span.no-file-avai-icon {
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	background: /*green*/ url(../images/icon_nofile-available.png) no-repeat left center;
+}
+
+/*span.daisy-icon-login {
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 8px 0 0 50px;
+	background: maroon url(../images/daisy-icon-login.png) no-repeat left center;
+}*/
 
 span.daisy-icon-login {
 	display: block;
 	height: 40px;
 	margin: 0;
-	padding: 8px 0 0 50px;
-	background: /*maroon*/ url(../images/daisy-icon-login.png) no-repeat left center;
+	padding: 0;
+	background: /*maroon*/ url(../images/icon_login-access.png) no-repeat left center;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content span.daisy-icon-login a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	/*background: limegreen;*/
 }
 
 /* @end*/
@@ -1669,7 +1769,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats {
-	/*background-color: limegreen;*/
+	background-color: limegreen;
 	float: left;
 	width: 100%;
 	margin: 0 0 5px;
@@ -1679,14 +1779,14 @@ span.daisy-icon-login {
 /* @group repo-item - available-formats */
 
 .repo-item.available-formats .view-content {
-	/*background-color: pink;*/
+	background-color: pink;
 	width: 100%;
 	margin: 0 0 5px;
 	padding: 0;
 }
 
 .repo-item.available-formats .view-list-ul {
-	/*background-color: orange;*/
+	background-color: orange;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -1694,17 +1794,96 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .view-list-ul li {
-	/*background-color: hotpink;*/
+	background-color: hotpink;
 	float: left;
 	width: 98%;
 	margin: 5px;
-	padding: 5px 5px 5px 10px;
+	padding: 5px;
 	list-style-type: none;
 	list-style-image: none;
 }
 
+.repo-item.available-formats .views-field-nothing,
+.repo-item.available-formats .views-field-nothing-1 {
+	background-color: khaki;
+	float: right;
+	width: 25%;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.repo-item.available-formats .views-field-field-s3-file-upload {
+	background-color: indigo;
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0;
+}
+
+/* @group file icons */
+
+
+
+.repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
+.repo-item.available-formats .views-field-field-s3-file-upload .daisy3 {
+	float: left;
+	display: block;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: orangered url(../images/icon_download.png) no-repeat left top;
+}
+
+.repo-item.available-formats .views-field-field-s3-file-upload .field-content a {
+	display: block;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	/*background: limegreen;*/
+}
+
+.repo-item.available-formats .views-field-field-s3-file-upload .no-file-avai-icon {
+	/*float: left;*/
+	display: block;
+	min-height: 40px;
+	margin: 0;
+	padding: 5px 5px 5px 40px;
+	background: fuchsia url(../images/icon_nofile-available.png) no-repeat left top;
+	overflow: visible;
+}
+
+.repo-item.available-formats .views-field-field-s3-file-upload .no-file-avai-icon a {
+	display: block;
+	float: left;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	background: olive;
+	clear: both;
+}
+
+/* @end */
+
+.repo-item.available-formats .views-field-field-running-time {
+	background-color: cadetblue;
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.available-formats .views-field-field-performer {
+	background-color: navajowhite;
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 5px;
+}
+
 .repo-item.available-formats .view-header {
-	/*background-color: pink;*/
+	background-color: pink;
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -1712,7 +1891,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .view-footer {
-	/*background-color: orange;*/
+	background-color: orange;
 	float: left;
 	width: 100%;
 	margin: 0;
