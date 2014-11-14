@@ -52,18 +52,24 @@
 		$class = 'daisy-icon-login';
 	}
 	//if no file produced yet.....
-	if($availability != 1 || empty($file_id)) {
-		$link = t("No file available");
-	  //$class = "daisy-icon-na";
-	  $class = "no-file-avai-icon";
-
-		if (empty($file_id) && !empty($s3_path) && user_access('parse s3 paths') ) {
-			$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
-		  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
-		  
+	if( ($availability != 1 || empty($file_id)) ) {
+		if(user_access('parse s3 paths')  ) {
+			$link = t("No file available");
+		  //$class = "daisy-icon-na";
+		  $class = "no-file-avai-icon";
+	
+			if (empty($file_id) ) {
+				$link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
+			  //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
+			  
+			}		
 		}
+		else {
+			$output = '';
+		}
+
   }
-	$output = '<span class="' . $class . '">' . $link . '</span>';
+  if(!empty($output)) $output = '<span class="' . $class . '">' . $link . '</span>';
 
 	
 ?>
