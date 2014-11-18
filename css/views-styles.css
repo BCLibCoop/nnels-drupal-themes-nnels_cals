@@ -1826,13 +1826,14 @@ span.daisy-icon-login {
 
 
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
-.repo-item.available-formats .views-field-field-s3-file-upload .daisy3 {
+.repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
+.repo-item.available-formats .views-field-field-s3-file-upload .e-text {
 	float: left;
 	display: block;
 	height: 40px;
 	margin: 0;
 	padding: 0;
-	background: orangered url(../images/icon_download.png) no-repeat left top;
+	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
 }
 
 .repo-item.available-formats .views-field-field-s3-file-upload .field-content a {
@@ -1850,17 +1851,17 @@ span.daisy-icon-login {
 	min-height: 40px;
 	margin: 0;
 	padding: 5px 5px 5px 40px;
-	background: fuchsia url(../images/icon_nofile-available.png) no-repeat left top;
+	background: /*fuchsia*/ url(../images/icon_nofile-available.png) no-repeat left top;
 	overflow: visible;
 }
 
 .repo-item.available-formats .views-field-field-s3-file-upload .no-file-avai-icon a {
+	/*background: olive;*/
 	display: block;
 	float: left;
 	height: auto;
 	margin: 0;
 	padding: 0;
-	background: olive;
 	clear: both;
 }
 
