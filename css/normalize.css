@@ -93,7 +93,21 @@ body {
 
 /* @group available custom fonts */
 
+/* @group clear-sans */
+
+    /*font-family: 'clear_sansbold';*/
+    /*font-family: 'clear_sansbold_italic';*/
+    /*font-family: 'clear_sansitalic';*/
+    /*font-family: 'clear_sans_lightregular';*/
+    /*font-family: 'clear_sans_mediumregular';*/
+    /*font-family: 'clear_sans_mediumitalic';*/
+    /*font-family: 'clear_sansregular';*/
+    /*font-family: 'clear_sans_thinregular';*/
+
+/* @end */
+
 /* @group open-sans */
+
 	/*font-family: 'open_sansbold';*/
 	/*font-family: 'open_sansbold_italic';*/
 	/*font-family: 'open_sansextrabold';*/
@@ -103,12 +117,15 @@ body {
 	/*font-family: 'open_sanslight_italic';*/
 	/*font-family: 'open_sansregular';*/
 	/*font-family: 'open_sanssemibold';*/
+
 /* @end */
 
 /* @group open-sans-condensed */
+
 	/*font-family: 'open_sans_condensedbold';*/
 	/*font-family: 'open_sanscondensed_light';*/
 	/*font-family: 'open_sansCnLtIt';*/
+
 /* @end */
 
 /* @end */
