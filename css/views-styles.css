@@ -63,15 +63,15 @@
 
 .views-exposed-form .views-exposed-widget.views-submit-button {
  	/*background-color: lemonchiffon;*/
-   float: left;
+	float: left;
 	margin: 0;
     padding: 25px 0 0 10px;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
+	/*background-color: palegoldenrod;*/
 	margin: 0;
 	padding: 3px 5px;
-	background-color: palegoldenrod;
 	color: #333333;
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
@@ -83,7 +83,7 @@
 }
 
 .views-label {
-	font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;
 }
 
 
@@ -92,7 +92,7 @@
 /* @group global views overrides*/
 
 .views-exposed-form label {
-	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 16px/24px 'clear_sansbold', sans-serif;
 }
 
 .block-views {
@@ -136,7 +136,7 @@
 	/*background-color: fuchsia;*/
 	margin: 0;
 	padding: 0;
-	font: normal normal 16px/18px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 }
 
@@ -220,7 +220,7 @@
 	width: 98%;
 	margin: 0 0 5px;
 	padding: 5px;
-	font: normal normal 16px/18px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 }
 
@@ -281,7 +281,7 @@
 	width: 98%;
 	margin: 0 0 5px;
 	padding: 5px;
-	font: normal normal 16px/18px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 }
 
@@ -353,7 +353,7 @@
 	width: 70%;
 	margin: 0;
 	padding: 10px 5px 5px;
-	font: normal normal 16px/18px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 }
 
@@ -363,7 +363,7 @@
 	width: 70%;
 	margin: 0;
 	padding: 5px;
-	font: normal normal 16px/18px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 16px/18px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 }
 
@@ -435,6 +435,7 @@
 	padding: 10px;
 	border: 1px solid #336699;
 	overflow: hidden;
+	background: #D0D0D0;
 }
 
 .recently-added-block.front .block-title {
@@ -453,9 +454,8 @@
 	/*background-color: teal;*/
 	margin: 0 0 5px;
 	padding: 0;
-	font: normal normal 20px/28px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 20px/28px 'clear_sansbold', sans-serif;
 	text-decoration: none;
-	/*border-bottom: 1px solid #336699;*/
 }
 
 .recently-added .view-list-ul {
@@ -476,6 +476,7 @@
 	list-style-type: none;
 	list-style-image: none;
 	border: 1px solid #336699;
+	background: #FFFFFF;
 }
 
 .recently-added .view-list-ul li.views-row-last {
@@ -501,7 +502,7 @@
 	/*background-color: forestgreen;*/
 	margin: 0;
 	padding: 5px 5px 5px 65px;
-	font: normal normal normal 16px/20px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
 .recently-added .views-field-body {
@@ -573,6 +574,7 @@
 	padding: 10px;
 	border: 1px solid #336699;
 	overflow: hidden;
+	background: #D0D0D0;
 }
 
 .most-downloaded-block.front .block-title {
@@ -604,6 +606,7 @@
 	list-style-type: none;
 	list-style-image: none;
 	border: 1px solid #336699;
+	background: #FFFFFF;
 }
 
 .most-downloaded .view-list-ul li.views-row-last {
@@ -629,7 +632,7 @@
 	/*background-color: forestgreen;*/
 	margin: 0;
 	padding: 5px 5px 5px 65px;
-	font: normal normal normal 16px/20px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
 /*.most-downloaded .views-field-field-dc-description {
@@ -761,9 +764,24 @@
 	display: none;
 }
 
-.search-repository .views-submit-button {
+/*.search-repository .views-submit-button {
 	margin: 0;
 	padding: 0;
+}*/
+
+.search-repository .views-submit-button .form-submit {
+	/*background-color: palegoldenrod;*/
+	margin: 0;
+	padding: 5px;
+	color: #333333;
+	background: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.search-repository .views-submit-button .form-submit:hover {
+	color: #CC6600;
+	background: #D0D0D0;
+	background: #C2C2C2;
 }
 
 .search-repository .views-reset-button {
@@ -792,7 +810,7 @@
 
 .search-results .views-label {
 	/*background-color: fuchsia;*/
-	/*font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;*/
+	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
 }
 
 .search-results .view-list-ul {
@@ -848,7 +866,7 @@
 	width: 90%;
 	margin: 5px;
 	padding: 5px;
-	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
 }
 
 .search-results .views-field-field-dc-creator {
@@ -993,7 +1011,7 @@
 	width: 100%;
 	margin: 0 0 10px;
 	padding: 10px 10px 10px 5px;
-	font-family: 'open_sans_condensedbold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -1004,14 +1022,14 @@
 
 .search-results .field-label {
 	/*background-color: fuchsia;*/
-	font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;
 }
 
 .search-results .field-title {
 	/*background-color: forestgreen;*/
 	margin: 5px;
 	padding: 5px 5px 0;
-	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/24px 'clear_sansbold', sans-serif;
 }
 
 .search-results .field-authors,
@@ -1042,7 +1060,7 @@
 
 .browse-results .views-label {
  	/*background-color: gold;*/ 
-	/*font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;*/
+	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
 }
 
 .browse-results .view-list-ul .author {
@@ -1117,7 +1135,7 @@
  	/*background-color: forestgreen;*/ 
 	margin: 5px;
 	padding: 5px 5px 5px 60px;
-	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
 }
 
 .browse-results .views-field-field-dc-creator {
@@ -1182,7 +1200,7 @@
     margin: 0;
 	padding: 10px;
 	/*background-color: fuchsia;*/
-	font: normal normal normal 12px/18px 'open_sanslight', sans-serif;
+	font: normal normal normal 12px/18px 'clear_sans_lightregular', sans-serif;
 	overflow: hidden;
 }
 
@@ -1196,7 +1214,7 @@
 
 .pager-current {
 	text-decoration: none;
-	font: normal normal normal 12px/18px 'open_sanssemibold', sans-serif;
+	font: normal normal normal 12px/18px 'clear_sansbold', sans-serif;
 }
 
 
@@ -1368,12 +1386,12 @@ span.daisy-icon-login {
 
 .group.list table.views-table .views-field-lable {
 	/*background-color: violet;*/
-	font-family: 'open_sanssemibold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
 }
 
 .group.list table.views-table .comment-title {
 	/*background-color: violet;*/
-	font-family: 'open_sanssemibold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
 }
 
 
@@ -1413,7 +1431,7 @@ span.daisy-icon-login {
 
 .group.list.all-groups .views-field-title {
 	/*background-color: mediumaquamarine;*/
-	font-family: 'open_sanssemibold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
 }
 
 /* @end*/
@@ -1558,13 +1576,13 @@ span.daisy-icon-login {
 
 .library-search.page .views-field-title {
  	/*background-color: violet;*/
-	font: 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: 20px/24px 'clear_sansbold', sans-serif;
     margin: 0 0 5px;
     padding: 5px;
 }
 .library-search.page .views-field-field-headquarters {
         /*background-color: aquamarine;*/
-    font: 18px/24px 'open_sans_condensedbold', sans-serif;
+    font: 18px/24px 'clear_sansbold', sans-serif;
     margin: 0 0 5px;
     padding: 5px;
 }
@@ -1950,7 +1968,7 @@ span.daisy-icon-login {
 
 .repo-item.detail .views-label {
  	/*background-color: fuchsia;*/ 
-	/*font: normal normal normal 16px/22px 'open_sans_condensedbold', sans-serif;*/
+	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
 }
 
 .repo-item.detail .views-field-field-dc-creator {
@@ -2010,7 +2028,7 @@ span.daisy-icon-login {
 	float: left;
 	margin: 0;
 	padding: 5px;
-	font-family: 'open_sans_condensedbold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
 }
 
 .repo-item.detail .field-name-field-dc-date {

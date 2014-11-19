@@ -68,6 +68,7 @@ select,
 textarea {
 	font-family: Helvetica, Arial, Verdana, "DejaVu Sans", sans-serif;
 	font-family: 'open_sansregular', sans-serif;
+	font-family: 'clear_sansregular', sans-serif;
 }
 
 pre,
@@ -133,15 +134,16 @@ body {
 /* @group links */
 
 a {
+    font-family: 'clear_sans_mediumregular';
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: lime;
 	color: #0E3E6C;
 	outline: 0;
 }
 
 a:link {
+    font-family: 'clear_sans_mediumregular';
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -176,10 +178,8 @@ a.active {
 }
 
 a:focus { /*fixes issue in CHROME*/
-	/*outline: thin dotted;*/
 	outline: 0;
 	outline: #0E3E6C solid 1px;
-	/*background-color: fuchsia;*/
 }
 
 a:hover,
@@ -201,37 +201,37 @@ a:active {
 /* @group headers */
 
 h1 {
-	font: normal normal 32px/32px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 32px/32px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h2 {
-	font: normal normal 24px/32px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 24px/32px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h3 {
-	font: normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 18px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h4 {
-	font: normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 16px/24px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h5 {
-	font: normal normal 14px/28px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 14px/28px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 28px 0;
 }
 
 h6 {
-	font: normal normal 12px/32px 'open_sans_condensedbold', sans-serif;
+	font: normal normal 12px/32px 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 32px 0;
 }
@@ -251,7 +251,7 @@ h1.title { /*page title*/
 	width: 100%;
 	margin: 0;
 	padding: 10px 10px 10px 5px;
-	font-family: 'open_sans_condensedbold', sans-serif;
+	font-family: 'clear_sansbold', Times, sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -283,7 +283,15 @@ abbr[title] {
 
 b,
 strong { /*override browser*/
-	font-family: 'open_sanssemibold', sans-serif;
+	font-family: 'clear_sansbold', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+}
+
+i,
+em { /*override browser*/
+	font-family: 'clear_sansitalic', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
@@ -425,7 +433,7 @@ legend {
 	padding: 0 5px;
 	white-space: normal;
 	*margin-left: -10px;
-	font: 18px/18px 'open_sans_condensedbold', sans-serif;
+	font: 18px/18px 'clear_sansbold', sans-serif;
 }
 
 /* @group button, input */

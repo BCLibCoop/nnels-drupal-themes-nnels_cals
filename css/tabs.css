@@ -21,7 +21,7 @@ ul.secondary {
 	line-height: normal;
 	font-size: 12px;
 	text-transform: lowercase;
-	border-bottom: 1px dotted #333333;
+	/*border-bottom: 1px dotted #333333;*/
 	/*background-color: fuchsia;*/
 }
 
@@ -45,10 +45,10 @@ ul.secondary li {
 ul.primary a,
 ul.secondary a {
 	display: block;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 5px 10px;
 	border: 1px dotted #333333;
-	border-bottom: 0;
+	/*border-bottom: 0;*/
 	text-decoration: none;
 	color: #333333;
 	/*background: transparent;*/
@@ -78,7 +78,7 @@ ul.action-links {
 	line-height: normal;
 	font-size: 12px;
 	text-transform: lowercase;
-	border-bottom: 1px dotted #333333;
+	/*border-bottom: 1px dotted #333333;*/
 	/*background-color: fuchsia;*/
 }
 
@@ -96,10 +96,10 @@ ul.action-links li {
 
 ul.action-links a {
 	display: block;
-	margin: 0;
+	margin: 0 0 5px;
 	padding: 5px 10px;
 	border: 1px dotted #333333;
-	border-bottom: 0;
+	/*border-bottom: 0;*/
 	text-decoration: none;
 	color: #333333;
 	/*background: transparent;*/
@@ -158,7 +158,7 @@ ul.quicktabs-tabs.quicktabs-style-zen li a {
 	display: block;
 	margin: 0;
 	padding: 5px;
-	font: 14px/16px 'open_sansregular', sans-serif;
+	font: 14px/16px 'clear_sansregular', sans-serif;
 	text-decoration: none;
 	border: 0;
 	background: limegreen none;

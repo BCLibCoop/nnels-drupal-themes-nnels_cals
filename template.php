@@ -270,3 +270,11 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * Theme the loggedinblock that shows for logged-in users.
+ */
+function NNELS_CALS_v001_lt_loggedinblock($variables){
+  return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
+}
+

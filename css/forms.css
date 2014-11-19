@@ -49,7 +49,7 @@ form table .item-list ul {
 
 .form-item label {
 	display: block;
-	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
 .form-item label.option {
@@ -162,7 +162,7 @@ td.menu-disabled {
 	/*background-color: orange;*/
 	margin: 0;
 	padding: 0;
-	font: normal normal normal 18px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 	text-transform: capitalize;
 }
 
@@ -205,12 +205,12 @@ td.menu-disabled {
 	/*background-color: violet;*/
 	margin: 0;
 	padding: 0;
-	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
 .detail-library-registration .form-item-legal-accept strong {
 	/*background-color: firebrick;*/
-	font: normal normal normal 16px/24px 'open_sans_condensedbold', sans-serif;
+	font: normal normal normal 16px/24px 'clear_sansbold', sans-serif;
 }
 
 .detail-library-registration #edit-actions {

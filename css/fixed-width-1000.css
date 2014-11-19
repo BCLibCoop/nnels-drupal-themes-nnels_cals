@@ -145,6 +145,7 @@ body {
 	margin: 0;
 	padding: 0 0 0 15px;
 	background: #EEEEEE;
+	background: #D0D0D0;
 	border-bottom: 2px solid #336699;
 }
 
@@ -155,6 +156,7 @@ body {
 	padding: 10px;
 	background: none;
 	background: #EEEEEE;
+	background: #D0D0D0;
 	border: 1px solid #336699;
 }
 
@@ -306,6 +308,7 @@ body {
 	margin: 0;
 	padding: 10px;
 	border-top: 2px solid #336699;
+	background: #D0D0D0;
 }
 
 

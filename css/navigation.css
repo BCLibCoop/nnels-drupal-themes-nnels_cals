@@ -19,8 +19,8 @@
 .language-switcher {
 	/*background-color: orange;*/
 	float: right;
-	width: 250px;
-	margin: 0 0 105px;
+	width: 210px;
+	margin: 0 0 85px;
 	padding: 0;
 }
 
@@ -37,11 +37,10 @@
 .language-switcher ul.language-switcher-locale-url li {
 	/*background-color: mediumaquamarine;*/
 	float: left;
-	margin: 0 5px 0 0;
+	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
-	/*border-right: 1px dotted #333333;*/
 }
 
 .language-switcher ul.language-switcher-locale-url li.last {
@@ -55,15 +54,18 @@
 
 .language-switcher a {
 	/*background-color: gold;*/
-	margin: 0 5px 0 0;
+	display: block;
+	margin: 0 10px 0 0;
 	padding: 5px 10px;
 	color: #333333;
+	background: #D0D0D0;
+	border: 1px solid #336699;
 }
 
 .language-switcher a:hover {
 	/*background-color: limegreen;*/
-	/*color: #FFFFFF;*/
 	color: #CC6600;
+	background: #EEEEEE;
 }
 
 /* @end */
@@ -72,6 +74,8 @@
 
 .main-navigation {
 	/*background-color: fuchsia;*/
+	display: block;
+	float: left;
 	margin: 0;
 	padding: 0 0 0 10px;
 }
@@ -79,8 +83,9 @@
 .main-navigation ul.menu {
 	/*background-color: palegreen;*/
 	display: block;
+	float: left;
 	margin: 0;
-	padding: 5px 0 0;
+	padding: 8px 0 0;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -95,28 +100,35 @@
 }
 
 .main-navigation a {
-	/*background-color: gold;*/
+	background-color: gold;
 	display: block;
-	margin: 0;
-	padding: 5px 10px 3px;
-	border-right: 1px solid #336699;
-	font-size: 14px;
-	line-height: 18px;
+	margin: 0 10px 0 0;
+	padding: 10px 15px 8px;
+	font-size: 16px;
+	line-height: 16px;
 	color: #333333;
+	background: #D0D0D0;
+	border: 1px solid #336699;
+	border-bottom: 0px solid #336699;
 }
 
-.main-navigation ul.menu li.last a {
+/*.main-navigation ul.menu li.last a {
 	border-right: 0px solid #336699;
-}
+}*/
 
 .main-navigation a.active {
 	color: #CC6600;
+	background: #EEEEEE;
+}
+
+.main-navigation a.active-trail {
+	color: #CC6600;
+	background: #EEEEEE;
 }
 
 .main-navigation a:hover {
-	/*background-color: limegreen;*/
-	/*color: #FFFFFF;*/
 	color: #CC6600;
+	background: #EEEEEE;
 }
 
 
@@ -131,6 +143,7 @@
 	margin: 10px 0;
 	padding: 0 5px;
 	border: 1px solid #336699;
+	background: #D0D0D0;
 }
 
 .secondary-navigation .block-title {
@@ -150,11 +163,21 @@
 }
 
 .secondary-navigation ul.menu li {
-	/*background-color: rosybrown;*/
+	/*background-color: pink;*/
 	margin: 0 0 5px;
-	padding: 0;
+	padding: 5px;
 	list-style-type: none;
 	list-style-image: none;
+}
+
+.secondary-navigation ul.menu li:hover {
+	/*background-color: lime;*/
+	background: #EEEEEE;
+}
+
+.secondary-navigation ul.menu li.is-active-trail {
+	/*background-color: lime;*/
+	background: #EEEEEE;
 }
 
 .secondary-navigation a {
@@ -244,8 +267,8 @@
 
 .footer-navigation ul.menu li {
 	/*background-color: rosybrown;*/
-	margin: 0 0 2px;
-	padding: 0;
+	margin: 0 0 5px;
+	padding: 5px;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -255,20 +278,15 @@
 	display: block;
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
+	line-height: 16px;
 	color: #333333;
 }
 
 .footer-navigation a:hover {
 	/*background-color: limegreen;*/
-	/*color: #FFFFFF;*/
 	color: #CC6600;
 }
-
-/* staff login button for footer */
-
-/*#block-cals-external-search-cals-staff-login {
-	float:left;
-}*/
 
 /* @end */
 
@@ -286,9 +304,9 @@
 .footer-navigation-copyright ul.menu {
 	/*background-color: palegreen;*/
 	display: block;
-	float: right;
+	float: left;
 	margin: 0;
-	padding: 5px 0 0;
+	padding: 5px 0 0 10px;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -306,9 +324,9 @@
 	/*background-color: gold;*/
 	display: block;
 	margin: 0;
-	padding: 0px 5px;
-	font-size: 11px;
-	line-height: 12px;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 14px;
 	color: #333333;
 	border-right: 1px solid #336699;
 }
@@ -333,7 +351,7 @@
     margin: 0;
 	padding: 10px;
 	/*background-color: fuchsia;*/
-	font: normal normal normal 12px/18px 'open_sanslight', sans-serif;
+	font: normal normal normal 12px/18px 'clear_sans_lightregular', sans-serif;
 }
 
 .item-list .pager li {
@@ -343,7 +361,7 @@
 
 .pager-current {
 	text-decoration: none;
-	font: normal normal normal 12px/18px 'open_sanssemibold', sans-serif;
+	font: normal normal normal 12px/18px 'clear_sansbold', sans-serif;
 }
 
 
