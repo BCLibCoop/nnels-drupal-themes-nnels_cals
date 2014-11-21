@@ -516,9 +516,9 @@ table {
 
 th {
 	text-align: left;
-	padding: 0;
-	border-bottom: none;
-	vertical-align: top;
+	padding: 5px;
+	border-bottom: 3px solid #333333;
+	vertical-align: bottom;
 }
 
 tbody {
@@ -543,6 +543,8 @@ tr.even, tr.odd {
 
 td {
 	vertical-align: top;
+	margin: 0;
+	padding: 5px;
 }
 
 /* @end */

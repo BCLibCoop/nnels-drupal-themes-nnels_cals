@@ -99,6 +99,7 @@
 
 .region-header .block-calsauthen {
 	/*background-color: pink;*/
+	/*display: block;*/
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -106,13 +107,12 @@
 
 .region-header .block-calsauthen a {
 	/*background-color: gold;*/
-	margin: 30px 0 0;
-	padding: 3px 5px;
-	/*color: #FFFFFF;
-	background-color: #666666;
-	border: 1px dotted #333333;*/
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px 10px;
 	color: #333333;
-	background-color: #FFFFFF;
+	background: #D0D0D0;
 	border: 1px solid #336699;
 }
 

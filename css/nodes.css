@@ -137,3 +137,52 @@ article.node-post ul.links.inline li a {
 }
 
 /* @end */
+
+/* @group record-set */
+
+.node-type-record-set {
+ 	/*background-color: fuchsia;*/ 
+}
+
+.node-record-set {
+ 	/*background-color: orangered;*/
+	margin: 0;
+	padding: 10px;
+}
+
+.node-record-set .submitted {
+ 	/*background-color: lime;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.node-record-set .field {
+ 	/*background-color: lavender;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.node-record-set .field .field-items {
+ 	/*background-color: pink;*/
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.node-record-set a.generate-stub {
+	background-color: hotpink;
+	display: inline-block;
+	margin: 5px 5px 10px;
+	padding: 5px 10px;
+	color: #333333;
+    font-family: 'clear_sans_mediumregular';
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.node-record-set a.generate-stub:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+/* @end */

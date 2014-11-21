@@ -73,6 +73,7 @@
 	margin: 0;
 	padding: 3px 5px;
 	color: #333333;
+    font-family: 'clear_sans_mediumregular';
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 }
@@ -86,13 +87,18 @@
 	font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;
 }
 
+.views-exposed-widgets {
+	margin: 0;
+	padding: 0;
+}
+
 
 /* @end*/
 
 /* @group global views overrides*/
 
 .views-exposed-form label {
-	font: normal normal normal 16px/24px 'clear_sansbold', sans-serif;
+	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
 .block-views {
@@ -745,7 +751,7 @@
 
 .front .search-repository #edit-search-api-views-fulltext-2 {
 	/*background-color: forestgreen;*/
-	width: 250px;
+	width: 230px;
 }
 
 .search-repository .views-widget-sort-by {
@@ -772,7 +778,7 @@
 .search-repository .views-submit-button .form-submit {
 	/*background-color: palegoldenrod;*/
 	margin: 0;
-	padding: 5px;
+	padding: 5px 10px;
 	color: #333333;
 	background: #FFFFFF;
 	border: 1px solid #336699;
@@ -2096,7 +2102,7 @@ span.daisy-icon-login {
 
 /* @end */
 
-.marc-xml-data {
+.marc-xml-data-block {
  	/*background-color: olive;*/
 	float: left;
 	width: 100%;
@@ -2107,7 +2113,7 @@ span.daisy-icon-login {
 
 /* @group repo-item - data */
 
-.marc-xml-data h2.block-title {
+.marc-xml-data-block h2.block-title {
 	/*background-color: limegreen;*/
 	margin: 0 0 5px;
 	padding: 10px;
@@ -2132,4 +2138,193 @@ span.daisy-icon-login {
 
 /* @end */
 
+.audit-trail-block {
+ 	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* @group audit-trail - data */
+
+.audit-trail-block h2.block-title {
+	/*background-color: limegreen;*/
+	margin: 0 0 5px;
+	padding: 10px;
+	border-bottom: 1px solid #336699;
+}
+
+.repo-item.audit-trail {
+ 	/*background-color: darkcyan;*/
+}
+
+.repo-item.audit-trail tr {
+	border-bottom: 1px solid #333333;
+}
+
+.repo-item.audit-trail .views-field-item-id {
+ 	/*background-color: cadetblue;*/
+	width: 80px;
+}
+
+.repo-item.audit-trail .views-field-field-activity {
+ 	/*background-color: darkgoldenrod;*/
+	width: 150px;
+}
+
+.repo-item.audit-trail .views-field-field-user {
+ 	/*background-color: violet;*/
+	width: 80px;
+}
+
+.repo-item.audit-trail .views-field-nothing {
+ 	/*background-color: pink;*/
+	width: 80px;
+}
+
+.repo-item.audit-trail .views-field-nothing a {
+	/*background-color: hotpink;*/
+	display: block;
+	clear: both;
+	margin: 0 0 5px;
+	padding: 5px 10px;
+	color: #333333;
+    font-family: 'clear_sans_mediumregular';
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.repo-item.audit-trail .views-field-nothing a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+
+
+/* @end */
+
 /* @end*/
+
+/* @group admin-views */
+
+/* @group record-sets */
+
+.repo-item-admin {
+	/*background-color: orange;*/
+}
+
+.repo-item-admin.record-set {
+	/*background-color: lightblue;*/
+}
+
+.repo-item-admin.record-set .views-exposed-widgets {
+	/*background-color: khaki;*/
+	margin: 0;
+	padding: 10px;
+}
+
+.repo-item-admin.record-set .view-content fieldset {
+	/*background-color: fuchsia;*/
+	margin: 0;
+	padding: 10px;
+	border-style: none;
+}
+
+.repo-item-admin.record-set .view-content fieldset .form-submit {
+	background-color: hotpink;
+	margin: 0 5px 0 0;
+	padding: 3px 5px;
+	color: #333333;
+    font-family: 'clear_sans_mediumregular';
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.repo-item-admin.record-set .view-content fieldset .form-submit:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+.repo-item-admin.record-set .views-field-nothing {
+	/*background-color: hotpink;*/
+	margin: 0;
+	padding: 5px;
+	width: 380px;
+}
+
+.repo-item-admin.record-set tr {
+	border-bottom: 1px solid #333333;
+}
+
+.repo-item-admin.record-set .views-field-title {
+	/*background-color: yellow;*/
+	margin: 0 0 5px;
+	padding: 5px;
+	font: normal normal 18px/20px 'clear_sansbold', sans-serif;
+}
+
+.repo-item-admin.record-set .views-field-body {
+	/*background-color: pink;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item-admin.record-set .views-field-view {
+	/*background-color: chartreuse;*/
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item-admin.record-set .views-field-field-system-control-number {
+	/*background-color: violet;*/
+	margin: 0;
+	padding: 5px;
+	width: 200px;
+}
+
+.repo-item-admin.record-set .views-field-delete-node {
+	/*background-color: yellow;*/
+}
+
+.repo-item-admin.record-set .views-field-delete-node a {
+	/*background-color: hotpink;*/
+	display: block;
+	clear: both;
+	margin: 0 0 5px;
+	padding: 5px 10px;
+	color: #333333;
+    font-family: 'clear_sans_mediumregular';
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.repo-item-admin.record-set .views-field-delete-node a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+.repo-item-admin.record-set.audit-trail {
+	/*background-color: navy;*/
+}
+
+.repo-item-admin.record-set.audit-trail ol {
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+.repo-item-admin.record-set.audit-trail ol li {
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 5px;
+}
+
+
+/* @end */
+
+
+
+/* @end */

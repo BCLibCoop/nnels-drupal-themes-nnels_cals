@@ -7,28 +7,22 @@
 /* @group Drupal Admin Tables */
 
 form th {
-	text-align: left; /* LTR */
-	padding-right: 1em; /* LTR */
-	border-bottom: 3px solid #ccc;
+	text-align: left;
+	padding: 5px;
+	border-bottom: 3px solid #333333;
 }
 
 form tbody {
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #333333;
 }
 
 form tr.even {
-	background-color: #fff;
+	background-color: transparent;
 }
 
 form table .item-list ul {
 	margin: 0;
-}
-
-.lt-ie8 tr.even th,
-.lt-ie8 tr.even td,
-.lt-ie8 tr.odd th,
-.lt-ie8 tr.odd td {
-	border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+	padding: 0;
 }
 
 
