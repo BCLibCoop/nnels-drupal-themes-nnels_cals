@@ -123,6 +123,11 @@
 	background-color: #EEEEEE;
 }
 
+.block.block-calsauthen.detail-library-registration .block-content {
+	display: inline-block;
+	margin-top: 1em;
+}
+
 /* @end */
 
 /* @group user-logged-in */
