@@ -27,6 +27,7 @@
 	//append to as new patterns emerge
 	$replacements = array(
 	  "Narrator:",
+	  "Narrated by:",
 	  "Read by ",
 	  
 	);
