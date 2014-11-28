@@ -26,10 +26,11 @@
 <?php
 	//append to as new patterns emerge
 	$replacements = array(
-	  "Narrator: ",
+	  "Narrator:",
 	  "Read by ",
+	  
 	);
-  $output = str_replace($replacements, "", $output);
+  $output = trim(str_replace($replacements, "", $output));
 	//dpm($output);
 	if(strlen($output)) $output = '<span class="views-label">' . t("Performed / Narrated by") . ': </span>' . $output;
 ?>
