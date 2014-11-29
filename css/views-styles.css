@@ -1815,6 +1815,14 @@ span.daisy-icon-login {
 	padding: 0;
 }
 
+.repo-item.available-formats .view-header {
+	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
 .repo-item.available-formats .view-list-ul {
 	/*background-color: orange;*/
 	margin: 0;
@@ -1835,18 +1843,37 @@ span.daisy-icon-login {
 
 .repo-item.available-formats .views-field-nothing,
 .repo-item.available-formats .views-field-nothing-1 {
-	/*background-color: khaki;*/
+	/*background-color: lawngreen;*/
 	float: right;
-	width: 25%;
+	width: 20%;
+	height: 40px;
 	margin: 0;
 	padding: 5px;
 	text-align: center;
 }
 
+.repo-item.available-formats .views-field-nothing a,
+.repo-item.available-formats .views-field-nothing-1 a {
+	/*background-color: palegoldenrod;*/
+	display: block;
+	margin: 0;
+	padding: 3px 5px;
+	color: #333333;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.repo-item.available-formats .views-field-nothing a:hover,
+.repo-item.available-formats .views-field-nothing-1 a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
 .repo-item.available-formats .views-field-field-s3-file-upload {
 	/*background-color: indigo;*/
 	float: left;
-	width: 50%;
+	width: 60%;
 	margin: 0;
 	padding: 0;
 }
@@ -1905,7 +1932,7 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-running-time {
 	/*background-color: cadetblue;*/
 	float: left;
-	width: 98%;
+	width: 50%;
 	margin: 0;
 	padding: 5px;
 }
@@ -1913,13 +1940,13 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-performer {
 	/*background-color: navajowhite;*/
 	float: left;
-	width: 98%;
+	width: 50%;
 	margin: 0;
 	padding: 5px;
 }
 
-.repo-item.available-formats .view-header {
-	/*background-color: pink;*/
+.repo-item.available-formats .views-field-field-description {
+	/*background-color: chartreuse;*/
 	float: left;
 	width: 100%;
 	margin: 0;
