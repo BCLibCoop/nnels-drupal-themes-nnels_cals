@@ -33,7 +33,7 @@
 	);
   $output = trim(str_replace($replacements, "", $output));
 	//dpm($output);
-	if(strlen($output)) $output = '<span class="views-label">' . t("Performed / Narrated by") . ': </span>' . $output;
+	//if(strlen($output)) $output = '<span class="views-label">' . t("Performed / Narrated by") . ': </span>' . $output;
 ?>
 
 <?php  print $output; ?>
