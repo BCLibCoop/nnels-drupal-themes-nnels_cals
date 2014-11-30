@@ -23,7 +23,7 @@
  */
 ?>
 <?php
-	global $user;
+	//global $user;
 	$hrs = 0;
 	$mins = 0;
   $l = strlen($output);
