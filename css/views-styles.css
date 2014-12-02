@@ -113,6 +113,71 @@
 
 /* @end*/
 
+/* @group announcements-landing*/
+.announcements-block-landing {
+	/*background-color: orange;*/
+	float: left;
+	width: 98%;
+	margin: 0 0 15px;
+	padding: 10px;
+	border: 1px solid #336699;
+}
+
+.announcements .view-list-ul {
+	/*background-color: pink;*/
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.announcements .view-list-ul li.views-row {
+	/*background-color: lemonchiffon;*/
+	float: left;
+	width: 98%;
+	margin: 0 0 5px;
+	padding: 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.announcements .views-field-title-field {
+	/*background-color: lavender;*/
+	float: left;
+	width: 98%;
+	margin: 0 0 5px;
+	padding: 5px;
+	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
+	text-decoration: none;
+}
+
+.announcements .views-field-body {
+	/*background-color: chartreuse;*/
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 5px;
+}
+
+.announcements .views-field-view-node {
+	/*background-color: teal;*/
+	float: left;
+	width: 98%;
+	margin: 0;
+	padding: 5px 20px 5px 5px;
+	text-align: right;
+}
+
+.announcements .views-field-clone-node,
+.announcements .views-field-edit-node {
+	/*background-color: chartreuse;*/
+	float: right;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* @end*/
+
 /* @group faq-list (DEPRECIATED)*/
 
 .faq-list {
