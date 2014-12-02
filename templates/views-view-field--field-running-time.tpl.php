@@ -39,8 +39,8 @@
 		  $hrs = (string) substr($output, 0, $l-4);
 	  	//if($output == 223311)	printAndDie($mins);
 	  }
-		
-		$output = $hrs . ":" . $mins;
+		if(strlen($hrs) == 1) $hrs = "0" . $hrs;
+		$output = $hrs . ":" . $mins . " " . t("hrs");
 		//printAndDie($l, $output);
 	
 	}
