@@ -24,17 +24,27 @@
 ?>
 <?php
 	//global $user;
+	if(strlen($output)) dpm($output);
 	$hrs = 0;
 	$mins = 0;
-  $l = strlen($output);
-  if($l == 4) $mins = substr($output, 0, 2);
-  if($l == 3) $mins = substr($output, 0, 1);
-  if($l >= 4) $mins = substr($output, $l-4, 2);
-  if($l >= 5) $hrs = substr($output, 0, $l-4);
-  $output = t("not known");
-  $output = 0;
-  if($mins > 0) $output = $mins . " " . t("mins");
-  if($hrs > 0) $output = $hrs . " " . t("hours") . ", " . $output;
+	$output = trim($output);
+	$l = strlen($output);
+	if($l > 0) {
+		//variants	
+	  if($l == 4) $mins = (string) substr($val, 0, 2); // e.g., 99 min 01 sec
+	  if($l == 3) $mins = (string) substr($val, 0, 1); // e.g., 9 min 01 sec
+	  
+	  if($l >= 5) { //includes HRS, e.g., 050101 = 5 hrs 01 min 01 sec
+		  $mins = (string) substr($output, -4, 2);
+		  $hrs = (string) substr($output, 0, $l-4);
+	  	//if($output == 223311)	printAndDie($mins);
+	  }
+		
+		$output = $hrs . ":" . $mins;
+		//printAndDie($l, $output);
+	
+	}
+	
  
 ?>
 <?php print $output; ?>
