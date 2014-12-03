@@ -23,11 +23,9 @@
  */
 ?>
 <?php
-	//global $user;
-	if(strlen($output)) dpm($output);
+	$output = trim($output);
 	$hrs = 0;
 	$mins = 0;
-	$output = trim($output);
 	$l = strlen($output);
 	if($l > 0) {
 		//variants	
@@ -39,12 +37,8 @@
 		  $hrs = (string) substr($output, 0, $l-4);
 	  	//if($output == 223311)	printAndDie($mins);
 	  }
-		
-		$output = $hrs . ":" . $mins;
-		//printAndDie($l, $output);
-	
-	}
-	
- 
+		if(strlen($hrs) == 1) $hrs = "0" . $hrs; //prepend 0 for nicer format
+		$output = $hrs . ":" . $mins . " " . t("hrs");
+	} 
 ?>
 <?php print $output; ?>
