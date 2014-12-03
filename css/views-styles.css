@@ -151,12 +151,12 @@
 	text-decoration: none;
 }
 
-.announcements .views-field-body {
+.announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file {
 	/*background-color: chartreuse;*/
 	float: left;
 	width: 98%;
 	margin: 0;
-	padding: 5px;
+	padding: 0px 0px 5px 5px;
 }
 
 .announcements .views-field-view-node {
