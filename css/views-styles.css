@@ -1936,7 +1936,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .views-field-field-s3-file-upload {
-	background-color: indigo;
+	/*background-color: indigo;*/
 	float: left;
 	width: 60%;
 	margin: 0;
@@ -1995,7 +1995,7 @@ span.daisy-icon-login {
 /* @end */
 
 .repo-item.available-formats .views-field-field-running-time {
-	background-color: cadetblue;
+	/*background-color: cadetblue;*/
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -2003,7 +2003,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .views-field-field-performer {
-	background-color: navajowhite;
+	/*background-color: navajowhite;*/
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -2011,7 +2011,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .views-field-field-description {
-	background-color: chartreuse;
+	/*background-color: chartreuse;*/
 	float: left;
 	width: 100%;
 	margin: 0;
