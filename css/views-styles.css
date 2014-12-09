@@ -1071,7 +1071,9 @@
 	padding: 0;
 }
 
-
+.search-results .view-footer .request-title {
+	display:inline-block;
+}
 
 /* @end */
 
