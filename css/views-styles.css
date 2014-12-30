@@ -1969,7 +1969,7 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-nothing-1 {
 	/*background-color: lawngreen;*/
 	float: right;
-	width: 20%;
+	/*width: 10%;*/
 	height: 40px;
 	margin: 0;
 	padding: 5px;
@@ -1981,7 +1981,7 @@ span.daisy-icon-login {
 	/*background-color: palegoldenrod;*/
 	display: block;
 	margin: 0;
-	padding: 3px 5px;
+	padding: 3px 10px;
 	color: #333333;
 	text-align: center;
 	background-color: #FFFFFF;
@@ -2090,7 +2090,7 @@ span.daisy-icon-login {
 	/*background-color: palegoldenrod;*/
 	margin: 30px 0 0;
 	margin: 0;
-	padding: 3px 5px;
+	padding: 3px 10px;
 	color: #333333;
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
@@ -2184,15 +2184,15 @@ span.daisy-icon-login {
  	/*background-color: olive;*/
 	float: left;
 	margin: 0;
-	padding: 5px;
+	padding: 0 0 0 5px;
 	font-family: 'clear_sansbold', sans-serif;
 }
 
 .repo-item.detail .field-name-field-dc-date {
  	/*background-color: palegoldenrod;*/
 	float: left;
-	margin: 0 10px 0 0;
-	padding: 5px;
+	margin: 0 5px 0 0;
+	padding: 2px 5px 0;
 }
 
 .repo-item.detail .views-field-body {
