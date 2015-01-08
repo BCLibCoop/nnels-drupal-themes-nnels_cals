@@ -166,7 +166,15 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
-  
+
+  //Create custom Piwik event with user's organization and bind to download links to track downloads per org   
+	global $user;
+	$token = "[current-user:field_organization]";
+        $org = token_replace($token, array('user' => $user));
+        if (strcmp($org, $token) == 0) {
+        $org = "No organization";
+        }
+        drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline'); 
 }
 
 
