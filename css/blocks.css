@@ -10,7 +10,7 @@
 }
 
 .spacer-block {
-	background-color: fuchsia;
+	/*background-color: fuchsia;*/
 	float: left;
 	clear: both;
 	width: 240px;
@@ -235,6 +235,65 @@
 
 .facet-search.genre {
 	
+}
+
+/* @end */
+
+/* @group request title link block */
+
+.request-title-block {
+	/*background-color: orangered;*/
+	background-color: #DDDDDD;
+	width: 240px;
+	float: left;
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px solid #336699;
+}
+
+.request-title-block h2.block-title {
+	/*background-color: paleturquoise;*/
+	margin: 0;
+	padding: 0 5px;
+	font-size: 20px;
+	line-height: 28px;
+	border-bottom: 1px solid #336699;
+}
+
+.request-title-block .block-content {
+	/*background-color: lime;*/
+	margin: 0;
+	padding: 0;
+}
+
+.request-title-block .block-content p {
+	/*background-color: orangered;*/
+	margin: 0;
+	padding: 5px 5px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.request-title-block a.request-title {
+	/*background-color: gold;*/
+	display: block;
+	margin: 5px 0 0;
+	padding: 3px 5px;
+	/*color: #FFFFFF;
+	background-color: #666666;
+	border: 1px dotted #333333;*/
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.request-title-block a.request-title:hover {
+	/*color: #EC1C24;
+	background-color: #BBBBBB;*/
+	color: #CC6600;
+	background-color: #EEEEEE;
 }
 
 /* @end */

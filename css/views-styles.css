@@ -1404,7 +1404,7 @@ span.daisy-icon-login {
 	display: block;
 	height: 40px;
 	margin: 0;
-	padding: 10px 0 0 45px;
+	padding: 10px 0 0;
 	background: /*maroon*/ url(../images/icon_login-access.png) no-repeat left center;
 }
 
@@ -2191,8 +2191,8 @@ span.daisy-icon-login {
 .repo-item.detail .field-name-field-dc-date {
  	/*background-color: palegoldenrod;*/
 	float: left;
-	margin: 0 5px 0 0;
-	padding: 2px 5px 0;
+	margin: 0;
+	padding: 1px 5px 0;
 }
 
 .repo-item.detail .views-field-body {
@@ -2238,7 +2238,13 @@ span.daisy-icon-login {
 }
 
 .repo-item.detail .views-field-field-publisher {
-/*background-color: khaki;*/
+	/*background-color: khaki;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-iso-language {
+	/*background-color: khaki;*/
 	margin: 0 0 5px;
 	padding: 5px;
 }
