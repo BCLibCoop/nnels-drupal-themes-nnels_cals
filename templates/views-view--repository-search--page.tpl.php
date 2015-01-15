@@ -32,7 +32,7 @@
   $skip_links = array();
 	$path = request_uri();
 	$blocks = block_list('sidebar_first');
-	$header = '<ul id="search-skip-link">
+/*	$header = '<ul id="search-skip-link">
 	<li><a href="#block-facetapi-m0xbt2plkszcq7ydu4whplcebcevnz1i">
 		Filter by Availability</a>
 	</li>
@@ -42,7 +42,7 @@
 	<li><a href="#block-facetapi-2sjcr0oglhj79v3xreaxpenbxoy61l3b">
 		Filter by genre</a>
 	</li>
-</ul>';
+</ul>';*/
 	foreach(array_keys($blocks) as $name) {
 		if(strpos($name, "facetapi_") !== FALSE) {
 			$label = str_replace(":", "", $blocks[$name]->title);		
