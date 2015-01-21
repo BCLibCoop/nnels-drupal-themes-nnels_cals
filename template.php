@@ -171,12 +171,14 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
 	global $user;
 	$token = "[current-user:field_organization]";
         $org = token_replace($token, array('user' => $user));
+	$bclc = "BC Libraries Cooperative";
         if (strcmp($org, $token) == 0) {
-        $org = "No organization";
+        	$org = "No organization";
         }
-        drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline'); 
+	if (!(strcmp($org, $bclc)) == 0) {
+       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline'); 
+	}	
 }
-
 
 function NNELS_CALS_v001_preprocess_block(&$vars) {
 
