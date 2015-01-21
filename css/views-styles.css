@@ -1677,6 +1677,8 @@ span.daisy-icon-login {
 	width: 500px;
 }
 
+
+
 /* @end*/
 
 /* @group results list*/
@@ -1752,9 +1754,7 @@ span.daisy-icon-login {
 	text-align: right;
 }
 
-.view-library-search.library-search.page .view-empty {
-   visibility:hidden;
-}
+
 
 /* @end*/
 
