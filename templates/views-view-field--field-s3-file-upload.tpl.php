@@ -48,7 +48,7 @@
 	}
 	else { // access = 1, restrict to logged in users
 	  $dest = array("destination" => "node/" . $nid);
-	  $link = l(t('Login to access this item'), "user/login", array("query" => $dest) );
+	  $link = l(t('Login to access (@format)', array("@format" => $format)), "user/login", array("query" => $dest) );
 		$class = 'daisy-icon-login';
 	}
 	//if no file produced yet.....
