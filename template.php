@@ -166,6 +166,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
+	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/externalsearch.css', array('group' => CSS_THEME, 'type' => 'file'));
 
   //Create custom Piwik event with user's organization and bind to download links to track downloads per org   
 	global $user;

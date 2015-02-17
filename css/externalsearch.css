@@ -1,0 +1,20 @@
+/** NNELS_CALS_v001A **/
+
+/** External search results **/
+
+.externalsearch-item-list ul.search-results-list {
+	list-style: none;
+}
+
+.externalsearch-item-list ul.search-results-list .field-title, .externalsearch-item-list ul.search-results-list .field-authors {
+	display: inline-block;
+}
+
+.externalsearch-item-list ul.search-results-list .field-authors > .field-label {
+	display: none;
+}
+
+.externalsearch-item-list ul.search-results-list div.field-publish_year {
+	margin: 5px;
+	padding-right: 5px, 5px;
+}
