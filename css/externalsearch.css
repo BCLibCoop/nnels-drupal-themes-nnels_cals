@@ -2,19 +2,36 @@
 
 /** External search results **/
 
-.externalsearch-item-list ul.search-results-list {
+.externalsearch-item-list ul.search-results-list {   
 	list-style: none;
 }
 
-.externalsearch-item-list ul.search-results-list .field-title, .externalsearch-item-list ul.search-results-list .field-authors {
+.externalsearch-item-list ul.search-results-list .field-title, 
+.externalsearch-item-list ul.search-results-list .field-authors, 
+.externalsearch-item-list ul.search-results-list .field-publish_year  {
 	display: inline-block;
 }
 
-.externalsearch-item-list ul.search-results-list .field-authors > .field-label {
-	display: none;
+/* Hide Field Labels */
+.externalsearch-item-list ul.search-results-list .field-authors span.field-label, 
+.externalsearch-item-list ul.search-results-list .field-description span.field-label,
+.externalsearch-item-list ul.search-results-list .field-publish_year span.field-label
+ {   
+	display: none; 
 }
 
 .externalsearch-item-list ul.search-results-list div.field-publish_year {
 	margin: 5px;
-	padding-right: 5px, 5px;
+	padding: 5px 5px 0px 5px;
+}
+
+.externalsearch-item-list div.externalsearch-more-results {
+	text-align: right;
+	margin-right: 1.5em;
+	margin-top: 1.5em;
+	font-size: 1.2em;
+}
+
+.externalsearch-item-list div.item-list ul.search-results-list {
+	padding-left: 3px;
 }
