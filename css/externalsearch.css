@@ -3,13 +3,13 @@
 /** External search results **/
 
 .externalsearch-item-list ul.search-results-list {   
-	list-style: none;
+  list-style: none;
 }
 
 .externalsearch-item-list ul.search-results-list .field-title, 
 .externalsearch-item-list ul.search-results-list .field-authors, 
 .externalsearch-item-list ul.search-results-list .field-publish_year  {
-	display: inline-block;
+  display: inline-block;
 }
 
 /* Hide Field Labels */
@@ -17,21 +17,45 @@
 .externalsearch-item-list ul.search-results-list .field-description span.field-label,
 .externalsearch-item-list ul.search-results-list .field-publish_year span.field-label
  {   
-	display: none; 
+  display: none; 
 }
 
 .externalsearch-item-list ul.search-results-list div.field-publish_year {
-	margin: 5px;
-	padding: 5px 5px 0px 5px;
+  margin: 5px;
+  padding: 5px 5px 0px 5px;
 }
 
 .externalsearch-item-list div.externalsearch-more-results {
-	text-align: right;
-	margin-right: 1.5em;
-	margin-top: 1.5em;
-	font-size: 1.2em;
+  margin-left: 26.5em;
+  margin-top: 1.5em;
+  font-size: 1.2em;
 }
 
 .externalsearch-item-list div.item-list ul.search-results-list {
-	padding-left: 3px;
+  padding-left: 3px;
+}
+
+.externalsearch-keyword-button > a, .externalsearch-request-button > a {
+  display: block;
+  padding: 3px, 5px;
+  background-color: #FFF;
+  border: 1px solid #369;
+  text-align: center;
+  width: 45%;
+  color: #333;
+}
+
+.externalsearch-keyword-button > a {
+  margin: 1.6em 14.3em 0em;
+  padding: 7px;
+}
+
+.externalsearch-request-button > a {
+  margin: 0.75em 14.3em;
+  padding: 5px;
+}
+
+.externalsearch-keyword-button a:hover, .externalsearch-request-button a:hover {
+  color: #CC6600;
+  background: #D0D0D0;
 }
