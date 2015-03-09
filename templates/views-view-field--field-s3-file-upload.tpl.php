@@ -30,6 +30,7 @@
 	$availability = $row->field_field_availability_status[0]['raw']['value'];
 	$file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
 	$s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
+	$filesize = $row->file_managed_field_data_field_s3_file_upload_filesize;
 	$format = '';
 	$class = '';
 	if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
@@ -67,6 +68,14 @@
 		else {
 			$output = '';
 		}
+
+  }
+  //if Filesize = NULL
+	if( empty($filesize) ) {
+		if(user_access('parse s3 paths')  ) {
+			$link .= '<p>' .  l(t("Update Filesize"), "admin/" . $nid . "/update-filesize-field-collection/" . $item_id) . '</p>';
+			  
+ 		}
 
   }
   if(!empty($output)) $output = '<span class="' . $class . '">' . $link . '</span>';
