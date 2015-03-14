@@ -2077,6 +2077,14 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
+.repo-item.available-formats .views-field-filesize {
+	/*background-color: chartreuse;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
 .repo-item.available-formats .view-footer {
 	/*background-color: orange;*/
 	float: left;
