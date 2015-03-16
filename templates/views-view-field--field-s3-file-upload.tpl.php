@@ -39,12 +39,7 @@
   }
   
   if($access == 0 || $user->uid > 0) {
-    if($filesize > 1) {
-    	$link = l(t("Download (@format - @filesize)", array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), $output);
-    }
-    else {
-    	$link = l(t("Download (@format)", array("@format" => $format)), $output);
-    }
+    $link = ($filesize > 1) ? l(t("Download (@format - @filesize)", array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), $output) : l(t("Download (@format)", array("@format" => $format)), $output);
     $class = "generic-file-icon";
     //provide format specific class
     $class = str_replace(" ", "", strtolower($format));
@@ -52,7 +47,7 @@
   }
   else { // access = 1, restrict to logged in users
     $dest = array("destination" => "node/" . $nid);
-    $link = l(t('Login to access (@format)', array("@format" => $format)), "user/login", array("query" => $dest) );
+    $link = ($filesize > 1) ? l(t('Login to access (@format - @filesize)', array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), "user/login", array("query" => $dest) ) : l(t('Login to access (@format)', array("@format" => $format)), "user/login", array("query" => $dest) );
     $class = 'daisy-icon-login';
   }
   //if no file produced yet.....
