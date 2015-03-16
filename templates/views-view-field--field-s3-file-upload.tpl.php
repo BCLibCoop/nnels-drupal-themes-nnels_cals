@@ -30,7 +30,7 @@
   $availability = $row->field_field_availability_status[0]['raw']['value'];
   $file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
   $s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
-  $filesize = $row->file_managed_field_data_field_s3_file_upload_filesize;
+  $filesize = $row->field_field_s3_file_upload[0]['raw']['filesize'];
   $format = '';
   $class = '';
   if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
@@ -39,9 +39,12 @@
   }
   
   if($access == 0 || $user->uid > 0) {
-    $link = l(t("Download (@format)", array("@format" => $format)), $output);
-    //$class = "daisy-icon";
-    
+    if($filesize > 1) {
+    	$link = l(t("Download (@format - @filesize)", array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), $output);
+    }
+    else {
+    	$link = l(t("Download (@format)", array("@format" => $format)), $output);
+    }
     $class = "generic-file-icon";
     //provide format specific class
     $class = str_replace(" ", "", strtolower($format));
