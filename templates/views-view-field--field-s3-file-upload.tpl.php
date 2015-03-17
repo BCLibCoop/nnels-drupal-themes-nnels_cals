@@ -25,7 +25,6 @@
 <?php
   //see cals_s3 module
   if(function_exists('cals_s3_get_s3_download')) {
-  	drupal_set_message("FUNCTION ExiST");
   	$arr = cals_s3_get_s3_download($row, $output);
   	$output = $arr['output'];
   }	
