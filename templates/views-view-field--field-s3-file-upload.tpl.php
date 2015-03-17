@@ -23,62 +23,12 @@
  */
 ?>
 <?php
-  global $user;
-  $nid = $row->field_file_resource_field_collection_item_nid;
-  $item_id = $row->field_collection_item_item_id;
-  $access =  $row->field_field_access_restrictions[0]['raw']['value'];
-  $availability = $row->field_field_availability_status[0]['raw']['value'];
-  $file_id = trim($row->file_managed_field_data_field_s3_file_upload_fid);
-  $s3_path = $row->_field_data['item_id']['entity']->field_s3_path['und'][0]['value'];
-  $filesize = $row->field_field_s3_file_upload[0]['raw']['filesize'];
-  $format = '';
-  $class = '';
-  if(isset($row->field_field_file_format[0]['rendered']['#markup'])) {
-    $format = $row->field_field_file_format[0]['rendered']['#markup'];
-    //$format = str_replace("Other", "file", $format); // strip out 2 and 3 from Daisy
-  }
-  
-  if($access == 0 || $user->uid > 0) {
-    $link = ($filesize > 1) ? l(t("Download @format (@filesize)", array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), $output) : l(t("Download @format", array("@format" => $format)), $output);
-    $class = "generic-file-icon";
-    //provide format specific class
-    $class = str_replace(" ", "", strtolower($format));
-    if($class == 'pdf') $class = "file-pdf";
-  }
-  else { // access = 1, restrict to logged in users
-    $dest = array("destination" => "node/" . $nid);
-    $link = ($filesize > 1) ? l(t('Login to access @format (@filesize)', array("@format" => $format, "@filesize" => format_size($filesize, $langcode = NULL))), "user/login", array("query" => $dest) ) : l(t('Login to access @format', array("@format" => $format)), "user/login", array("query" => $dest) );
-    $class = 'daisy-icon-login';
-  }
-  //if no file produced yet.....
-  if( ($availability != 1 || empty($file_id)) ) {
-    if(user_access('parse s3 paths')  ) {
-      $link = t("No file available");
-      //$class = "daisy-icon-na";
-      $class = "no-file-avai-icon";
-      if (empty($file_id) ) {
-        $link .= ": " . l(t("Update File Attachment"), "admin/" . $nid . "/update-file-upload-from-field-collection/" . $item_id);
-        //$link = _cals_importer_s3path_to_file_updater($nid, $item_id);
-        
-      }   
-    }
-    else {
-      $output = '';
-    }
-  }
-  /*
-  //if Filesize = NULL
-  if( empty($filesize) ) {
-    if(user_access('parse s3 paths')  ) {
-      $class = "no-file-avai-icon";
-      $link .= l(t("Update Filesize"), "admin/" . $nid . "/update-filesize-field-collection/" . $item_id) ;
-        
-    }
-
-  }
-  */
-  if(!empty($output)) $output = '<span class="' . $class . '">' . $link . '</span>';
-
-  
+  //see cals_s3 module
+  if(function_exists('cals_s3_get_s3_download')) {
+  	drupal_set_message("FUNCTION ExiST");
+  	$arr = cals_s3_get_s3_download($row, $output);
+  	$output = $arr['output'];
+  }	
+  if(!empty($output)) $output = '<span class="' . $arr['class'] . '">' . $arr['link'] . '</span>';
 ?>
 <?php print $output; ?>
