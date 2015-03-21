@@ -58,7 +58,7 @@ h2 {
 	background-color: #DDD;
 }
 
-.language-switcher a {
+.language-switcher {
 	width: auto;
 	margin: 0;
 }
@@ -101,6 +101,7 @@ h2 {
 }
 .footer-navigation {
 	min-width: 200px;
+	width: auto;
 }
 
 #block-block-2 {
@@ -176,6 +177,9 @@ h2 {
 @media screen and (max-width: 56.7rem) {
 
   /*** Header ***/
+  .header-logo h1.site-title {
+  	margin: 5px;
+  }
   .header-logo a.home-link {
   	width: 25%;
   	margin: .1rem .2rem;
@@ -245,8 +249,8 @@ h2 {
 		position: static;
 	}
 	.region-header .block-calsauthen a {
-		float: right;
-		margin: 0.3rem 0.6rem;
+		float: none;
+		margin: 0.4rem 0.6rem;
 	}
 
 	/** do something with the menu **/
