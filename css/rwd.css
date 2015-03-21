@@ -6,6 +6,7 @@ html {
 
 #page {
 	max-width: 1200px;
+	width: 100%;
 }
 
 /** Headings **/
@@ -60,7 +61,6 @@ h2 {
 .language-switcher a {
 	width: auto;
 	margin: 0;
-	padding: 0;
 }
 
 .region-header .block-calsauthen {
@@ -125,6 +125,8 @@ h2 {
 }
 .search-repository .views-widget-filter-search_api_views_fulltext_2 {
 	width: 70%;
+	float: none;
+	display: inline-block;
 }
 
 .front .search-repository #edit-search-api-views-fulltext-2 {
@@ -157,10 +159,9 @@ h2 {
 }
 
 /*** Forms ***/
-/* "Search" button on front page, where else? */
+/* "Search" button on front page, is it where else? */
 .views-exposed-form .views-exposed-widget.views-submit-button {
 	width: auto;
-	vertical-align: middle;
 	float: none;
 	display: inline-block;
 	padding: 5px;
