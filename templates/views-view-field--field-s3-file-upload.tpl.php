@@ -25,9 +25,8 @@
 <?php
   //see cals_s3 module
   if(function_exists('cals_s3_get_s3_download')) {
-  	$arr = cals_s3_get_s3_download($row, $output);
-  	$output = $arr['output'];
-  }	
-  if(!empty($output)) $output = '<span class="' . $arr['class'] . '">' . $arr['link'] . '</span>';
+  	$output = cals_s3_get_s3_download($row, $output);
+  }
+
 ?>
 <?php print $output; ?>
