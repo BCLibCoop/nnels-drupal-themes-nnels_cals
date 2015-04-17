@@ -88,7 +88,7 @@ td.menu-disabled {
 /* @end */
 
 /* @group registered user login */
-
+.block-cals-forms.detail-library-login,
 .block-calsauthen.detail-library-login {
 	/*background-color: lime;*/
 	float: left;
