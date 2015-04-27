@@ -23,24 +23,24 @@
  */
 ?>
 <?php
-	$output = trim($output);
-	$hrs = 0;
-	$mins = 0;
-	$l = strlen($output);
-	
-
-	if($l > 0) {
-		//variants	
-	  if($l == 4) $mins = (string) substr($output, 0, 2); // e.g., 99 min 01 sec
-	 	
-	  if($l == 3) $mins = (string) substr($output, 0, 1); // e.g., 9 min 01 sec
-	  
-	  if($l >= 5) { //includes HRS, e.g., 050101 = 5 hrs 01 min 01 sec
-		  $mins = (string) substr($output, -4, 2);
-		  $hrs = (string) substr($output, 0, $l-4);
-	  }
-		if(strlen($hrs) == 1) $hrs = "0" . $hrs; //prepend 0 for nicer format
-		$output = $hrs . ":" . $mins . " " . t("hrs");
-	} 
+  $output = trim($output);
+  $hrs = 0;
+  $mins = 0;
+  $l = strlen($output);
+  if($l > 0) {
+    //variants  
+    if($l == 3) {
+      $mins = (string) substr($output, 0, 1); // e.g., 9 min 01 sec
+      if($mins < 10) $mins = "0" . $mins;
+    }
+    if($l == 4) $mins = (string) substr($output, 0, 2); // e.g., 99 min 01 sec
+    if($l >= 5) { 
+      //includes HRS, e.g., 050101 = 5 hrs 01 min 01 sec
+      $mins = (string) substr($output, -4, 2);
+      $hrs = (string) substr($output, 0, $l-4);
+    }
+    if(strlen($hrs) == 1) $hrs = "0" . $hrs; //prepend 0 for nicer format
+    $output = $hrs . ":" . $mins . " " . t("hrs");
+  } 
 ?>
 <?php print $output; ?>
