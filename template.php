@@ -157,6 +157,10 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     	//dpm($language->name);
     	drupal_set_message(t("NB: DEVEL server!"), "error");	
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	if(isset($_SESSION['calsauthen_target_driver']) ) {
+	  		dpm("driver: " .$_SESSION['calsauthen_target_driver']);
+	  		dpm("org: " . $_SESSION['calsauthen_target_organization']);
+  		}
     	break;
     	
     case "staging.nnels.ca":
@@ -225,7 +229,9 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   $display = array_intersect($roles_allowed, $user->roles) ? "embed_4" : "embed_5";
   
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
-  $variables['view_download_files'] = views_embed_view("field_collection_view_repo_files", $display, $variables['nid']);
+  $variables['view_download_files'] = 
+    views_embed_view("field_collection_view_repo_files", $display, $variables['nid']) . 
+    views_embed_view("field_collection_view_commercially_available", $display, $variables['nid']);
 }
 
 // */
