@@ -2061,6 +2061,17 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
+.repo-item.available-formats .views-field-field-accrual-method {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.available-formats .views-field-field-accrual-method {
+	display: inline;
+}
+
 .repo-item.available-formats .views-field-field-performer {
 	/*background-color: navajowhite;*/
 	float: left;
@@ -2192,15 +2203,15 @@ span.daisy-icon-login {
  	/*background-color: olive;*/
 	float: left;
 	margin: 0;
-	padding: 0 0 0 5px;
-	font-family: 'clear_sansbold', sans-serif;
+	padding: 2px 0 0 5px;
+	font-family: 'clear_sansregular', sans-serif;
 }
 
 .repo-item.detail .field-name-field-dc-date {
  	/*background-color: palegoldenrod;*/
 	float: left;
 	margin: 0;
-	padding: 1px 5px 0;
+	padding: 2px 0 0 5px;
 }
 
 .repo-item.detail .views-field-body {
@@ -2263,7 +2274,25 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
+/* administrative metadata */
 
+.repo-item.detail .views-field-field-access-rights {
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-access-rights div.field-content {
+	display: inline;
+}
+
+.repo-item.detail .views-field-field-rights-holder {
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-rights-holder div.field-content {
+	display: inline;
+}
 
 /* @end */
 
