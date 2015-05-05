@@ -2068,7 +2068,7 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.available-formats .views-field-field-accrual-method {
+.repo-item.available-formats .views-field-field-accrual-method div.field-content {
 	display: inline;
 }
 
