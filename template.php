@@ -224,14 +224,33 @@ function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
  */
 function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	global $user;
+	$nid = $variables['nid'];
   //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
   $roles_allowed = array('site editor', 'site manager', 'contributor', 'administrator');
   $display = array_intersect($roles_allowed, $user->roles) ? "embed_4" : "embed_5";
-  
+  $node = node_load($nid);
+	
+	
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
   $variables['view_download_files'] = 
-    views_embed_view("field_collection_view_repo_files", $display, $variables['nid']) . 
-    views_embed_view("field_collection_view_commercially_available", $display, $variables['nid']);
+    views_embed_view("field_collection_view_repo_files", $display, $nid) . 
+    views_embed_view("field_collection_view_commercially_available", $display, $nid) . 
+    '<h3>NEW VIEW TO BE THEMED</h3>' . 
+    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
+    //views_embed_view("repository_item_detail_page_embedded", "embed_3", $nid) . 
+		//views_embed_view("field_collection_repository_details", "embed_1", $nid) .
+	  //views_embed_view("repository_item_detail_page_embedded", "embed_2", $nid) . 
+		theme('html_tag', array(
+			'element' => array(
+			  '#tag' => 'h2',
+			  '#attributes' => array(
+			    'class' => 'activities-sidbar',
+			    ),
+			  '#value' => t('MARC XML Data'),
+			),
+		)) .
+    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) . 
+      '<h3>END NEW VIEW</h3>';
 }
 
 // */
