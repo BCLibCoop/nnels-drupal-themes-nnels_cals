@@ -230,7 +230,6 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   $display = array_intersect($roles_allowed, $user->roles) ? "embed_4" : "embed_5";
   $node = node_load($nid);
 	
-	
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
   $variables['view_download_files'] = 
     views_embed_view("field_collection_view_repo_files", $display, $nid) . 
