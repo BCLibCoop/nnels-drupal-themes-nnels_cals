@@ -9,13 +9,17 @@ html {
 	width: 100%;
 }
 
-/** Headings **/
+/** General Formatting **/
 h1.title {
 	padding: 0.5rem 0.5rem 0.5rem 0.2rem;
 }
 h2 {
 	font-size: 1.5rem;
 	line-height: 1.5rem;
+}
+
+p + p {
+	margin-top: 1rem;
 }
 
 /*** Header ***/
@@ -67,12 +71,17 @@ h2 {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
+	text-align: center;
 }
 
 /*** Navigation ***/
 #navigation {
 	width: 100%;
 	height: auto;
+}
+
+#menu-link {
+	display: none;
 }
 
 .main-navigation,
@@ -89,9 +98,47 @@ h2 {
 	background-color: #DDD;
 }
 
+/*** Search Area ***/
+.views-exposed-form .views-exposed-widget {
+	float: none;
+	display: inline-block;
+}
+.views-exposed-form .views-exposed-widget.views-submit-button {
+	float: none;
+	display: inline-block;
+	padding: 0;
+	margin-left: 0.3rem
+}
+
 /*** Content ***/
 #content {
 	padding: 1%;
+}
+
+/* Main area */
+.sidebar-first #content {
+	width: 80%;
+	float: right;
+	margin: 0;
+	padding: 1.5rem 2rem;
+}
+
+/* sidebar */
+.sidebars {
+	width: 20%;
+}
+.sidebar-first .region-sidebar-first,
+.spacer-block, 
+.secondary-navigation {
+	max-width: 100%;
+}
+
+/* General views */
+.block-content,
+.views-exposed-form .views-exposed-widget,
+.form-item,
+.form-text {
+	max-width: 100%;
 }
 
 /*** Footer ***/
@@ -116,6 +163,33 @@ h2 {
 	width: 100%;
 }
 
+/*** Sign Up Form specific ***/
+#edit-captcha-response {
+	width: 100%;
+	max-width: 25rem;
+}
+
+/*** Forum specific ***/
+.page-forum ul.action-links a {
+	width: 4rem;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/*** Title searches/pages specific ***/
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li {
+	float: none;
+}
+span.daisy-icon-login {
+	height: auto;
+}
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content a,
+.repo-item.available-formats .views-field-field-s3-file-upload .field-content a {
+	padding-top: 0;
+	height: auto;
+}
+
 /*** Front page specific ***/
 
 .front #search {
@@ -124,7 +198,7 @@ h2 {
 	padding: 1%;
 	margin: 1%;
 }
-.search-repository .views-widget-filter-search_api_views_fulltext_2 {
+.front .search-repository .views-widget-filter-search_api_views_fulltext_2 {
 	width: 70%;
 	float: none;
 	display: inline-block;
@@ -132,6 +206,18 @@ h2 {
 
 .front .search-repository #edit-search-api-views-fulltext-2 {
 	width: 100%;
+}
+
+.front .views-exposed-form .views-exposed-widget.views-submit-button {
+	width: auto;
+	float: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+.front .views-exposed-form label {
+	font-size: 1.2rem;
+	line-height: 1.3rem;
 }
 
 .front #content {
@@ -157,20 +243,6 @@ h2 {
 .most-downloaded .view-list-ul li {
 	min-width: 250px;
 	background-color: #F0F0F0;
-}
-
-/*** Forms ***/
-/* "Search" button on front page, is it where else? */
-.views-exposed-form .views-exposed-widget.views-submit-button {
-	width: auto;
-	float: none;
-	display: inline-block;
-	padding: 5px;
-}
-
-.views-exposed-form label {
-	font-size: 1.2rem;
-	line-height: 1.3rem;
 }
 
 /*** Maximum width of 900 pixels. ***/
@@ -214,8 +286,46 @@ h2 {
   	font-size: 1rem;
   	line-height: 1rem;
   }
-
-  /** do something with the menu **/
+/** NEED TO CHANGE HTML so that inside menu-block-wrapper div <a id="menu-link" href="#footer">Menu</a> **/
+  /*** Menu ***/
+	.main-navigation ul.menu {
+		display: none;
+	}
+	#menu-link {
+		background: none repeat scroll 0% 0% #DDD;
+		border-width: 1px 1px 0px;
+  	border-style: solid;
+  	border-color: #369;
+		margin-top: 1.5rem;
+		padding: 0.7rem 1.2rem;
+		font-size: 1.5rem;
+		font-family: "clear_sans_mediumregular";
+		width: auto;
+		display: inline-block;
+	}
+	#menu-link:hover,
+	#menu-link:focus,
+	#menu-link:active {
+		background: none repeat scroll 0% 0% #EEE;
+	}
+	#menu-link:hover,
+	#menu-link:focus {
+		color: #C60;
+	}
+	
+	/*** Content ***/
+	.sidebar-first #content {
+		width: 100%;
+	}
+	.sidebars {
+		width: auto;
+		max-width: 100%;
+	}
+	.sidebar-first .region-sidebar-first {
+		float: none;
+		width: auto;
+		max-width: 100%;
+	}
 }
 
 /*** Maximum width of 725 pixels. ***/
@@ -252,8 +362,11 @@ h2 {
 		float: none;
 		margin: 0.4rem 0.6rem;
 	}
-
-	/** do something with the menu **/
+	
+	/** Forum Specific ***/
+	#forum .last-reply {
+		display: none;
+	}
 }
 
 /*** Maximum width of 540 pixels. ***/
@@ -269,6 +382,11 @@ h2 {
 	.header-logo h2.site-subtitle {
 		display: none;
 	}
+	/*** Search Area ***/
+	.views-exposed-form .views-exposed-widget .form-text {
+		max-width: 95%;
+	}
+
 	/*** Footer ***/
 	.footer-navigation {
 		float: none;
