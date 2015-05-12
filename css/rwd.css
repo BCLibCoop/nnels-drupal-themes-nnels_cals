@@ -36,6 +36,7 @@ p + p {
 .header-logo {
 	max-width: 75%;
 	height: auto;
+	background: none;
 }
 
 /** NEED TO CHANGE HTML so that inside the a tag it's img with a link to image alt text NNELS logo **/
@@ -58,7 +59,8 @@ p + p {
 }
 
 .language-switcher a,
-.region-header .block-calsauthen a {
+.region-header .block-calsauthen a,
+.user-logged-in a {
 	background-color: #DDD;
 }
 
@@ -67,11 +69,18 @@ p + p {
 	margin: 0;
 }
 
+.user-logged-in,
 .region-header .block-calsauthen {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
 	text-align: center;
+}
+
+.user-logged-in .username.span {
+	display: inline-block;
+	margin-right: 1rem;
+	vertical-align: middle;
 }
 
 /*** Navigation ***/
@@ -139,6 +148,26 @@ p + p {
 .form-item,
 .form-text {
 	max-width: 100%;
+}
+
+/* Search page */
+.facet-search {
+	max-width: 100%;
+	clear: left;
+}
+.request-title-block {
+	max-width: 100%;
+	clear: left;
+}
+
+/* discussion group block when logged in page */
+.discussion-groups,
+.discussion-groups ul,
+.discussion-groups ul li {
+	max-width: 100%;
+}
+.discussion-groups {
+	clear: left;
 }
 
 /*** Footer ***/
@@ -355,9 +384,12 @@ span.daisy-icon-login {
 	.language-switcher a {
 		margin: 0.1rem 0.6rem 0.3rem 0.6rem;
 	}
+	.user-logged-in,
 	.region-header .block-calsauthen {
 		position: static;
 	}
+	.user-logged-in a, 
+	.user-logged-in .username.span,
 	.region-header .block-calsauthen a {
 		float: none;
 		margin: 0.4rem 0.6rem;
@@ -386,7 +418,7 @@ span.daisy-icon-login {
 	.views-exposed-form .views-exposed-widget .form-text {
 		max-width: 95%;
 	}
-
+	
 	/*** Footer ***/
 	.footer-navigation {
 		float: none;
@@ -395,5 +427,14 @@ span.daisy-icon-login {
 		float: none;
 		width: 90%;
 		margin: 2rem 0.5rem;
+	}
+}
+
+/*** Maximum width of 385 pixels. ***/
+@media screen and (max-width: 24rem) {
+	 title details view 
+	.repo-item.available-formats .views-field-field-s3-file-upload,
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, .repo-item.available-formats .views-field-field-s3-file-upload .daisy3, .repo-item.available-formats .views-field-field-s3-file-upload .mp3, .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf, .repo-item.available-formats .views-field-field-s3-file-upload .e-text, .repo-item.available-formats .views-field-field-s3-file-upload .epub2, .repo-item.available-formats .views-field-field-s3-file-upload .epub3, .repo-item.available-formats .views-field-field-s3-file-upload .braille {
+		height: auto;
 	}
 }
