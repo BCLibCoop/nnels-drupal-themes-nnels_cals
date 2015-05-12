@@ -99,6 +99,7 @@
 	background-color: #EEEEEE;
 }
 
+.region-header .block-cals-forms,
 .region-header .block-calsauthen {
 	/*background-color: pink;*/
 	/*display: block;*/
@@ -107,6 +108,7 @@
 	padding: 0;
 }
 
+.region-header .block-cals-forms a,
 .region-header .block-calsauthen a {
 	/*background-color: gold;*/
 	display: block;
@@ -118,6 +120,7 @@
 	border: 1px solid #336699;
 }
 
+.region-header .block-cals-forms a:hover,
 .region-header .block-calsauthen a:hover {
 	/*color: #EC1C24;
 	background-color: #BBBBBB;*/
@@ -125,6 +128,7 @@
 	background-color: #EEEEEE;
 }
 
+.block.block-cals-forms.detail-library-registration .block-content,
 .block.block-calsauthen.detail-library-registration .block-content {
 	display: inline-block;
 	margin-top: 1em;
