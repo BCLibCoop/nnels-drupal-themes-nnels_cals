@@ -1922,6 +1922,8 @@ span.daisy-icon-login {
 	/*background-color: fuchsia;*/
 }
 
+/* @group repo-item - available-formats */
+
 .repo-item.available-formats {
 	/*background-color: limegreen;*/
 	float: left;
@@ -1929,8 +1931,6 @@ span.daisy-icon-login {
 	margin: 0 0 5px;
 	padding: 0;
 }
-
-/* @group repo-item - available-formats */
 
 .repo-item.available-formats .view-content {
 	/*background-color: pink;*/
@@ -2132,6 +2132,160 @@ span.daisy-icon-login {
 	padding: 0;
 }
 
+/* @group repo-item - commercially available data */
+
+.repo-item.comercially-available {
+	/*background-color: violet;*/
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item.comercially-available .view-content {
+	/*background-color: pink;*/
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item.comercially-available .view-header .description {
+	/*background-color: teal;*/
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .view-header {
+	/*background-color: beige;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .view-list-ul {
+	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.comercially-available .views-row {
+	/*background-color: salmon;*/
+	float: left;
+	width: 98%;
+	margin: 5px;
+	padding: 5px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.comercially-available .views-field-nothing,
+.repo-item.comercially-available .views-field-nothing-1 {
+	/*background-color: lawngreen;*/
+	float: right;
+	/*width: 10%;*/
+	height: 40px;
+	margin: 0;
+	padding: 5px;
+	text-align: center;
+}
+
+.repo-item.comercially-available .views-field-nothing a,
+.repo-item.comercially-available .views-field-nothing-1 a {
+	/*background-color: palegoldenrod;*/
+	display: block;
+	margin: 0;
+	padding: 3px 10px;
+	color: #333333;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.repo-item.comercially-available .views-field-nothing a:hover,
+.repo-item.comercially-available .views-field-nothing-1 a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+.repo-item.comercially-available .views-field-item-id {
+	/*background-color: cadetblue;*/
+	float: left;
+	width: 60%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .views-field-field-file-format-1 {
+	/*background-color: sandybrown;*/
+	float: left;
+	width: 60%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .views-field-field-url-external,
+.repo-item.comercially-available .views-field-field-url-external-1 {
+	/*background-color: violet;*/
+	float: left;
+	width: 60%;
+	margin: 0;
+	padding: 5px 5px 5px 10px;
+}
+
+.repo-item.comercially-available .view-footer {
+	/*background-color: lightblue;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px 20px 5px 5px;
+}
+
+.repo-item.comercially-available.public .view-footer {
+	/*background-color: lightblue;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px 20px 5px 5px;
+}
+
+.repo-item.comercially-available .view-footer .description {
+	/*background-color: teal;*/
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .view-footer .add-new-link {
+	/*background-color: khaki;*/
+	float: right;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.comercially-available .view-footer .add-new-link a {
+	/*background-color: palegoldenrod;*/
+	margin: 0;
+	padding: 3px 10px;
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.repo-item.comercially-available .view-footer .add-new-link a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+
+
+/* @end */
+
+/* @group repo-item - detail */
+
 .repo-item.detail {
 	/*background-color: orangered;*/
 	float: left;
@@ -2140,11 +2294,44 @@ span.daisy-icon-login {
 	padding: 0;
 }
 
-/* @group repo-item - detail */
+.repo-item.detail .view-content {
+	/*background-color: pink;*/
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item.detail .view-header {
+	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
 
 .repo-item.detail .views-label {
  	/*background-color: fuchsia;*/ 
 	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
+}
+
+.repo-item.detail .view-list-ul {
+	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.detail .views-row {
+	/*background-color: salmon;*/
+	float: left;
+	width: 98%;
+	margin: 5px;
+	padding: 5px;
+	list-style-type: none;
+	list-style-image: none;
 }
 
 .repo-item.detail .views-field-field-dc-creator {
@@ -2215,7 +2402,13 @@ span.daisy-icon-login {
 }
 
 .repo-item.detail .views-field-body {
-	/*background-color: salmon;*/
+	/*background-color: sandybrown;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-subject {
+	/*background-color: firebrick;*/
 	margin: 0 0 5px;
 	padding: 5px;
 }
@@ -2226,23 +2419,23 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.detail .views-field-field-dc-subject {
- 	/*background-color: yellowgreen;*/ 
+/*.repo-item.detail .views-field-field-dc-subject {
+ 	background-color: yellowgreen; 
 	margin: 0 0 5px;
 	padding: 5px;
 	overflow: hidden;
-}
+}*/
 
-.repo-item.detail .views-field-field-dc-subject .item-list ul {
- 	/*background-color: mediumaquamarine;*/ 
+/*.repo-item.detail .views-field-field-dc-subject .item-list ul {
+ 	background-color: mediumaquamarine; 
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
-}
+}*/
 
-.repo-item.detail .views-field-field-dc-subject .item-list ul li {
- 	/*background-color: tomato;*/ 
+/*.repo-item.detail .views-field-field-dc-subject .item-list ul li {
+ 	background-color: tomato; 
 	float: left;
 	margin: 0;
 	padding: 0 10px;
@@ -2250,11 +2443,11 @@ span.daisy-icon-login {
 	list-style-image: none;
 	border-left: 1px solid #336699;
 	line-height: 16px;
-}
+}*/
 
-.repo-item.detail .views-field-field-dc-subject .item-list ul li.views-row-first {
+/*.repo-item.detail .views-field-field-dc-subject .item-list ul li.views-row-first {
 	border-left: 0px solid #336699;
-}
+}*/
 
 .repo-item.detail .views-field-field-publisher {
 	/*background-color: khaki;*/
@@ -2262,75 +2455,120 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.detail .views-field-field-iso-language {
-	/*background-color: khaki;*/
-	margin: 0 0 5px;
-	padding: 5px;
-}
-
-.repo-item.detail .views-field-field-uri .field-content {
+.repo-item.detail .views-field-field-uri {
 	/*background-color: olive;*/
 	margin: 0;
 	padding: 5px;
 }
 
-/* administrative metadata */
-
-.repo-item.detail .views-field-field-access-rights {
+.repo-item.detail .views-field-field-iso-language {
+	/*background-color: hotpink;*/
 	margin: 0 0 5px;
 	padding: 5px;
 }
 
-.repo-item.detail .views-field-field-access-rights div.field-content {
-	display: inline;
-}
+/* @group administrative metadata */
 
-.repo-item.detail .views-field-field-rights-holder {
+/*.repo-item.detail .views-field-field-access-rights {
 	margin: 0 0 5px;
 	padding: 5px;
-}
+}*/
 
-.repo-item.detail .views-field-field-rights-holder div.field-content {
+/*.repo-item.detail .views-field-field-access-rights div.field-content {
 	display: inline;
-}
+}*/
+
+/*.repo-item.detail .views-field-field-rights-holder {
+	margin: 0 0 5px;
+	padding: 5px;
+}*/
+
+/*.repo-item.detail .views-field-field-rights-holder div.field-content {
+	display: inline;
+}*/
+
+
 
 /* @end */
 
-.marc-xml-data-block {
- 	/*background-color: olive;*/
+/* @end */
+
+/*.marc-xml-data-block {
+ 	background-color: olive;
 	float: left;
 	width: 100%;
 	margin: 0;
 	padding: 0;
  	background-color: #CCCCCC;
-}
+}*/
 
-/* @group repo-item - data */
+/* @group repo-item - XML data */
 
-.marc-xml-data-block h2.block-title {
-	/*background-color: limegreen;*/
-	margin: 0 0 5px;
+/*h2.marc-xml-data.block-title {
+	background: lime;
+	float: left;
+	width: 100%;
+	margin: 0;
 	padding: 10px;
 	border-bottom: 1px solid #336699;
-}
+	background: #CCCCCC
+}*/
 
 .repo-item.marc-xml {
- 	/*background-color: forestgreen;*/
+ 	/*background: forestgreen;*/
+	float: left;
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+ 	background: #CCCCCC;
+}
+
+.repo-item.marc-xml .view-content {
+	/*background-color: pink;*/
+	width: 100%;
+	margin: 0 0 5px;
+	padding: 0;
+}
+
+.repo-item.marc-xml .view-header {
+	/*background-color: pink;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.marc-xml .view-list-ul {
+ 	/*background-color: orange;*/
+	margin: 0;
+	padding: 5px 10px 5px 20px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.repo-item.marc-xml .views-row {
+ 	/*background-color: palegreen;*/
+	width: 100%;
 	height: 200px;
-	margin: 0 5px;
-	padding: 0 10px;
-	color: #000000;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
 	font: 14px/18px "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+	color: #333333;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	border-top: 10px solid #CCCCCC;
+	/*border-top: 10px solid orange;*/
 	border-bottom: 10px solid #CCCCCC;
- 	background-color: #CCCCCC;
+	/*border-bottom: 10px solid pink;*/
 }
 
 
 
 /* @end */
+
+/* @group audit-trail - data */
 
 .audit-trail-block {
  	/*background-color: pink;*/
@@ -2339,8 +2577,6 @@ span.daisy-icon-login {
 	margin: 0;
 	padding: 0;
 }
-
-/* @group audit-trail - data */
 
 .audit-trail-block h2.block-title {
 	/*background-color: limegreen;*/
