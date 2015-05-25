@@ -19,9 +19,9 @@
 .language-switcher {
 	/*background-color: orange;*/
 	float: right;
-	width: 210px;
-	margin: 0 0 85px;
 	padding: 0;
+	width: auto;
+	margin: 0;
 }
 
 .language-switcher ul.language-switcher-locale-url {
@@ -58,7 +58,7 @@
 	margin: 0 10px 0 0;
 	padding: 5px 10px;
 	color: #333333;
-	background: #D0D0D0;
+	background-color: #DDD;
 	border: 1px solid #336699;
 }
 
@@ -68,6 +68,12 @@
 	background: #EEEEEE;
 }
 
+@media screen and (max-width: 37.8rem) {
+	.language-switcher a {
+		margin: 0.1rem 0.6rem 0.3rem 0.6rem;
+	}
+}
+
 /* @end */
 
 /* @group main-navigation */
@@ -75,7 +81,6 @@
 .main-navigation {
 	/*background-color: fuchsia;*/
 	display: block;
-	float: left;
 	margin: 0;
 	padding: 0 0 0 10px;
 }
@@ -83,7 +88,6 @@
 .main-navigation ul.menu {
 	/*background-color: palegreen;*/
 	display: block;
-	float: left;
 	margin: 0;
 	padding: 8px 0 0;
 	list-style-type: none;
@@ -92,7 +96,7 @@
 
 .main-navigation ul.menu li {
 	/*background-color: rosybrown;*/
-	float: left;
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -107,14 +111,10 @@
 	font-size: 16px;
 	line-height: 16px;
 	color: #333333;
-	background: #D0D0D0;
+	background: #DDD;
 	border: 1px solid #336699;
 	border-bottom: 0px solid #336699;
 }
-
-/*.main-navigation ul.menu li.last a {
-	border-right: 0px solid #336699;
-}*/
 
 .main-navigation a.active {
 	color: #CC6600;
@@ -131,7 +131,11 @@
 	background: #EEEEEE;
 }
 
-
+@media screen and (max-width: 51.25rem) {
+	.main-navigation ul.menu {
+		display: none;
+	}
+}
 /* @end */
 
 /* @group secondary-navigation */
@@ -253,7 +257,8 @@
 .footer-navigation {
 	/*background-color: forestgreen;*/
 	float: left;
-	width: 600px;
+	min-width: 200px;
+	width: auto;
 }
 
 .footer-navigation ul.menu {
@@ -288,6 +293,14 @@
 	color: #CC6600;
 }
 
+/*** Maximum width of 540 pixels. ***/
+@media screen and (max-width: 34rem) {
+	.footer-navigation {
+		float: none;
+	}
+}
+
+
 /* @end */
 
 /* @group footer-copyright */
@@ -296,7 +309,7 @@
 	/*background-color: gold;*/
 	clear: both;
 	float: left;
-	width: 980px;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -379,6 +392,14 @@
 	padding: 0px;
 	border: 1px solid #336699;
 }
+
+/*** Maximum width of 540 pixels. ***/
+@media screen and (max-width: 34rem) {
+	#admin-menu {
+		display: none;
+	}
+}
+
 
 /* @group Superfish */
 

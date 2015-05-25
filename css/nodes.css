@@ -25,11 +25,6 @@ div.field-name-body h2:first-child {
 
 /* @group front */
 
-.front #page-title {
-	/*background-color: teal;*/
-	float: left;
-}
-
 .front .node-page {
 	/*background-color: orangered;*/
 	float: left;

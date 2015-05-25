@@ -91,12 +91,6 @@
 	/*background-color: firebrick;*/
 }
 
-/*#forum .title span.submitted {
-	margin: 0;
-	padding: 0 0 0 5px;
-	background-color: firebrick;
-}*/
-
 #forum span.submitted a {
 	/*background-color: forestgreen;*/
 }
@@ -105,6 +99,12 @@
     content: '\A';
     white-space: pre;
 	/*background-color: fuchsia;*/
+}
+
+@media screen and (max-width: 37.8rem) {
+	#forum .last-reply {
+		display: none;
+	}
 }
 
 /* @end */
@@ -140,13 +140,15 @@
 
 .page-forum ul.action-links a {
 	display: block;
-	margin: 0;
 	padding: 5px 10px;
 	text-decoration: none;
 	color: #333333;
 	border: 1px solid #336699;
 	background: #D0D0D0;
 	text-align: center;
+	width: 4rem;
+	max-width: 100%;
+	margin: 0 auto;
 }
 
 .page-forum ul.action-links a:hover,

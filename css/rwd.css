@@ -1,14 +1,14 @@
-/* Rewrites to make site responsive */
+/*** General rewrites to make site responsive, many rewrites in theme specific files */
 html {
 	font-size: 100%;
 	line-height: 1.2rem;
 }
-
+/*
 #page {
 	max-width: 1200px;
 	width: 100%;
 }
-
+*/
 /** General Formatting **/
 h1.title {
 	padding: 0.5rem 0.5rem 0.5rem 0.2rem;
@@ -22,8 +22,10 @@ p + p {
 	margin-top: 1rem;
 }
 
+/*** commented out styles to be removed after testing ***/
+
 /*** Header ***/
-#header, #header .region-header {
+/*#header, #header .region-header {
 	width: 100%;
 	height: auto;
 }
@@ -39,7 +41,6 @@ p + p {
 	background: none;
 }
 
-/** NEED TO CHANGE HTML so that inside the a tag it's img with a link to image alt text NNELS logo **/
 .header-logo a.home-link {
 	width: auto;
 	height: auto;
@@ -81,15 +82,19 @@ p + p {
 	display: inline-block;
 	margin-right: 1rem;
 	vertical-align: middle;
-}
+}*/
 
 /*** Navigation ***/
-#navigation {
+/*#navigation {
 	width: 100%;
 	height: auto;
 }
 
-#menu-link {
+#navigation p {
+	margin: 0;
+}
+
+#mobile-menu-link {
 	display: none;
 }
 
@@ -105,10 +110,10 @@ p + p {
 
 .main-navigation a {
 	background-color: #DDD;
-}
+}*/
 
 /*** Search Area ***/
-.views-exposed-form .views-exposed-widget {
+/*.views-exposed-form .views-exposed-widget {
 	float: none;
 	display: inline-block;
 }
@@ -117,61 +122,61 @@ p + p {
 	display: inline-block;
 	padding: 0;
 	margin-left: 0.3rem
-}
+}*/
 
 /*** Content ***/
-#content {
+/*#content {
 	padding: 1%;
-}
+}*/
 
 /* Main area */
-.sidebar-first #content {
+/*.sidebar-first #content {
 	width: 80%;
 	float: right;
 	margin: 0;
 	padding: 1.5rem 2rem;
-}
+}*/
 
 /* sidebar */
-.sidebars {
+/*.sidebars {
 	width: 20%;
 }
 .sidebar-first .region-sidebar-first,
 .spacer-block, 
 .secondary-navigation {
 	max-width: 100%;
-}
+}*/
 
 /* General views */
-.block-content,
+/*.block-content,
 .views-exposed-form .views-exposed-widget,
 .form-item,
 .form-text {
 	max-width: 100%;
-}
+}*/
 
 /* Search page */
-.facet-search {
+/*.facet-search {
 	max-width: 100%;
 	clear: left;
 }
 .request-title-block {
 	max-width: 100%;
 	clear: left;
-}
+}*/
 
 /* discussion group block when logged in page */
-.discussion-groups,
+/*.discussion-groups,
 .discussion-groups ul,
 .discussion-groups ul li {
 	max-width: 100%;
 }
 .discussion-groups {
 	clear: left;
-}
+}*/
 
 /*** Footer ***/
-#footer {
+/*#footer {
 	background-color: #DDD;
 	width: 100%;
 }
@@ -190,23 +195,23 @@ p + p {
 }
 .footer-navigation-copyright {
 	width: 100%;
-}
+}*/
 
 /*** Sign Up Form specific ***/
-#edit-captcha-response {
+/*#edit-captcha-response {
 	width: 100%;
 	max-width: 25rem;
-}
+}*/
 
 /*** Forum specific ***/
-.page-forum ul.action-links a {
+/*.page-forum ul.action-links a {
 	width: 4rem;
 	max-width: 100%;
 	margin: 0 auto;
-}
+}*/
 
 /*** Title searches/pages specific ***/
-.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content,
+/*.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li {
 	float: none;
 }
@@ -217,10 +222,10 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload .field-content a {
 	padding-top: 0;
 	height: auto;
-}
+}*/
 
 /*** Front page specific ***/
-
+/*
 .front #search {
 	background-color: #DDD;
 	width: 45%;
@@ -248,7 +253,6 @@ span.daisy-icon-login {
 	font-size: 1.2rem;
 	line-height: 1.3rem;
 }
-
 .front #content {
 	width: 52%;
 }
@@ -273,20 +277,21 @@ span.daisy-icon-login {
 	min-width: 250px;
 	background-color: #F0F0F0;
 }
+*/
 
 /*** Maximum width of 900 pixels. ***/
 @media screen and (max-width: 56.7rem) {
 
-  /*** Header ***/
+  /*** Header 
   .header-logo h1.site-title {
   	margin: 5px;
   }
   .header-logo a.home-link {
   	width: 25%;
   	margin: .1rem .2rem;
-  }
+  }***/
 
-  /*** Front page specific ***/
+  /*** Front page specific 
   .recently-added .view-list-ul li,
   .most-downloaded .view-list-ul li {
   	min-height: 50px;
@@ -297,13 +302,13 @@ span.daisy-icon-login {
   .recently-added .views-field-body,
   .most-downloaded .views-field-body {
   	padding: 0;
-  }
+  }***/
 
 }
 
 /*** Maximum width of 820 pixels. ***/
-@media screen and (max-width: 56.7rem) {
-  /*** Header ***/
+@media screen and (max-width: 51.25rem) {
+  /*** Header 
   .header-logo a.home-link {
   	width: 20%;
   }
@@ -314,35 +319,35 @@ span.daisy-icon-login {
   .header-logo h2.site-subtitle {
   	font-size: 1rem;
   	line-height: 1rem;
-  }
-/** NEED TO CHANGE HTML so that inside menu-block-wrapper div <a id="menu-link" href="#footer">Menu</a> **/
-  /*** Menu ***/
+  }***/
+
+  /*** Menu 
 	.main-navigation ul.menu {
 		display: none;
 	}
-	#menu-link {
+	#mobile-menu-link {
 		background: none repeat scroll 0% 0% #DDD;
 		border-width: 1px 1px 0px;
-  	border-style: solid;
-  	border-color: #369;
-		margin-top: 1.5rem;
+  		border-style: solid;
+  		border-color: #369;
+		margin: 1.5rem 0.35em 0;
 		padding: 0.7rem 1.2rem;
 		font-size: 1.5rem;
 		font-family: "clear_sans_mediumregular";
 		width: auto;
 		display: inline-block;
 	}
-	#menu-link:hover,
-	#menu-link:focus,
-	#menu-link:active {
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus,
+	#mobile-menu-link:active {
 		background: none repeat scroll 0% 0% #EEE;
 	}
-	#menu-link:hover,
-	#menu-link:focus {
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus {
 		color: #C60;
-	}
+	}***/
 	
-	/*** Content ***/
+	/*** Content 
 	.sidebar-first #content {
 		width: 100%;
 	}
@@ -354,12 +359,12 @@ span.daisy-icon-login {
 		float: none;
 		width: auto;
 		max-width: 100%;
-	}
+	}***/
 }
 
 /*** Maximum width of 725 pixels. ***/
 @media screen and (max-width: 45.675rem) {
-  /*** Header ***/
+  /*** Header 
 	.header-logo a.home-link {
 		display: none;
 	}
@@ -370,17 +375,17 @@ span.daisy-icon-login {
   .header-logo h2.site-subtitle {
   	font-size: 1.1rem;
   	line-height: 1.2rem;
-  }
-  /*** Front page specific ***/
+  }***/
+  /*** Front page specific 
 	.front #search,
 	.front #content {
 		width: 95%;
-	}
+	}***/
 }
 
 /*** Maximum width of 600 pixels. ***/
 @media screen and (max-width: 37.8rem) {
-    /*** Header ***/
+    /*** Header 
 	.language-switcher a {
 		margin: 0.1rem 0.6rem 0.3rem 0.6rem;
 	}
@@ -393,17 +398,17 @@ span.daisy-icon-login {
 	.region-header .block-calsauthen a {
 		float: none;
 		margin: 0.4rem 0.6rem;
-	}
+	}***/
 	
-	/** Forum Specific ***/
+	/** Forum Specific 
 	#forum .last-reply {
 		display: none;
-	}
+	}***/
 }
 
 /*** Maximum width of 540 pixels. ***/
 @media screen and (max-width: 34rem) {
-	/*** Header ***/
+	/*** Header 
 	.header-logo {
 		width: calc(95% - 105px);
 	}
@@ -414,12 +419,16 @@ span.daisy-icon-login {
 	.header-logo h2.site-subtitle {
 		display: none;
 	}
-	/*** Search Area ***/
+	#admin-menu {
+		display: none;
+	}***/
+
+	/*** Search Area 
 	.views-exposed-form .views-exposed-widget .form-text {
 		max-width: 95%;
-	}
+	}***/
 	
-	/*** Footer ***/
+	/*** Footer 
 	.footer-navigation {
 		float: none;
 	}
@@ -427,14 +436,13 @@ span.daisy-icon-login {
 		float: none;
 		width: 90%;
 		margin: 2rem 0.5rem;
-	}
+	}***/
 }
 
-/*** Maximum width of 385 pixels. ***/
+/*** Maximum width of 385 pixels. 
 @media screen and (max-width: 24rem) {
-	 title details view 
 	.repo-item.available-formats .views-field-field-s3-file-upload,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, .repo-item.available-formats .views-field-field-s3-file-upload .daisy3, .repo-item.available-formats .views-field-field-s3-file-upload .mp3, .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf, .repo-item.available-formats .views-field-field-s3-file-upload .e-text, .repo-item.available-formats .views-field-field-s3-file-upload .epub2, .repo-item.available-formats .views-field-field-s3-file-upload .epub3, .repo-item.available-formats .views-field-field-s3-file-upload .braille {
 		height: auto;
 	}
-}
+}***/
