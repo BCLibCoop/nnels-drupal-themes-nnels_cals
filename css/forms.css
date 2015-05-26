@@ -217,6 +217,10 @@ td.menu-disabled {
 	padding: 10px 10px 10px 15px;
 }
 
+.password-strength {
+	max-width: 100%;
+}
+
 .detail-library-registration #edit-captcha-response {
 	width: 100%;
 	max-width: 25rem;

@@ -216,16 +216,6 @@ body {
 	overflow: hidden;
 }
 
-.front #content {
-	width: 52%;
-}
-
-@media screen and (max-width: 45.675rem) {
-	.front #content {
-		width: 95%;
-	}
-}
-
 .region-content-bottom {
 	clear: both;
 	/*background-color: orange;*/
@@ -308,6 +298,15 @@ body {
 	width: 500px;
 }
 
+.front #content {
+	width: 52%;
+}
+
+@media screen and (max-width: 45.675rem) {
+	.front #content {
+		width: 95%;
+	}
+}
 
 
 /* @end */

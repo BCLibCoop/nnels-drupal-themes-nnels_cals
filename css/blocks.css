@@ -179,9 +179,11 @@
 
 /*** Maximum width of 600 pixels. ***/
 @media screen and (max-width: 37.8rem) {
+	.region-header .block-cals-forms,
 	.region-header .block-calsauthen {
 		position: static;
 	}
+	.region-header .block-cals-forms a,
 	.region-header .block-calsauthen a {
 		float: none;
 		margin: 0.4rem 0.6rem;
