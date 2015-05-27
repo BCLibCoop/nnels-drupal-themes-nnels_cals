@@ -195,6 +195,7 @@
 
 /* @group user-logged-in */
 
+#block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
 	float: right;
 	margin: 0;
