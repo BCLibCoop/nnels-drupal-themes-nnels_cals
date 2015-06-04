@@ -2053,7 +2053,8 @@ span.daisy-icon-login {
 
 /* @end */
 
-.repo-item.available-formats .views-field-field-running-time {
+.repo-item.available-formats .views-field-field-running-time,
+.repo-item.available-formats .views-field-field-availability-status  {
 	/*background-color: cadetblue;*/
 	float: left;
 	width: 100%;
