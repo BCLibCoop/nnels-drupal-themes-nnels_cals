@@ -2467,7 +2467,11 @@ span.daisy-icon-login {
 	margin: 0 0 5px;
 	padding: 5px;
 }
-
+.repo-item.detail .views-label-field-dc-relation {
+	/*background-color: hotpink;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
 /* @group administrative metadata */
 
 /*.repo-item.detail .views-field-field-access-rights {
