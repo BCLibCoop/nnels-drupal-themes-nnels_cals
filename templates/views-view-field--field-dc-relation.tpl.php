@@ -23,9 +23,7 @@
  */
 ?>
 <?php 
-	//dpm($row->field_field_dc_relation);
-	$data = $row->field_field_dc_relation->field_alias;
-	dpm($data);
+	//see: https://github.com/BCLibCoop/nnels/issues/89
   $output = '';
   $links = array();
   foreach($row->field_field_dc_relation as $value) {
