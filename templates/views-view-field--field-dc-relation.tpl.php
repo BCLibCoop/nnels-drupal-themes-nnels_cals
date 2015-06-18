@@ -30,8 +30,8 @@
   	$id = $value['raw']['value'];
     $item = $value['rendered']['entity']['field_collection_item'][$id];
     if($item['field_dc_relation_qualifiers']['#items'][0]['value'] == 'IsPartOf') {
-	    $title = $item['field_value_term_'][0]['#title'];
-	    $href = $item['field_value_term_'][0]['#href'];
+	    $title = $item['field_dc_relation_term_value'][0]['#title'];
+	    $href = $item['field_dc_relation_term_value'][0]['#href'];
 	    $links[] = l($title, $href);
     }
   }
