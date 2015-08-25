@@ -201,12 +201,17 @@
 	margin: 0;
 	padding: 0;
 	clear: right;
-	position: absolute !important;
 	right: 0px;
 	bottom: 0px;
 	text-align: center;
 }
 
+@media screen and (min-width: 37.8rem) {
+	#block-logintoboggan-logintoboggan-logged-in,
+	.user-logged-in {
+		position: absolute !important;
+	}
+}
 .user-logged-in a {
 	display: block;
 	float: left;
