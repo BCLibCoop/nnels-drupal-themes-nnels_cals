@@ -1,0 +1,451 @@
+/*** General rewrites to make site responsive, many rewrites in theme specific files */
+html {
+	font-size: 100%;
+	line-height: 1.2rem;
+}
+/*
+#page {
+	max-width: 1200px;
+	width: 100%;
+}
+*/
+/** General Formatting **/
+h1.title {
+	padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+}
+h2 {
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+}
+
+p + p {
+	margin-top: 1rem;
+}
+form {
+	max-width: 100%;
+}
+
+/*** commented out styles to be removed after testing ***/
+
+/*** Header ***/
+/*#header, #header .region-header {
+	width: 100%;
+	height: auto;
+}
+
+#header .region-header {
+	position: relative;
+	padding: 0.7rem 0.7rem 0;
+}
+
+.header-logo {
+	max-width: 75%;
+	height: auto;
+	background: none;
+}
+
+.header-logo a.home-link {
+	width: auto;
+	height: auto;
+	padding: 0;
+	overflow: unset;
+	max-width: 34%;
+}
+
+.header-logo h1.site-title {
+	font-size: 2.2rem;
+	line-height: 2.4rem;
+}
+
+.header-logo h2.site-subtitle {
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+}
+
+.language-switcher a,
+.region-header .block-calsauthen a,
+.user-logged-in a {
+	background-color: #DDD;
+}
+
+.language-switcher {
+	width: auto;
+	margin: 0;
+}
+
+.user-logged-in,
+.region-header .block-calsauthen {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+}
+
+.user-logged-in .username.span {
+	display: inline-block;
+	margin-right: 1rem;
+	vertical-align: middle;
+}*/
+
+/*** Navigation ***/
+/*#navigation {
+	width: 100%;
+	height: auto;
+}
+
+#navigation p {
+	margin: 0;
+}
+
+#mobile-menu-link {
+	display: none;
+}
+
+.main-navigation,
+.main-navigation ul.menu,
+.main-navigation ul.menu li {
+	float: none;
+}
+
+.main-navigation ul.menu li {
+	display: inline-block;
+}
+
+.main-navigation a {
+	background-color: #DDD;
+}*/
+
+/*** Search Area ***/
+/*.views-exposed-form .views-exposed-widget {
+	float: none;
+	display: inline-block;
+}
+.views-exposed-form .views-exposed-widget.views-submit-button {
+	float: none;
+	display: inline-block;
+	padding: 0;
+	margin-left: 0.3rem
+}*/
+
+/*** Content ***/
+/*#content {
+	padding: 1%;
+}*/
+
+/* Main area */
+/*.sidebar-first #content {
+	width: 80%;
+	float: right;
+	margin: 0;
+	padding: 1.5rem 2rem;
+}*/
+
+/* sidebar */
+/*.sidebars {
+	width: 20%;
+}
+.sidebar-first .region-sidebar-first,
+.spacer-block, 
+.secondary-navigation {
+	max-width: 100%;
+}*/
+
+/* General views */
+/*.block-content,
+.views-exposed-form .views-exposed-widget,
+.form-item,
+.form-text {
+	max-width: 100%;
+}*/
+
+/* Search page */
+/*.facet-search {
+	max-width: 100%;
+	clear: left;
+}
+.request-title-block {
+	max-width: 100%;
+	clear: left;
+}*/
+
+/* discussion group block when logged in page */
+/*.discussion-groups,
+.discussion-groups ul,
+.discussion-groups ul li {
+	max-width: 100%;
+}
+.discussion-groups {
+	clear: left;
+}*/
+
+/*** Footer ***/
+/*#footer {
+	background-color: #DDD;
+	width: 100%;
+}
+.footer-navigation {
+	min-width: 200px;
+	width: auto;
+}
+
+#block-block-2 {
+	background: none;
+	border: none;
+	width: 30%;
+	min-width: 300px;
+	vertical-align: top;
+	padding: 0;
+}
+.footer-navigation-copyright {
+	width: 100%;
+}*/
+
+/*** Sign Up Form specific ***/
+/*#edit-captcha-response {
+	width: 100%;
+	max-width: 25rem;
+}*/
+
+/*** Forum specific ***/
+/*.page-forum ul.action-links a {
+	width: 4rem;
+	max-width: 100%;
+	margin: 0 auto;
+}*/
+
+/*** Title searches/pages specific ***/
+/*.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li {
+	float: none;
+}
+span.daisy-icon-login {
+	height: auto;
+}
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content a,
+.repo-item.available-formats .views-field-field-s3-file-upload .field-content a {
+	padding-top: 0;
+	height: auto;
+}*/
+
+/*** Front page specific ***/
+/*
+.front #search {
+	background-color: #DDD;
+	width: 45%;
+	padding: 1%;
+	margin: 1%;
+}
+.front .search-repository .views-widget-filter-search_api_views_fulltext_2 {
+	width: 70%;
+	float: none;
+	display: inline-block;
+}
+
+.front .search-repository #edit-search-api-views-fulltext-2 {
+	width: 100%;
+}
+
+.front .views-exposed-form .views-exposed-widget.views-submit-button {
+	width: auto;
+	float: none;
+	display: inline-block;
+	padding: 5px;
+}
+
+.front .views-exposed-form label {
+	font-size: 1.2rem;
+	line-height: 1.3rem;
+}
+.front #content {
+	width: 52%;
+}
+.front #page-title {
+	float: none;
+}
+
+.most-downloaded-block.front,
+.recently-added-block.front {
+	background: none;
+	border: none;
+}
+.recently-added .view-title,
+.most-downloaded-block.front .block-title {
+	font-size: 1.3rem;
+	line-height: 1.4rem;
+	margin: 0 0 0.2rem;
+}
+
+.recently-added .view-list-ul li,
+.most-downloaded .view-list-ul li {
+	min-width: 250px;
+	background-color: #F0F0F0;
+}
+*/
+
+/*** Maximum width of 900 pixels. ***/
+@media screen and (max-width: 56.7rem) {
+
+  /*** Header 
+  .header-logo h1.site-title {
+  	margin: 5px;
+  }
+  .header-logo a.home-link {
+  	width: 25%;
+  	margin: .1rem .2rem;
+  }***/
+
+  /*** Front page specific 
+  .recently-added .view-list-ul li,
+  .most-downloaded .view-list-ul li {
+  	min-height: 50px;
+  	height: auto;
+  	width: 100%;
+  	padding: .1rem;
+  }
+  .recently-added .views-field-body,
+  .most-downloaded .views-field-body {
+  	padding: 0;
+  }***/
+
+}
+
+/*** Maximum width of 820 pixels. ***/
+@media screen and (max-width: 51.25rem) {
+  /*** Header 
+  .header-logo a.home-link {
+  	width: 20%;
+  }
+  .header-logo h1.site-title {
+  	font-size: 1.8rem;
+  	line-height: 1.8rem;
+  }
+  .header-logo h2.site-subtitle {
+  	font-size: 1rem;
+  	line-height: 1rem;
+  }***/
+
+  /*** Menu 
+	.main-navigation ul.menu {
+		display: none;
+	}
+	#mobile-menu-link {
+		background: none repeat scroll 0% 0% #DDD;
+		border-width: 1px 1px 0px;
+  		border-style: solid;
+  		border-color: #369;
+		margin: 1.5rem 0.35em 0;
+		padding: 0.7rem 1.2rem;
+		font-size: 1.5rem;
+		font-family: "clear_sans_mediumregular";
+		width: auto;
+		display: inline-block;
+	}
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus,
+	#mobile-menu-link:active {
+		background: none repeat scroll 0% 0% #EEE;
+	}
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus {
+		color: #C60;
+	}***/
+	
+	/*** Content 
+	.sidebar-first #content {
+		width: 100%;
+	}
+	.sidebars {
+		width: auto;
+		max-width: 100%;
+	}
+	.sidebar-first .region-sidebar-first {
+		float: none;
+		width: auto;
+		max-width: 100%;
+	}***/
+}
+
+/*** Maximum width of 725 pixels. ***/
+@media screen and (max-width: 45.675rem) {
+  /*** Header 
+	.header-logo a.home-link {
+		display: none;
+	}
+  .header-logo h1.site-title {
+  	font-size: 2rem;
+  	line-height: 2.2rem;
+  }
+  .header-logo h2.site-subtitle {
+  	font-size: 1.1rem;
+  	line-height: 1.2rem;
+  }***/
+  /*** Front page specific 
+	.front #search,
+	.front #content {
+		width: 95%;
+	}***/
+}
+
+/*** Maximum width of 600 pixels. ***/
+@media screen and (max-width: 37.8rem) {
+    /*** Header 
+	.language-switcher a {
+		margin: 0.1rem 0.6rem 0.3rem 0.6rem;
+	}
+	.user-logged-in,
+	.region-header .block-calsauthen {
+		position: static;
+	}
+	.user-logged-in a, 
+	.user-logged-in .username.span,
+	.region-header .block-calsauthen a {
+		float: none;
+		margin: 0.4rem 0.6rem;
+	}***/
+	
+	/** Forum Specific 
+	#forum .last-reply {
+		display: none;
+	}***/
+}
+
+/*** Maximum width of 540 pixels. ***/
+@media screen and (max-width: 34rem) {
+	/*** Header 
+	.header-logo {
+		width: calc(95% - 105px);
+	}
+	.header-logo h1.site-title {
+		font-size: 1.5rem;
+		line-height: 1.7rem;
+	}
+	.header-logo h2.site-subtitle {
+		display: none;
+	}
+	#admin-menu {
+		display: none;
+	}***/
+
+	/*** Search Area 
+	.views-exposed-form .views-exposed-widget .form-text {
+		max-width: 95%;
+	}***/
+	
+	/*** Footer 
+	.footer-navigation {
+		float: none;
+	}
+	#block-block-2 {
+		float: none;
+		width: 90%;
+		margin: 2rem 0.5rem;
+	}***/
+}
+
+/*** Maximum width of 385 pixels. 
+@media screen and (max-width: 24rem) {
+	.repo-item.available-formats .views-field-field-s3-file-upload,
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, .repo-item.available-formats .views-field-field-s3-file-upload .daisy3, .repo-item.available-formats .views-field-field-s3-file-upload .mp3, .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf, .repo-item.available-formats .views-field-field-s3-file-upload .e-text, .repo-item.available-formats .views-field-field-s3-file-upload .epub2, .repo-item.available-formats .views-field-field-s3-file-upload .epub3, .repo-item.available-formats .views-field-field-s3-file-upload .braille {
+		height: auto;
+	}
+}***/

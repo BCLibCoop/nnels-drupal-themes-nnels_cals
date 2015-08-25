@@ -7,7 +7,6 @@
 /* @group body-modifications */
 
 body {
-	/*background: fuchsia;*/
 	background: #444444;
 }
 
@@ -43,8 +42,8 @@ body {
 #page {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
-	/*background-color: orangered;*/
+	max-width: 1200px;
+	width: 100%;
 	background: #FFFFFF;
 }
 
@@ -52,7 +51,6 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
-	/*background-color: blanchedalmond;*/
 }
 
 
@@ -69,9 +67,6 @@ body {
 #footer {
 	border: 0;
 	word-wrap: break-word;
-	_display: inline;
-	_overflow: hidden;
-	_overflow-y: visible;
 }
 
 #header,
@@ -105,18 +100,18 @@ body {
 /* @group header */
 
 #header {
-	/*background-color: aqua;*/
-	width: 1000px;
-	height: 170px;
+	width: 100%;
+	height: auto;
 	margin: 0;
 	padding: 0;
 }
 
 #header .region-header {
-	width: 1000px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 0.7rem 0.7rem 0;
 	margin: 0;
-	padding: 10px;
-	/*background-color: forestgreen;*/
 	overflow: hidden; 
 }
 
@@ -128,12 +123,44 @@ body {
 #navigation {
 	/*background: violet;*/
 	width: 100%;
-	height: 45px;
+	height: auto;
 	margin: 0;
 	padding: 0;
 	border-bottom: 2px solid #336699;
 }
 
+#mobile-menu-link {
+	display: none;
+}
+
+#navigation p {
+	margin: 0;
+}
+
+/*** Maximum width of 820 pixels. ***/
+@media screen and (max-width: 51.25rem) {
+	#mobile-menu-link {
+		background: none repeat scroll 0% 0% #DDD;
+		border-width: 1px 1px 0px;
+  		border-style: solid;
+  		border-color: #369;
+		margin: 1.5rem 0.35em 0;
+		padding: 0.7rem 1.2rem;
+		font-size: 1.5rem;
+		font-family: "clear_sans_mediumregular";
+		width: auto;
+		display: inline-block;
+	}
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus,
+	#mobile-menu-link:active {
+		background: none repeat scroll 0% 0% #EEE;
+	}
+	#mobile-menu-link:hover,
+	#mobile-menu-link:focus {
+		color: #C60;
+	}
+}
 
 
 /* @end */
@@ -151,16 +178,18 @@ body {
 
 .front #search {
 	float: left;
-	width: 480px;
-	margin: 10px;
-	padding: 10px;
-	background: none;
-	background: #EEEEEE;
-	background: #D0D0D0;
+	width: 45%;
+	padding: 1%;
+	margin: 1%;
 	border: 1px solid #336699;
+	background-color: #DDD;
 }
 
-
+@media screen and (max-width: 45.675rem) {
+	.front #search {
+		width: 95%;
+	}
+}
 
 /* @end */
 
@@ -183,12 +212,8 @@ body {
 
 #content {
 	margin: 0;
-	padding: 10px;
+	padding: 1%;
 	overflow: hidden;
-}
-
-.region-content {
-	
 }
 
 .region-content-bottom {
@@ -214,13 +239,32 @@ body {
 
 /* @end */
 
+/* @group sidebar */
+.sidebars {
+	width: 20%;
+}
+.sidebar-first .region-sidebar-first,
+.spacer-block, 
+.secondary-navigation {
+	max-width: 100%;
+}
+
+@media screen and (max-width: 51.25rem) {
+	.sidebars {
+		width: auto;
+		max-width: 100%;
+	}
+}
+
+/* @end */
+
 /* @group sidebar-first */
 
 .sidebar-first #content {
-	float: left;
-	width: 750px;
-	margin-left: 250px;
-	margin-right: -1000px;
+	width: 80%;
+	float: right;
+	margin: 0;
+	padding: 1.5rem 2rem;
 	/*background-color: mediumaquamarine;*/
 }
 
@@ -232,7 +276,17 @@ body {
 	/*background-color: lightcoral;*/
 }
 
-
+/*** Maximum width of 820 pixels. ***/
+@media screen and (max-width: 51.25rem) {
+	.sidebar-first #content {
+		width: 100%;
+	}
+	.sidebar-first .region-sidebar-first {
+		float: none;
+		width: auto;
+		max-width: 100%;
+	}
+}
 
 /* @end */
 
@@ -244,6 +298,15 @@ body {
 	width: 500px;
 }
 
+.front #content {
+	width: 52%;
+}
+
+@media screen and (max-width: 45.675rem) {
+	.front #content {
+		width: 95%;
+	}
+}
 
 
 /* @end */
@@ -304,11 +367,11 @@ body {
 
 #footer {
 	/*background-color: aqua;*/
-	width: 1000px;
 	margin: 0;
 	padding: 10px;
 	border-top: 2px solid #336699;
-	background: #D0D0D0;
+	background-color: #DDD;
+	width: 100%;
 }
 
 

@@ -30,6 +30,10 @@ form table .item-list ul {
 /* @end */
 
 /* @group generic */
+.form-item,
+.form-text {
+	max-width: 100%;
+}
 
 .form-item {
 	margin: 10px 0;
@@ -211,6 +215,15 @@ td.menu-disabled {
 	/*background-color: palegreen;*/
 	margin: 0;
 	padding: 10px 10px 10px 15px;
+}
+
+.password-strength {
+	max-width: 100%;
+}
+
+.detail-library-registration #edit-captcha-response {
+	width: 100%;
+	max-width: 25rem;
 }
 
 .detail-library-registration .form-submit {
