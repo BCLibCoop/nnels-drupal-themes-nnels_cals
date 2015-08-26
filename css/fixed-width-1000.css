@@ -198,7 +198,14 @@ body {
 #main {
 	position: relative;
 	margin: 0;
-	padding: 0 0 30px;
+	padding: 1rem 0 1rem 1rem;
+}
+
+/* at 600px */
+@media screen and (max-width: 37.8rem) { 
+	#main {
+		padding-left: 0.5rem;
+	}
 }
 
 #front-main-views {
