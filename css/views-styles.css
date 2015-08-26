@@ -992,6 +992,14 @@
 	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
 }
 
+/* at 820px */
+@media screen and (max-width: 51.25rem) {
+	.search-results .views-field-title-field {
+		float: left;
+		width: calc(90% - 60px);
+	}
+}
+
 .search-results .views-field-field-dc-creator {
 	/*background-color: bisque;*/
 	float: right;
