@@ -122,6 +122,7 @@
 
 .block-views {
 	/*background-color: orange;*/
+	clear: both;
 }
 
 .views-table {
