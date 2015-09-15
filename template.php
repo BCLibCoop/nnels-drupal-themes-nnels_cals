@@ -227,12 +227,12 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	$nid = $variables['nid'];
   //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
   $roles_allowed = array('site editor', 'site manager', 'contributor', 'administrator');
-  $display = array_intersect($roles_allowed, $user->roles) ? "embed_4" : "embed_5";
+  $display_check = array_intersect($roles_allowed, $user->roles);
   $node = node_load($nid);
 	
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
 /**/
-  if(user_access('administer s3 item only')) {
+  if ($display_check) {
 	  $variables['view_download_files'] = 
 	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
 	    views_embed_view("field_collection_view_commercially_available", "embed_4", $nid) . 
