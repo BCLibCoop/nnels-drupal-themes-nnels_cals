@@ -241,8 +241,8 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   }
   else {
 	  $variables['view_download_files'] = 
-	    //views_embed_view("field_collection_view_repo_files", "embed_5", $nid) . 
-	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
+	    views_embed_view("field_collection_view_repo_files", "embed_5", $nid) . 
+	    //views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
 	    views_embed_view("field_collection_view_commercially_available", "embed_5", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
