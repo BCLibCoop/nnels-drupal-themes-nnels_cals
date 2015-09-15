@@ -181,3 +181,17 @@ article.node-post ul.links.inline li a {
 }
 
 /* @end */
+
+/* @group article */
+
+.node-article .field .field-name-field-cors-file {
+	padding: 1em 0;
+}
+
+.node-article .field .field-name-field-location {
+	padding: 0 0 1em;
+}
+
+.node-article .field .field-name-field-news-date {
+	padding: 0 0 1em;
+}
