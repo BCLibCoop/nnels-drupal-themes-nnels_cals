@@ -195,5 +195,10 @@ article.node-post ul.links.inline li a {
 .node-article .field.field-name-field-news-date {
 	padding: 0 0 1em;
 }
+
+.node-article div.submitted {
+	padding: 0 0 1em;
+}
+
 /* @end */
 

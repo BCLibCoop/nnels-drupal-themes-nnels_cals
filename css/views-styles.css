@@ -171,7 +171,7 @@
 	text-decoration: none;
 }
 
-.announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file {
+.announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file, .announcements .views-field-field-location, .announcements .views-field-field-news-date {
 	/*background-color: chartreuse;*/
 	float: left;
 	width: 98%;
