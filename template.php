@@ -232,6 +232,7 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
 /**/
+/*
   if ($display_check) {
 	  $variables['view_download_files'] = 
 	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
@@ -247,16 +248,18 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
   }
+*/
 
   $view_display_commercial = (user_access('administer s3 item only')) ? "embed_4" : "embed_5"; 
 
 /*
   this will replace the above...
+*/
+  
   $variables['view_download_files'] =  views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
     views_embed_view("field_collection_view_commercially_available", $view_display_commercial, $nid) . 
     views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
     views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid);
-*/
 }
 
 // */
