@@ -1300,7 +1300,7 @@
 .browse-results .views-field-field-file-resource .multi-file-embed {
 	/*background-color: aqua;*/
 	width: 100%;
-	margin: 0;
+	margin: 0 0 5px 65px;
 	padding: 0;
 }
 
