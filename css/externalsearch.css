@@ -46,7 +46,7 @@
   color: #333;
 }
 
-.externalsearch-keyword-button > a {
+.externalsearch-keyword-button > a, .externalsearch-single > a {
   margin: 1.6em 14.3em 0em;
   padding: 7px;
 }
