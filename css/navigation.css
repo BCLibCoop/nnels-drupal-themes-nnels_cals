@@ -385,12 +385,20 @@
 .admin-toolbar {
 	background-color: fuchsia;
 	background-color: #EEEEEE;
-	width: 240px;
+	/* width: 240px; */
 	float: left;
 	display: block;
 	margin: 0 0 10px;
 	padding: 0px;
 	border: 1px solid #336699;
+}
+
+.sidebar .admin-toolbar {
+	width: auto;
+}
+
+.sidebar .admin-toolbar .block-content {
+	padding: 10px;
 }
 
 /*** Maximum width of 540 pixels. ***/
