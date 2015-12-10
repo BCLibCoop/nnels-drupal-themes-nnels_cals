@@ -376,6 +376,62 @@
 
 /* @end */
 
+/* @group externalsearch-single */
+
+.external-search-block {
+	/*background-color: orangered;*/
+	background-color: #DDDDDD;
+	width: 240px;
+	float: left;
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px solid #336699;
+	max-width: 100%;
+	clear: left;
+}
+
+.external-search-block h2.block-title {
+	/*background-color: paleturquoise;*/
+	margin: 0;
+	padding: 0 5px;
+	font-size: 20px;
+	line-height: 28px;
+	border-bottom: 1px solid #336699;
+}
+
+.external-search-block .block-content {
+	/*background-color: lime;*/
+	margin: 0;
+	padding: 0;
+}
+
+.external-search-block .block-content p {
+	/*background-color: orangered;*/
+	margin: 0;
+	padding: 5px 5px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.external-search-block .externalsearch-single a {
+	/*background-color: gold;*/
+	display: block;
+	margin: 5px 0 0;
+	padding: 5px 5px;
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.external-search-block .externalsearch-single a:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+/* @end */
+
 /* @group block-block-2 - copyright/contact */
 
 #block-block-2 {
