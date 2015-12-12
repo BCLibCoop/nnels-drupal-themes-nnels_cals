@@ -318,6 +318,13 @@
 	
 }
 
+/* In support of facet checkbox mode */
+ul.facetapi-facetapi-checkbox-links.facetapi-processed {
+	padding-left: 0px;
+	list-style: none;
+}
+
+
 /* @end */
 
 /* @group request title link block */
