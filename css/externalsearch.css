@@ -2,6 +2,10 @@
 
 /** External search results **/
 
+.page-externalsearch-results .target-results.search-results {
+  margin-bottom: 4rem;
+}
+
 .externalsearch-item-list div.item-list ul.search-results-list li.search-result {   
   list-style: none !important;
 }
@@ -27,7 +31,7 @@
 }
 
 .externalsearch-item-list div.externalsearch-more-results {
-  margin-top: 1.5rem 0 6.5rem 0;
+  margin: 1.5rem 0 6.5rem 0;
   float: right;
   font-size: 1.2em;
   display: block;
