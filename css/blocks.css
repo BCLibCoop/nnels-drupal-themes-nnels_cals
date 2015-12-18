@@ -560,3 +560,34 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 
 
 /* @end */
+
+/* @group search-reset-filters block */
+
+.block-current-search.search-reset-filters {
+	clear: left;
+}
+
+.search-reset-filters .reset-filters-link-wrapper {
+        margin: 0;
+        padding: 6px 10px 5px 10px;
+        color: #333333;
+        background: #FFFFFF;
+        border: 1px solid #336699;
+        height: 35px;
+}
+
+.search-reset-filters .reset-filters-link-wrapper a {
+        color: #333333;
+	display: block;
+}
+
+.search-reset-filters .reset-filters-link-wrapper:hover {
+        background: #C2C2C2;
+}
+
+.search-reset-filters .reset-filters-link-wrapper a:hover {
+        color: #CC6600;
+}
+
+/* @end*/
+

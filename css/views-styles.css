@@ -820,6 +820,8 @@
 	margin: 0;
 	padding: 5px 5px 10px;
 	overflow: hidden;
+/*	display: inline-block;
+	width: 57%;*/
 }
 
 .search-repository .block-title {
@@ -914,41 +916,6 @@
 }
 
 /* @end */
-
-/* @group search-reset-filters block */
-
-.search-reset-filters {
-        top: 15.45em;
-        left: 64em;
-        width: 12%;
-        height: 0px;
-        position:absolute;
-}
-
-.search-reset-filters .reset-filters-link-wrapper {
-        margin: 0;
-        padding: 6px 10px 5px 10px;
-        color: #333333;
-        background: #FFFFFF;
-        border: 1px solid #336699;
-        height: 34px;
-        text-align: center;
-        display: inline-block;
-}
-
-.search-reset-filters .reset-filters-link-wrapper a {
-        color: #333333;
-}
-
-.search-reset-filters .reset-filters-link-wrapper:hover {
-        background: #C2C2C2;
-}
-
-.search-reset-filters .reset-filters-link-wrapper a:hover {
-        color: #CC6600;
-}
-
-/* @end*/
 
 /* @group search-results - page*/
 
