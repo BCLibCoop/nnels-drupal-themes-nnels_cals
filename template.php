@@ -231,11 +231,23 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   $node = node_load($nid);
 	
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
-  $variables['view_download_files'] = 
-    views_embed_view("field_collection_view_repo_files", $display, $nid) . 
-    views_embed_view("field_collection_view_commercially_available", $display, $nid) . 
-    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
-    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
+  if(user_access('administer s3 item only')) {
+	  $variables['view_download_files'] = 
+	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
+	    views_embed_view("field_collection_view_commercially_available", "embed_4", $nid) . 
+	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
+	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
+  
+  }
+  else {
+	  $variables['view_download_files'] = 
+	    views_embed_view("field_collection_view_repo_files", "embed_5", $nid) . 
+	    views_embed_view("field_collection_view_commercially_available", "embed_5", $nid) . 
+	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
+	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
+  
+  
+  }
 }
 
 // */

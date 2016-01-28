@@ -468,5 +468,32 @@
 
 
 /* @end */
-=======
->>>>>>> mbehiels
+
+
+
+/* @group top of page operations (added by DK) */
+.admin-repo-item-operations {
+	margin: 0;
+	padding: 10px;
+	border-style: none;
+}
+
+.admin-repo-item-operations .form-submit {
+	margin: 0 5px 5px 0;
+	padding: 3px 5px;
+	color: #333333;
+  font-family: 'clear_sans_mediumregular';
+	white-space: nowrap;
+  line-height: normal;
+  font-size: 12px;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+}
+
+.admin-repo-item-operations .form-submit:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+
+/* @end */

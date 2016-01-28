@@ -2115,7 +2115,8 @@ span.daisy-icon-login {
 
 /* @end */
 
-.repo-item.available-formats .views-field-field-running-time {
+.repo-item.available-formats .views-field-field-running-time,
+.repo-item.available-formats .views-field-field-availability-status  {
 	/*background-color: cadetblue;*/
 	float: left;
 	width: 100%;
@@ -2239,8 +2240,8 @@ span.daisy-icon-login {
 	/*background-color: salmon;*/
 	float: left;
 	width: 98%;
-	margin: 5px;
-	padding: 5px;
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 	list-style-image: none;
 }
@@ -2250,9 +2251,9 @@ span.daisy-icon-login {
 	/*background-color: lawngreen;*/
 	float: right;
 	/*width: 10%;*/
-	height: 40px;
+	/*height: 40px;*/
 	margin: 0;
-	padding: 5px;
+	padding: 0;
 	text-align: center;
 }
 
@@ -2260,7 +2261,7 @@ span.daisy-icon-login {
 .repo-item.comercially-available .views-field-nothing-1 a {
 	/*background-color: palegoldenrod;*/
 	display: block;
-	margin: 0;
+	margin: 0 0 0 10px;
 	padding: 3px 10px;
 	color: #333333;
 	text-align: center;
@@ -2296,7 +2297,7 @@ span.daisy-icon-login {
 	float: left;
 	width: 60%;
 	margin: 0;
-	padding: 5px 5px 5px 10px;
+	padding: 3px 5px 3px 20px;
 }
 
 .repo-item.comercially-available .view-footer {
@@ -2528,7 +2529,11 @@ span.daisy-icon-login {
 	margin: 0 0 5px;
 	padding: 5px;
 }
-
+.repo-item.detail .views-label-field-dc-relation {
+	/*background-color: hotpink;*/
+	margin: 0 0 5px;
+	padding: 5px;
+}
 /* @group administrative metadata */
 
 /*.repo-item.detail .views-field-field-access-rights {
