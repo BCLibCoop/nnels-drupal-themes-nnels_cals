@@ -23,10 +23,34 @@
 
 /* @end */
 
+/* @group pagestyle - colour contrast selector */
+.block-pagestyle {
+	float: right;
+	margin-right: 1em;
+	display: flex;
+	flex-flow: column-reverse;
+}
+.block-pagestyle .block-title {
+	font-size: 1.1em;
+}
+/*** Maximum width of 850 pixels. ***/
+@media screen and (max-width: 53.125rem) {
+	.block-pagestyle {
+		float: none;
+	}
+}
+/*** Maximum width of 600 pixels. ***/
+@media screen and (max-width: 37.8rem) {
+	.block-pagestyle {
+		display: none;
+	}
+}
+/* @end */
+
 /* @group header-logo - logo-wordmark */
 
 .header-logo {
-	max-width: 75%;
+	max-width: 73%;
 	height: auto;
 	float: left;
 	width: 760px;
@@ -72,6 +96,9 @@
 
 /*** Maximum width of 820 pixels. ***/
 @media screen and (max-width: 51.25rem) {
+	.header-logo {
+		max-width: 65%;
+	}
   .header-logo a.home-link {
   	width: 20%;
   }
