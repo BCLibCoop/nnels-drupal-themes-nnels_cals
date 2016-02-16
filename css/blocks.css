@@ -33,7 +33,7 @@
 .block-pagestyle .block-title {
 	font-size: 1.1em;
 }
-.block-pagestyle select#edit-pagestyle-select {
+.block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
 }
 /*** Maximum width of 850 pixels. ***/
