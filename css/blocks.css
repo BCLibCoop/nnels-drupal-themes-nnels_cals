@@ -23,10 +23,72 @@
 
 /* @end */
 
+/* @group pagestyle - colour contrast selector */
+.block-pagestyle {
+	float: right;
+	margin-right: 1em;
+	display: flex;
+	flex-flow: column-reverse;
+}
+.block-pagestyle .block-title {
+	font-size: 1.1em;
+}
+.block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
+	margin-bottom: 0;
+}
+/*** Maximum width of 850 pixels. ***/
+@media screen and (max-width: 53.125rem) {
+	.block-pagestyle {
+		float: none;
+	}
+}
+/*** Maximum width of 600 pixels. ***/
+@media screen and (max-width: 37.8rem) {
+	.block-pagestyle {
+		display: none;
+	}
+}
+/* @end */
+
+/* @group text-resize - text resizer */
+.block-text-resize {
+	float: right;
+	margin-right: 1em;
+	display: flex;
+	flex-flow: column-reverse;
+}
+.block-text-resize .block-title {
+	font-size: 1.1em;
+}
+.block-text-resize .changer {
+	float: left;
+	margin-left: 6px;
+}
+.block-text-resize #text_resize_decrease {
+	margin-top: 6px;
+}
+.block-text-resize #text_resize_reset {
+	margin-top: 3px;
+}
+.block-text-resize #text_resize_increase {
+	margin-top: 0;
+}
+#text_resize_clear {
+	clear: none;
+}
+
+/*** Maximum width of 925ixels. ***/
+@media screen and (max-width: 57.813rem) {
+	.block-text-resize {
+		display: none;
+	}
+}
+/* @end */
+
 /* @group header-logo - logo-wordmark */
 
 .header-logo {
-	max-width: 75%;
+	max-width: 73%;
 	height: auto;
 	float: left;
 	width: 760px;
@@ -72,6 +134,9 @@
 
 /*** Maximum width of 820 pixels. ***/
 @media screen and (max-width: 51.25rem) {
+	.header-logo {
+		max-width: 65%;
+	}
   .header-logo a.home-link {
   	width: 20%;
   }
