@@ -31,7 +31,7 @@
 	flex-flow: column-reverse;
 }
 .block-pagestyle .block-title {
-	font-size: 1.1em;
+	font-size: 1rem;
 }
 .block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
@@ -58,7 +58,7 @@
 	flex-flow: column-reverse;
 }
 .block-text-resize .block-title {
-	font-size: 1.1em;
+	font-size: 1rem;
 }
 .block-text-resize .changer {
 	float: left;
