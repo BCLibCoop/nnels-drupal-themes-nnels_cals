@@ -201,37 +201,37 @@ a:active {
 /* @group headers */
 
 h1 {
-	font: normal normal 32px/32px 'clear_sansbold', sans-serif;
+	font: normal normal 2rem/2rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h2 {
-	font: normal normal 24px/32px 'clear_sansbold', sans-serif;
+	font: normal normal 1.5rem/2rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h3 {
-	font: normal normal 18px/24px 'clear_sansbold', sans-serif;
+	font: normal normal 1.125rem/1.5rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h4 {
-	font: normal normal 16px/24px 'clear_sansbold', sans-serif;
+	font: normal normal 1rem/1.5rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 24px 0 16px;
 }
 
 h5 {
-	font: normal normal 14px/28px 'clear_sansbold', sans-serif;
+	font: normal normal 0.875rem/1.125rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 28px 0;
 }
 
 h6 {
-	font: normal normal 12px/32px 'clear_sansbold', sans-serif;
+	font: normal normal 0.75rem/1rem 'clear_sansbold', sans-serif;
 	text-decoration: none;
 	margin: 32px 0;
 }
