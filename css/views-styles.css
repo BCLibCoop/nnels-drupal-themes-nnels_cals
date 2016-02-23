@@ -919,25 +919,6 @@
 
 /* @group search-results - page*/
 
-.search-results {
-	/*background-color: fuchsia;*/
-}
-
-.search-results .view-header {
-	/*background-color: limegreen;*/
-	/*visibility: hidden;*/
-}
-
-.search-results .search-skip-link {
-	/*background-color: pink;*/
-	/*visibility: hidden;*/
-}
-
-.search-results .views-label {
-	/*background-color: fuchsia;*/
-	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
-}
-
 .search-results .view-list-ul {
 	/*background-color: navy;*/
 	width: 100%;
@@ -1006,7 +987,7 @@
 .search-results .views-field-body-value, 
 .search-results .views-field-field-keyword-index, 
 .search-results .views-field-field-genre,
-.search-results .views-field-view
+.search-results .views-field-view,
 .search-results .views-field-field-dc-edition {
 	/*background-color: bisque;*/
 	float: right;
@@ -1014,15 +995,6 @@
 	margin: 5px;
 	padding: 5px;
 }
-
-/*.search-results .views-field-php {
-	background-color: fuchsia;
-	float: left;
-	width: 98%;
-	height: 40px;
-	margin: 5px 5px 5px 65px;
-	padding: 0;
-}*/
 
 .search-results .views-field-view .multi-file-embed {
 	/*background-color: aqua;*/
