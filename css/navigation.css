@@ -104,12 +104,11 @@
 }
 
 .main-navigation a {
-	background-color: gold;
 	display: block;
 	margin: 0 10px 0 0;
 	padding: 10px 15px 8px;
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 1rem;
+	line-height: 1rem;
 	color: #333333;
 	background: #DDD;
 	border: 1px solid #336699;
@@ -283,8 +282,8 @@
 	display: block;
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 1rem;
+	line-height: 1rem;
 	color: #333333;
 }
 
@@ -338,8 +337,8 @@
 	display: block;
 	margin: 0;
 	padding: 5px;
-	font-size: 12px;
-	line-height: 14px;
+	font-size: 0.75rem;
+	line-height: 0.875rem;
 	color: #333333;
 	border-right: 1px solid #336699;
 }
