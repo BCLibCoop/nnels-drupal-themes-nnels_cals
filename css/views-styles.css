@@ -1412,6 +1412,19 @@ span.daisy-icon-login {
 	/*background: limegreen;*/
 }
 
+/* Narrator (performer) and Running Time per file embed in Search Results */
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content a {
+    display: inline-block;
+    width: unset;
+    padding: 3px;
+}
+
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content,
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-running-time span.search-embed-running-time-content {
+    display: inline-block;
+    float: unset;
+}
+
 /* @end*/
 
 /* @group OG-discussion*/
