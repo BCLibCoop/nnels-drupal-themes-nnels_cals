@@ -383,6 +383,13 @@
 	
 }
 
+/* In support of facet checkbox mode */
+ul.facetapi-facetapi-checkbox-links.facetapi-processed {
+	padding-left: 0px;
+	list-style: none;
+}
+
+
 /* @end */
 
 /* @group request title link block */
@@ -435,6 +442,62 @@
 }
 
 .request-title-block a.request-title:hover {
+	color: #CC6600;
+	background-color: #EEEEEE;
+}
+
+/* @end */
+
+/* @group externalsearch-single */
+
+.external-search-block {
+	/*background-color: orangered;*/
+	background-color: #DDDDDD;
+	width: 240px;
+	float: left;
+	display: block;
+	margin: 0 0 10px;
+	padding: 10px;
+	border: 1px solid #336699;
+	max-width: 100%;
+	clear: left;
+}
+
+.external-search-block h2.block-title {
+	/*background-color: paleturquoise;*/
+	margin: 0;
+	padding: 0 5px;
+	font-size: 20px;
+	line-height: 28px;
+	border-bottom: 1px solid #336699;
+}
+
+.external-search-block .block-content {
+	/*background-color: lime;*/
+	margin: 0;
+	padding: 0;
+}
+
+.external-search-block .block-content p {
+	/*background-color: orangered;*/
+	margin: 0;
+	padding: 5px 5px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.external-search-block .externalsearch-single a {
+	/*background-color: gold;*/
+	display: block;
+	margin: 5px 0 0;
+	padding: 5px 5px;
+	color: #333333;
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	text-align: center;
+}
+
+.external-search-block .externalsearch-single a:hover {
 	color: #CC6600;
 	background-color: #EEEEEE;
 }
@@ -562,3 +625,34 @@
 
 
 /* @end */
+
+/* @group search-reset-filters block */
+
+.block-current-search.search-reset-filters {
+	clear: left;
+}
+
+.search-reset-filters .reset-filters-link-wrapper {
+        margin: 0;
+        padding: 6px 10px 5px 10px;
+        color: #333333;
+        background: #FFFFFF;
+        border: 1px solid #336699;
+        height: 35px;
+}
+
+.search-reset-filters .reset-filters-link-wrapper a {
+        color: #333333;
+	display: block;
+}
+
+.search-reset-filters .reset-filters-link-wrapper:hover {
+        background: #C2C2C2;
+}
+
+.search-reset-filters .reset-filters-link-wrapper a:hover {
+        color: #CC6600;
+}
+
+/* @end*/
+

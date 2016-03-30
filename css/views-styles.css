@@ -122,6 +122,7 @@
 
 .block-views {
 	/*background-color: orange;*/
+	clear: both;
 }
 
 .views-table {
@@ -139,7 +140,7 @@
 	width: 98%;
 	margin: 0 0 15px;
 	padding: 10px;
-	border: 1px solid #336699;
+	/* border: 1px solid #336699; */
 }
 
 .announcements .view-list-ul {
@@ -170,7 +171,7 @@
 	text-decoration: none;
 }
 
-.announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file {
+.announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file, .announcements .views-field-field-location, .announcements .views-field-field-news-date {
 	/*background-color: chartreuse;*/
 	float: left;
 	width: 98%;
@@ -819,6 +820,8 @@
 	margin: 0;
 	padding: 5px 5px 10px;
 	overflow: hidden;
+/*	display: inline-block;
+	width: 57%;*/
 }
 
 .search-repository .block-title {
@@ -912,8 +915,7 @@
 	display: none;
 }
 
-
-/* @end*/
+/* @end */
 
 /* @group search-results - page*/
 
@@ -1243,7 +1245,7 @@
 .browse-results .views-field-field-file-resource .multi-file-embed {
 	/*background-color: aqua;*/
 	width: 100%;
-	margin: 0;
+	margin: 0 0 5px 65px;
 	padding: 0;
 }
 
@@ -1408,6 +1410,19 @@ span.daisy-icon-login {
 	margin: 0;
 	padding: 5px 5px 5px 40px;
 	/*background: limegreen;*/
+}
+
+/* Narrator (performer) and Running Time per file embed in Search Results */
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content a {
+    display: inline-block;
+    width: unset;
+    padding: 3px;
+}
+
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content,
+.search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-running-time span.search-embed-running-time-content {
+    display: inline-block;
+    float: unset;
 }
 
 /* @end*/
