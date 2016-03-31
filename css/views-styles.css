@@ -1024,7 +1024,7 @@
 	border: 0px solid #336699;
 }
 
-/* @group file icons */
+/* file icons */
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content {
 	/*background: pink;*/
@@ -1079,6 +1079,10 @@
 
 .search-results .view-footer .request-title {
 	display:inline-block;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
+	overflow: auto;
 }
 
 /* @end */
@@ -2030,7 +2034,6 @@ span.daisy-icon-login {
 	width: 60%;
 	margin: 0;
 	padding: 0;
-	overflow: auto;
 }
 
 /* @group file icons */
