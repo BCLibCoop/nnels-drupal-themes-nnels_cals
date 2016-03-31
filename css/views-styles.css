@@ -1413,6 +1413,23 @@ span.daisy-icon-login {
 }
 
 /* Narrator (performer) and Running Time per file embed in Search Results */
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
+	margin-left: 2.5rem;
+}
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
+	margin-top: -0.5rem;
+}
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
+	margin-top: 0;
+}
+@media screen and (max-width: 28rem) { /* 448px */
+	.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
+		margin-top: 0;
+	}
+}
+
 .search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content a {
     display: inline-block;
     width: unset;
@@ -2013,6 +2030,7 @@ span.daisy-icon-login {
 	width: 60%;
 	margin: 0;
 	padding: 0;
+	overflow: auto;
 }
 
 /* @group file icons */
