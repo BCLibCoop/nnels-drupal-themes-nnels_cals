@@ -1441,15 +1441,15 @@ span.daisy-icon-login {
 	}
 }
 
-.browse-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content a,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li span.search-embed-narrator-content a,
 .search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content a {
     display: inline-block;
     width: unset;
     padding: 3px;
 }
 
-.browse-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content,
-.browse-results .views-field-view.solr-embed-file-field-collection div.views-field-field-running-time span.search-embed-running-time-content,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li span.search-embed-narrator-content,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li span.search-embed-running-time-content,
 .search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-performer span.search-embed-narrator-content,
 .search-results .views-field-view.solr-embed-file-field-collection div.views-field-field-running-time span.search-embed-running-time-content {
     display: inline-block;
