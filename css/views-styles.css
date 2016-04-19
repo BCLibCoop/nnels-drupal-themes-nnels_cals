@@ -1418,24 +1418,24 @@ span.daisy-icon-login {
 }
 
 /* Narrator (performer) and Running Time per file embed in Search Results */
-.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
-.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time,
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 	margin-left: 2.5rem;
 }
-.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
-.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time,
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 	margin-top: -0.5rem;
 }
-.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
 	margin-top: 0;
 }
 @media screen and (max-width: 28rem) { /* 448px */
-	.browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time,
+	.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 	.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 		margin-top: 0;
 	}
