@@ -2394,6 +2394,7 @@ span.daisy-icon-login {
 .repo-item.detail .views-field-field-genre,
 .repo-item.detail .views-field-field-publisher,
 .repo-item.detail .views-field-field-iso-language,
+.repo-item.detail .views-field-field-isbn-audio,
 .repo-item.detail .views-label-field-dc-relation,
 .repo-item.detail .views-field-field-uri {
 	margin: 0 0 5px;
