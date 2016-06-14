@@ -2410,9 +2410,22 @@ span.daisy-icon-login {
 .repo-item.detail .views-field-field-iso-language,
 .repo-item.detail .views-field-field-isbn-audio,
 .repo-item.detail .views-label-field-dc-relation,
-.repo-item.detail .views-field-field-uri {
+.repo-item.detail .views-field-field-uri,
+.repo-item.detail .views-field-field-isbn-audio,
+.repo-item.detail .views-field-field-publisher-source,
+.repo-item.detail .views-field-field-urls-external {
 	margin: 0 0 5px;
 	padding: 5px;
+}
+
+.repo-item.detail .views-field-field-publisher-source::before {
+	display: block;
+	content: "Source Information:";
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	margin-left: -10px;
+	margin-top: 0.5em;
 }
 
 .repo-item.detail .views-field-field-date {
