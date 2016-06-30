@@ -1090,6 +1090,17 @@
 	overflow: auto;
 }
 
+.search-results .views-field-php.flag-toggle-wrapper {
+	display: inline-block;
+	float: right;
+}
+
+.search-results .views-field-php.flag-toggle-wrapper .flag-message {
+	background: #D0D0D0;
+	width: 200px;
+	font-size: 1em;
+}
+
 /* @end */
 
 /* @group external-search*/
@@ -2545,8 +2556,18 @@ span.daisy-icon-login {
 }
 
 
+/* @end */
+
+
+/* @group flag-bookshelf */
+.node-repository-item .bookshelf-add-wrapper,
+.view-repository-search .bookshelf-add-wrapper  {
+	float: right !important;
+	padding: 5px;
+}
 
 /* @end */
+
 
 /* @group audit-trail - data */
 

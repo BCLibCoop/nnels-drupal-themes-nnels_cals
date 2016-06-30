@@ -202,7 +202,7 @@
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 }
-
+.bookshelf-button a:hover,
 .user-login a:hover {
 	color: #CC6600;
 	background-color: #EEEEEE;
@@ -260,6 +260,7 @@
 
 /* @group user-logged-in */
 
+.block.bookshelf-button,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
 	float: right;
@@ -277,6 +278,7 @@
 		position: absolute !important;
 	}
 }
+.bookshelf-button a,
 .user-logged-in a {
 	display: block;
 	float: left;
@@ -656,3 +658,13 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 
 /* @end*/
 
+/* Flags */
+.block-flag-lists ul.flag-lists-links li {
+	list-style: none !important;
+}
+
+.block-flag-lists {
+	display: block;
+	float: left;
+	width: auto;
+}
