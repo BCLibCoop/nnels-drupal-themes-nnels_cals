@@ -22,7 +22,7 @@
 	<div id="main">
 		<div id="content" class="column" role="main">
 
-			<?php print $breadcrumb; ?>
+			<?php //print $breadcrumb; ?>
 
 			<?php print render($page['admin_nav']); ?>
 
