@@ -8,6 +8,7 @@
 
 	<?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
 		<section>
+			<?php print $flag_icon; ?>
 			<?php print render($title_prefix); ?>
 			<?php if (!$page && $title): ?>
 				<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
