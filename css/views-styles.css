@@ -2066,9 +2066,18 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload {
 	/*background-color: indigo;*/
 	float: left;
-	width: 60%;
+	width: 30%;
 	margin: 0;
 	padding: 0;
+	display: inline-block;
+}
+
+.repo-item.available-formats div.file-size-warning-wrapper {
+      /*  width: 30%;*/
+        margin: 3% 0 0 0;
+        padding: 0;
+        float: right;
+	font-size: 90%;
 }
 
 /* @group file icons */
