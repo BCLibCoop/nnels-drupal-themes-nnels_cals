@@ -656,6 +656,7 @@
 	border: 0px solid #336699;
 }
 
+/* at 907px */
 @media screen and (max-width: 56.7rem) {
   /*** Front page specific ***/
   .recently-added .view-list-ul li {
@@ -2059,23 +2060,33 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .views-field-field-s3-file-upload {
-	/*background-color: indigo;*/
 	float: left;
-	width: 30%;
+	width: 60%;
 	margin: 0;
 	padding: 0;
 	display: inline-block;
 }
+@media screen and (max-width: 30rem) { /* 480px */
+	.repo-item.available-formats .views-field-field-s3-file-upload {
+		width: 95%;
+	}
+}
 
 .repo-item.available-formats div.file-size-warning-wrapper,
 .multi-file-embed div.file-size-warning-wrapper {
-  /*  width: 30%;*/
   margin: 1% 0 0 0;
   padding: 5px;
   float: right;
   font-size: 90%;
-  height: 40px;
+  max-height: 40px;
 }
+@media screen and (max-width: 30rem) { /* 480px */
+	.repo-item.available-formats div.file-size-warning-wrapper,
+	.multi-file-embed div.file-size-warning-wrapper {
+		float: none;
+	}
+}
+
 
 /* @group file icons */
 
@@ -2419,7 +2430,9 @@ span.daisy-icon-login {
 }
 
 .repo-item.detail .views-field-body,
+.repo-item.detail .views-field-field-contents,
 .repo-item.detail .views-field-field-dc-creator, 
+.repo-item.detail .views-field-field-dc-contributor,
 .repo-item.detail .view-field-collection-view-edition-statement .views-row,
 .repo-item.detail .views-field-field-subject,
 .repo-item.detail .views-field-field-genre,
