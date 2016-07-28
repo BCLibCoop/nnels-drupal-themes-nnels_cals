@@ -1085,6 +1085,17 @@
 	overflow: auto;
 }
 
+.search-results .views-field-php.flag-toggle-wrapper {
+	display: inline-block;
+	float: right;
+}
+
+.search-results .views-field-php.flag-toggle-wrapper .flag-message {
+	background: #D0D0D0;
+	width: 200px;
+	font-size: 1em;
+}
+
 /* @end */
 
 /* @group external-search*/
@@ -2050,9 +2061,20 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload {
 	/*background-color: indigo;*/
 	float: left;
-	width: 60%;
+	width: 30%;
 	margin: 0;
 	padding: 0;
+	display: inline-block;
+}
+
+.repo-item.available-formats div.file-size-warning-wrapper,
+.multi-file-embed div.file-size-warning-wrapper {
+  /*  width: 30%;*/
+  margin: 1% 0 0 0;
+  padding: 5px;
+  float: right;
+  font-size: 90%;
+  height: 40px;
 }
 
 /* @group file icons */
@@ -2553,8 +2575,18 @@ span.daisy-icon-login {
 }
 
 
+/* @end */
+
+
+/* @group flag-bookshelf */
+.node-repository-item .bookshelf-add-wrapper,
+.view-repository-search .bookshelf-add-wrapper  {
+	float: right !important;
+	padding: 5px;
+}
 
 /* @end */
+
 
 /* @group audit-trail - data */
 

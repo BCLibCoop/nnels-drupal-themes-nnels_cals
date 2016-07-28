@@ -244,6 +244,11 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
   }
+  //Flag icon markup
+  $variables['flag_icon'] = '<div class="bookshelf-add-wrapper">' .
+                            '<i class="fa fa-bookmark-o flag-bookmark-icon" aria-hidden="true"></i>' .
+			    flag_create_link('bookshelf', $nid) .
+			    '</div>';
 }
 
 // */
@@ -306,4 +311,5 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
 function NNELS_CALS_v001_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
 }
+
 
