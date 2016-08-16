@@ -62,6 +62,13 @@
 	align-items: center;
 }
 
+@media screen and (max-width: 42rem) { /* 672px */
+	#block-views-exp-repository-search-page {
+		flex-direction: column;
+		align-items: left;
+	}
+}
+
 #views-exposed-form-repository-search-page .views-exposed-form label {
 	position: absolute !important;
 	clip: rect(1px, 1px, 1px, 1px);
@@ -75,7 +82,6 @@
 }
 
 .views-exposed-form .views-exposed-widget.views-submit-button {
- 	/*background-color: lemonchiffon;*/
 	float: none;
 	display: inline-block;
 	margin: 0.9rem 0 0 0.3rem;
@@ -83,7 +89,6 @@
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-	/*background-color: palegoldenrod;*/
 	margin: 0;
 	padding: 3px 5px;
 	color: #333333;
@@ -122,12 +127,10 @@
 }
 
 .block-views {
-	/*background-color: orange;*/
 	clear: both;
 }
 
 .views-table {
-/*background-color: lawngreen;*/
 	float: left;
 }
 
@@ -136,16 +139,13 @@
 
 /* @group announcements-landing*/
 .announcements-block-landing {
-	/*background-color: orange;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 15px;
 	padding: 10px;
-	/* border: 1px solid #336699; */
 }
 
 .announcements .view-list-ul {
-	/*background-color: pink;*/
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -153,7 +153,6 @@
 }
 
 .announcements .view-list-ul li.views-row {
-	/*background-color: lemonchiffon;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 5px;
@@ -163,7 +162,6 @@
 }
 
 .announcements .views-field-title-field {
-	/*background-color: lavender;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 5px;
@@ -173,7 +171,6 @@
 }
 
 .announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file, .announcements .views-field-field-location, .announcements .views-field-field-news-date {
-	/*background-color: chartreuse;*/
 	float: left;
 	width: 98%;
 	margin: 0;
@@ -181,7 +178,6 @@
 }
 
 .announcements .views-field-view-node {
-	/*background-color: teal;*/
 	float: left;
 	width: 98%;
 	margin: 0;
@@ -191,7 +187,6 @@
 
 .announcements .views-field-clone-node,
 .announcements .views-field-edit-node {
-	/*background-color: chartreuse;*/
 	float: right;
 	margin: 5px;
 	padding: 5px;
@@ -206,13 +201,11 @@
 /* @group faq-list (DEPRECIATED)*/
 
 .faq-list {
-	/*background-color: fuchsia;*/
 	margin: 20px 0 0;
 	padding: 0;
 }
 
 .faq-list .item-list ul {
-	/*background-color: orange;*/
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -220,7 +213,6 @@
 }
 
 .faq-list .item-list ul li {
-	/*background-color: navy;*/
 	margin: 0 0 20px;
 	padding: 0;
 	list-style-type: none;
@@ -229,7 +221,6 @@
 }
 
 .faq-list .views-field-title {
-	/*background-color: fuchsia;*/
 	margin: 0;
 	padding: 0;
 	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
@@ -237,7 +228,6 @@
 }
 
 .faq-list .views-field-body {
-	/*background-color: goldenrod;*/
 	margin: 0;
 	padding: 0;
 }
@@ -659,7 +649,6 @@
 
 /* at 907px */
 @media screen and (max-width: 56.7rem) {
-  /*** Front page specific ***/
   .recently-added .view-list-ul li {
   	min-height: 50px;
   	height: auto;
@@ -801,8 +790,6 @@
 }
 
 @media screen and (max-width: 56.7rem) {
-
-  /*** Front page specific ***/
   .most-downloaded .view-list-ul li {
   	min-height: 50px;
   	height: auto;
@@ -875,13 +862,6 @@
 
 .search-repository .views-reset-button {
 	display: none;
-}
-
-@media screen and (max-width: 42rem) { /* 672px */
-	#block-views-exp-repository-search-page {
-		flex-direction: column;
-		align-items: left;
-	}
 }
 
 /* @end */
@@ -996,7 +976,6 @@
 /* file icons */
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content {
-	/*background: pink;*/
 	float: left;
 	display: block;
 	margin: 0;
@@ -1067,7 +1046,8 @@
 
 /* @group external-search*/
 
-.search-results h1.no-results-title { /*page title*/
+/*page title*/
+.search-results h1.no-results-title { 
 	clear: both;
 	width: 100%;
 	margin: 0 0 10px;
@@ -1078,16 +1058,13 @@
 	text-decoration: none;
 	font-variant: normal;
 	border-bottom: 1px solid #336699;
-	/*background-color: fuchsia;*/
 }
 
 .search-results .field-label {
-	/*background-color: fuchsia;*/
 	font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;
 }
 
 .search-results .field-title {
-	/*background-color: forestgreen;*/
 	margin: 5px;
 	padding: 5px 5px 0;
 	font: normal normal normal 18px/24px 'clear_sansbold', sans-serif;
@@ -1098,7 +1075,6 @@
 .search-results .field-isbn,
 .search-results .field-description,
 .search-results .field-link {
-	/*background-color: bisque;*/
 	margin: 5px;
 	padding: 5px 5px 0;
 }
@@ -1111,21 +1087,7 @@
 
 /* @group browse-results - page*/
 
-.browse-results {
- 	/*background-color: fuchsia;*/ 
-}
-
-.browse-results .views-exposed-form {
- 	/*background-color: seagreen;*/ 
-}
-
-.browse-results .views-label {
- 	/*background-color: gold;*/ 
-	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
-}
-
 .browse-results .view-list-ul .author {
- 	/*background-color: firebrick;*/ 
 	float: left;
 	width: 100%;
 	margin: 0 0 20px;
@@ -1134,7 +1096,6 @@
 }
 
 .browse-results .item-list h3 {
- 	/*background-color: orangered;*/ 
 	float: left;
 	width: 100%;
 	margin: 0 0 5px;
@@ -1142,7 +1103,6 @@
 }
 
 .browse-results .view-list-ul {
- 	/*background-color: navy;*/ 
 	margin: 10px 0 0;
 	padding: 0;
 	list-style-type: none;
@@ -1253,7 +1213,6 @@
 /* @group file icons */
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content {
-	/*background: pink;*/
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -1280,7 +1239,6 @@
 	width: 100%;
 	margin: 0;
 	padding: 0 5px 5px 40px;
-	/*background: limegreen;*/
 	height: auto;
 }
 
@@ -1294,7 +1252,6 @@
 }
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .no-file-avai-icon a {
-	/*background: olive;*/
 	display: block;
 	height: auto;
 	margin: 0;
@@ -1304,6 +1261,8 @@
 
 
 /* @end */
+
+/* @group genre */
 
 .browse-by-genre .item-list ul li {
 	float: left;
@@ -1360,16 +1319,7 @@ span.daisy-icon a {
 	height: 40px;
 	margin: 0;
 	padding: 8px 0 0 50px;
-	/*background-color: lime;*/
 }
-
-/*span.daisy-icon-na {
-	display: block;
-	height: 40px;
-	margin: 0;
-	padding: 8px 0 0 50px;
-	background: green url(../images/daisy-icon-na.png) no-repeat left center;
-}*/
 
 span.daisy-icon-na {
 	display: block;
@@ -1454,11 +1404,8 @@ span.daisy-icon-login {
 	clear: both;
 }
 
+/* @end*/
 /* @group generic*/
-
-.group.list {
-	/*background-color: orangered;*/
-}
 
 .group.list table.views-table {
 	background-color: orangered;
@@ -1550,8 +1497,6 @@ span.daisy-icon-login {
 	font-family: 'clear_sansbold', sans-serif;
 }
 
-
-
 /* @end*/
 
 /* @group all groups*/
@@ -1612,22 +1557,11 @@ span.daisy-icon-login {
 	padding: 10px;
 }
 
-
-
 /* @end*/
 
 /* @group discussion, files*/
 
-.group.list.discussion {
-	/*background-color: pink;*/
-}
-
-.group.list.discussion .view-header {
-	/*background-color: blue;*/
-}
-
 .group.list.discussion .form-text {
-	/*background-color: fuchsia;*/
 	width: 400px;
 }
 
@@ -1637,12 +1571,7 @@ span.daisy-icon-login {
 	padding: 5px 0 0 10px;
 }
 
-.group.list.files {
-	/*background-color: rosybrown;*/
-}
-
 .group.list.files .view-header {
-	/*background-color: forestgreen;*/
 	margin: 0;
 	padding: 5px;
 }
@@ -1651,21 +1580,6 @@ span.daisy-icon-login {
 
 /* @end*/
 
-/* @end*/
-
-/* @group search-library organizations*/
-
-.section-library-search {
-	/*background-color: fuchsia;*/
-}
-
-.library-search {
-	/*background-color: orangered;*/
-}
-
-.library-search.page {
-	/*background-color: limegreen;*/
-}
 
 /* @group search block*/
 
@@ -1929,13 +1843,8 @@ span.daisy-icon-login {
 
 /* @end */
 
-/* @end*/
 
 /* @group repository-item*/
-
-.repository-detail {
-	/*background-color: fuchsia;*/
-}
 
 .repo-item-block {
 	/*background-color: khaki;*/
@@ -1943,14 +1852,6 @@ span.daisy-icon-login {
 	width: 100%;
 	margin: 0 0 5px;
 	padding: 0;
-}
-
-.repo-item-block h2.block-title {
-	/*background-color: limegreen;*/
-}
-
-.repo-item {
-	/*background-color: fuchsia;*/
 }
 
 /* @group repo-item - available-formats */
@@ -2053,7 +1954,7 @@ span.daisy-icon-login {
 	}
 }
 
-
+/* @end */
 /* @group file icons */
 
 
@@ -2181,10 +2082,6 @@ span.daisy-icon-login {
 	background-color: #EEEEEE;
 }
 
-
-
-/* @end */
-
 .repo-item.daisy-url {
 	/*background-color: navy;*/
 	float: left;
@@ -2193,6 +2090,7 @@ span.daisy-icon-login {
 	padding: 0;
 }
 
+/* @end */
 /* @group repo-item - commercially available data */
 
 .repo-item.comercially-available {
@@ -2473,32 +2371,8 @@ span.daisy-icon-login {
 	margin: 0;
 	padding: 2px 0 0 5px;
 }
-
 /* @end */
-
-/* @group administrative metadata */
-
-/*.repo-item.detail .views-field-field-access-rights {
-	margin: 0 0 5px;
-	padding: 5px;
-}*/
-
-/*.repo-item.detail .views-field-field-access-rights div.field-content {
-	display: inline;
-}*/
-
-/*.repo-item.detail .views-field-field-rights-holder {
-	margin: 0 0 5px;
-	padding: 5px;
-}*/
-
-/*.repo-item.detail .views-field-field-rights-holder div.field-content {
-	display: inline;
-}*/
-
-
 /* @end */
-
 
 /* @group repo-item - XML data */
 
@@ -2634,7 +2508,6 @@ span.daisy-icon-login {
 
 /* @end */
 
-/* @end*/
 
 /* @group admin-views */
 
