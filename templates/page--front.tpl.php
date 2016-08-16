@@ -27,6 +27,9 @@
 
 			<?php print render($page['admin_nav']); ?>
 			<?php print $messages; ?>
+
+			<?php print render($page['front_side']); ?>
+
 			<?php print render($tabs); ?>
 
 			<?php if ($action_links): ?>
