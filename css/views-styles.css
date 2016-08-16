@@ -26,7 +26,7 @@
 }
 
 .views-displays .secondary .open > a:hover {
-	color: #333;
+	color: #333
 }
 
 .views-displays .secondary .action-list li {
@@ -69,13 +69,14 @@
 	margin: 1.35rem 0 0 0.3rem;
 	padding: 0;
 }
+/*
 .front .views-exposed-form .views-exposed-widget.views-submit-button {
 	width: auto;
 	float: none;
 	display: inline-block;
 	padding: 5px;
 }
-
+*/
 .views-exposed-form .views-exposed-widget .form-submit {
 	/*background-color: palegoldenrod;*/
 	margin: 0;
@@ -114,12 +115,12 @@
 .views-exposed-form label {
 	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
-
+/*
 .front .views-exposed-form label {
 	font-size: 1.2rem;
 	line-height: 1.3rem;
 }
-
+*/
 .block-views {
 	/*background-color: orange;*/
 	clear: both;
