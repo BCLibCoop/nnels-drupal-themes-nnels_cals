@@ -175,22 +175,7 @@ body {
 	background: #D0D0D0;
 	border-bottom: 2px solid #336699;
 }
-/*
-.front #search {
-	float: left;
-	width: 45%;
-	padding: 1%;
-	margin: 1%;
-	border: none;
-	background-color: #DDD;
-}
 
-@media screen and (max-width: 45.675rem) {
-	.front #search {
-		width: 95%;
-	}
-}
-*/
 /* @end */
 
 /* @group main */
@@ -209,7 +194,6 @@ body {
 }
 
 #front-main-views {
-	/*background: navajowhite;*/
 	float: left;
 	clear: both;
 	width: 100%;
@@ -225,7 +209,6 @@ body {
 
 .region-content-bottom {
 	clear: both;
-	/*background-color: orange;*/
 	overflow: hidden;
 	margin: 0;
 	padding: 10px 0;
@@ -233,18 +216,8 @@ body {
 
 .region-highlighted {
 	clear: both;
-	/*background-color: aqua;*/
 }
 
-/* @group no-sidebars */
-
-.no-sidebars #content {
-	/*background-color: orange;*/
-}
-
-
-
-/* @end */
 
 /* @group sidebar */
 .sidebars {
@@ -315,6 +288,9 @@ body {
 
 @media screen and (max-width: 45.675rem) {
 	.front #content {
+		width: 95%;
+	}
+	.region-front-side {
 		width: 95%;
 	}
 }
