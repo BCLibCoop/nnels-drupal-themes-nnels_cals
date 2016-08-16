@@ -198,7 +198,7 @@ body {
 #main {
 	position: relative;
 	margin: 0;
-	padding: 1rem 0 1rem 1rem;
+	padding: 1rem;
 }
 
 /* at 600px */
@@ -299,14 +299,18 @@ body {
 
 /* @group front content */
 
-.front #content {
-	/*background-color: palegreen;*/
+.region-front-side {
 	float: left;
-	width: 500px;
+	width: 48%;
+	padding: 1%;
+}
+.region-front-side .block-title {
+	padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+	font-size: 1.8rem;
 }
 
 .front #content {
-	width: 52%;
+	max-width: 97%;
 }
 
 @media screen and (max-width: 45.675rem) {
@@ -318,57 +322,6 @@ body {
 
 /* @end */
 
-/* @group sidebar-second */
-
-/*.sidebar-second #content {
-	float: left;
-	width: 700px;
-	margin: 0 -700px 0 0px;
-	padding: 10px;
-	background-color: yellow;
-}*/
-
-/*.sidebar-second .region-sidebar-second {
-	float: left;
-	width: 300px;
-	margin: 0 -1000px 0 700px;
-	padding: 10px;
-	background-color: aqua;
-}*/
-
-/* @end */
-
-/* @group two-sidebars */
-
-/*.two-sidebars #content {
-	float: left;
-	width: 568px;
-	margin-left: 196px;
-	margin-right: -784px;
-}*/
-
-/*.two-sidebars .region-sidebar-first {
-	float: left;
-	width: 176px;
-	margin-left: 0px;
-	margin-right: -196px;
-}*/
-
-/*.two-sidebars .region-sidebar-second {
-	 Span 1 column, starting in 5th column from left. 
-	float: left;
-	width: 176px;
-	margin-left: 784px;
-	margin-right: -980px;
-}*/
-
-
-
-/* @end */
-
-
-
-/* @end */
 
 /* @group footer */
 
