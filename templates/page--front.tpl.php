@@ -14,19 +14,19 @@
 	</div>
 	<!-- /#navigation -->
 
-	<div id="main">
+	<div id="search">
+		<nav id="search-navigation" role="navigation">
+			<?php print render($page['search']); ?>
+		</nav>
+	</div>
+	<!-- /#search -->
 
-		<div id="search">
-			<nav id="search-navigation" role="navigation">
-				<?php print $messages; ?>
-				<?php print render($page['admin_nav']); ?>
-				<?php print render($page['search']); ?>
-			</nav>
-		</div>
-		<!-- /#search -->
+	<div id="main">
 
 		<div id="content" class="column" role="main">
 
+			<?php print render($page['admin_nav']); ?>
+			<?php print $messages; ?>
 			<?php print render($tabs); ?>
 
 			<?php if ($action_links): ?>
