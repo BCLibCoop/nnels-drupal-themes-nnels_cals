@@ -24,6 +24,7 @@
 	<div id="main">
 
 			<?php print render($page['admin_nav']); ?>
+			<?php print $messages; ?>
 
 		<?php if ($page['front_side']): ?>
 		<div id="front-side-content">
@@ -33,7 +34,6 @@
 
 		<div id="content" class="column" role="main">
 
-			<?php print $messages; ?>
 			<?php print render($tabs); ?>
 
 			<?php if ($action_links): ?>
