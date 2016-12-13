@@ -202,3 +202,10 @@ article.node-post ul.links.inline li a {
 
 /* @end */
 
+/* @group contributed_video */
+
+.node-contributed-video .field-name-field-video-collection .field-items {
+	padding: 3px;
+}
+
+/* @end */
