@@ -200,6 +200,13 @@
 	clear: both;
 }
 
+/* Mixed weighting in news article headings */
+article.node-article .field-items h3 em {
+    font-weight: bold;
+    font-family: 'clear_sansbold', sans-serif;
+    font-style: italic;
+}
+
 /* @end*/
 
 /* @group faq-list (DEPRECIATED)*/
