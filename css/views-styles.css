@@ -2756,5 +2756,18 @@ span.daisy-icon-login {
 /* @end */
 
 
+/* @group contributed-videos */
+
+.view-contributed-videos .views-field.views-field-title {
+	overflow-wrap: break-word;
+}
+
+.view-contributed-videos table.views-view-grid.cols-3 td {
+	padding: 5px 35px 25px 5px;
+}
+
+.view-contributed-videos .views-field.views-field-field-video-upload {
+	margin-top: 1em;
+}
 
 /* @end */
