@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001A **/
+G/** NNELS_CALS_v001A **/
 
 /* 01/10/2014 */
 
@@ -2743,5 +2743,12 @@ span.daisy-icon-login {
 .view-contributed-videos .views-field.views-field-field-video-upload {
 	margin-top: 1em;
 }
+
+.view-contributed-videos .views-field.views-field-body {
+	width: 19em;
+	margin-top: 1.5em;
+}
+
+
 
 /* @end */
