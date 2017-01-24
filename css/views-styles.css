@@ -2749,6 +2749,31 @@ span.daisy-icon-login {
 	margin-top: 1.5em;
 }
 
+/* @end */
 
+/* @responsive-grid */
+
+.rgrid-row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+.views-columns-3.responsive-grid-wrapper .rgrid-col {
+    float: left;
+    width: 33.33%;
+}
+
+[class*="rgrid-col"] {
+    padding: 20px;
+}
+
+@media all and ( min-width: 935px ) {
+
+  .views-columns-3.responsive-grid-wrapper .rgrid-col {
+    float: left;
+    width: 33.33%;
+  }
+
+}
 
 /* @end */
