@@ -2734,14 +2734,16 @@ span.daisy-icon-login {
 
 .view-contributed-videos .views-field.views-field-title {
 	overflow-wrap: break-word;
+	font-size: 1.5em;
+	width: 65%;
+	line-height: 1.75rem;
 }
-
 .view-contributed-videos table.views-view-grid.cols-3 td {
 	padding: 5px 35px 25px 5px;
 }
 
 .view-contributed-videos .views-field.views-field-field-video-upload {
-	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .view-contributed-videos .views-field.views-field-body {
@@ -2764,10 +2766,10 @@ span.daisy-icon-login {
 }
 
 [class*="rgrid-col"] {
-    padding: 20px;
+    padding: 10px;
 }
 
-@media all and ( min-width: 935px ) {
+@media all and ( min-width: 930px ) {
 
   .views-columns-3.responsive-grid-wrapper .rgrid-col {
     float: left;
