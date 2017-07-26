@@ -1047,10 +1047,13 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .mp3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .file-pdf,
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .pdf,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .e-text,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub2,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3,
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille {
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3 {
 	float: left;
 	display: block;
 	height: 40px;
@@ -1297,6 +1300,8 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .e-text,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub2,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .azw3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille {
 	float: left;
 	display: block;
@@ -2062,9 +2067,12 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
 .repo-item.available-formats .views-field-field-s3-file-upload .mp3,
 .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
+.repo-item.available-formats .views-field-field-s3-file-upload .pdf,
 .repo-item.available-formats .views-field-field-s3-file-upload .e-text,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub2,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3,
+.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\),
+.repo-item.available-formats .views-field-field-s3-file-upload .azw3,
 .repo-item.available-formats .views-field-field-s3-file-upload .braille {
 	float: left;
 	display: block;
@@ -2106,7 +2114,17 @@ span.daisy-icon-login {
 /*** Maximum width of 385 pixels. ***/
 @media screen and (max-width: 24rem) {
 	.repo-item.available-formats .views-field-field-s3-file-upload,
-	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, .repo-item.available-formats .views-field-field-s3-file-upload .daisy3, .repo-item.available-formats .views-field-field-s3-file-upload .mp3, .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf, .repo-item.available-formats .views-field-field-s3-file-upload .e-text, .repo-item.available-formats .views-field-field-s3-file-upload .epub2, .repo-item.available-formats .views-field-field-s3-file-upload .epub3, .repo-item.available-formats .views-field-field-s3-file-upload .braille {
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .mp3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
+	.repo-item.available-formats .views-field-field-s3-file-upload .pdf, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .e-text, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub2, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub3
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\)
+	.repo-item.available-formats .views-field-field-s3-file-upload .azw3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .braille {
 		height: auto;
 	}
 }
