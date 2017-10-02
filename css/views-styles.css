@@ -1931,9 +1931,9 @@ span.daisy-icon-login {
 
 .organization-details .views-field-field-address .field-content {
         /*background-color: orange;*/
-        display: inline-block;
+        display: block;
         margin: 0;
-        padding: 0;
+        padding-top: 1em;
 }
 
 .organization-details .views-field-field-partner-library- {
@@ -1948,8 +1948,29 @@ span.daisy-icon-login {
         padding: 5px;
 }
 
+/* Attempt to make organization details cards more readable */
 .organization-details .views-field-field-url-library .field-content {
         display: inline;
+}
+
+.organization-details .view-content .field-content {
+        float: right;
+        margin-right: 10em;
+}
+
+.organization-details .view-content .views-field-field-partner-library- .field-content {
+				font-weight: bold;
+}
+
+article.node-organization .field-name-field-user-manager.field-type-user-reference div {
+				display: inline-block;
+				margin: 5px;
+}
+
+article.node-organization .field-name-field-user-manager.field-type-user-reference div.field-items {
+			  float: right;
+			  margin-right: 10em;
+			  padding: 0;
 }
 
 
