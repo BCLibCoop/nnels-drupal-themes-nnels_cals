@@ -656,3 +656,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 
 /* @end*/
 
+.block-webform h2.node-title {
+    display: none;
+}
+
