@@ -1,4 +1,4 @@
-G/** NNELS_CALS_v001A **/
+/** NNELS_CALS_v001A **/
 
 /* 01/10/2014 */
 
@@ -134,6 +134,10 @@ G/** NNELS_CALS_v001A **/
 	float: left;
 }
 
+.page-admin .view .view-header {
+    font-size: 1.5em;
+    margin: 2em 0;
+}
 
 /* @end*/
 
