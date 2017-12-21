@@ -130,6 +130,10 @@ G/** NNELS_CALS_v001A **/
 	float: left;
 }
 
+.page-admin .view .view-header {
+    font-size: 1.5em;
+    margin: 2em 0;
+}
 
 /* @end*/
 
@@ -2787,7 +2791,5 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 	width: 15rem;
 	margin-top: 1.5em;
 }
-
-
 
 /* @end */
