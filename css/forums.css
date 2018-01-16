@@ -154,7 +154,7 @@
 .page-forum ul.action-links a:hover,
 .page-forum ul.action-links a:focus {
 	/*background: transparent;*/
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -231,7 +231,7 @@
 .node-forum ul.links.inline a:hover,
 .node-forum ul.links.inline a:focus {
 	/*background: transparent;*/
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 

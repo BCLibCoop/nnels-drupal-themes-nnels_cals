@@ -12,6 +12,14 @@
 	box-sizing: border-box;
 }
 
+/* resets */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* @end */
 
 /* @group HTML5 display definitions */
@@ -164,7 +172,7 @@ a:focus {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #CC6600;
+	color: #b34d00;
 	outline: 0;
 }
 
@@ -173,7 +181,7 @@ a.active {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
-	color: #CC6600;
+	color: #b34d00;
 	outline: 0;
 }
 

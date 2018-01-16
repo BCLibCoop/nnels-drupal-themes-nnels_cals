@@ -5,7 +5,7 @@
 <h1>FORUM PAGES</h1>
  -->
 <div id="page">
-	<header id="header" role="banner">
+	<header id="header">
 		<?php print render($page['header']); ?>
 	</header>
 

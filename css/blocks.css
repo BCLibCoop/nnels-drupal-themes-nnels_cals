@@ -204,7 +204,7 @@
 }
 
 .user-login a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -232,7 +232,7 @@
 
 .region-header .block-cals-forms a:hover,
 .region-header .block-calsauthen a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -288,7 +288,7 @@
 }
 
 .user-logged-in a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background: #EEEEEE;
 }
 
@@ -442,7 +442,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 }
 
 .request-title-block a.request-title:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -498,7 +498,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 }
 
 .external-search-block .externalsearch-single a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -555,7 +555,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 }
 
 #block-block-5 .province-login a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -619,7 +619,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 }
 
 .admin-repo-item-operations .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -651,7 +651,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 }
 
 .search-reset-filters .reset-filters-link-wrapper a:hover {
-        color: #CC6600;
+        color: #b34d00;
 }
 
 /* @end*/

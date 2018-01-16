@@ -87,7 +87,7 @@ G/** NNELS_CALS_v001A **/
 }
 
 .views-exposed-form .views-exposed-widget .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -913,7 +913,7 @@ article.node-article .field-items h3 em {
 }
 
 .search-repository .views-submit-button .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background: #D0D0D0;
 	background: #C2C2C2;
 }
@@ -2042,7 +2042,7 @@ span.daisy-icon-login {
 
 .repo-item.available-formats .views-field-nothing a:hover,
 .repo-item.available-formats .views-field-nothing-1 a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2177,7 +2177,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .view-footer a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2269,7 +2269,7 @@ span.daisy-icon-login {
 
 .repo-item.comercially-available .views-field-nothing a:hover,
 .repo-item.comercially-available .views-field-nothing-1 a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2337,7 +2337,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.comercially-available .view-footer .add-new-link a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2601,7 +2601,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.audit-trail .views-field-nothing a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2647,7 +2647,7 @@ span.daisy-icon-login {
 }
 
 .repo-item-admin.record-set .view-content fieldset .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2706,7 +2706,7 @@ span.daisy-icon-login {
 }
 
 .repo-item-admin.record-set .views-field-delete-node a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2734,14 +2734,16 @@ span.daisy-icon-login {
 
 .view-contributed-videos .views-field.views-field-title {
 	overflow-wrap: break-word;
+	font-size: 1.5em;
+	width: 65%;
+	line-height: 1.75rem;
 }
-
 .view-contributed-videos table.views-view-grid.cols-3 td {
 	padding: 5px 35px 25px 5px;
 }
 
 .view-contributed-videos .views-field.views-field-field-video-upload {
-	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .view-contributed-videos .views-field.views-field-body {
@@ -2749,6 +2751,26 @@ span.daisy-icon-login {
 	margin-top: 1.5em;
 }
 
+/* @end */
 
+/* @responsive-grid */
+
+.rgrid-row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+[class*="rgrid-col"] {
+    padding: 10px;
+}
+
+@media all and ( min-width: 930px ) {
+
+  .views-columns-3.responsive-grid-wrapper .rgrid-col {
+    float: left;
+    width: 33.33%;
+  }
+
+}
 
 /* @end */
