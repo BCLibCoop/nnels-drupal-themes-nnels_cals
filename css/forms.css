@@ -52,7 +52,7 @@ form table .item-list ul {
 
 .form-item label.option {
 	display: inline;
-	font-weight: normal;
+	font: normal normal normal 14px/18px 'clear_sansregular', sans-serif;
 }
 
 .form-required {
