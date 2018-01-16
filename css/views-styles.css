@@ -1,4 +1,4 @@
-/** NNELS_CALS_v001A **/
+G/** NNELS_CALS_v001A **/
 
 /* 01/10/2014 */
 
@@ -87,7 +87,7 @@
 }
 
 .views-exposed-form .views-exposed-widget .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -130,6 +130,10 @@
 	float: left;
 }
 
+.page-admin .view .view-header {
+    font-size: 1.5em;
+    margin: 2em 0;
+}
 
 /* @end*/
 
@@ -916,7 +920,7 @@ article.node-article .field-items h3 em {
 }
 
 .search-repository .views-submit-button .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background: #D0D0D0;
 	background: #C2C2C2;
 }
@@ -1050,10 +1054,13 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .mp3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .file-pdf,
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .pdf,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .e-text,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub2,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3,
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille {
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille,
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3 {
 	float: left;
 	display: block;
 	height: 40px;
@@ -1300,6 +1307,8 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .e-text,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub2,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .azw3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille {
 	float: left;
 	display: block;
@@ -1939,9 +1948,9 @@ span.daisy-icon-login {
 
 .organization-details .views-field-field-address .field-content {
         /*background-color: orange;*/
-        display: inline-block;
+        display: block;
         margin: 0;
-        padding: 0;
+        padding-top: 1em;
 }
 
 .organization-details .views-field-field-partner-library- {
@@ -1956,8 +1965,29 @@ span.daisy-icon-login {
         padding: 5px;
 }
 
+/* Attempt to make organization details cards more readable */
 .organization-details .views-field-field-url-library .field-content {
         display: inline;
+}
+
+.organization-details .view-content .field-content {
+        float: right;
+        margin-right: 10em;
+}
+
+.organization-details .view-content .views-field-field-partner-library- .field-content {
+				font-weight: bold;
+}
+
+article.node-organization .field-name-field-user-manager.field-type-user-reference div {
+				display: inline-block;
+				margin: 5px;
+}
+
+article.node-organization .field-name-field-user-manager.field-type-user-reference div.field-items {
+			  float: right;
+			  margin-right: 10em;
+			  padding: 0;
 }
 
 
@@ -2055,7 +2085,7 @@ span.daisy-icon-login {
 
 .repo-item.available-formats .views-field-nothing a:hover,
 .repo-item.available-formats .views-field-nothing-1 a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2075,9 +2105,12 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
 .repo-item.available-formats .views-field-field-s3-file-upload .mp3,
 .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
+.repo-item.available-formats .views-field-field-s3-file-upload .pdf,
 .repo-item.available-formats .views-field-field-s3-file-upload .e-text,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub2,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3,
+.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\),
+.repo-item.available-formats .views-field-field-s3-file-upload .azw3,
 .repo-item.available-formats .views-field-field-s3-file-upload .braille {
 	float: left;
 	display: block;
@@ -2119,7 +2152,17 @@ span.daisy-icon-login {
 /*** Maximum width of 385 pixels. ***/
 @media screen and (max-width: 24rem) {
 	.repo-item.available-formats .views-field-field-s3-file-upload,
-	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, .repo-item.available-formats .views-field-field-s3-file-upload .daisy3, .repo-item.available-formats .views-field-field-s3-file-upload .mp3, .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf, .repo-item.available-formats .views-field-field-s3-file-upload .e-text, .repo-item.available-formats .views-field-field-s3-file-upload .epub2, .repo-item.available-formats .views-field-field-s3-file-upload .epub3, .repo-item.available-formats .views-field-field-s3-file-upload .braille {
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .daisy3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .mp3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
+	.repo-item.available-formats .views-field-field-s3-file-upload .pdf, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .e-text, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub2, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub3
+	.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\)
+	.repo-item.available-formats .views-field-field-s3-file-upload .azw3, 
+	.repo-item.available-formats .views-field-field-s3-file-upload .braille {
 		height: auto;
 	}
 }
@@ -2190,7 +2233,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.available-formats .view-footer a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2282,7 +2325,7 @@ span.daisy-icon-login {
 
 .repo-item.comercially-available .views-field-nothing a:hover,
 .repo-item.comercially-available .views-field-nothing-1 a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2350,7 +2393,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.comercially-available .view-footer .add-new-link a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2627,7 +2670,7 @@ span.daisy-icon-login {
 }
 
 .repo-item.audit-trail .views-field-nothing a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2673,7 +2716,7 @@ span.daisy-icon-login {
 }
 
 .repo-item-admin.record-set .view-content fieldset .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2732,7 +2775,7 @@ span.daisy-icon-login {
 }
 
 .repo-item-admin.record-set .views-field-delete-node a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -2760,14 +2803,43 @@ span.daisy-icon-login {
 
 .view-contributed-videos .views-field.views-field-title {
 	overflow-wrap: break-word;
+	font-size: 1.5em;
+	width: 65%;
+	line-height: 1.75rem;
 }
-
 .view-contributed-videos table.views-view-grid.cols-3 td {
 	padding: 5px 35px 25px 5px;
 }
 
 .view-contributed-videos .views-field.views-field-field-video-upload {
-	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.view-contributed-videos .views-field.views-field-body {
+	width: 15rem;
+	margin-top: 1.5em;
+}
+
+/* @end */
+
+/* @responsive-grid */
+
+.rgrid-row {
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+[class*="rgrid-col"] {
+    padding: 10px;
+}
+
+@media all and ( min-width: 930px ) {
+
+  .views-columns-3.responsive-grid-wrapper .rgrid-col {
+    float: left;
+    width: 33.33%;
+  }
+
 }
 
 /* @end */

@@ -19,8 +19,6 @@
 		<meta name="viewport" content="width=device-width">
 	<?php endif; ?>
 
-	<meta http-equiv="cleartype" content="on">
-
 	<?php print $styles; ?>
 
 	<?php print $scripts; ?>

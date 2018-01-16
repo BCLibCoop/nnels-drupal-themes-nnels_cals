@@ -52,7 +52,7 @@ form table .item-list ul {
 
 .form-item label.option {
 	display: inline;
-	font-weight: normal;
+	font: normal normal normal 14px/18px 'clear_sansregular', sans-serif;
 }
 
 .form-required {
@@ -130,7 +130,7 @@ td.menu-disabled {
 #user-login .form-submit:hover {
 	/*color: #EC1C24;
 	background-color: #BBBBBB;*/
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -180,7 +180,7 @@ td.menu-disabled {
 }
 
 #cals-external-search-request-new-title-form #edit-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 }
 
 /* @end */
@@ -236,7 +236,7 @@ td.menu-disabled {
 }
 
 .detail-library-registration .form-submit:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 

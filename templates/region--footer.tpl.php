@@ -27,7 +27,7 @@
  */
 ?>
 <?php if ($content): ?>
-	<footer id="footer" class="<?php print $classes; ?>" role="banner">
+	<footer id="footer" class="<?php print $classes; ?>">
 		<?php print $content; ?>
 	</footer><!-- region__footer -->
 <?php endif; ?>

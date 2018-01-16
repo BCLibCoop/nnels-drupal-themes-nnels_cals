@@ -176,7 +176,7 @@ article.node-post ul.links.inline li a {
 }
 
 .node-record-set a.generate-stub:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background-color: #EEEEEE;
 }
 
@@ -206,6 +206,13 @@ article.node-post ul.links.inline li a {
 
 .node-contributed-video .field-name-field-video-collection .field-items {
 	padding: 3px;
+}
+
+.node-contributed-video .field-name-body p {
+    font-size: 1.25em;
+    margin-top: 2em;
+		margin-bottom: 2em;
+		width: 75%;
 }
 
 /* @end */

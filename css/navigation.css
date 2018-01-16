@@ -64,7 +64,7 @@
 
 .language-switcher a:hover {
 	/*background-color: limegreen;*/
-	color: #CC6600;
+	color: #b34d00;
 	background: #EEEEEE;
 }
 
@@ -116,17 +116,17 @@
 }
 
 .main-navigation a.active {
-	color: #CC6600;
+	color: #b34d00;
 	background: #EEEEEE;
 }
 
 .main-navigation a.active-trail {
-	color: #CC6600;
+	color: #b34d00;
 	background: #EEEEEE;
 }
 
 .main-navigation a:hover {
-	color: #CC6600;
+	color: #b34d00;
 	background: #EEEEEE;
 }
 
@@ -193,12 +193,12 @@
 
 .secondary-navigation a:hover {
 	/*background-color: limegreen;*/
-	color: #CC6600;
+	color: #b34d00;
 }
 
 .secondary-navigation a.active {
 	/*background-color: limegreen;*/
-	color: #CC6600;
+	color: #b34d00;
 }
 
 .secondary-navigation.help-categories-block {
@@ -289,7 +289,7 @@
 
 .footer-navigation a:hover {
 	/*background-color: limegreen;*/
-	color: #CC6600;
+	color: #b34d00;
 }
 
 /*** Maximum width of 540 pixels. ***/
@@ -350,7 +350,7 @@
 .footer-navigation-copyright a:hover {
 	/*background-color: limegreen;*/
 	/*color: #FFFFFF;*/
-	color: #CC6600;
+	color: #b34d00;
 }
 
 /* @end */
