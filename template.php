@@ -186,46 +186,13 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
 }
 
 function NNELS_CALS_v001_preprocess_block(&$vars) {
- 
+
   if($vars['block']->module == 'facetapi') {
   	
     $vars['theme_hook_suggestions'][] = 'block__facetapi_skiplinks';  
 	  //dpm($vars);
   }
 
-  if ($vars['block_html_id'] == 'block-views-exp-repository-search-page') {
-  	drupal_add_js(
-		'Drupal.behaviors.nnelsSearchWithinSearch = {
-			attach: function (context, settings) {
-				jQuery("input#edit-submit-repository-search").click(function () {
-					if (Drupal.ajax_facets) {
-						Drupal.ajax_facets.sendAjaxQuery({
-      							pushStateNeeded: true,
-        						searchResultsNeeded: true
-      						});
-					}
-				});
-			}
-		};', 
-		array(
-			'type' => 'inline',
-			'scope' => 'footer'
-    	 	));
-
-        drupal_add_js(
-		'Drupal.behaviors.nnelsSearchResultsPlurals = {
-			attach: function (context, settings) {
-				count = jQuery(".search-results .views-row .view-content").length;
-				if (count > 1) {
-					jQuery("#search-view-total-count").addClass("plural");
-				}
-			}
-		};',
-		array(
-			'type' => 'inline',
-			'scope' => 'footer'
-     		));
-  }
 }
 
 
@@ -276,6 +243,13 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 	    views_embed_view("field_collection_view_commercially_available", "embed_5", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
+  }
+  //Flag icon markup
+  if ( $user->uid) {
+	$variables['flag_icon'] = '<div class="bookshelf-add-wrapper">' .
+                            '<i class="fa fa-bookmark-o flag-bookmark-icon" aria-hidden="true"></i>' .
+			    flag_create_link('bookshelf', $nid) .
+			    '</div>';
   }
 }
 
@@ -339,4 +313,5 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
 function NNELS_CALS_v001_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
 }
+
 

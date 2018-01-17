@@ -100,6 +100,7 @@ regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
 regions[content_bottom]        = Content Bottom
+regions[front_side]        = Front Side Content
 regions[front_bottom]        = Front Bottom
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar

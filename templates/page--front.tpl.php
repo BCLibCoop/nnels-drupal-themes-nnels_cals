@@ -14,16 +14,23 @@
 	</div>
 	<!-- /#navigation -->
 
+	<div id="search">
+		<nav id="search-navigation" role="navigation">
+			<?php print render($page['search']); ?>
+		</nav>
+	</div>
+	<!-- /#search -->
+
 	<div id="main">
 
-		<div id="search">
-			<nav id="search-navigation" role="navigation">
-				<?php print $messages; ?>
-				<?php print render($page['admin_nav']); ?>
-				<?php print render($page['search']); ?>
-			</nav>
+			<?php print render($page['admin_nav']); ?>
+			<?php print $messages; ?>
+
+		<?php if ($page['front_side']): ?>
+		<div id="front-side-content">
+			<?php print render($page['front_side']); ?>
 		</div>
-		<!-- /#search -->
+		<?php endif; ?>
 
 		<div id="content" class="column" role="main">
 

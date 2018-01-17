@@ -202,7 +202,7 @@
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 }
-
+.bookshelf-button a:hover,
 .user-login a:hover {
 	color: #b34d00;
 	background-color: #EEEEEE;
@@ -260,6 +260,7 @@
 
 /* @group user-logged-in */
 
+.block.bookshelf-button,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
 	float: right;
@@ -277,6 +278,7 @@
 		position: absolute !important;
 	}
 }
+.bookshelf-button a,
 .user-logged-in a {
 	display: block;
 	float: left;
@@ -384,24 +386,11 @@
 }
 
 /* In support of facet checkbox mode */
-ul.facetapi-facetapi-checkbox-links.facetapi-processed,
-/* Ajax facets */
-.block-facetapi.block--ajax_facets ul.facetapi-facetapi-ajax-checkboxes {
+ul.facetapi-facetapi-checkbox-links.facetapi-processed {
 	padding-left: 0px;
 	list-style: none;
 }
 
-.block--ajax_facets .facetapi-facetapi-ajax-checkboxes label.option {
-	font-weight: inherit;
-	font-family: "clear_sansregular", sans-serif;
-	font-size: 16px;
-	line-height: 18px;
-}
-
-.facetapi-facetapi-ajax-checkboxes .form-item.form-type-checkbox:hover {
-    	font-weight: bold;
-    	color: #CC6600;
-}
 
 /* @end */
 
@@ -641,13 +630,11 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 
 /* @group search-reset-filters block */
 
-.block-current-search.search-reset-filters,
-.block-ajax-reset {
+.block-current-search.search-reset-filters {
 	clear: left;
 }
 
-.search-reset-filters .reset-filters-link-wrapper,
-.block-ajax-reset .block-content {
+.search-reset-filters .reset-filters-link-wrapper {
         margin: 0;
         padding: 6px 10px 5px 10px;
         color: #333333;
@@ -656,35 +643,32 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
         height: 35px;
 }
 
-.block-ajax-reset .item-list li {
-	list-style: none;
-}
-
-.search-reset-filters .reset-filters-link-wrapper a,
-.block-ajax-reset .block-content a {
+.search-reset-filters .reset-filters-link-wrapper a {
         color: #333333;
 	display: block;
-	font-size: 1.2rem;
-	font-weight: bold;
 }
 
-.search-reset-filters .reset-filters-link-wrapper:hover,
-.block-ajax-reset .block-content:hover {
+.search-reset-filters .reset-filters-link-wrapper:hover {
         background: #C2C2C2;
 }
 
-.search-reset-filters .reset-filters-link-wrapper a:hover,
-.block-ajax-reset .block-content a:hover {
+.search-reset-filters .reset-filters-link-wrapper a:hover {
         color: #b34d00;
-}
-
-.ajax-facets-submit-all-link {
-    	visibility: hidden;
 }
 
 /* @end*/
 
+/* Flags */
+.block-flag-lists ul.flag-lists-links li {
+	list-style: none !important;
+}
+
+.block-flag-lists {
+	display: block;
+	float: left;
+	width: auto;
+}
+
 .block-webform h2.node-title {
     display: none;
 }
-

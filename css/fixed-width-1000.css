@@ -7,7 +7,7 @@
 /* @group body-modifications */
 
 body {
-	background: #444444;
+	background: #061C3E;
 }
 
 /* @end */
@@ -176,21 +176,6 @@ body {
 	border-bottom: 2px solid #336699;
 }
 
-.front #search {
-	float: left;
-	width: 45%;
-	padding: 1%;
-	margin: 1%;
-	border: 1px solid #336699;
-	background-color: #DDD;
-}
-
-@media screen and (max-width: 45.675rem) {
-	.front #search {
-		width: 95%;
-	}
-}
-
 /* @end */
 
 /* @group main */
@@ -198,7 +183,7 @@ body {
 #main {
 	position: relative;
 	margin: 0;
-	padding: 1rem 0 1rem 1rem;
+	padding: 1rem;
 }
 
 /* at 600px */
@@ -209,7 +194,6 @@ body {
 }
 
 #front-main-views {
-	/*background: navajowhite;*/
 	float: left;
 	clear: both;
 	width: 100%;
@@ -225,7 +209,6 @@ body {
 
 .region-content-bottom {
 	clear: both;
-	/*background-color: orange;*/
 	overflow: hidden;
 	margin: 0;
 	padding: 10px 0;
@@ -233,18 +216,8 @@ body {
 
 .region-highlighted {
 	clear: both;
-	/*background-color: aqua;*/
 }
 
-/* @group no-sidebars */
-
-.no-sidebars #content {
-	/*background-color: orange;*/
-}
-
-
-
-/* @end */
 
 /* @group sidebar */
 .sidebars {
@@ -299,18 +272,25 @@ body {
 
 /* @group front content */
 
-.front #content {
-	/*background-color: palegreen;*/
+.region-front-side {
 	float: left;
-	width: 500px;
+	width: 48%;
+	padding: 1%;
+}
+.region-front-side .block-title {
+	padding: 0.5rem 0.5rem 0.5rem 0.2rem;
+	font-size: 1.8rem;
 }
 
 .front #content {
-	width: 52%;
+	max-width: 97%;
 }
 
 @media screen and (max-width: 45.675rem) {
 	.front #content {
+		width: 95%;
+	}
+	.region-front-side {
 		width: 95%;
 	}
 }
@@ -318,57 +298,6 @@ body {
 
 /* @end */
 
-/* @group sidebar-second */
-
-/*.sidebar-second #content {
-	float: left;
-	width: 700px;
-	margin: 0 -700px 0 0px;
-	padding: 10px;
-	background-color: yellow;
-}*/
-
-/*.sidebar-second .region-sidebar-second {
-	float: left;
-	width: 300px;
-	margin: 0 -1000px 0 700px;
-	padding: 10px;
-	background-color: aqua;
-}*/
-
-/* @end */
-
-/* @group two-sidebars */
-
-/*.two-sidebars #content {
-	float: left;
-	width: 568px;
-	margin-left: 196px;
-	margin-right: -784px;
-}*/
-
-/*.two-sidebars .region-sidebar-first {
-	float: left;
-	width: 176px;
-	margin-left: 0px;
-	margin-right: -196px;
-}*/
-
-/*.two-sidebars .region-sidebar-second {
-	 Span 1 column, starting in 5th column from left. 
-	float: left;
-	width: 176px;
-	margin-left: 784px;
-	margin-right: -980px;
-}*/
-
-
-
-/* @end */
-
-
-
-/* @end */
 
 /* @group footer */
 

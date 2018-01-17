@@ -55,29 +55,40 @@ G/** NNELS_CALS_v001A **/
 
 /* @group generic views items*/
 
+#block-views-exp-repository-search-page {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 42rem) { /* 672px */
+	#block-views-exp-repository-search-page {
+		flex-direction: column;
+		align-items: left;
+	}
+}
+
+#views-exposed-form-repository-search-page .views-exposed-form label {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
 .views-exposed-form .views-exposed-widget {
 	max-width: 100%;
 	display: inline-block;
 	margin: 0;
-    padding: 5px;
+    padding: 4px;
 }
 
 .views-exposed-form .views-exposed-widget.views-submit-button {
- 	/*background-color: lemonchiffon;*/
 	float: none;
 	display: inline-block;
-	margin: 1.35rem 0 0 0.3rem;
+	margin: 0;
 	padding: 0;
-}
-.front .views-exposed-form .views-exposed-widget.views-submit-button {
-	width: auto;
-	float: none;
-	display: inline-block;
-	padding: 5px;
 }
 
 .views-exposed-form .views-exposed-widget .form-submit {
-	/*background-color: palegoldenrod;*/
 	margin: 0;
 	padding: 3px 5px;
 	color: #333333;
@@ -115,40 +126,26 @@ G/** NNELS_CALS_v001A **/
 	font: normal normal normal 18px/22px 'clear_sansbold', sans-serif;
 }
 
-.front .views-exposed-form label {
-	font-size: 1.2rem;
-	line-height: 1.3rem;
-}
-
 .block-views {
-	/*background-color: orange;*/
 	clear: both;
 }
 
 .views-table {
-/*background-color: lawngreen;*/
 	float: left;
 }
 
-.page-admin .view .view-header {
-    font-size: 1.5em;
-    margin: 2em 0;
-}
 
 /* @end*/
 
 /* @group announcements-landing*/
 .announcements-block-landing {
-	/*background-color: orange;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 15px;
 	padding: 10px;
-	/* border: 1px solid #336699; */
 }
 
 .announcements .view-list-ul {
-	/*background-color: pink;*/
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -156,7 +153,6 @@ G/** NNELS_CALS_v001A **/
 }
 
 .announcements .view-list-ul li.views-row {
-	/*background-color: lemonchiffon;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 5px;
@@ -166,7 +162,6 @@ G/** NNELS_CALS_v001A **/
 }
 
 .announcements .views-field-title-field {
-	/*background-color: lavender;*/
 	float: left;
 	width: 98%;
 	margin: 0 0 5px;
@@ -176,7 +171,6 @@ G/** NNELS_CALS_v001A **/
 }
 
 .announcements .views-field-body, .announcements .views-field-created, .announcements .views-field-field-cors-file, .announcements .views-field-field-location, .announcements .views-field-field-news-date {
-	/*background-color: chartreuse;*/
 	float: left;
 	width: 98%;
 	margin: 0;
@@ -184,7 +178,6 @@ G/** NNELS_CALS_v001A **/
 }
 
 .announcements .views-field-view-node {
-	/*background-color: teal;*/
 	float: left;
 	width: 98%;
 	margin: 0;
@@ -194,7 +187,6 @@ G/** NNELS_CALS_v001A **/
 
 .announcements .views-field-clone-node,
 .announcements .views-field-edit-node {
-	/*background-color: chartreuse;*/
 	float: right;
 	margin: 5px;
 	padding: 5px;
@@ -206,7 +198,7 @@ G/** NNELS_CALS_v001A **/
 
 /* Mixed weighting in news article headings */
 article.node-article .field-items h3 em {
-    font-weight: bold;
+    font-weight: normal;
     font-family: 'clear_sansbold', sans-serif;
     font-style: italic;
 }
@@ -216,13 +208,11 @@ article.node-article .field-items h3 em {
 /* @group faq-list (DEPRECIATED)*/
 
 .faq-list {
-	/*background-color: fuchsia;*/
 	margin: 20px 0 0;
 	padding: 0;
 }
 
 .faq-list .item-list ul {
-	/*background-color: orange;*/
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
@@ -230,7 +220,6 @@ article.node-article .field-items h3 em {
 }
 
 .faq-list .item-list ul li {
-	/*background-color: navy;*/
 	margin: 0 0 20px;
 	padding: 0;
 	list-style-type: none;
@@ -239,7 +228,6 @@ article.node-article .field-items h3 em {
 }
 
 .faq-list .views-field-title {
-	/*background-color: fuchsia;*/
 	margin: 0;
 	padding: 0;
 	font: normal normal 20px/24px 'clear_sansbold', sans-serif;
@@ -247,7 +235,6 @@ article.node-article .field-items h3 em {
 }
 
 .faq-list .views-field-body {
-	/*background-color: goldenrod;*/
 	margin: 0;
 	padding: 0;
 }
@@ -578,7 +565,6 @@ article.node-article .field-items h3 em {
 	padding: 5px;
 	list-style-type: none;
 	list-style-image: none;
-	border: 1px solid #336699;
 	min-width: 250px;
 	background-color: #F0F0F0;
 }
@@ -668,8 +654,8 @@ article.node-article .field-items h3 em {
 	border: 0px solid #336699;
 }
 
+/* at 907px */
 @media screen and (max-width: 56.7rem) {
-  /*** Front page specific ***/
   .recently-added .view-list-ul li {
   	min-height: 50px;
   	height: auto;
@@ -721,7 +707,6 @@ article.node-article .field-items h3 em {
 	padding: 5px;
 	list-style-type: none;
 	list-style-image: none;
-	border: 1px solid #336699;
 	min-width: 250px;
 	background-color: #F0F0F0;
 }
@@ -812,8 +797,6 @@ article.node-article .field-items h3 em {
 }
 
 @media screen and (max-width: 56.7rem) {
-
-  /*** Front page specific ***/
   .most-downloaded .view-list-ul li {
   	min-height: 50px;
   	height: auto;
@@ -831,89 +814,48 @@ article.node-article .field-items h3 em {
 /* @group search-repository*/
 
 .search-repository {
-	/*background-color: lightblue;*/
 	margin: 0;
-	padding: 5px 5px 10px;
+	padding: 0.8rem 0.1rem;
 	overflow: hidden;
-/*	display: inline-block;
-	width: 57%;*/
 }
 
 .search-repository .block-title {
-	/*background-color: magenta;*/
-	border-bottom: 1px solid #336699;
-}
-
-.not-front .search-repository .block-title {
-	/*background-color: fuchsia;*/
 	border-bottom: 0px solid #336699;
 	float: left;
 	margin: 0;
-	padding: 20px 10px 0 0;
+	padding: 0 0.7rem 0 0.3rem;
 }
 
 .search-repository #views-exposed-form-repository-search-page {
-	/*background-color: navy;*/
-}
-
-.not-front .search-repository #views-exposed-form-repository-search-page {
-	/*background-color: violet;*/
 	float: left;
 }
 
-.search-repository .views-widget-filter-search_api_views_fulltext_2 {
-	/*background-color: rosybrown;*/
-}
-
-.front .search-repository .views-widget-filter-search_api_views_fulltext_2 {
-	width: 70%;
-	float: none;
-	display: inline-block;
-}
-
-@media screen and (max-width: 24rem) {
-	.front .search-repository .views-widget-filter-search_api_views_fulltext_2 {
-		width: 100%;
-	}
-}
-
 .search-repository #edit-search-api-views-fulltext-2 {
-	width: 300px;
+	width: 310px;
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 	max-width: 95%;
-}
-
-.front .search-repository #edit-search-api-views-fulltext-2 {
-	/*background-color: forestgreen;*/
-	width: 100%;
-}
-
-.search-repository .views-widget-sort-by {
-	/*background-color: darkcyan;*/
+	line-height: 1.6rem;
 }
 
 .search-repository .views-widget-sort-by select {
-	/*background: lime;*/
 	width: 110px;
 	background: #FFFFFF;
 	border: 1px solid #336699;
 }
 
 .search-repository .views-widget-sort-order {
-	/*background-color: navy;*/
 	display: none;
 }
 
-/*.search-repository .views-submit-button {
-	margin: 0;
-	padding: 0;
-}*/
+.search-repository .views-exposed-widgets {
+	display: flex;
+	align-items: center;
+}
 
 .search-repository .views-submit-button .form-submit {
-	/*background-color: palegoldenrod;*/
 	margin: 0;
-	padding: 5px 10px;
+	padding: 3px 10px;
 	color: #333333;
 	background: #FFFFFF;
 	border: 1px solid #336699;
@@ -926,7 +868,6 @@ article.node-article .field-items h3 em {
 }
 
 .search-repository .views-reset-button {
-	/*background-color: wheat;*/
 	display: none;
 }
 
@@ -1042,10 +983,8 @@ article.node-article .field-items h3 em {
 /* file icons */
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content {
-	/*background: pink;*/
 	float: left;
 	display: block;
-	/*height: 40px;*/
 	margin: 0;
 	padding: 0;
 }
@@ -1063,7 +1002,7 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3 {
 	float: left;
 	display: block;
-	height: 40px;
+	min-height: 40px;
 	margin: 0;
 	padding: 0;
 	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
@@ -1072,10 +1011,9 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
 	display: block;
 	width: 100%;
-	height: 40px;
+	min-height: 40px;
 	margin: 0;
 	padding: 5px 5px 5px 40px;
-	/*background: limegreen;*/
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon {
@@ -1084,11 +1022,10 @@ article.node-article .field-items h3 em {
 	min-height: 40px;
 	margin: 0;
 	padding: 5px 5px 5px 40px;
-	background: /*palegoldenrod*/ url(../images/icon_nofile-available.png) no-repeat left top;
+	background: url(../images/icon_nofile-available.png) no-repeat left top;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon a {
-	/*background: olive;*/
 	display: block;
 	height: auto;
 	margin: 0;
@@ -1104,11 +1041,23 @@ article.node-article .field-items h3 em {
 	overflow: auto;
 }
 
+.search-results .views-field-php.flag-toggle-wrapper {
+	display: inline-block;
+	float: right;
+}
+
+.search-results .views-field-php.flag-toggle-wrapper .flag-message {
+	background: #D0D0D0;
+	width: 200px;
+	font-size: 1em;
+}
+
 /* @end */
 
 /* @group external-search*/
 
-.search-results h1.no-results-title { /*page title*/
+/*page title*/
+.search-results h1.no-results-title { 
 	clear: both;
 	width: 100%;
 	margin: 0 0 10px;
@@ -1119,16 +1068,13 @@ article.node-article .field-items h3 em {
 	text-decoration: none;
 	font-variant: normal;
 	border-bottom: 1px solid #336699;
-	/*background-color: fuchsia;*/
 }
 
 .search-results .field-label {
-	/*background-color: fuchsia;*/
 	font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;
 }
 
 .search-results .field-title {
-	/*background-color: forestgreen;*/
 	margin: 5px;
 	padding: 5px 5px 0;
 	font: normal normal normal 18px/24px 'clear_sansbold', sans-serif;
@@ -1139,7 +1085,6 @@ article.node-article .field-items h3 em {
 .search-results .field-isbn,
 .search-results .field-description,
 .search-results .field-link {
-	/*background-color: bisque;*/
 	margin: 5px;
 	padding: 5px 5px 0;
 }
@@ -1152,21 +1097,7 @@ article.node-article .field-items h3 em {
 
 /* @group browse-results - page*/
 
-.browse-results {
- 	/*background-color: fuchsia;*/ 
-}
-
-.browse-results .views-exposed-form {
- 	/*background-color: seagreen;*/ 
-}
-
-.browse-results .views-label {
- 	/*background-color: gold;*/ 
-	/*font: normal normal normal 16px/22px 'clear_sansbold', sans-serif;*/
-}
-
 .browse-results .view-list-ul .author {
- 	/*background-color: firebrick;*/ 
 	float: left;
 	width: 100%;
 	margin: 0 0 20px;
@@ -1175,7 +1106,6 @@ article.node-article .field-items h3 em {
 }
 
 .browse-results .item-list h3 {
- 	/*background-color: orangered;*/ 
 	float: left;
 	width: 100%;
 	margin: 0 0 5px;
@@ -1183,7 +1113,6 @@ article.node-article .field-items h3 em {
 }
 
 .browse-results .view-list-ul {
- 	/*background-color: navy;*/ 
 	margin: 10px 0 0;
 	padding: 0;
 	list-style-type: none;
@@ -1294,7 +1223,6 @@ article.node-article .field-items h3 em {
 /* @group file icons */
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content {
-	/*background: pink;*/
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -1323,7 +1251,6 @@ article.node-article .field-items h3 em {
 	width: 100%;
 	margin: 0;
 	padding: 0 5px 5px 40px;
-	/*background: limegreen;*/
 	height: auto;
 }
 
@@ -1337,7 +1264,6 @@ article.node-article .field-items h3 em {
 }
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .no-file-avai-icon a {
-	/*background: olive;*/
 	display: block;
 	height: auto;
 	margin: 0;
@@ -1347,6 +1273,8 @@ article.node-article .field-items h3 em {
 
 
 /* @end */
+
+/* @group genre */
 
 .browse-by-genre .item-list ul li {
 	float: left;
@@ -1403,16 +1331,7 @@ span.daisy-icon a {
 	height: 40px;
 	margin: 0;
 	padding: 8px 0 0 50px;
-	/*background-color: lime;*/
 }
-
-/*span.daisy-icon-na {
-	display: block;
-	height: 40px;
-	margin: 0;
-	padding: 8px 0 0 50px;
-	background: green url(../images/daisy-icon-na.png) no-repeat left center;
-}*/
 
 span.daisy-icon-na {
 	display: block;
@@ -1497,11 +1416,8 @@ span.daisy-icon-login {
 	clear: both;
 }
 
+/* @end*/
 /* @group generic*/
-
-.group.list {
-	/*background-color: orangered;*/
-}
 
 .group.list table.views-table {
 	background-color: orangered;
@@ -1593,8 +1509,6 @@ span.daisy-icon-login {
 	font-family: 'clear_sansbold', sans-serif;
 }
 
-
-
 /* @end*/
 
 /* @group all groups*/
@@ -1655,22 +1569,11 @@ span.daisy-icon-login {
 	padding: 10px;
 }
 
-
-
 /* @end*/
 
 /* @group discussion, files*/
 
-.group.list.discussion {
-	/*background-color: pink;*/
-}
-
-.group.list.discussion .view-header {
-	/*background-color: blue;*/
-}
-
 .group.list.discussion .form-text {
-	/*background-color: fuchsia;*/
 	width: 400px;
 }
 
@@ -1680,12 +1583,7 @@ span.daisy-icon-login {
 	padding: 5px 0 0 10px;
 }
 
-.group.list.files {
-	/*background-color: rosybrown;*/
-}
-
 .group.list.files .view-header {
-	/*background-color: forestgreen;*/
 	margin: 0;
 	padding: 5px;
 }
@@ -1694,21 +1592,6 @@ span.daisy-icon-login {
 
 /* @end*/
 
-/* @end*/
-
-/* @group search-library organizations*/
-
-.section-library-search {
-	/*background-color: fuchsia;*/
-}
-
-.library-search {
-	/*background-color: orangered;*/
-}
-
-.library-search.page {
-	/*background-color: limegreen;*/
-}
 
 /* @group search block*/
 
@@ -1948,9 +1831,9 @@ span.daisy-icon-login {
 
 .organization-details .views-field-field-address .field-content {
         /*background-color: orange;*/
-        display: block;
+        display: inline-block;
         margin: 0;
-        padding-top: 1em;
+        padding: 0;
 }
 
 .organization-details .views-field-field-partner-library- {
@@ -1965,41 +1848,15 @@ span.daisy-icon-login {
         padding: 5px;
 }
 
-/* Attempt to make organization details cards more readable */
 .organization-details .views-field-field-url-library .field-content {
         display: inline;
-}
-
-.organization-details .view-content .field-content {
-        float: right;
-        margin-right: 10em;
-}
-
-.organization-details .view-content .views-field-field-partner-library- .field-content {
-				font-weight: bold;
-}
-
-article.node-organization .field-name-field-user-manager.field-type-user-reference div {
-				display: inline-block;
-				margin: 5px;
-}
-
-article.node-organization .field-name-field-user-manager.field-type-user-reference div.field-items {
-			  float: right;
-			  margin-right: 10em;
-			  padding: 0;
 }
 
 
 /* @end */
 
-/* @end*/
 
 /* @group repository-item*/
-
-.repository-detail {
-	/*background-color: fuchsia;*/
-}
 
 .repo-item-block {
 	/*background-color: khaki;*/
@@ -2007,14 +1864,6 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 	width: 100%;
 	margin: 0 0 5px;
 	padding: 0;
-}
-
-.repo-item-block h2.block-title {
-	/*background-color: limegreen;*/
-}
-
-.repo-item {
-	/*background-color: fuchsia;*/
 }
 
 /* @group repo-item - available-formats */
@@ -2090,13 +1939,34 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 }
 
 .repo-item.available-formats .views-field-field-s3-file-upload {
-	/*background-color: indigo;*/
 	float: left;
 	width: 60%;
 	margin: 0;
 	padding: 0;
+	display: inline-block;
+}
+@media screen and (max-width: 30rem) { /* 480px */
+	.repo-item.available-formats .views-field-field-s3-file-upload {
+		width: 95%;
+	}
 }
 
+.repo-item.available-formats div.file-size-warning-wrapper,
+.multi-file-embed div.file-size-warning-wrapper {
+  margin: 1% 0 0 0;
+  padding: 5px;
+  float: right;
+  font-size: 90%;
+  max-height: 40px;
+}
+@media screen and (max-width: 30rem) { /* 480px */
+	.repo-item.available-formats div.file-size-warning-wrapper,
+	.multi-file-embed div.file-size-warning-wrapper {
+		float: none;
+	}
+}
+
+/* @end */
 /* @group file icons */
 
 
@@ -2237,10 +2107,6 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 	background-color: #EEEEEE;
 }
 
-
-
-/* @end */
-
 .repo-item.daisy-url {
 	/*background-color: navy;*/
 	float: left;
@@ -2249,6 +2115,7 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 	padding: 0;
 }
 
+/* @end */
 /* @group repo-item - commercially available data */
 
 .repo-item.comercially-available {
@@ -2452,7 +2319,9 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 }
 
 .repo-item.detail .views-field-body,
+.repo-item.detail .views-field-field-contents,
 .repo-item.detail .views-field-field-dc-creator, 
+.repo-item.detail .views-field-field-dc-contributor,
 .repo-item.detail .view-field-collection-view-edition-statement .views-row,
 .repo-item.detail .views-field-field-subject,
 .repo-item.detail .views-field-field-genre,
@@ -2527,32 +2396,8 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 	margin: 0;
 	padding: 2px 0 0 5px;
 }
-
 /* @end */
-
-/* @group administrative metadata */
-
-/*.repo-item.detail .views-field-field-access-rights {
-	margin: 0 0 5px;
-	padding: 5px;
-}*/
-
-/*.repo-item.detail .views-field-field-access-rights div.field-content {
-	display: inline;
-}*/
-
-/*.repo-item.detail .views-field-field-rights-holder {
-	margin: 0 0 5px;
-	padding: 5px;
-}*/
-
-/*.repo-item.detail .views-field-field-rights-holder div.field-content {
-	display: inline;
-}*/
-
-
 /* @end */
-
 
 /* @group repo-item - XML data */
 
@@ -2608,8 +2453,26 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 }
 
 
+/* @end */
+
+
+/* @group flag-bookshelf */
+.node-repository-item .bookshelf-add-wrapper,
+.view-repository-search .bookshelf-add-wrapper  {
+	float: right !important;
+	padding: 5px;
+}
+
+.view-nnels-bookshelf-user-dashboard fieldset.container-inline {
+	border: none;
+}
+.view-nnels-bookshelf-user-dashboard .fieldset-legend {
+	visibility: hidden;
+	display: none;
+}
 
 /* @end */
+
 
 /* @group audit-trail - data */
 
@@ -2678,7 +2541,6 @@ article.node-organization .field-name-field-user-manager.field-type-user-referen
 
 /* @end */
 
-/* @end*/
 
 /* @group admin-views */
 
