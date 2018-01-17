@@ -199,6 +199,7 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
 			attach: function (context, settings) {
 				jQuery("input#edit-submit-repository-search").click(function () {
 					if (Drupal.ajax_facets) {
+            Drupal.ajax_facets.force_update_results = true;
 						Drupal.ajax_facets.sendAjaxQuery({
       							pushStateNeeded: true,
         						searchResultsNeeded: true
