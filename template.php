@@ -155,24 +155,24 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     case "dev.nnels.ca":
     	global $language;
     	//dpm($language->name);
-    	drupal_set_message(t("NB: DEVEL server!"), "error");	
+    	drupal_set_message(t("NB: DEVEL server!"), "error");
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	if(isset($_SESSION['calsauthen_target_driver']) ) {
 	  		dpm("driver: " .$_SESSION['calsauthen_target_driver']);
 	  		dpm("org: " . $_SESSION['calsauthen_target_organization']);
   		}
     	break;
-    	
+
     case "staging.nnels.ca":
     	drupal_set_message(t("NB: STAGING server!"), "error");
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
-  
+
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
 	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/externalsearch.css', array('group' => CSS_THEME, 'type' => 'file'));
 
-  //Create custom Piwik event with user's organization and bind to download links to track downloads per org   
+  //Create custom Piwik event with user's organization and bind to download links to track downloads per org
 	global $user;
 	$token = "[current-user:field_organization]";
         $org = token_replace($token, array('user' => $user));
@@ -181,15 +181,15 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
         	$org = "No organization";
         }
 	if (!(strcmp($org, $bclc)) == 0) {
-       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline'); 
-	}	
+       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline');
+	}
 }
 
 function NNELS_CALS_v001_preprocess_block(&$vars) {
- 
+
   if($vars['block']->module == 'facetapi') {
-  	
-    $vars['theme_hook_suggestions'][] = 'block__facetapi_skiplinks';  
+
+    $vars['theme_hook_suggestions'][] = 'block__facetapi_skiplinks';
 	  //dpm($vars);
   }
 
@@ -206,7 +206,7 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
 					}
 				});
 			}
-		};', 
+		};',
 		array(
 			'type' => 'inline',
 			'scope' => 'footer'
@@ -245,7 +245,7 @@ function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
   if (function_exists($function)) {
     $function($variables, $hook);
   }
-  
+
 }
 /**
  * Override or insert variables into the item repository templates.
@@ -264,17 +264,17 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   $node = node_load($nid);
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
   if ($display_check || user_access('bypass node access') ) {
-	  $variables['view_download_files'] = 
-	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) . 
-	    views_embed_view("field_collection_view_commercially_available", "embed_4", $nid) . 
-	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
+	  $variables['view_download_files'] =
+	    views_embed_view("field_collection_view_repo_files", "embed_4", $nid) .
+	    views_embed_view("field_collection_view_commercially_available", "embed_4", $nid) .
+	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) .
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
   }
   else {
-	  $variables['view_download_files'] = 
-	    views_embed_view("field_collection_view_repo_files", "embed_5", $nid) . 
-	    views_embed_view("field_collection_view_commercially_available", "embed_5", $nid) . 
-	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) . 
+	  $variables['view_download_files'] =
+	    views_embed_view("field_collection_view_repo_files", "embed_5", $nid) .
+	    views_embed_view("field_collection_view_commercially_available", "embed_5", $nid) .
+	    views_embed_view("repository_item_detail_page_embedded", "embed_1", $nid) .
 	    views_embed_view("repository_item_detail_page_embedded", "embed_4", $nid) ;
   }
   //Flag icon markup
