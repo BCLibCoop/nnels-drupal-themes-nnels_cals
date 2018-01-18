@@ -194,38 +194,38 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
   }
 
   if ($vars['block_html_id'] == 'block-views-exp-repository-search-page') {
-  	drupal_add_js(
-		'Drupal.behaviors.nnelsSearchWithinSearch = {
-			attach: function (context, settings) {
-				jQuery("input#edit-submit-repository-search").click(function () {
-					if (Drupal.ajax_facets) {
-            Drupal.ajax_facets.force_update_results = true;
-						Drupal.ajax_facets.sendAjaxQuery({
-      							pushStateNeeded: true,
-        						searchResultsNeeded: true
-      						});
-					}
-				});
-			}
-		};',
-		array(
-			'type' => 'inline',
-			'scope' => 'footer'
-    	 	));
+    drupal_add_js(
+                'Drupal.behaviors.nnelsSearchWithinSearch = {
+                        attach: function (context, settings) {
+                                if (Drupal.ajax_facets) {
+                                        Drupal.ajax_facets.force_update_results = true;
+                                        jQuery("input#edit-submit-repository-search").click(function () {
+                                                Drupal.ajax_facets.sendAjaxQuery({
+                                                        pushStateNeeded: true,
+                                                        searchResultsNeeded: true
+                                                });
+                                        });
+                                }
+                        }
+                };',
+                array(
+                        'type' => 'inline',
+                        'scope' => 'footer'
+                ));
+    drupal_add_js(
+                'Drupal.behaviors.nnelsSearchResultsPlurals = {
+                        attach: function (context, settings) {
+                                count = jQuery(".search-results .views-row .view-content").length;
+                                if (count > 1) {
+                                        jQuery("#search-view-total-count").addClass("plural");
+                                }
+                        }
+                };',
+                array(
+                        'type' => 'inline',
+                        'scope' => 'footer'
+                ));
 
-        drupal_add_js(
-		'Drupal.behaviors.nnelsSearchResultsPlurals = {
-			attach: function (context, settings) {
-				count = jQuery(".search-results .views-row .view-content").length;
-				if (count > 1) {
-					jQuery("#search-view-total-count").addClass("plural");
-				}
-			}
-		};',
-		array(
-			'type' => 'inline',
-			'scope' => 'footer'
-     		));
   }
 }
 
@@ -347,5 +347,3 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
 function NNELS_CALS_v001_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
 }
-
-
