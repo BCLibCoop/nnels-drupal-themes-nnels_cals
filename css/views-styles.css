@@ -65,7 +65,7 @@ G/** NNELS_CALS_v001A **/
 @media screen and (max-width: 42rem) { /* 672px */
 	#block-views-exp-repository-search-page {
 		flex-direction: column;
-		align-items: left;
+		align-items: flex-start;
 	}
 }
 
