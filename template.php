@@ -227,6 +227,10 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
                 ));
 
   }
+
+  if ($vars['block_html_id'] == 'block-views-repository-items-front-page-bra' || $vars['block_html_id'] == 'block-views-repository-items-front-page-bmd') {
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/uniform_height.js');
+  }
 }
 
 
