@@ -1011,9 +1011,8 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
 	display: block;
 	width: 100%;
-	min-height: 40px;
 	margin: 0;
-	padding: 5px 5px 5px 40px;
+	padding: 10px 5px 10px 40px;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon {
@@ -1257,7 +1256,7 @@ article.node-article .field-items h3 em {
 	display: block;
 	width: 100%;
 	margin: 0;
-	padding: 0 5px 5px 40px;
+	padding: 10px 5px 10px 40px;
 	height: auto;
 }
 
@@ -1360,7 +1359,7 @@ span.daisy-icon-login {
 	display: block;
 	height: auto;
 	margin: 0;
-	padding: 10px 0 0;
+	padding: 0;
 	background: url(../images/icon_login-access.png) no-repeat left center;
 }
 
@@ -1379,8 +1378,12 @@ span.daisy-icon-login {
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
   margin-left: 2.5rem;
-	margin-top: -0.2rem;
-  padding: 5px;
+	margin-top: -0.5rem;
+  padding: 0 5px 5px 5px;
+}
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
+  padding-bottom: 0px;
 }
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
