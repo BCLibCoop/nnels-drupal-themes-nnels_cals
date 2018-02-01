@@ -199,6 +199,12 @@ td.menu-disabled {
 	padding: 5px;
 }
 
+.detail-library-registration .form-type-password-confirm {
+  /*background-color: pink;*/
+  margin: 0;
+  padding: 5px;
+}
+
 .detail-library-registration .form-item-legal-accept {
 	/*background-color: violet;*/
 	margin: 0;
