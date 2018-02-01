@@ -1,4 +1,4 @@
-G/** NNELS_CALS_v001A **/
+/** NNELS_CALS_v001A **/
 
 /* 01/10/2014 */
 
@@ -1379,12 +1379,8 @@ span.daisy-icon-login {
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 	margin-left: 2.5rem;
-}
-.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
-.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
-.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
-.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 	margin-top: -0.2rem;
+  padding: 5px;
 }
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
