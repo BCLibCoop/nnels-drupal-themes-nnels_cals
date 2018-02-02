@@ -26,6 +26,7 @@
 /* @group pagestyle - colour contrast selector */
 .block-pagestyle {
   display: table-cell;
+  padding: 0 0 0 10px;
   vertical-align: middle;
 }
 .block-pagestyle .block-title {
@@ -45,6 +46,9 @@
 	.block-pagestyle {
 		display: none;
 	}
+}
+.block-pagestyle label {
+  padding: 0 10px 0 0;
 }
 /* @end */
 
@@ -182,7 +186,7 @@
 
 /* @group user-login */
 
-.user-login {
+/*.user-login {
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -238,10 +242,10 @@
 .block.block-calsauthen.detail-library-registration .block-content {
 	display: inline-block;
 	margin-top: 1em;
-}
+}*/
 
 /*** Maximum width of 600 pixels. ***/
-@media screen and (max-width: 37.8rem) {
+/*@media screen and (max-width: 37.8rem) {
 	.region-header .block-cals-forms,
 	.region-header .block-calsauthen {
 		position: static;
@@ -251,46 +255,80 @@
 		float: none;
 		margin: 0.4rem 0.6rem;
 	}
-}
+}*/
 
+/* @end */
+
+/* @group user-logged-out */
+.block-calsauthen {
+  display: table-cell;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  text-align: right;
+}
+.block-calsauthen a {
+  color: #333333;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+.block-calsauthen a.sign-up-search:after {
+  content: "|";
+  display: inline-block;
+  padding: 0 1px 0 5px;
+  text-decoration: none;
+}
+.block-calsauthen a.sign-up-search:hover:after {
+  color: #333333;
+}
+.block-calsauthen a:hover {
+  color: #b34d00;
+}
 
 /* @end */
 
 /* @group user-logged-in */
 
 .block.bookshelf-button,
-.block-calsauthen,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
 	display: table-cell;
 	margin: 0;
-	padding: 0;
-	/*clear: right;*/
-	right: 0px;
-	bottom: 0px;
+	padding: 5px 10px 5px 10px;
 	text-align: center;
+}
+.block.bookshelf-button {
+  width: 150px;
+}
+#block-logintoboggan-logintoboggan-logged-in {
+  text-align: right;
 }
 
 .bookshelf-button a,
 .user-logged-in a {
-	display: block;
-	float: left;
-	margin: 0 10px 0 0;
-	padding: 5px 10px;
-	color: #333333;
-	background-color: #DDD;
-	border: 1px solid #336699;
+  color: #333333;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+}
+.user-logged-in a.username:after {
+  content: "|";
+  display: inline-block;
+  padding: 0 1px 0 5px;
+  text-decoration: none;
+}
+.user-logged-in a.username:hover:after {
+  color: #333333;
 }
 
 .user-logged-in a:hover {
 	color: #b34d00;
-	background: #EEEEEE;
 }
 
 .user-logged-in .username.span {
 	display: inline-block;
-	margin-right: 1rem;
-	vertical-align: middle;
 }
 
 /*** Maximum width of 600 pixels. ***/
