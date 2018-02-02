@@ -1,3 +1,5 @@
+// Minified with https://javascript-minifier.com/
+
 // Window load rather than document ready, document ready did not produce the
 // correct height, due to fonts not being rendered, etc.
 jQuery(window).load(
