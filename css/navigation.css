@@ -17,55 +17,50 @@
 /* @group language-switcher */
 
 .language-switcher {
-	/*background-color: orange;*/
-	float: right;
-	padding: 0;
-	width: auto;
-	margin: 0;
+	display: table-cell;
+  margin: 0 10px 0 0;
+  padding: 5px 10px;
+  width: 110px;
 }
 
 .language-switcher ul.language-switcher-locale-url {
-	/*background-color: pink;*/
 	display: block;
-	float: right;
+  list-style-type: none;
+  list-style-image: none;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
-	list-style-image: none;
 }
 
 .language-switcher ul.language-switcher-locale-url li {
-	/*background-color: mediumaquamarine;*/
-	float: left;
+  background-repeat: no-repeat;
+  background-size: 30px 16px;
+  list-style-type: none;
+  list-style-image: none;
 	margin: 0;
 	padding: 0;
-	list-style-type: none;
-	list-style-image: none;
 }
 
-.language-switcher ul.language-switcher-locale-url li.last {
-	/*border-right: 0px solid #333333;*/
+.language-switcher ul.language-switcher-locale-url li.en {
+  background-image: url(../images/flag-uk.png);
+}
+
+.language-switcher ul.language-switcher-locale-url li.fr {
+  background-image: url(../images/flag-france.png);
 }
 
 .language-switcher ul.language-switcher-locale-url li.active {
-	/*background-color: mediumaquamarine;*/
 	display: none;
 }
 
 .language-switcher a {
-	/*background-color: gold;*/
-	display: block;
-	margin: 0 10px 0 0;
-	padding: 5px 10px;
-	color: #333333;
-	background-color: #DDD;
-	border: 1px solid #336699;
+  color: #333333;
+  display: block;
+  padding: 0 0 0 40px;
+  text-decoration: underline;
 }
 
 .language-switcher a:hover {
-	/*background-color: limegreen;*/
 	color: #b34d00;
-	background: #EEEEEE;
 }
 
 @media screen and (max-width: 37.8rem) {

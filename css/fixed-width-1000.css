@@ -106,8 +106,13 @@ body {
 	padding: 0;
 }
 
+#header .region-utility {
+  display: table;
+  background: #ededed;
+  width: 100%;
+}
+
 #header .region-header {
-  clear: both;
 	width: 100%;
 	height: auto;
 	position: relative;
@@ -115,7 +120,6 @@ body {
 	margin: 0;
 	overflow: hidden; 
 }
-
 
 /* @end */
 

@@ -25,10 +25,8 @@
 
 /* @group pagestyle - colour contrast selector */
 .block-pagestyle {
-	float: left;
-	margin-right: 1em;
-	display: flex;
-	flex-flow: column-reverse;
+  display: table-cell;
+  vertical-align: middle;
 }
 .block-pagestyle .block-title {
 	font-size: 1rem;
@@ -264,7 +262,7 @@
 .block-calsauthen,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
-	float: right;
+	display: table-cell;
 	margin: 0;
 	padding: 0;
 	/*clear: right;*/
@@ -273,12 +271,6 @@
 	text-align: center;
 }
 
-@media screen and (min-width: 37.8rem) {
-	#block-logintoboggan-logintoboggan-logged-in,
-	.user-logged-in {
-		/*position: absolute !important;*/
-	}
-}
 .bookshelf-button a,
 .user-logged-in a {
 	display: block;
