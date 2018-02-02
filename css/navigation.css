@@ -11,16 +11,21 @@
 	margin: 0 0 5px;
 	padding: 5px;
 }
+.admin-jump-menu select {
+  width: 100%;
+}
 
 /* @end */
 
 /* @group language-switcher */
 
 .language-switcher {
-	display: table-cell;
+  margin: 10px 10px 10px 0;
+  /* Desktop */
+	/*display: table-cell;
   margin: 0 10px 0 0;
   padding: 5px 10px;
-  width: 110px;
+  width: 110px;*/
 }
 
 .language-switcher ul.language-switcher-locale-url {
@@ -41,11 +46,13 @@
 }
 
 .language-switcher ul.language-switcher-locale-url li.en {
-  background-image: url(../images/flag-uk.png);
+  /* Desktop */
+  /*background-image: url(../images/flag-uk.png);*/
 }
 
 .language-switcher ul.language-switcher-locale-url li.fr {
-  background-image: url(../images/flag-france.png);
+  /* Desktop */
+  /*background-image: url(../images/flag-france.png);*/
 }
 
 .language-switcher ul.language-switcher-locale-url li.active {
@@ -53,10 +60,15 @@
 }
 
 .language-switcher a {
+  background: #DDD;
+  border: 1px solid #336699;
   color: #333333;
   display: block;
-  padding: 0 0 0 40px;
-  text-decoration: underline;
+  padding: 5px;
+  text-align: center;
+  /* Desktop */
+  /*padding: 0 0 0 40px;
+  text-decoration: underline;*/
 }
 
 .language-switcher a:hover {
@@ -65,7 +77,7 @@
 
 @media screen and (max-width: 37.8rem) {
 	.language-switcher a {
-		margin: 0.1rem 0.6rem 0.3rem 0.6rem;
+		/*margin: 0.1rem 0.6rem 0.3rem 0.6rem;*/
 	}
 }
 

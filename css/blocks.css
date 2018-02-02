@@ -26,7 +26,7 @@
 /* @group pagestyle - colour contrast selector */
 .block-pagestyle {
   display: table-cell;
-  padding: 0 0 0 10px;
+  padding: 3px 0 3px 10px;
   vertical-align: middle;
 }
 .block-pagestyle .block-title {
@@ -263,7 +263,7 @@
 .block-calsauthen {
   display: table-cell;
   margin: 0;
-  padding: 5px 10px 5px 10px;
+  padding: 8px 10px 8px 10px;
   text-align: right;
 }
 .block-calsauthen a {
@@ -293,31 +293,48 @@
 .block.bookshelf-button,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
-	display: table-cell;
+  display: block;
+  margin: 10px 10px 10px 0;
+  /* Desktop */
+  /*display: table-cell;
 	margin: 0;
-	padding: 5px 10px 5px 10px;
-	text-align: center;
+	padding: 8px 10px 8px 10px;
+	text-align: center;*/
 }
 .block.bookshelf-button {
-  width: 150px;
+  /* Desktop */
+  /*width: 150px;*/
 }
 #block-logintoboggan-logintoboggan-logged-in {
-  text-align: right;
+  text-align: left;
+  /* Desktop */
+  /*text-align: right;*/
 }
 
 .bookshelf-button a,
 .user-logged-in a {
-  color: #333333;
+  background: #DDD;
+  border: 1px solid #336699;
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  text-align: center;
+  /* Desktop */
+  /*color: #333333;
   display: inline-block;
   margin: 0;
   padding: 0;
-  text-decoration: underline;
+  text-decoration: underline;*/
+}
+.bookshelf-button a i {
+  display: none;
 }
 .user-logged-in a.username:after {
-  content: "|";
+  /* Desktop */
+  /*content: "|";
   display: inline-block;
   padding: 0 1px 0 5px;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 .user-logged-in a.username:hover:after {
   color: #333333;
@@ -332,16 +349,13 @@
 }
 
 /*** Maximum width of 600 pixels. ***/
-@media screen and (max-width: 37.8rem) {
-	.user-logged-in {
-		position: static;
-	}
+/*@media screen and (max-width: 37.8rem) {
 	.user-logged-in a, 
 	.user-logged-in .username.span {
 		float: none;
 		margin: 0.4rem 0.6rem;
 	}
-}
+}*/
 
 /* @end */
 

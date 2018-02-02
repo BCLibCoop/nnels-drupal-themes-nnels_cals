@@ -50,7 +50,7 @@ body {
 .region-bottom {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 320px;
 }
 
 
@@ -107,9 +107,14 @@ body {
 }
 
 #header .region-utility {
-  display: table;
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  /* Desktop */
+  /*display: table;
   background: #ededed;
-  width: 100%;
+  width: 100%;*/
 }
 
 #header .region-header {
