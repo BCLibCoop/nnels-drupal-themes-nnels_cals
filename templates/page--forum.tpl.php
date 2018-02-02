@@ -6,6 +6,7 @@
  -->
 <div id="page">
 	<header id="header">
+    <?php print render($page['utility']); ?>
 		<?php print render($page['header']); ?>
 	</header>
 

@@ -25,7 +25,7 @@
 
 /* @group pagestyle - colour contrast selector */
 .block-pagestyle {
-	float: right;
+	float: left;
 	margin-right: 1em;
 	display: flex;
 	flex-flow: column-reverse;
@@ -261,12 +261,13 @@
 /* @group user-logged-in */
 
 .block.bookshelf-button,
+.block-calsauthen,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
 	float: right;
 	margin: 0;
 	padding: 0;
-	clear: right;
+	/*clear: right;*/
 	right: 0px;
 	bottom: 0px;
 	text-align: center;
@@ -275,7 +276,7 @@
 @media screen and (min-width: 37.8rem) {
 	#block-logintoboggan-logintoboggan-logged-in,
 	.user-logged-in {
-		position: absolute !important;
+		/*position: absolute !important;*/
 	}
 }
 .bookshelf-button a,
