@@ -261,23 +261,33 @@
 
 /* @group user-logged-out */
 .block-calsauthen {
-  display: table-cell;
+  margin: 10px 10px 10px 0;
+  /* Desktop */
+  /*display: table-cell;
   margin: 0;
   padding: 8px 10px 8px 10px;
-  text-align: right;
+  text-align: right;*/
 }
 .block-calsauthen a {
+  background: #DDD;
+  border: 1px solid #336699;
   color: #333333;
-  display: inline-block;
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  text-align: center;
+  /* Desktop */
+  /*display: inline-block;
   margin: 0;
   padding: 0;
-  text-decoration: underline;
+  text-decoration: underline;*/
 }
 .block-calsauthen a.sign-up-search:after {
-  content: "|";
+  /* Desktop */
+  /*content: "|";
   display: inline-block;
   padding: 0 1px 0 5px;
-  text-decoration: none;
+  text-decoration: none;*/
 }
 .block-calsauthen a.sign-up-search:hover:after {
   color: #333333;
