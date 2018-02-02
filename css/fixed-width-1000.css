@@ -107,6 +107,7 @@ body {
 }
 
 #header .region-header {
+  clear: both;
 	width: 100%;
 	height: auto;
 	position: relative;
