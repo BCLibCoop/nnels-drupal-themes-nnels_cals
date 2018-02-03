@@ -62,12 +62,12 @@
 .language-switcher a {
   background: #DDD;
   border: 1px solid #336699;
-  color: #333333;
   display: block;
   padding: 5px;
   text-align: center;
   /* Desktop */
   /*padding: 0 0 0 40px;
+  color: #333333;
   text-decoration: underline;*/
 }
 

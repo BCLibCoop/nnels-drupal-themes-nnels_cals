@@ -369,6 +369,9 @@
   /* Desktop */
   /*text-align: right;*/
 }
+#block-logintoboggan-logintoboggan-logged-in .username {
+  display: none;
+}
 
 .bookshelf-button a,
 .user-logged-in a {
@@ -376,7 +379,7 @@
   border: 1px solid #336699;
   display: block;
   margin: 0 0 10px 0;
-  padding: 5px;
+  padding: 5px 0;
   text-align: center;
   /* Desktop */
   /*color: #333333;
