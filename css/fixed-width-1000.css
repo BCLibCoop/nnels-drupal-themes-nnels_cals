@@ -8,6 +8,7 @@
 
 body {
 	background: #061C3E;
+  min-width: 320px;
 }
 
 /* @end */
@@ -104,17 +105,35 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
+  position: relative;
 }
-
 #header .region-utility {
   display: block;
+  padding: 5px 5px 0 5px;
   position: absolute;
   right: 0;
   width: 40%;
-  /* Desktop */
-  /*display: table;
-  background: #ededed;
-  width: 100%;*/
+}
+/*** 540+ ***/
+@media screen and (min-width: 34rem) {
+  #header .region-utility {
+    width: 35%;
+  }
+}
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  #header .region-utility {
+    width: 30%;
+  }
+}
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #header .region-utility {
+    display: table;
+    background: #ededed;
+    position: relative;
+    width: 100%;
+  }
 }
 
 #header .region-header {

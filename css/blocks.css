@@ -25,9 +25,11 @@
 
 /* @group pagestyle - colour contrast selector */
 .block-pagestyle {
-  display: table-cell;
+  display: none;
+  /* Desktop */
+  /*display: table-cell;
   padding: 3px 0 3px 10px;
-  vertical-align: middle;
+  vertical-align: middle;*/
 }
 .block-pagestyle .block-title {
 	font-size: 1rem;
@@ -35,16 +37,12 @@
 .block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
 }
-/*** Maximum width of 850 pixels. ***/
-@media screen and (max-width: 53.125rem) {
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
 	.block-pagestyle {
-		float: none;
-	}
-}
-/*** Maximum width of 600 pixels. ***/
-@media screen and (max-width: 37.8rem) {
-	.block-pagestyle {
-		display: none;
+    display: table-cell;
+    padding: 10px 0 5px 0;
+    vertical-align: middle;
 	}
 }
 .block-pagestyle label {
@@ -90,41 +88,100 @@
 /* @group header-logo - logo-wordmark */
 
 .header-logo {
-	max-width: 73%;
+  width: 60%;
+/*	max-width: 73%;
 	height: auto;
 	float: left;
 	width: 760px;
 	margin: 0;
-	padding: 0;
+	padding: 0;*/
 }
-
 .header-logo a.home-link {
-	float: left;
+  display: none;
+/*	float: left;
 	margin: 0;
 	width: auto;
 	height: auto;
 	padding: 0;
-	max-width: 34%;
+	max-width: 34%;*/
 }
-
 .header-logo h1.site-title {
-	float: left;
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  margin: 5px;
+/*	float: left;
 	margin: 20px 5px 5px;
 	padding: 0;
 	font: normal 2.2rem/2.4rem 'clear_sansbold', sans-serif;
-	text-decoration: none;
+	text-decoration: none;*/
 }
-
 .header-logo h2.site-subtitle {
-	float: left;
+  display: none;
+/*	float: left;
 	margin: 5px;
 	padding: 0;
 	font: normal 1.3rem/1.4rem 'clear_sansbold', sans-serif;
-	text-decoration: none;
+	text-decoration: none;*/
 }
-
+/*** 540+ ***/
+@media screen and (min-width: 34rem) {
+  .header-logo {
+    width: 65%;
+  }
+  .header-logo h1.site-title {
+    font-size: 1.9rem;
+    line-height: 2.2rem;
+  }
+  .header-logo h2.site-subtitle {
+    display: block;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    margin: 5px;
+  }
+}
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  .header-logo {
+    width: 75%;
+  }
+  .header-logo a.home-link {
+    display: block;
+    float: left;
+    margin: .1rem .5rem .1rem .2rem;
+    width: 20%;
+  }
+}
+/*** 821+ ***/
+@media screen and (min-width: 45.6875rem) {
+  .header-logo a.home-link {
+    width: 25%;
+  }
+  .header-logo h1.site-title {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  .header-logo h2.site-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+}
+/*** 908+ ***/
+@media screen and (min-width: 56.75rem) {
+  .header-logo a.home-link {
+    margin: 0;
+    max-width: 35%;
+    width: auto;
+  }
+  .header-logo h1.site-title {
+    float: left;
+    margin: 20px 5px 5px;
+  }
+  .header-logo h2.site-subtitle {
+    float: left;
+  }
+}
 /*** Maximum width of 900 pixels. ***/
-@media screen and (max-width: 56.7rem) {
+/*@media screen and (max-width: 56.7rem) {
   .header-logo h1.site-title {
   	margin: 5px;
   }
@@ -132,10 +189,10 @@
   	width: 25%;
   	margin: .1rem .2rem;
   }
-}
+}*/
 
 /*** Maximum width of 820 pixels. ***/
-@media screen and (max-width: 51.25rem) {
+/*@media screen and (max-width: 51.25rem) {
 	.header-logo {
 		max-width: 65%;
 	}
@@ -150,10 +207,10 @@
   	font-size: 1rem;
   	line-height: 1rem;
   }
-}
+}*/
 
 /*** Maximum width of 725 pixels. ***/
-@media screen and (max-width: 45.675rem) {
+/*@media screen and (max-width: 45.675rem) {
 	.header-logo a.home-link {
 		display: none;
 	}
@@ -165,21 +222,7 @@
 		font-size: 1.1rem;
 		line-height: 1.2rem;
 	}
-}
-
-/*** Maximum width of 540 pixels. ***/
-@media screen and (max-width: 34rem) {
-	.header-logo {
-		width: calc(95% - 105px);
-	}
-	.header-logo h1.site-title {
-		font-size: 1.5rem;
-		line-height: 1.7rem;
-	}
-	.header-logo h2.site-subtitle {
-		display: none;
-	}
-}
+}*/
 
 
 /* @end */
