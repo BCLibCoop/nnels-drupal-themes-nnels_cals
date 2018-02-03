@@ -147,12 +147,22 @@
   .header-logo a.home-link {
     display: block;
     float: left;
-    margin: .1rem .5rem .1rem .2rem;
+    margin: .1rem .2rem;
     width: 20%;
+  }
+  .header-logo h1.site-title {
+    float: left;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .header-logo h2.site-subtitle {
+    float: left;
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 /*** 821+ ***/
-@media screen and (min-width: 45.6875rem) {
+@media screen and (min-width: 51.3125rem) {
   .header-logo a.home-link {
     width: 25%;
   }
@@ -173,11 +183,7 @@
     width: auto;
   }
   .header-logo h1.site-title {
-    float: left;
     margin: 20px 5px 5px;
-  }
-  .header-logo h2.site-subtitle {
-    float: left;
   }
 }
 /*** Maximum width of 900 pixels. ***/
