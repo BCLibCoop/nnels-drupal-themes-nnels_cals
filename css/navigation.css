@@ -21,13 +21,16 @@
 
 .language-switcher {
   margin: 10px 10px 10px 0;
-  /* Desktop */
-	/*display: table-cell;
-  margin: 0 10px 0 0;
-  padding: 5px 10px;
-  width: 110px;*/
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .language-switcher {
+    display: table-cell;
+    margin: 0 10px 0 0;
+    padding: 5px 10px;
+    width: 110px;
+  }
+}
 .language-switcher ul.language-switcher-locale-url {
 	display: block;
   list-style-type: none;
@@ -44,41 +47,37 @@
 	margin: 0;
 	padding: 0;
 }
-
-.language-switcher ul.language-switcher-locale-url li.en {
-  /* Desktop */
-  /*background-image: url(../images/flag-uk.png);*/
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .language-switcher ul.language-switcher-locale-url li.en {
+    background-image: url(../images/flag-uk.png);
+  }
+  .language-switcher ul.language-switcher-locale-url li.fr {
+    background-image: url(../images/flag-france.png);
+  }
 }
-
-.language-switcher ul.language-switcher-locale-url li.fr {
-  /* Desktop */
-  /*background-image: url(../images/flag-france.png);*/
-}
-
 .language-switcher ul.language-switcher-locale-url li.active {
 	display: none;
 }
-
 .language-switcher a {
   background: #DDD;
   border: 1px solid #336699;
   display: block;
   padding: 5px;
   text-align: center;
-  /* Desktop */
-  /*padding: 0 0 0 40px;
-  color: #333333;
-  text-decoration: underline;*/
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .language-switcher a {
+    background: transparent;
+    border: none;
+    padding: 0 0 0 40px;
+    color: #333333;
+    text-decoration: underline;
+  }
+}
 .language-switcher a:hover {
 	color: #b34d00;
-}
-
-@media screen and (max-width: 37.8rem) {
-	.language-switcher a {
-		/*margin: 0.1rem 0.6rem 0.3rem 0.6rem;*/
-	}
 }
 
 /* @end */
