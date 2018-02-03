@@ -36,6 +36,7 @@
 }
 .block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
+  width: 100px;
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
@@ -317,6 +318,12 @@
   padding: 8px 10px 8px 10px;
   text-align: right;*/
 }
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  .block-calsauthen {
+    margin-top: 3px;
+  }
+}
 .block-calsauthen a {
   background: #DDD;
   border: 1px solid #336699;
@@ -368,6 +375,12 @@
   text-align: left;
   /* Desktop */
   /*text-align: right;*/
+}
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  #block-logintoboggan-logintoboggan-logged-in {
+    margin-top: 3px;
+  }
 }
 #block-logintoboggan-logintoboggan-logged-in .username {
   display: none;
