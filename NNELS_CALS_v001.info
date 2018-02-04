@@ -93,6 +93,7 @@ stylesheets-conditional[lte IE 8][all][] = css/ie8.css
 ;   <?php print $header_top; ?>
 
 regions[header]         = Header
+regions[utility]     = Utility Bar
 regions[navigation]     = Navigation Bar
 regions[search]     = Search Bar
 regions[admin_nav]    = Admin Navigation

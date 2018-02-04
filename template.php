@@ -231,8 +231,23 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
                 ));
 
   }
+
+  if ($vars['block_html_id'] == 'block-views-repository-items-front-page-bra' || $vars['block_html_id'] == 'block-views-repository-items-front-page-bmd') {
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/uniform_height.min.js');
+  }
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function NNELS_CALS_v001_form_alter(&$form, &$form_state, $form_id) {
+
+  // Alter the page style form - put the label on the left.
+  if ($form_id == 'pagestyle_form') {
+    $form['pagestyle_select']['#prefix'] = $form['pagestyle_select']['#suffix'];
+    unset($form['pagestyle_select']['#suffix']);
+  }
+}
 
 // */
 
