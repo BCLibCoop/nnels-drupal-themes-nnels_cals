@@ -109,7 +109,7 @@ body {
 }
 #header .region-utility {
   display: block;
-  padding: 5px 5px 0 5px;
+  padding: 5px 5px 5px 5px;
   position: absolute;
   right: 0;
   width: 40%;
@@ -129,6 +129,7 @@ body {
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #header .region-utility {
+    border-bottom: 1px solid #336699;
     display: table;
     background: #ededed;
     position: relative;
