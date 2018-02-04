@@ -138,6 +138,7 @@ body {
 }
 
 #header .region-header {
+  border-bottom: 2px solid #336699;
 	width: 100%;
 	height: auto;
 	position: relative;
@@ -156,10 +157,9 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
-	border-bottom: 2px solid #336699;
 }
 
-#mobile-menu-link {
+#block-block-22 {
 	display: none;
 }
 
@@ -169,6 +169,12 @@ body {
 
 /*** Maximum width of 820 pixels. ***/
 @media screen and (max-width: 51.25rem) {
+  #block-block-22 {
+    display: block;
+  }
+  #block-block-22 .block-content p {
+    margin: 0;
+  }
 	#mobile-menu-link {
 		background: none repeat scroll 0% 0% #DDD;
 		border-width: 1px 1px 0px;
@@ -179,7 +185,7 @@ body {
 		font-size: 1.5rem;
 		font-family: "clear_sans_mediumregular";
 		width: auto;
-		display: inline-block;
+    display: inline-block;
 	}
 	#mobile-menu-link:hover,
 	#mobile-menu-link:focus,
