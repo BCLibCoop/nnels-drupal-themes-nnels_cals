@@ -61,6 +61,12 @@ G/** NNELS_CALS_v001A **/
 	justify-content: center;
 	align-items: center;
 }
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #block-views-exp-repository-search-page {
+    display: block;
+  }
+}
 
 @media screen and (max-width: 42rem) { /* 672px */
 	#block-views-exp-repository-search-page {
@@ -825,9 +831,30 @@ article.node-article .field-items h3 em {
 	margin: 0;
 	padding: 0 0.7rem 0 0.3rem;
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .block-title {
+    display: block;
+    float: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository .block-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
 .search-repository #views-exposed-form-repository-search-page {
 	float: left;
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository #views-exposed-form-repository-search-page {
+    float: none;
+  }
 }
 .search-repository #edit-search-api-views-fulltext-2-wrapper {
   float: none;
@@ -835,10 +862,17 @@ article.node-article .field-items h3 em {
 }
 /*** 544+ ***/
 @media screen and (min-width: 34rem) {
-.search-repository #edit-search-api-views-fulltext-2-wrapper {
-  float: left;
-  width: auto;
+  .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    float: left;
+    width: auto;
+  }
 }
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    float: none;
+    width: 75%;
+  }
 }
 .search-repository #edit-search-api-views-fulltext-2 {
 	background-color: #FFFFFF;
@@ -846,10 +880,11 @@ article.node-article .field-items h3 em {
 	max-width: 95%;
 	line-height: 1.6rem;
 }
-/*** 544+ ***/
-@media screen and (min-width: 34rem) {
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
   .search-repository #edit-search-api-views-fulltext-2 {
-    width: 310px;
+    max-width: 100%;
+    width: 100%;
   }
 }
 .search-repository .views-widget-sort-by select {
@@ -873,6 +908,12 @@ article.node-article .field-items h3 em {
     align-items: center;
   }
 }
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .views-exposed-widgets {
+    display: block;
+  }
+}
 .search-repository .views-submit-button .form-submit {
 	margin: 0;
 	padding: 3px 10px;
@@ -880,7 +921,12 @@ article.node-article .field-items h3 em {
 	background: #FFFFFF;
 	border: 1px solid #336699;
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .views-submit-button .form-submit {
+    margin: 0 0 0 5px;
+  }
+}
 .search-repository .views-submit-button .form-submit:hover {
 	color: #b34d00;
 	background: #D0D0D0;
