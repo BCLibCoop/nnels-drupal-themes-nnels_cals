@@ -183,6 +183,10 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
 	if (!(strcmp($org, $bclc)) == 0) {
        	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline');
 	}
+
+  if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/move_promote_flag.min.js');
+  }
 }
 
 function NNELS_CALS_v001_preprocess_block(&$vars) {
