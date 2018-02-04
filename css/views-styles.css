@@ -829,15 +829,29 @@ article.node-article .field-items h3 em {
 .search-repository #views-exposed-form-repository-search-page {
 	float: left;
 }
-
+.search-repository #edit-search-api-views-fulltext-2-wrapper {
+  float: none;
+  width: 65%;
+}
+/*** 544+ ***/
+@media screen and (min-width: 34rem) {
+.search-repository #edit-search-api-views-fulltext-2-wrapper {
+  float: left;
+  width: auto;
+}
+}
 .search-repository #edit-search-api-views-fulltext-2 {
-	width: 310px;
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 	max-width: 95%;
 	line-height: 1.6rem;
 }
-
+/*** 544+ ***/
+@media screen and (min-width: 34rem) {
+  .search-repository #edit-search-api-views-fulltext-2 {
+    width: 310px;
+  }
+}
 .search-repository .views-widget-sort-by select {
 	width: 110px;
 	background: #FFFFFF;
@@ -849,10 +863,16 @@ article.node-article .field-items h3 em {
 }
 
 .search-repository .views-exposed-widgets {
-	display: flex;
-	align-items: center;
+  margin: 10px 0 0 0;
 }
-
+/*** 544+ ***/
+@media screen and (min-width: 34rem) {
+  .search-repository .views-exposed-widgets {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
 .search-repository .views-submit-button .form-submit {
 	margin: 0;
 	padding: 3px 10px;

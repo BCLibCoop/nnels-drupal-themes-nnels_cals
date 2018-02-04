@@ -112,13 +112,19 @@
 .main-navigation a {
 	display: block;
 	margin: 0 10px 0 0;
-	padding: 10px 15px 8px;
+	padding: 10px 10px 8px;
 	font-size: 1rem;
 	line-height: 1rem;
 	color: #333333;
 	background: #DDD;
 	border: 1px solid #336699;
 	border-bottom: 0px solid #336699;
+}
+/*** 908+ ***/
+@media screen and (min-width: 56.75rem) {
+  .main-navigation a {
+    padding: 10px 15px 8px;
+  }
 }
 
 .main-navigation a.active {
