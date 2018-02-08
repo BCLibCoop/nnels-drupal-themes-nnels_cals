@@ -219,25 +219,25 @@
 /* @end */
 
 /* @group user-logged-out */
-.block-calsauthen {
+#block-calsauthen-calsauthen-custom-registration {
   margin: 10px 10px 10px 0;
 }
 /*** 731+ ***/
 @media screen and (min-width: 45.6875rem) {
-  .block-calsauthen {
+  #block-calsauthen-calsauthen-custom-registration {
     margin-top: 3px;
   }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .block-calsauthen {
+  #block-calsauthen-calsauthen-custom-registration {
     display: table-cell;
     margin: 0;
     padding: 8px 10px 8px 10px;
     text-align: right;
   }
 }
-.block-calsauthen a {
+#block-calsauthen-calsauthen-custom-registration a {
   background: #DDD;
   border: 1px solid #336699;
   color: #333333;
@@ -248,7 +248,7 @@
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .block-calsauthen a {
+  #block-calsauthen-calsauthen-custom-registration a {
     background: transparent;
     border: none;
     display: inline-block;
@@ -256,17 +256,17 @@
     padding: 0;
     text-decoration: underline;
   }
-  .block-calsauthen a.sign-up-search:after {
+  #block-calsauthen-calsauthen-custom-registration a.sign-up-search:after {
     content: "|";
     display: inline-block;
     padding: 0 1px 0 5px;
     text-decoration: none;
   }
 }
-.block-calsauthen a.sign-up-search:hover:after {
+#block-calsauthen-calsauthen-custom-registration a.sign-up-search:hover:after {
   color: #333333;
 }
-.block-calsauthen a:hover {
+#block-calsauthen-calsauthen-custom-registration a:hover {
   color: #b34d00;
 }
 
