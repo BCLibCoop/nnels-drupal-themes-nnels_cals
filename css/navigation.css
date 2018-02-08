@@ -27,8 +27,8 @@
   .language-switcher {
     display: table-cell;
     margin: 0 10px 0 0;
-    padding: 5px 10px;
-    width: 110px;
+    padding: 5px 0px;
+    width: 90px;
   }
 }
 .language-switcher ul.language-switcher-locale-url {
@@ -47,15 +47,6 @@
 	margin: 0;
 	padding: 0;
 }
-/*** 821+ ***/
-@media screen and (min-width: 51.3125rem) {
-  .language-switcher ul.language-switcher-locale-url li.en {
-    background-image: url(../images/flag-uk.png);
-  }
-  .language-switcher ul.language-switcher-locale-url li.fr {
-    background-image: url(../images/flag-france.png);
-  }
-}
 .language-switcher ul.language-switcher-locale-url li.active {
 	display: none;
 }
@@ -71,8 +62,9 @@
   .language-switcher a {
     background: transparent;
     border: none;
-    padding: 0 0 0 40px;
+    padding: 0;
     color: #333333;
+    text-align: left;
     text-decoration: underline;
   }
 }
@@ -120,13 +112,34 @@
 	border: 1px solid #336699;
 	border-bottom: 0px solid #336699;
 }
+body.i18n-fr .main-navigation a {
+  margin: 0 5px 0 0;
+  padding: 10px 5px 8px;
+  font-size: 0.8rem;
+}
 /*** 908+ ***/
 @media screen and (min-width: 56.75rem) {
   .main-navigation a {
     padding: 10px 15px 8px;
   }
+  body.i18n-fr .main-navigation a {
+    font-size: 0.9rem;
+  }
 }
-
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  body.i18n-fr .main-navigation a {
+    padding: 10px 10px 8px;
+  }
+}
+/*** 1200+ ***/
+@media screen and (min-width: 75rem) {
+  body.i18n-fr .main-navigation a {
+    margin: 0 10px 0 0;
+    padding: 10px 15px 8px;
+    font-size: 1rem;
+  }
+}
 .main-navigation a.active {
 	color: #b34d00;
 	background: #EEEEEE;

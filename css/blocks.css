@@ -115,11 +115,30 @@
     font-size: 1.9rem;
     line-height: 2.2rem;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
   .header-logo h2.site-subtitle {
     display: block;
     font-size: 1.1rem;
     line-height: 1.2rem;
     margin: 5px;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
 /*** 731+ ***/
@@ -138,10 +157,18 @@
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
   .header-logo h2.site-subtitle {
     float: left;
     font-size: 1rem;
     line-height: 1rem;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 }
 /*** 821+ ***/
@@ -156,6 +183,10 @@
     font-size: 2.0rem;
     line-height: 2.2rem;
     width: 70%;
+  }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.7rem;
+    line-height: 2.0rem;
   }
   .header-logo h2.site-subtitle {
     font-size: 1.2rem;
@@ -192,12 +223,20 @@
     padding: 10px 5px 5px;
     width: 65%;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+  }
   .header-logo h2.site-subtitle {
     font-size: 1rem;
     line-height: 1.1rem;
     margin: 0;
     padding: 5px;
     width: 65%;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
   }
 }
 /*** 1200+ ***/
@@ -210,10 +249,18 @@
     line-height: 2.4rem;
     width: 70%;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
   .header-logo h2.site-subtitle {
     font-size: 1.3rem;
     line-height: 1.5rem;
     width: 70%;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
   }
 }
 /* @end */
@@ -233,7 +280,7 @@
   #block-calsauthen-calsauthen-custom-registration {
     display: table-cell;
     margin: 0;
-    padding: 8px 10px 8px 10px;
+    padding: 8px 6px 8px 10px;
     text-align: right;
   }
 }
@@ -256,14 +303,14 @@
     padding: 0;
     text-decoration: underline;
   }
-  #block-calsauthen-calsauthen-custom-registration a.sign-up-search:after {
+  #block-calsauthen-calsauthen-custom-registration a:after {
     content: "|";
     display: inline-block;
     padding: 0 1px 0 5px;
     text-decoration: none;
   }
 }
-#block-calsauthen-calsauthen-custom-registration a.sign-up-search:hover:after {
+#block-calsauthen-calsauthen-custom-registration a:hover:after {
   color: #333333;
 }
 #block-calsauthen-calsauthen-custom-registration a:hover {
