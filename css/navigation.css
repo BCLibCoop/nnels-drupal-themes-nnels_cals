@@ -27,7 +27,7 @@
   .language-switcher {
     display: table-cell;
     margin: 0 10px 0 0;
-    padding: 5px 0px;
+    padding: 5px 10px 5px 0;
     width: 90px;
   }
 }
@@ -60,16 +60,16 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   .language-switcher a {
-    background: transparent;
+    background-color: #cc0000;
     border: none;
-    padding: 0;
-    color: #333333;
-    text-align: left;
-    text-decoration: underline;
+    border-radius: 6px;
+    color: #ededed;
+    padding: 5px 10px;
+    text-decoration: none;
   }
 }
 .language-switcher a:hover {
-	color: #b34d00;
+  text-decoration: underline;
 }
 
 /* @end */

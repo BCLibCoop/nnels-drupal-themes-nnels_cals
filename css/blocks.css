@@ -280,7 +280,7 @@
   #block-calsauthen-calsauthen-custom-registration {
     display: table-cell;
     margin: 0;
-    padding: 8px 4px 8px 10px;
+    padding: 4px 4px 4px 10px;
     text-align: right;
   }
 }
@@ -296,25 +296,18 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-calsauthen-calsauthen-custom-registration a {
-    background: transparent;
+    background-color: #cc0000;
     border: none;
+    border-radius: 6px;
+    color: #ededed;
     display: inline-block;
     margin: 0;
-    padding: 0;
-    text-decoration: underline;
-  }
-  #block-calsauthen-calsauthen-custom-registration a:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 1px 0 5px;
+    padding: 5px 10px;
     text-decoration: none;
   }
 }
-#block-calsauthen-calsauthen-custom-registration a:hover:after {
-  color: #333333;
-}
 #block-calsauthen-calsauthen-custom-registration a:hover {
-  color: #b34d00;
+  text-decoration: underline;
 }
 
 /* @end */
@@ -334,11 +327,11 @@
   .user-logged-in {
     display: table-cell;
     margin: 0;
-    padding: 8px 10px 8px 10px;
+    padding: 4px 0px 4px 0px;
     text-align: center;
   }
   .block.bookshelf-button {
-    width: 150px;
+    width: 126px;
   }
 }
 #block-logintoboggan-logintoboggan-logged-in {
@@ -378,33 +371,25 @@
 @media screen and (min-width: 51.3125rem) {
   .bookshelf-button a,
   .user-logged-in a {
-    background: transparent;
+    background-color: #cc0000;
     border: none;
-    color: #333333;
+    border-radius: 6px;
+    color: #ededed;
     display: inline-block;
     margin: 0;
-    padding: 0;
-    text-decoration: underline;
+    padding: 5px 10px;
+    text-decoration: none;
   }
 }
 .bookshelf-button a i {
   display: none;
-}
-/*** 821+ ***/
-@media screen and (min-width: 51.3125rem) {
-  .user-logged-in .username:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 1px 0 5px;
-    text-decoration: none;
-  }
 }
 .user-logged-in a.username:hover:after {
   color: #333333;
 }
 .bookshelf-button a:hover,
 .user-logged-in a:hover {
-	color: #b34d00;
+	text-decoration: underline;
 }
 
 .user-logged-in .username.span {
