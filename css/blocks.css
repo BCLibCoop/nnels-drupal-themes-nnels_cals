@@ -115,11 +115,30 @@
     font-size: 1.9rem;
     line-height: 2.2rem;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
   .header-logo h2.site-subtitle {
     display: block;
     font-size: 1.1rem;
     line-height: 1.2rem;
     margin: 5px;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
   }
 }
 /*** 731+ ***/
@@ -138,10 +157,18 @@
     font-size: 1.8rem;
     line-height: 1.8rem;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
   .header-logo h2.site-subtitle {
     float: left;
     font-size: 1rem;
     line-height: 1rem;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1rem;
+    line-height: 1.2rem;
   }
 }
 /*** 821+ ***/
@@ -156,6 +183,10 @@
     font-size: 2.0rem;
     line-height: 2.2rem;
     width: 70%;
+  }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.7rem;
+    line-height: 2.0rem;
   }
   .header-logo h2.site-subtitle {
     font-size: 1.2rem;
@@ -192,12 +223,20 @@
     padding: 10px 5px 5px;
     width: 65%;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+  }
   .header-logo h2.site-subtitle {
     font-size: 1rem;
     line-height: 1.1rem;
     margin: 0;
     padding: 5px;
     width: 65%;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
   }
 }
 /*** 1200+ ***/
@@ -210,10 +249,18 @@
     line-height: 2.4rem;
     width: 70%;
   }
+  body.i18n-fr .header-logo h1.site-title {
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+  }
   .header-logo h2.site-subtitle {
     font-size: 1.3rem;
     line-height: 1.5rem;
     width: 70%;
+  }
+  body.i18n-fr .header-logo h2.site-subtitle {
+    font-size: 1.1rem;
+    line-height: 1.2rem;
   }
 }
 /* @end */
@@ -233,7 +280,7 @@
   #block-calsauthen-calsauthen-custom-registration {
     display: table-cell;
     margin: 0;
-    padding: 8px 10px 8px 10px;
+    padding: 4px 4px 4px 10px;
     text-align: right;
   }
 }
@@ -249,25 +296,18 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-calsauthen-calsauthen-custom-registration a {
-    background: transparent;
+    background-color: #cc0000;
     border: none;
+    border-radius: 6px;
+    color: #ededed;
     display: inline-block;
     margin: 0;
-    padding: 0;
-    text-decoration: underline;
-  }
-  #block-calsauthen-calsauthen-custom-registration a.sign-up-search:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 1px 0 5px;
+    padding: 5px 10px;
     text-decoration: none;
   }
 }
-#block-calsauthen-calsauthen-custom-registration a.sign-up-search:hover:after {
-  color: #333333;
-}
 #block-calsauthen-calsauthen-custom-registration a:hover {
-  color: #b34d00;
+  text-decoration: underline;
 }
 
 /* @end */
@@ -287,11 +327,11 @@
   .user-logged-in {
     display: table-cell;
     margin: 0;
-    padding: 8px 10px 8px 10px;
+    padding: 4px 0px 4px 0px;
     text-align: center;
   }
   .block.bookshelf-button {
-    width: 150px;
+    width: 126px;
   }
 }
 #block-logintoboggan-logintoboggan-logged-in {
@@ -331,33 +371,25 @@
 @media screen and (min-width: 51.3125rem) {
   .bookshelf-button a,
   .user-logged-in a {
-    background: transparent;
+    background-color: #cc0000;
     border: none;
-    color: #333333;
+    border-radius: 6px;
+    color: #ededed;
     display: inline-block;
     margin: 0;
-    padding: 0;
-    text-decoration: underline;
+    padding: 5px 10px;
+    text-decoration: none;
   }
 }
 .bookshelf-button a i {
   display: none;
-}
-/*** 821+ ***/
-@media screen and (min-width: 51.3125rem) {
-  .user-logged-in .username:after {
-    content: "|";
-    display: inline-block;
-    padding: 0 1px 0 5px;
-    text-decoration: none;
-  }
 }
 .user-logged-in a.username:hover:after {
   color: #333333;
 }
 .bookshelf-button a:hover,
 .user-logged-in a:hover {
-	color: #b34d00;
+	text-decoration: underline;
 }
 
 .user-logged-in .username.span {

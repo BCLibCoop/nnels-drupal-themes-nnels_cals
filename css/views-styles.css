@@ -839,12 +839,21 @@ article.node-article .field-items h3 em {
     font-size: 1.2rem;
     line-height: 1.2rem;
   }
+  body.i18n-fr .search-repository .block-title {
+    font-size: 1.4rem;
+  }
 }
 /*** 1008+ ***/
 @media screen and (min-width: 63rem) {
-  .search-repository .block-title {
+  body.i18n-fr .search-repository .block-title {
     font-size: 1.5rem;
     line-height: 1.5rem;
+  }
+}
+/*** 1200+ ***/
+@media screen and (min-width: 75rem) {
+  .search-repository .block-title {
+    font-size: 1.5rem;
   }
 }
 .search-repository #views-exposed-form-repository-search-page {
@@ -872,6 +881,9 @@ article.node-article .field-items h3 em {
   .search-repository #edit-search-api-views-fulltext-2-wrapper {
     float: none;
     width: 75%;
+  }
+  body.i18n-fr .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    width: 70%;
   }
 }
 .search-repository #edit-search-api-views-fulltext-2 {
