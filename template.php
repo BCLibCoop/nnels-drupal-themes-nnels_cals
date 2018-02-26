@@ -180,8 +180,41 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
         if (strcmp($org, $token) == 0) {
         	$org = "No organization";
         }
+
+  //Only track for non-BCLC accounts
 	if (!(strcmp($org, $bclc)) == 0) {
-       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline');
+      drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByOrg = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads S3", "Orgs", "'.$org.'"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
+
+    //Track clicks on downloads by title and nid by Custom Dimension and Event methods
+
+    //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
+    $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
+    drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByTitle = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
+                                                   _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
 	}
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
@@ -281,7 +314,6 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
   $roles_allowed = array('site editor', 'site manager', 'contributor', 'administrator');
   $display_check = array_intersect($roles_allowed, $user->roles);
-  $node = node_load($nid);
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
   if ($display_check || user_access('bypass node access') ) {
 	  $variables['view_download_files'] =
