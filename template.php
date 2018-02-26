@@ -180,8 +180,38 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
         if (strcmp($org, $token) == 0) {
         	$org = "No organization";
         }
+
+  //Only track for non-BCLC accounts
 	if (!(strcmp($org, $bclc)) == 0) {
-       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline');
+      drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByOrg = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads (Org)", "S3", "'.$org.'"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
+    //Track clicks on downloads by title and nid
+    //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
+    $title = urlencode( truncate_utf8( trim($variables['node']->title) ), 60, TRUE, TRUE, 30 );
+    drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByTitle = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads (Title)", "S3", "'.$title.' ('.$variables['node']->nid.')"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
 	}
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
@@ -288,14 +318,6 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 			    flag_create_link('bookshelf', $nid) .
 			    '</div>';
   }
-
-  // Download Metrics by Title.
-  //
-  // Method 1: Events
-  // drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "Book Title", "' . urlencode($variables['title']) . '"]);});});}(jQuery));', 'inline');
-  //
-  // Method 2: Custom Dimensions
-  drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["setCustomDimension", 1, "' . urlencode($variables['title']) . '"]);});});}(jQuery));', 'inline');
 }
 
 // */
