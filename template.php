@@ -187,7 +187,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
                     'Drupal.behaviors.nnelsDownloadsByOrg = {
                             attach: function (context, settings) {
                                             jQuery(".views-field-field-s3-file-upload span a").click(function () {
-                                                   _paq.push(["trackEvent", "Downloads (Org)", "S3", "'.$org.'"]);
+                                                   _paq.push(["trackEvent", "Downloads S3", "Orgs", "'.$org.'"]);
                                             });
                                     }
                     };',
@@ -196,14 +196,17 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
                             'scope' => 'footer'
                     )
     );
-    //Track clicks on downloads by title and nid
+
+    //Track clicks on downloads by title and nid by Custom Dimension and Event methods
+
     //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
-    $title = urlencode( truncate_utf8( trim($variables['node']->title) ), 60, TRUE, TRUE, 30 );
+    $title = urlencode( truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30) );
     drupal_add_js(
                     'Drupal.behaviors.nnelsDownloadsByTitle = {
                             attach: function (context, settings) {
                                             jQuery(".views-field-field-s3-file-upload span a").click(function () {
-                                                   _paq.push(["trackEvent", "Downloads (Title)", "S3", "'.$title.' ('.$variables['node']->nid.')"]);
+                                                   _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
+                                                   _paq.push(["setCustomDimension, 1, "'.$title.' ('.$variables['node']->nid.')"]);
                                             });
                                     }
                     };',
