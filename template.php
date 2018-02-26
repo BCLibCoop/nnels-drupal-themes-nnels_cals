@@ -155,7 +155,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     case "dev.nnels.ca":
     	global $language;
     	//dpm($language->name);
-    	drupal_set_message(t("NB: DEVEL server!"), "error");
+    	drupal_set_message(t("NB: DEVEL server!"), "status");
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	if(isset($_SESSION['calsauthen_target_driver']) ) {
 	  		dpm("driver: " .$_SESSION['calsauthen_target_driver']);
@@ -164,7 +164,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     	break;
 
     case "staging.nnels.ca":
-    	drupal_set_message(t("NB: STAGING server!"), "error");
+    	drupal_set_message(t("NB: STAGING server!"), "status");
     	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
 
