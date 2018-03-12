@@ -25,10 +25,9 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   .language-switcher {
-    display: table-cell;
-    margin: 0 10px 0 0;
-    padding: 5px 10px 5px 0;
-    width: 90px;
+  	float: left;
+    padding: 4px 0;
+    margin: 0;
   }
 }
 .language-switcher ul.language-switcher-locale-url {

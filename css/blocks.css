@@ -38,9 +38,11 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   .block-pagestyle {
-    display: table-cell;
-    padding: 3px 0 3px 10px;
-    vertical-align: middle;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 7px 0;
+    vertical-align: inherit;
   }
 }
 .block-pagestyle .block-title {
@@ -278,10 +280,9 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-calsauthen-calsauthen-custom-registration {
-    display: table-cell;
+    float: right;
     margin: 0;
-    padding: 4px 4px 4px 10px;
-    text-align: right;
+    padding: 4px 4px 4px 0;
   }
 }
 #block-calsauthen-calsauthen-custom-registration a {
@@ -325,7 +326,7 @@
   .block.bookshelf-button,
   #block-logintoboggan-logintoboggan-logged-in,
   .user-logged-in {
-    display: table-cell;
+    float: right;
     margin: 0;
     padding: 4px 0px 4px 0px;
     text-align: center;
@@ -346,6 +347,8 @@
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-logintoboggan-logintoboggan-logged-in {
+    margin-right: 4px;
+    margin-top: 0;
     text-align: right;
   }
 }
