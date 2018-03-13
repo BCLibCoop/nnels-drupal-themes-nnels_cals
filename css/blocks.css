@@ -30,9 +30,12 @@
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
   .block-pagestyle {
-    display: table-cell;
+    display: block;
+    left: 0px;
     padding: 10px 0 5px 0;
-    vertical-align: middle;
+    position: absolute;
+    top: 10px;
+    width: 100%;
   }
 }
 /*** 821+ ***/
@@ -40,9 +43,13 @@
   .block-pagestyle {
     display: block;
     float: left;
+    left: auto;
     margin: 0;
     padding: 7px 0;
+    position: relative;
+    top: auto;
     vertical-align: inherit;
+    width: auto;
   }
 }
 .block-pagestyle .block-title {
@@ -269,7 +276,17 @@
 
 /* @group user-logged-out */
 #block-calsauthen-calsauthen-custom-registration {
+  left: 0px;
   margin: 10px 10px 10px 0;
+  position: absolute;
+  top: 47px;
+  width: 90%;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  #block-calsauthen-calsauthen-custom-registration {
+    top: 90px;
+  }
 }
 /*** 731+ ***/
 @media screen and (min-width: 45.6875rem) {
@@ -281,8 +298,12 @@
 @media screen and (min-width: 51.3125rem) {
   #block-calsauthen-calsauthen-custom-registration {
     float: right;
+    left: auto;
     margin: 0;
     padding: 4px 4px 4px 0;
+    position: relative;
+    top: auto;
+    width: auto;
   }
 }
 #block-calsauthen-calsauthen-custom-registration a {

@@ -20,14 +20,28 @@
 /* @group language-switcher */
 
 .language-switcher {
+  left: 0px;
   margin: 10px 10px 10px 0;
+  position: absolute;
+  top: 5px;
+  width: 90%;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  .language-switcher {
+  	top: 47px;
+  }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   .language-switcher {
   	float: left;
+  	left: auto;
     padding: 4px 0;
+    position: relative;
     margin: 0;
+    top: auto;
+    width: auto;
   }
 }
 .language-switcher ul.language-switcher-locale-url {
