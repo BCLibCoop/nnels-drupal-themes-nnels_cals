@@ -19,7 +19,7 @@
 
 /* @group language-switcher */
 
-.language-switcher {
+#block-locale-language {
   left: 0px;
   margin: 10px 10px 10px 0;
   position: absolute;
@@ -28,13 +28,13 @@
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
-  .language-switcher {
-  	top: 47px;
+  #block-locale-language {
+  	top: 37px;
   }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .language-switcher {
+  #block-locale-language {
   	float: left;
   	left: auto;
     padding: 4px 0;
@@ -44,7 +44,7 @@
     width: auto;
   }
 }
-.language-switcher ul.language-switcher-locale-url {
+#block-locale-language ul.language-switcher-locale-url {
 	display: block;
   list-style-type: none;
   list-style-image: none;
@@ -52,7 +52,7 @@
 	padding: 0;
 }
 
-.language-switcher ul.language-switcher-locale-url li {
+#block-locale-language ul.language-switcher-locale-url li {
   background-repeat: no-repeat;
   background-size: 30px 16px;
   list-style-type: none;
@@ -60,10 +60,10 @@
 	margin: 0;
 	padding: 0;
 }
-.language-switcher ul.language-switcher-locale-url li.active {
+#block-locale-language ul.language-switcher-locale-url li.active {
 	display: none;
 }
-.language-switcher a {
+#block-locale-language .block-content a {
   background: #DDD;
   border: 1px solid #336699;
   display: block;
@@ -72,7 +72,7 @@
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .language-switcher a {
+  #block-locale-language .block-content a {
     background-color: #cc0000;
     border: none;
     border-radius: 6px;
@@ -81,7 +81,7 @@
     text-decoration: none;
   }
 }
-.language-switcher a:hover {
+#block-locale-language a:hover {
   text-decoration: underline;
 }
 
