@@ -80,6 +80,15 @@
     padding: 5px 10px;
     text-decoration: none;
   }
+  body.ps_black_white #block-locale-language .block-content a,
+  body.pagestyle_black_white #block-locale-language .block-content a,
+  body.ps_white_black #block-locale-language .block-content a,
+  body.pagestyle_white_black #block-locale-language .block-content a,
+  body.ps_yellow_blue #block-locale-language .block-content a,
+  body.pagestyle_yellow_blue #block-locale-language .block-content a {
+    background-color: #cc0000 !important;
+    color: #ededed !important;
+  }
 }
 #block-locale-language a:hover {
   text-decoration: underline;

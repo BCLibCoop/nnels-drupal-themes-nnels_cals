@@ -419,6 +419,21 @@
     padding: 5px 10px;
     text-decoration: none;
   }
+  body.ps_black_white .bookshelf-button a,
+  body.ps_black_white .user-logged-in a,
+  body.pagestyle_black_white .bookshelf-button a,
+  body.pagestyle_black_white .user-logged-in a,
+  body.ps_white_black .bookshelf-button a,
+  body.ps_white_black .user-logged-in a,
+  body.pagestyle_white_black .bookshelf-button a,
+  body.pagestyle_white_black .user-logged-in a,
+  body.ps_yellow_blue .bookshelf-button a,
+  body.ps_yellow_blue .user-logged-in a,
+  body.pagestyle_yellow_blue .bookshelf-button a,
+  body.pagestyle_yellow_blue .user-logged-in a {
+    background-color: #cc0000 !important;
+    color: #ededed !important;
+  }
 }
 .bookshelf-button a i {
   display: none;
