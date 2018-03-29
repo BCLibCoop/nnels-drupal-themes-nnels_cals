@@ -2,7 +2,7 @@
 /* block.tpl.php */
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
-	<a href="searchapi-facetblock" id="facet-<?php print $block_id; ?>"></a>
+	<!--<a href="searchapi-facetblock" id="facet-<?php print $block_id; ?>"></a>//-->
 
 	<?php print render($title_prefix); ?>
 		<?php if ($title): ?>
