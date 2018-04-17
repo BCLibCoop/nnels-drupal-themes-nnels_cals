@@ -128,17 +128,14 @@ function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
-  //$variables['sample_variable'] = t('Lorem ipsum.');
-  //drupal_add_css("rubik-overrides.css")
-  	//drupal_add_css(path_to_theme() . '/css/rubik-overrides.css');
 
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
+  // Add the page style currently selected as a class on the body. This way the
+  // header buttons can be styled properly.
+  if (isset($_COOKIE['pagestyle'])) {
+    $variables['classes_array'][] = 'ps_' . $_COOKIE['pagestyle'];
+  }
 }
-// */
 
 /**
  * Override or insert variables into the page templates.

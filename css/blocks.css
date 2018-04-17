@@ -24,33 +24,42 @@
 /* @end */
 
 /* @group pagestyle - colour contrast selector */
-.block-pagestyle {
+#block-pagestyle-form {
   display: none;
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
-  .block-pagestyle {
-    display: table-cell;
+  #block-pagestyle-form {
+    display: block;
+    left: 0px;
     padding: 10px 0 5px 0;
-    vertical-align: middle;
+    position: absolute;
+    top: 0px;
+    width: 100%;
   }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .block-pagestyle {
-    display: table-cell;
-    padding: 3px 0 3px 10px;
-    vertical-align: middle;
+  #block-pagestyle-form {
+    display: block;
+    float: left;
+    left: auto;
+    margin: 0;
+    padding: 7px 0 7px 10px;
+    position: relative;
+    top: auto;
+    vertical-align: inherit;
+    width: auto;
   }
 }
-.block-pagestyle .block-title {
+#block-pagestyle-form .block-title {
 	font-size: 1rem;
 }
-.block-pagestyle div.pagestyle_list select#edit-pagestyle-select {
+#block-pagestyle-form div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
   width: 100px;
 }
-.block-pagestyle label {
+#block-pagestyle-form label {
   padding: 0 10px 0 0;
 }
 /* @end */
@@ -267,21 +276,28 @@
 
 /* @group user-logged-out */
 #block-calsauthen-calsauthen-custom-registration {
+  left: 0px;
   margin: 10px 10px 10px 0;
+  position: absolute;
+  top: 47px;
+  width: 90%;
 }
-/*** 731+ ***/
-@media screen and (min-width: 45.6875rem) {
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
   #block-calsauthen-calsauthen-custom-registration {
-    margin-top: 3px;
+    top: 78px;
   }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-calsauthen-calsauthen-custom-registration {
-    display: table-cell;
+    float: right;
+    left: auto;
     margin: 0;
-    padding: 4px 4px 4px 10px;
-    text-align: right;
+    padding: 4px 4px 4px 0;
+    position: relative;
+    top: auto;
+    width: auto;
   }
 }
 #block-calsauthen-calsauthen-custom-registration a {
@@ -314,39 +330,62 @@
 
 /* @group user-logged-in */
 
-.block.bookshelf-button,
+#block-nnels-bookshelf-bookshelf-button,
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
   display: block;
+  left: 0px;
   margin: 10px 10px 10px 0;
+  position: absolute;
+  width: 90%
+}
+#block-nnels-bookshelf-bookshelf-button {
+  top: 88px;
+}
+#block-logintoboggan-logintoboggan-logged-in,
+.user-logged-in {
+  top: 47px;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  #block-nnels-bookshelf-bookshelf-button {
+    top: 119px;
+  }
+  #block-logintoboggan-logintoboggan-logged-in,
+  .user-logged-in {
+    top: 78px;
+  }
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
-  .block.bookshelf-button,
+  #block-nnels-bookshelf-bookshelf-button,
   #block-logintoboggan-logintoboggan-logged-in,
   .user-logged-in {
-    display: table-cell;
+    float: right;
     margin: 0;
     padding: 4px 0px 4px 0px;
     text-align: center;
   }
-  .block.bookshelf-button {
-    width: 126px;
+  #block-nnels-bookshelf-bookshelf-button {
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
   }
 }
 #block-logintoboggan-logintoboggan-logged-in {
   text-align: left;
 }
-/*** 731+ ***/
-@media screen and (min-width: 45.6875rem) {
-  #block-logintoboggan-logintoboggan-logged-in {
-    margin-top: 3px;
-  }
-}
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #block-logintoboggan-logintoboggan-logged-in {
+    left: auto;
+    margin-right: 4px;
+    margin-top: 0;
+    position: relative;
     text-align: right;
+    top: auto;
+    width: auto;
   }
 }
 #block-logintoboggan-logintoboggan-logged-in .username {
@@ -379,6 +418,21 @@
     margin: 0;
     padding: 5px 10px;
     text-decoration: none;
+  }
+  body.ps_black_white .bookshelf-button a,
+  body.ps_black_white .user-logged-in a,
+  body.pagestyle_black_white .bookshelf-button a,
+  body.pagestyle_black_white .user-logged-in a,
+  body.ps_white_black .bookshelf-button a,
+  body.ps_white_black .user-logged-in a,
+  body.pagestyle_white_black .bookshelf-button a,
+  body.pagestyle_white_black .user-logged-in a,
+  body.ps_yellow_blue .bookshelf-button a,
+  body.ps_yellow_blue .user-logged-in a,
+  body.pagestyle_yellow_blue .bookshelf-button a,
+  body.pagestyle_yellow_blue .user-logged-in a {
+    background-color: #cc0000 !important;
+    color: #ededed !important;
   }
 }
 .bookshelf-button a i {
