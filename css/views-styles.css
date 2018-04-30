@@ -951,6 +951,9 @@ article.node-article .field-items h3 em {
 	margin: 5px;
 	padding: 5px;
 }
+.search-results .views-field-body-value h3 {
+  margin: 0 0 10px 0;
+}
 
 .search-results .views-field-view .multi-file-embed {
 	/*background-color: aqua;*/
