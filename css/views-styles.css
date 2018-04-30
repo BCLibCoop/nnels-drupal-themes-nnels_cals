@@ -1814,7 +1814,7 @@ span.daisy-icon-login {
 .organization-details .views-field-field-telephone {
         /*background-color: rosybrown;*/
         margin: 5px;
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
 }
 
 .organization-details .views-field-field-address {
@@ -1847,7 +1847,7 @@ span.daisy-icon-login {
 .organization-details .views-field-field-url-library {
         /*background-color: olivedrab;*/
         margin: 5px;
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
 }
 
 .organization-details .views-field-field-url-library .field-content {

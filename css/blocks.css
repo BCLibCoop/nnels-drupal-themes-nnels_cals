@@ -239,7 +239,6 @@
 .block.block-cals-forms.detail-library-registration .block-content,
 .block.block-calsauthen.detail-library-registration .block-content {
 	display: inline-block;
-	margin-top: 1em;
 }
 
 /*** Maximum width of 600 pixels. ***/
