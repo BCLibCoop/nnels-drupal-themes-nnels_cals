@@ -321,6 +321,15 @@
     padding: 5px 10px;
     text-decoration: none;
   }
+  body.ps_black_white #block-calsauthen-calsauthen-custom-registration a,
+  body.pagestyle_black_white #block-calsauthen-calsauthen-custom-registration a,
+  body.ps_white_black #block-calsauthen-calsauthen-custom-registration a,
+  body.pagestyle_white_black #block-calsauthen-calsauthen-custom-registration a,
+  body.ps_yellow_blue #block-calsauthen-calsauthen-custom-registration a,
+  body.pagestyle_yellow_blue #block-calsauthen-calsauthen-custom-registration a {
+    background-color: #cc0000 !important;
+    color: #ededed !important;
+  }
 }
 #block-calsauthen-calsauthen-custom-registration a:hover {
   text-decoration: underline;
