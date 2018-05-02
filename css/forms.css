@@ -192,11 +192,17 @@ td.menu-disabled {
 	margin: 0;
 	padding: 10px;
 }
+.detail-library-registration .block-content p {
+  margin: 5px 0 5px 5px;
+}
 
 .detail-library-registration .form-type-textfield {
 	/*background-color: pink;*/
 	margin: 0;
 	padding: 5px;
+}
+.detail-library-registration .form-type-checkbox {
+  margin: 10px 0 10px 5px;
 }
 
 .detail-library-registration .form-type-password-confirm {
@@ -220,7 +226,10 @@ td.menu-disabled {
 .detail-library-registration #edit-actions {
 	/*background-color: palegreen;*/
 	margin: 0;
-	padding: 10px 10px 10px 15px;
+	padding: 10px 10px 10px 5px;
+}
+.detail-library-registration #edit-actions p {
+  margin: 0 0 10px 0;
 }
 
 .password-strength {
@@ -233,7 +242,7 @@ td.menu-disabled {
 }
 
 .detail-library-registration .form-submit {
-	margin: 0;
+	margin: 10px 0 0 0;
 	padding: 3px 5px;
 	background-color: palegoldenrod;
 	color: #333333;
