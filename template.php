@@ -128,17 +128,14 @@ function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
-  //$variables['sample_variable'] = t('Lorem ipsum.');
-  //drupal_add_css("rubik-overrides.css")
-  	//drupal_add_css(path_to_theme() . '/css/rubik-overrides.css');
 
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
+  // Add the page style currently selected as a class on the body. This way the
+  // header buttons can be styled properly.
+  if (isset($_COOKIE['pagestyle'])) {
+    $variables['classes_array'][] = 'ps_' . $_COOKIE['pagestyle'];
+  }
 }
-// */
 
 /**
  * Override or insert variables into the page templates.
@@ -180,8 +177,41 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
         if (strcmp($org, $token) == 0) {
         	$org = "No organization";
         }
+
+  //Only track for non-BCLC accounts
 	if (!(strcmp($org, $bclc)) == 0) {
-       	 drupal_add_js('(function($) {$(document).ready(function() {$(".views-field-field-s3-file-upload span a").click(function() {_paq.push(["trackEvent", "Download", "S3", "'.$org.'"]);});});}(jQuery));', 'inline');
+      drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByOrg = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads S3", "Orgs", "'.$org.'"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
+
+    //Track clicks on downloads by title and nid by Custom Dimension and Event methods
+
+    //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
+    $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
+    drupal_add_js(
+                    'Drupal.behaviors.nnelsDownloadsByTitle = {
+                            attach: function (context, settings) {
+                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                   _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
+                                                   _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
+                                            });
+                                    }
+                    };',
+                    array(
+                            'type' => 'inline',
+                            'scope' => 'footer'
+                    )
+    );
 	}
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
@@ -231,8 +261,23 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
                 ));
 
   }
+
+  if ($vars['block_html_id'] == 'block-views-repository-items-front-page-bra' || $vars['block_html_id'] == 'block-views-repository-items-front-page-bmd') {
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/uniform_height.min.js');
+  }
 }
 
+/**
+ * Implements hook_form_alter().
+ */
+function NNELS_CALS_v001_form_alter(&$form, &$form_state, $form_id) {
+
+  // Alter the page style form - put the label on the left.
+  if ($form_id == 'pagestyle_form') {
+    $form['pagestyle_select']['#prefix'] = $form['pagestyle_select']['#suffix'];
+    unset($form['pagestyle_select']['#suffix']);
+  }
+}
 
 // */
 
@@ -266,7 +311,6 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
   //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
   $roles_allowed = array('site editor', 'site manager', 'contributor', 'administrator');
   $display_check = array_intersect($roles_allowed, $user->roles);
-  $node = node_load($nid);
   //see also the templates/views-view-field--field-s3-file-upload.tpl.php
   if ($display_check || user_access('bypass node access') ) {
 	  $variables['view_download_files'] =

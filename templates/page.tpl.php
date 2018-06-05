@@ -4,7 +4,13 @@
 
 <div id="page">
 	<header id="header">
+    <?php print render($page['utility']); ?>
 		<?php print render($page['header']); ?>
+    <div id="search">
+      <nav id="search-navigation" role="navigation">
+        <?php print render($page['search']); ?>
+      </nav>
+    </div><!-- /#search -->
 	</header>
 
 	<div id="navigation">
@@ -12,12 +18,6 @@
 			<?php print render($page['navigation']); ?>
 		</nav>
 	</div><!-- /#navigation -->
-
-	<div id="search">
-		<nav id="search-navigation" role="navigation">
-			<?php print render($page['search']); ?>
-		</nav>
-	</div><!-- /#search -->
 
 	<div id="main">
 		<div id="content" class="column" role="main">
