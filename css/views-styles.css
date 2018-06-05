@@ -1,4 +1,4 @@
-G/** NNELS_CALS_v001A **/
+/** NNELS_CALS_v001A **/
 
 /* 01/10/2014 */
 
@@ -60,6 +60,12 @@ G/** NNELS_CALS_v001A **/
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #block-views-exp-repository-search-page {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 42rem) { /* 672px */
@@ -825,19 +831,74 @@ article.node-article .field-items h3 em {
 	margin: 0;
 	padding: 0 0.7rem 0 0.3rem;
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .block-title {
+    display: block;
+    float: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  body.i18n-fr .search-repository .block-title {
+    font-size: 1.4rem;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  body.i18n-fr .search-repository .block-title {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+/*** 1200+ ***/
+@media screen and (min-width: 75rem) {
+  .search-repository .block-title {
+    font-size: 1.5rem;
+  }
+}
 .search-repository #views-exposed-form-repository-search-page {
 	float: left;
 }
-
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository #views-exposed-form-repository-search-page {
+    float: none;
+  }
+}
+.search-repository #edit-search-api-views-fulltext-2-wrapper {
+  float: none;
+  width: 65%;
+}
+/*** 544+ ***/
+@media screen and (min-width: 34rem) {
+  .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    float: left;
+    width: auto;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    float: none;
+    width: 75%;
+  }
+  body.i18n-fr .search-repository #edit-search-api-views-fulltext-2-wrapper {
+    width: 70%;
+  }
+}
 .search-repository #edit-search-api-views-fulltext-2 {
-	width: 310px;
 	background-color: #FFFFFF;
 	border: 1px solid #336699;
 	max-width: 95%;
 	line-height: 1.6rem;
 }
-
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-repository #edit-search-api-views-fulltext-2 {
+    max-width: 100%;
+    width: 100%;
+  }
+}
 .search-repository .views-widget-sort-by select {
 	width: 110px;
 	background: #FFFFFF;
@@ -849,10 +910,22 @@ article.node-article .field-items h3 em {
 }
 
 .search-repository .views-exposed-widgets {
-	display: flex;
-	align-items: center;
+  margin: 10px 0 0 0;
 }
-
+/*** 544+ ***/
+@media screen and (min-width: 34rem) {
+  .search-repository .views-exposed-widgets {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+}
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .views-exposed-widgets {
+    display: block;
+  }
+}
 .search-repository .views-submit-button .form-submit {
 	margin: 0;
 	padding: 3px 10px;
@@ -860,7 +933,12 @@ article.node-article .field-items h3 em {
 	background: #FFFFFF;
 	border: 1px solid #336699;
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  .search-repository .views-submit-button .form-submit {
+    margin: 0 0 0 5px;
+  }
+}
 .search-repository .views-submit-button .form-submit:hover {
 	color: #b34d00;
 	background: #D0D0D0;
@@ -951,6 +1029,9 @@ article.node-article .field-items h3 em {
 	margin: 5px;
 	padding: 5px;
 }
+.search-results .views-field-body-value h3 {
+  margin: 0 0 10px 0;
+}
 
 .search-results .views-field-view .multi-file-embed {
 	/*background-color: aqua;*/
@@ -1011,9 +1092,8 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
 	display: block;
 	width: 100%;
-	min-height: 40px;
 	margin: 0;
-	padding: 5px 5px 5px 40px;
+	padding: 10px 5px 10px 40px;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .no-file-avai-icon {
@@ -1257,7 +1337,7 @@ article.node-article .field-items h3 em {
 	display: block;
 	width: 100%;
 	margin: 0;
-	padding: 0 5px 5px 40px;
+	padding: 10px 5px 10px 40px;
 	height: auto;
 }
 
@@ -1360,7 +1440,7 @@ span.daisy-icon-login {
 	display: block;
 	height: auto;
 	margin: 0;
-	padding: 10px 0 0;
+	padding: 0;
 	background: url(../images/icon_login-access.png) no-repeat left center;
 }
 
@@ -1379,12 +1459,8 @@ span.daisy-icon-login {
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 	margin-left: 2.5rem;
-}
-.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
-.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
-.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
-.search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
-	margin-top: -0.2rem;
+	margin-top: -0.5rem;
+  padding: 0 5px 5px 5px;
 }
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
@@ -1819,7 +1895,7 @@ span.daisy-icon-login {
 .organization-details .views-field-field-telephone {
         /*background-color: rosybrown;*/
         margin: 5px;
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
 }
 
 .organization-details .views-field-field-address {
@@ -1852,7 +1928,7 @@ span.daisy-icon-login {
 .organization-details .views-field-field-url-library {
         /*background-color: olivedrab;*/
         margin: 5px;
-        padding: 5px;
+        padding: 5px 5px 5px 0px;
 }
 
 .organization-details .views-field-field-url-library .field-content {

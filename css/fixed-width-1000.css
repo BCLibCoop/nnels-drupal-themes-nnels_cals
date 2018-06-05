@@ -8,6 +8,7 @@
 
 body {
 	background: #061C3E;
+  min-width: 320px;
 }
 
 /* @end */
@@ -50,7 +51,7 @@ body {
 .region-bottom {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1000px;
+	width: 320px;
 }
 
 
@@ -104,9 +105,41 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
+  position: relative;
 }
-
+#header .region-utility {
+  display: block;
+  padding: 5px 5px 5px 5px;
+  position: absolute;
+  right: 0;
+  width: 40%;
+}
+/*** 540+ ***/
+@media screen and (min-width: 34rem) {
+  #header .region-utility {
+    width: 35%;
+  }
+}
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  #header .region-utility {
+    width: 25%;
+  }
+}
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #header .region-utility {
+  	background: #ededed;
+  	border-bottom: 1px solid #336699;
+    display: block;
+    height: 45px;
+    padding-top: 3px;
+    position: relative;
+    width: 100%;
+  }
+}
 #header .region-header {
+  border-bottom: 2px solid #336699;
 	width: 100%;
 	height: auto;
 	position: relative;
@@ -114,7 +147,27 @@ body {
 	margin: 0;
 	overflow: hidden; 
 }
-
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  #header .region-header {
+    height: 175px;
+  }
+}
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #header .region-header {
+    border: none;
+    float: left;
+    height: auto;
+    width: 70%;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  #header .region-header {
+    width: 55%;
+  }
+}
 
 /* @end */
 
@@ -126,19 +179,35 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
-	border-bottom: 2px solid #336699;
 }
-
-#mobile-menu-link {
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #navigation {
+    border-bottom: 2px solid #336699;
+  }
+}
+#block-block-22 {
 	display: none;
 }
-
+/*** 731+ ***/
+@media screen and (min-width: 45.6875rem) {
+  #block-block-22 {
+    bottom: 0;
+    position: absolute;
+  }
+}
 #navigation p {
 	margin: 0;
 }
 
 /*** Maximum width of 820 pixels. ***/
 @media screen and (max-width: 51.25rem) {
+  #block-block-22 {
+    display: block;
+  }
+  #block-block-22 .block-content p {
+    margin: 0;
+  }
 	#mobile-menu-link {
 		background: none repeat scroll 0% 0% #DDD;
 		border-width: 1px 1px 0px;
@@ -149,7 +218,7 @@ body {
 		font-size: 1.5rem;
 		font-family: "clear_sans_mediumregular";
 		width: auto;
-		display: inline-block;
+    display: inline-block;
 	}
 	#mobile-menu-link:hover,
 	#mobile-menu-link:focus,
@@ -175,7 +244,22 @@ body {
 	background: #D0D0D0;
 	border-bottom: 2px solid #336699;
 }
-
+/*** 821+ ***/
+@media screen and (min-width: 51.3125rem) {
+  #search {
+    background: transparent;
+    border: none;
+    float: right;
+    width: 30%;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  #search {
+    margin-top: 3%;
+    width: 45%;
+  }
+}
 /* @end */
 
 /* @group main */
