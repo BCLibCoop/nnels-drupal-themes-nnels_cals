@@ -101,10 +101,10 @@ body {
 /* @group header */
 
 #header {
-	width: 100%;
-	height: auto;
-	margin: 0;
-	padding: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
   position: relative;
 }
 #header .region-utility {
@@ -113,6 +113,7 @@ body {
   position: absolute;
   right: 0;
   width: 40%;
+  z-index: 80;
 }
 /*** 540+ ***/
 @media screen and (min-width: 34rem) {
@@ -129,8 +130,8 @@ body {
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
   #header .region-utility {
-  	background: #ededed;
-  	border-bottom: 1px solid #336699;
+    background: #ededed;
+    border-bottom: 1px solid #336699;
     display: block;
     height: 45px;
     padding-top: 3px;
@@ -140,12 +141,13 @@ body {
 }
 #header .region-header {
   border-bottom: 2px solid #336699;
-	width: 100%;
-	height: auto;
-	position: relative;
-	padding: 0.7rem 0.7rem 0;
-	margin: 0;
-	overflow: hidden; 
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 0.7rem 0.7rem 0;
+  margin: 0;
+  overflow: hidden;
+  z-index: 50;
 }
 /*** 731+ ***/
 @media screen and (min-width: 45.6875rem) {
@@ -179,6 +181,9 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
+}
+#block-block-22 {
+  z-index: 40
 }
 /*** 821+ ***/
 @media screen and (min-width: 51.3125rem) {
