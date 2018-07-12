@@ -24,18 +24,18 @@
  * @ingroup views_templates
  */
 ?>
+
 <?php
 // Some Repository Items only use the external URL field ("Resource URL")
 // in place of File Resources. If we find an item using field_urls_external
 // and having no File Resource field collections, we set to null whatever the
 // File Resource field has cooked up.
-if ( empty ( $row->_field_data['nid']['entity']->field_file_resource ) &&
-  ! empty ($row->field_field_urls_external)
-) {
+if ( empty ( $row->_entity_properties['entity object']->field_file_resource )
+  && ! empty($fields['field_urls_external']->content) ) {
   $fields['view'] = NULL;
 }
-
 ?>
+
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
