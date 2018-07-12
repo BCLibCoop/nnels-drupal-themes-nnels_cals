@@ -2432,7 +2432,6 @@ span.daisy-icon-login {
 
 .repo-item.detail .views-field-field-publisher-source::before {
 	display: block;
-	content: "Source Information:";
 	font-size: 1.2rem;
 	font-weight: bold;
 	margin-bottom: 0.8em;
