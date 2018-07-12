@@ -974,6 +974,10 @@ article.node-article .field-items h3 em {
 	border-bottom: 1px solid #336699;
 }
 
+.search-results .views-field-field-urls-external .item-list ul li {
+	border-bottom: none;
+}
+
 .search-results .views-field-nothing {
 	/*background-color: fuchsia;*/
 	float: left;
