@@ -1018,11 +1018,12 @@ article.node-article .field-items h3 em {
 }
 
 .search-results .views-field-field-dc-creator,
-.search-results .views-field-body-value, 
-.search-results .views-field-field-keyword-index, 
+.search-results .views-field-body-value,
+.search-results .views-field-field-keyword-index,
 .search-results .views-field-field-genre,
 .search-results .views-field-view,
-.search-results .views-field-field-dc-edition {
+.search-results .views-field-field-dc-edition,
+.search-results .views-field-field-urls-external {
 	/*background-color: bisque;*/
 	float: right;
 	width: 90%;
