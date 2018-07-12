@@ -197,22 +197,24 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
     //Track clicks on downloads by title and nid by Custom Dimension and Event methods
 
     //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
-    $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
-    drupal_add_js(
-                    'Drupal.behaviors.nnelsDownloadsByTitle = {
-                            attach: function (context, settings) {
-                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
-                                                   _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
-                                                   _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
-                                            });
-                                    }
-                    };',
-                    array(
-                            'type' => 'inline',
-                            'scope' => 'footer'
-                    )
-    );
-	}
+    if ( isset($variables['node']->title) ) {
+      $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
+      drupal_add_js(
+                      'Drupal.behaviors.nnelsDownloadsByTitle = {
+                              attach: function (context, settings) {
+                                              jQuery(".views-field-field-s3-file-upload span a").click(function () {
+                                                     _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
+                                                     _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
+                                              });
+                                      }
+                      };',
+                      array(
+                              'type' => 'inline',
+                              'scope' => 'footer'
+                      )
+      );
+  	}
+  }
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
     drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/move_promote_flag.min.js');
