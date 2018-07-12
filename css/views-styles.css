@@ -1224,6 +1224,10 @@ article.node-article .field-items h3 em {
 	border-bottom: 1px solid #336699;
 }
 
+.browse-results .views-field-field-urls-external .item-list ul li {
+	border-bottom: none;
+}
+
 .browse-results .views-field-nothing {
  	/*background-color: fuchsia;*/ 
 	float: left;
@@ -1263,7 +1267,8 @@ article.node-article .field-items h3 em {
 	padding: 5px 5px 5px 60px;
 }
 
-.browse-results .views-field-body {
+.browse-results .views-field-body,
+.browse-results .views-field-field-urls-external {
 /*background-color: navy;*/
 	margin: 5px;
 	padding: 5px 5px 5px 60px;
