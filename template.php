@@ -234,7 +234,15 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
                 'Drupal.behaviors.nnelsSearchWithinSearch = {
                         attach: function (context, settings) {
                                 if (Drupal.ajax_facets) {
+
+                                        /*
+                                        Set certain globals in our favour.
+                                        We need paged results and the Reset Facet link block active,
+                                        setting ajax_facets_buttons to hide that fact lets use both features.
+                                        */
+
                                         Drupal.ajax_facets.force_update_results = true;
+                                        Drupal.ajax_facets.ajax_facets_buttons = false;
                                         jQuery("input#edit-submit-repository-search").once().click(function () {
                                                 Drupal.ajax_facets.sendAjaxQuery({
                                                         pushStateNeeded: true,
