@@ -36,7 +36,7 @@ else {
   $image = theme(
     'image',
     array(
-      'path' => '/sites/default/modules/features/nnels_content_cafe_views_companion/img/blank.gif',
+      'path' => '/sites/default/modules/nnels_content_cafe/img/blank.gif',
       'alt'  => $entity->title,
     )
   );
