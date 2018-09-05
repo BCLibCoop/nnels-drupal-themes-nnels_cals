@@ -24,7 +24,8 @@
 $entity = $row->_entity_properties['entity object'];
 $jacket = nnels_content_cafe_select_multiple_content_cafe_jacket_rows_by_nids(array($row->entity));
 if ($jacket) {
-  $file   = file_load($jacket->fid);
+  $record = array_shift($jacket[$row->entity]);
+  $file   = file_load($record->fid);
   $image  = theme(
     'image',
     array(
