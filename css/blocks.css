@@ -847,3 +847,30 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 .block-webform h2.node-title {
     display: none;
 }
+
+/* Cover block on repository item node view */
+body.node-type-repository-item #content h1.title {
+  margin-bottom: 20px;
+}
+body.no_jacket #block-views-content-cafe-cover-block {
+  display: none;
+}
+body.has_jacket #block-views-content-cafe-cover-block {
+  margin: 0 auto;
+  max-width: 300px;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  body.has_jacket #block-views-content-cafe-cover-block {
+    display: inline-block;
+    margin-right: -1%;
+    vertical-align: top;
+    width: 35%;
+  }
+  body.has_jacket article.node-repository-item {
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: top;
+    width: 63%;
+  }
+}
