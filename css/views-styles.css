@@ -1347,6 +1347,7 @@ article.node-article .field-items h3 em {
 }
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202-fulltextandaudio,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .mp3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .file-pdf,
@@ -2086,6 +2087,7 @@ span.daisy-icon-login {
 
 
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
+.repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
 .repo-item.available-formats .views-field-field-s3-file-upload .mp3,
 .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
@@ -2137,6 +2139,7 @@ span.daisy-icon-login {
 @media screen and (max-width: 24rem) {
 	.repo-item.available-formats .views-field-field-s3-file-upload,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, 
+  .repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy3, 
 	.repo-item.available-formats .views-field-field-s3-file-upload .mp3, 
 	.repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
