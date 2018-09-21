@@ -65,7 +65,7 @@
 
 		<?php if ($sidebar_first || $sidebar_second): ?>
 			<aside class="sidebars">
-				<a id="secondary-navigation"></a>
+				<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
 			</aside><!-- /.sidebars -->
