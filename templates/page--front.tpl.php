@@ -47,7 +47,7 @@
 
 			<?php print render($page['highlighted']); ?>
 
-			<a id="main-content"></a>
+			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php if ($title): ?>
 				<h1 class="title" id="page-title"><?php print $title; ?></h1>

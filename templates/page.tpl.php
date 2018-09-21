@@ -40,7 +40,7 @@
 
 			<?php print render($page['highlighted']); ?>
 
-			<a id="main-content"></a>
+			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php print render($title_prefix); ?>
 
