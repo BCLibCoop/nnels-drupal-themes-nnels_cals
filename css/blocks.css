@@ -857,7 +857,7 @@ body.no_jacket #block-views-content-cafe-cover-block {
 }
 body.has_jacket #block-views-content-cafe-cover-block {
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 200px;
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
@@ -865,12 +865,12 @@ body.has_jacket #block-views-content-cafe-cover-block {
     display: inline-block;
     margin-right: -1%;
     vertical-align: top;
-    width: 35%;
+    width: 25%;
   }
   body.has_jacket article.node-repository-item {
     display: inline-block;
     margin-left: 2%;
     vertical-align: top;
-    width: 63%;
+    width: 73%;
   }
 }
