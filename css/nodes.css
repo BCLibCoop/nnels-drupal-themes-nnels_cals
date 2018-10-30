@@ -216,3 +216,16 @@ article.node-post ul.links.inline li a {
 }
 
 /* @end */
+
+/* @group marc_export_set */
+
+.node-marc-export-set .field-name-body {
+    margin: 2em 0 2em;
+    font-weight: lighter;
+}
+
+.node-marc-export-set .field-name-field-marc-xml-output-file {
+    margin: 2em 0 2em;
+}
+
+/* @end */
