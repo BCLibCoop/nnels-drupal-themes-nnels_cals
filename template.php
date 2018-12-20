@@ -344,6 +344,10 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 			    flag_create_link('bookshelf', $nid) .
 			    '</div>';
   }
+  //Request File link
+  if ( empty( $variables['field_file_resource'] ) && empty( $variables['field_urls_external'] ) ) {
+    $variables['request_title'] = '<span class="no-file-request-title"><a href="/request-production">Request this title</a></span>';
+  }
 }
 
 // */

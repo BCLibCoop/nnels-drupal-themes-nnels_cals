@@ -26,13 +26,37 @@
 ?>
 
 <?php
-// Some Repository Items only use the external URL field ("Resource URL")
-// in place of File Resources. If we find an item using field_urls_external
-// and having no File Resource field collections, we set to null whatever the
-// File Resource field has cooked up.
-if ( empty ( $row->_entity_properties['entity object']->field_file_resource )
-  && ! empty($fields['field_urls_external']->content) ) {
-  $fields['view'] = NULL;
+/* Some Repository Items only use the external URL field ("Resource URL")
+ * in place of File Resources.
+ *
+ * There are 2x2 properties between File Resource
+ * and External URL:
+ *
+ * File   URL	 Result
+ * ------------------
+ *  Y 	|  Y   | Hide URL
+ *  Y   |  N   | No action, File shows
+ *  N   |  Y   | Hide File
+ *  N   |  N   | Show Request (Sub-view result)
+ */
+
+$file_resource = $row->field_field_file_resource;
+$url_external =  $row->field_field_urls_external;
+
+if ( ! empty($file_resource) ) {
+  if ( ! empty($url_external) ) {
+    //FYUY: hide URL
+    $fields['field_urls_external'] = NULL;
+  } else {
+    //FYUN: no action
+  }
+} else {
+  if ( ! empty($url_external) ) {
+    //FNUY: hide request
+    $fields['view'] = NULL;
+  } else {
+    //FNUN: Show request from empty result in subview
+  }
 }
 ?>
 
