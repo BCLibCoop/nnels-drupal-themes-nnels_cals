@@ -35,7 +35,7 @@
  * ------------------
  *  Y 	|  Y   | Hide URL
  *  Y   |  N   | No action, File shows
- *  N   |  Y   | Hide File
+ *  N   |  Y   | Hide Request
  *  N   |  N   | Show Request (Sub-view result)
  */
 
@@ -51,7 +51,7 @@ if ( ! empty($file_resource) ) {
 } else {
     if ( ! empty($url_external) ) {
       //FNUY: hide request
-      //$fields['view'] = NULL;
+      //handled in node--repository_item.tpl.php
     } else {
       //FNUN: Show Request
       //handled in node--repository_item.tpl.php

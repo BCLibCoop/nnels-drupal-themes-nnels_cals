@@ -36,7 +36,7 @@
  * ------------------
  *  Y 	|  Y   | Hide URL
  *  Y   |  N   | No action, File shows
- *  N   |  Y   | Hide File
+ *  N   |  Y   | Hide Request
  *  N   |  N   | Show Request (Sub-view result)
  */
 
@@ -53,6 +53,7 @@ if ( ! empty($file_resource) ) {
 } else {
   if ( ! empty($url_external) ) {
     //FNUY: hide request
+    //Set the sub-view markup to NULL
     $fields['view'] = NULL;
   } else {
     //FNUN: Show request from empty result in subview

@@ -35,7 +35,7 @@
  * ------------------
  *  Y 	|  Y   | Hide URL
  *  Y   |  N   | No action, File shows
- *  N   |  Y   | Hide File
+ *  N   |  Y   | Hide Request
  *  N   |  N   | Show Request (Sub-view result)
  */
 
