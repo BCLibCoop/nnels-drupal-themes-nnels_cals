@@ -39,9 +39,8 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-$file_resource = $row->field_field_file_resource[0]['raw'];
-$url_external =  $row->field_field_urls_external[0]['raw'];
-
+$file_resource = $row->_field_data['nid']['entity']->field_file_resource;
+$url_external = $row->field_field_urls_external[0]['raw'];
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
     //FYUY: hide URL
@@ -49,14 +48,14 @@ if ( ! empty($file_resource) ) {
   } else {
     //FYUN: no action
   }
-} else { //File not present
+} else {
     if ( ! empty($url_external) ) {
       //FNUY: hide request
-      //Set the sub-view markup to NULL
-      $fields['view'] = NULL;
-  } else {
+      //handled in node--repository_item.tpl.php
+    } else {
       //FNUN: Show Request
-    }
+      //handled in node--repository_item.tpl.php
+  }
 }
 ?>
 <?php foreach ($fields as $id => $field): ?>
