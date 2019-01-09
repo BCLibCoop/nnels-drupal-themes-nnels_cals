@@ -39,8 +39,11 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-$file_resource = $row->field_field_file_resource[0]['raw'];
-$url_external =  $row->field_field_urls_external[0]['raw'];
+// Use isset, property for the renderable View object might not exist.
+$file_resource = ( isset( $row->field_field_file_resource[0]['raw'] ) ?
+  $row->field_field_file_resource[0]['raw'] : NULL );
+$url_external = ( isset( $row->field_field_urls_external[0]['raw'] ) ?
+  $row->field_field_urls_external[0]['raw'] : NULL );
 
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
@@ -58,14 +61,17 @@ if ( ! empty($file_resource) ) {
       //FNUN: Show Request
     }
 }
+
 ?>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
-
-  <?php print $field->wrapper_prefix; ?>
+  <?php //Don't render any nullified fields
+  if (isset($field)): ?>
+    <?php print $field->wrapper_prefix; ?>
     <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
+      <?php print $field->content; ?>
+    <?php print $field->wrapper_suffix; ?>
+  <?php endif; ?>
 <?php endforeach; ?>

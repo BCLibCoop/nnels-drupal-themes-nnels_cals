@@ -39,8 +39,14 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-$file_resource = $row->_field_data['nid']['entity']->field_file_resource;
-$url_external = $row->field_field_urls_external[0]['raw'];
+// Use isset, property for the renderable View object might not exist.
+$file_resource = ( isset
+( $row->_field_data['nid']['entity']->field_file_resource ) ?
+  $row->_field_data['nid']['entity']->field_file_resource: NULL ) ;
+$url_external = ( isset
+( $row->field_field_urls_external[0]['raw']) ?
+  $row->field_field_urls_external[0]['raw'] : NULL );
+
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
     //FYUY: hide URL
@@ -62,9 +68,11 @@ if ( ! empty($file_resource) ) {
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
-
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
+  <?php //Don't render any nullified fields
+  if (isset($field)): ?>
+    <?php print $field->wrapper_prefix; ?>
+      <?php print $field->label_html; ?>
+      <?php print $field->content; ?>
+    <?php print $field->wrapper_suffix; ?>
+<?php endif; ?>
 <?php endforeach; ?>
