@@ -2172,12 +2172,20 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.available-formats .views-field-field-accrual-method div.field-content {
+.repo-item.available-formats .views-field-field-accrual-method div.field-content,
+.repo-item.available-formats .views-field-field-publisher-format div.field-content { {
 	display: inline;
 }
 
 .repo-item.available-formats .views-field-field-performer {
 	/*background-color: navajowhite;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.available-formats .views-field-field-publisher-format {
 	float: left;
 	width: 100%;
 	margin: 0;
