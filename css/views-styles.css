@@ -1046,11 +1046,13 @@ article.node-article .field-items h3 em {
 @media screen and (min-width: 37.8125rem) {
   .search-results .views-field-field-dc-creator,
   .search-results .views-field-body-value,
-  .search-results .views-field-field-genre {
+  .search-results .views-field-field-genre
+  .search-results .views-field-field-urls-external {
     width: 85%;
   }
-  .search-results .views-field-body-value,
-  .search-results .views-field-field-genre {
+
+  .search-results .views-field-field-genre,
+  .search-results .views-field-field-urls-external {
     margin-left: 65px;
   }
 }
@@ -1095,7 +1097,7 @@ article.node-article .field-items h3 em {
 	padding: 0;
 }
 
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202,
+/*.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202-fulltextandaudio,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .mp3,
@@ -1106,13 +1108,14 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille,
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3 {
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3,*/
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .generic-file-icon {
 	float: left;
 	display: block;
 	min-height: 40px;
 	margin: 0;
 	padding: 0;
-	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
+	background: url(../images/icon_download.png) no-repeat left top;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
@@ -1145,6 +1148,10 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
 	overflow: auto;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
+  margin-left: 3em;
 }
 
 .search-results .views-field-php.flag-toggle-wrapper {
@@ -1346,7 +1353,7 @@ article.node-article .field-items h3 em {
 	padding: 0;
 }
 
-.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202,
+/*.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202-fulltextandaudio,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .mp3,
@@ -1356,13 +1363,14 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .azw3,
-.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille {
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille,*/
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .generic-file-icon {
 	float: left;
 	display: block;
 	height: 40px;
 	margin: 0;
 	padding: 0;
-	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
+	background: url(../images/icon_download.png) no-repeat left top;
 }
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content a {
@@ -1486,14 +1494,23 @@ span.daisy-icon-login {
 }
 
 /* Narrator (performer) and Running Time per file embed in Search Results */
-.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
-.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
-	margin-left: 2.5rem;
+/*	margin-left: 2.5rem;*/
 	margin-top: -0.5rem;
-  padding: 0 5px 5px 5px;
+  /*padding: 0 5px 5px 5px;*/
+  margin-left: 5.5em;
+	padding: 10px 5px 5px 5px;
 }
+
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time {
+	margin-top: -0.5rem;
+  /*padding: 0 5px 5px 5px;*/
+ /* margin-left: 5.5em;*/
+	padding: 10px 5px 5px 5px;
+}
+
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
 	margin-top: 0;
@@ -2086,7 +2103,7 @@ span.daisy-icon-login {
 
 
 
-.repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
+/*.repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
 .repo-item.available-formats .views-field-field-s3-file-upload .mp3,
@@ -2097,7 +2114,8 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\),
 .repo-item.available-formats .views-field-field-s3-file-upload .azw3,
-.repo-item.available-formats .views-field-field-s3-file-upload .braille {
+.repo-item.available-formats .views-field-field-s3-file-upload .braille*/
+.repo-item.available-formats .views-field-field-s3-file-upload .generic-file-icon {
 	float: left;
 	display: block;
 	height: 40px;
@@ -2137,7 +2155,7 @@ span.daisy-icon-login {
 
 /*** Maximum width of 385 pixels. ***/
 @media screen and (max-width: 24rem) {
-	.repo-item.available-formats .views-field-field-s3-file-upload,
+/*	.repo-item.available-formats .views-field-field-s3-file-upload,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, 
   .repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy3, 
@@ -2149,7 +2167,8 @@ span.daisy-icon-login {
 	.repo-item.available-formats .views-field-field-s3-file-upload .epub3
 	.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\)
 	.repo-item.available-formats .views-field-field-s3-file-upload .azw3, 
-	.repo-item.available-formats .views-field-field-s3-file-upload .braille {
+	.repo-item.available-formats .views-field-field-s3-file-upload .braille,*/
+	.repo-item.available-formats .views-field-field-s3-file-upload .generic-file-icon {
 		height: auto;
 	}
 }
