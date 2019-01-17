@@ -1051,9 +1051,11 @@ article.node-article .field-items h3 em {
     width: 85%;
   }
 
+  .search-results .views-field-body-value,
   .search-results .views-field-field-genre,
   .search-results .views-field-field-urls-external {
-    margin-left: 65px;
+   /* margin-left: 65px;*/
+    margin-left: 4em;
   }
 }
 .search-results .views-field-body-value h3 {
