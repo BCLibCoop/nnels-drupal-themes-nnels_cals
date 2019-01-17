@@ -1148,7 +1148,10 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
 	overflow: auto;
-	margin-left: 3em;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
+  margin-left: 3em;
 }
 
 .search-results .views-field-php.flag-toggle-wrapper {
@@ -1491,8 +1494,6 @@ span.daisy-icon-login {
 }
 
 /* Narrator (performer) and Running Time per file embed in Search Results */
-.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
-.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
 /*	margin-left: 2.5rem;*/
@@ -1501,6 +1502,15 @@ span.daisy-icon-login {
   margin-left: 5.5em;
 	padding: 10px 5px 5px 5px;
 }
+
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time {
+	margin-top: -0.5rem;
+  /*padding: 0 5px 5px 5px;*/
+ /* margin-left: 5.5em;*/
+	padding: 10px 5px 5px 5px;
+}
+
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
 	margin-top: 0;
