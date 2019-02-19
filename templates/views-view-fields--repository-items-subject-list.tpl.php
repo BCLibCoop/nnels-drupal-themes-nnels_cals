@@ -39,11 +39,13 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-// Use isset, property for the renderable View object might not exist.
-$file_resource = ( isset( $row->field_field_file_resource[0]['raw'] ) ?
-  $row->field_field_file_resource[0]['raw'] : NULL );
-$url_external = ( isset( $row->field_field_urls_external[0]['raw'] ) ?
-  $row->field_field_urls_external[0]['raw'] : NULL );
+// Use entity wrapper, property for the renderable View object might not exist.
+$wrapped_entity = entity_metadata_wrapper('node', $row->_field_data['nid']['entity']);
+
+$file_resource = ( $wrapped_entity->field_file_resource->value() ?
+  TRUE : NULL );
+$url_external = ( $wrapped_entity->field_urls_external->value() ?
+  TRUE : NULL );
 
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
