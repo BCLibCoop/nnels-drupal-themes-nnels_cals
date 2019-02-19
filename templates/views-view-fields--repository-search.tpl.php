@@ -41,10 +41,12 @@
  */
 
 // Use isset, property for the renderable View object might not exist.
-$file_resource = ( isset( $row->field_field_file_resource ) ?
-  $row->field_field_file_resource : NULL ) ;
-$url_external =  ( isset( $row->field_field_urls_external ) ?
-  $row->field_field_urls_external : NULL );
+$unarrayed_file_id = reset($row->_entity_properties['entity object']
+  ->field_file_resource['und']);
+$unarrayed_url_id = reset($row->_entity_properties['entity object']
+  ->field_urls_external['und']);
+$file_resource = ( isset($unarrayed_file_id) ? $unarrayed_file_id : NULL );
+$url_external =  ( isset( $unarrayed_url_id ) ? $unarrayed_url_id : NULL );
 
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
