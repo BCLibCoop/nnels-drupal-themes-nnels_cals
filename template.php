@@ -218,7 +218,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   }
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
-    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/move_promote_flag.min.js');
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/make_flags_tabs.min.js');
   }
 }
 
