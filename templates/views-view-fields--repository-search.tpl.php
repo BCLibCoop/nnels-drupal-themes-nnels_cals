@@ -40,13 +40,19 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-// Use isset, property for the renderable View object might not exist.
-$unarrayed_file_id = reset($row->_entity_properties['entity object']
-  ->field_file_resource['und']);
-$unarrayed_url_id = reset($row->_entity_properties['entity object']
-  ->field_urls_external['und']);
-$file_resource = ( isset($unarrayed_file_id) ? $unarrayed_file_id : NULL );
-$url_external =  ( isset( $unarrayed_url_id ) ? $unarrayed_url_id : NULL );
+// Check property for the renderable View object might not exist before
+// un-arraying with reset
+
+$file_resource =
+  isset($row->_entity_properties['entity object']->field_file_resource['und'] ) ?
+  reset($row->_entity_properties['entity object']->field_file_resource['und']
+  ) : NULL
+;
+
+$url_external =
+  isset( $row->_entity_properties['entity object']->field_urls_external['und'] ) ?
+  reset( $row->_entity_properties['entity object']->field_urls_external['und'] ): NULL
+;
 
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
