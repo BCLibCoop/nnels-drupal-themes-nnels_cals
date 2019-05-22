@@ -410,3 +410,36 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
 function NNELS_CALS_v001_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
 }
+
+/**
+ * Implements hook_preprocess_HOOK()
+ * @param $variables
+ */
+function NNELS_CALS_v001_preprocess_videojs(&$variables) {
+  $track = array();
+  $caption_lang = $variables['entity']->language; //Default to video language
+  $user_lang = $variables['user']->language ?: 'en';
+
+  if ($captions = reset($variables['entity']->field_s3_file_upload)) {
+    foreach($captions as $caption) {
+      //Replace var with lang from standard filename
+      $caption_lang = explode('.', explode('_', $caption['filename'])[1])[0] ?:
+        '';
+
+      if ($caption['filemime'] == "text/vtt") {
+
+        module_load_include('inc', 'cals_s3', 'cals_s3.NNELSStreamWrapper.class');
+        $track['src']['safe'] = (new \Drupal\cals_s3\NNELSStreamWrapper)
+          ->make_url($caption['uri']);
+
+        $track['filemime']['safe'] = $caption['filemime'];
+        $track['kind'] = 'captions';
+        $track['label'] = language_list()[$caption_lang]->name ?: $caption['filename'];
+        $track['langcode'] = language_list()[$caption_lang]->language ?: 'und';
+
+        $variables['tracks'][] = $track;
+        unset($track);
+      }
+    }
+  }
+}
