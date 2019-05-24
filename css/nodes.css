@@ -215,6 +215,11 @@ article.node-post ul.links.inline li a {
 		width: 75%;
 }
 
+.node-contributed-video .field-name-field-s3-file-upload {
+	margin-top: 2em;
+}
+
+
 /* @end */
 
 /* @group marc_export_set */
