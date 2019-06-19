@@ -2835,6 +2835,10 @@ span.daisy-icon-login {
 	margin-top: 1.5em;
 }
 
+img[title='Reading in EPUB'] {
+	height: 223px;
+}
+
 /* @end */
 
 /* @responsive-grid */
