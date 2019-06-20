@@ -42,6 +42,9 @@
 .available-braille {
 	margin: 0 0 5px;
 	padding: 5px;
+}
+
+.available-braille .braille-format-label {
 	font-weight: bold;
 }
 
