@@ -29,7 +29,7 @@
   foreach($row->field_field_dc_relation as $value) {
   	$id = $value['raw']['value'];
     $item = $value['rendered']['entity']['field_collection_item'][$id];
-    $title = $item['field_dc_relation_term_value'][0]['#title'];
+    if ( isset($item['field_dc_relation_term_value']) ) $title = $item['field_dc_relation_term_value'][0]['#title'];
     if($item['field_dc_relation_qualifiers']['#items'][0]['value'] == 'IsPartOf' && !empty($title)) {
 	    $href = $item['field_dc_relation_term_value'][0]['#href'];
 	    $links[] = l($title, $href);

@@ -1003,24 +1003,32 @@ article.node-article .field-items h3 em {
 	width: 50px;
 	height: 75px;
 }
-
 .search-results .views-field-title-field {
 	/*background-color: forestgreen;*/
-	float: right;
-	width: 90%;
+  float: left;
+  width: 65%;
 	margin: 5px;
 	padding: 5px;
 	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
 }
-
-/* at 820px */
-@media screen and (max-width: 51.25rem) {
-	.search-results .views-field-title-field {
-		float: left;
-		width: calc(90% - 60px);
-	}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  .search-results .views-field-title-field {
+    width: 55%;
+  }
 }
-
+/*** 908+ ***/
+@media screen and (min-width: 56.75rem) {
+  .search-results .views-field-title-field {
+    width: 60%;
+  }
+}
+/*** 1008+ ***/
+@media screen and (min-width: 63rem) {
+  .search-results .views-field-title-field {
+    width: 65%;
+  }
+}
 .search-results .views-field-field-dc-creator,
 .search-results .views-field-body-value,
 .search-results .views-field-field-keyword-index,
@@ -1029,10 +1037,26 @@ article.node-article .field-items h3 em {
 .search-results .views-field-field-dc-edition,
 .search-results .views-field-field-urls-external {
 	/*background-color: bisque;*/
-	float: right;
-	width: 90%;
+  float: left;
+  width: 100%;
 	margin: 5px;
 	padding: 5px;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  .search-results .views-field-field-dc-creator,
+  .search-results .views-field-body-value,
+  .search-results .views-field-field-genre
+  .search-results .views-field-field-urls-external {
+    width: 85%;
+  }
+
+  .search-results .views-field-body-value,
+  .search-results .views-field-field-genre,
+  .search-results .views-field-field-urls-external {
+   /* margin-left: 65px;*/
+    margin-left: 4em;
+  }
 }
 .search-results .views-field-body-value h3 {
   margin: 0 0 10px 0;
@@ -1075,7 +1099,8 @@ article.node-article .field-items h3 em {
 	padding: 0;
 }
 
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202,
+/*.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202,
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy202-fulltextandaudio,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .daisy3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .mp3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .file-pdf,
@@ -1085,13 +1110,14 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .braille,
-.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3 {
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .azw3,*/
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .generic-file-icon {
 	float: left;
 	display: block;
 	min-height: 40px;
 	margin: 0;
 	padding: 0;
-	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
+	background: url(../images/icon_download.png) no-repeat left top;
 }
 
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .field-content a {
@@ -1124,6 +1150,10 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload,
 .search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
 	overflow: auto;
+}
+
+.search-results .views-field-view .multi-file-embed .view-embed-list-ul li .views-field-field-s3-file-upload {
+  margin-left: 3em;
 }
 
 .search-results .views-field-php.flag-toggle-wrapper {
@@ -1325,7 +1355,8 @@ article.node-article .field-items h3 em {
 	padding: 0;
 }
 
-.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202,
+/*.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202,
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy202-fulltextandaudio,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .daisy3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .mp3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .file-pdf,
@@ -1334,20 +1365,21 @@ article.node-article .field-items h3 em {
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3,
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .epub3\(mediaoverlays\),
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .azw3,
-.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille {
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .braille,*/
+.browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .generic-file-icon {
 	float: left;
 	display: block;
 	height: 40px;
 	margin: 0;
 	padding: 0;
-	background: /*orangered*/ url(../images/icon_download.png) no-repeat left top;
+	background: url(../images/icon_download.png) no-repeat left top;
 }
 
 .browse-results .views-field-field-file-resource .multi-file-embed .view-embed-list-ul li .field-content a {
 	display: block;
 	width: 100%;
 	margin: 0;
-	padding: 10px 5px 10px 40px;
+	padding: 10px 5px 10px 45px;
 	height: auto;
 }
 
@@ -1464,14 +1496,23 @@ span.daisy-icon-login {
 }
 
 /* Narrator (performer) and Running Time per file embed in Search Results */
-.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
-.browse-results .view-field-collection-view-repo-files .views-field-field-running-time,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time {
-	margin-left: 2.5rem;
+/*	margin-left: 2.5rem;*/
 	margin-top: -0.5rem;
-  padding: 0 5px 5px 5px;
+  /*padding: 0 5px 5px 5px;*/
+  margin-left: 5.5em;
+	padding: 10px 5px 5px 5px;
 }
+
+.browse-results .view-field-collection-view-repo-files .views-field-field-performer,
+.browse-results .view-field-collection-view-repo-files .views-field-field-running-time {
+	margin-top: -0.5rem;
+  /*padding: 0 5px 5px 5px;*/
+ /* margin-left: 5.5em;*/
+	padding: 10px 5px 5px 5px;
+}
+
 .browse-results .view-field-collection-view-repo-files .views-field-field-running-time + .browse-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer,
 .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-running-time + .search-results .views-field-view.solr-embed-file-field-collection .views-field-field-performer {
 	margin-top: 0;
@@ -2046,7 +2087,7 @@ span.daisy-icon-login {
 
 .repo-item.available-formats div.file-size-warning-wrapper,
 .multi-file-embed div.file-size-warning-wrapper {
-  margin: 1% 0 0 0;
+  margin: 1% 10% 0 0;
   padding: 5px;
   float: right;
   font-size: 90%;
@@ -2064,7 +2105,8 @@ span.daisy-icon-login {
 
 
 
-.repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
+/*.repo-item.available-formats .views-field-field-s3-file-upload .daisy202,
+.repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 .repo-item.available-formats .views-field-field-s3-file-upload .daisy3,
 .repo-item.available-formats .views-field-field-s3-file-upload .mp3,
 .repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
@@ -2074,7 +2116,8 @@ span.daisy-icon-login {
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3,
 .repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\),
 .repo-item.available-formats .views-field-field-s3-file-upload .azw3,
-.repo-item.available-formats .views-field-field-s3-file-upload .braille {
+.repo-item.available-formats .views-field-field-s3-file-upload .braille*/
+.repo-item.available-formats .views-field-field-s3-file-upload .generic-file-icon {
 	float: left;
 	display: block;
 	height: 40px;
@@ -2114,8 +2157,9 @@ span.daisy-icon-login {
 
 /*** Maximum width of 385 pixels. ***/
 @media screen and (max-width: 24rem) {
-	.repo-item.available-formats .views-field-field-s3-file-upload,
+/*	.repo-item.available-formats .views-field-field-s3-file-upload,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy202, 
+  .repo-item.available-formats .views-field-field-s3-file-upload .daisy202-fulltextandaudio,
 	.repo-item.available-formats .views-field-field-s3-file-upload .daisy3, 
 	.repo-item.available-formats .views-field-field-s3-file-upload .mp3, 
 	.repo-item.available-formats .views-field-field-s3-file-upload .file-pdf,
@@ -2125,7 +2169,8 @@ span.daisy-icon-login {
 	.repo-item.available-formats .views-field-field-s3-file-upload .epub3
 	.repo-item.available-formats .views-field-field-s3-file-upload .epub3\(mediaoverlays\)
 	.repo-item.available-formats .views-field-field-s3-file-upload .azw3, 
-	.repo-item.available-formats .views-field-field-s3-file-upload .braille {
+	.repo-item.available-formats .views-field-field-s3-file-upload .braille,*/
+	.repo-item.available-formats .views-field-field-s3-file-upload .generic-file-icon {
 		height: auto;
 	}
 }
@@ -2148,12 +2193,20 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.available-formats .views-field-field-accrual-method div.field-content {
+.repo-item.available-formats .views-field-field-accrual-method div.field-content,
+.repo-item.available-formats .views-field-field-publisher-format div.field-content {
 	display: inline;
 }
 
 .repo-item.available-formats .views-field-field-performer {
 	/*background-color: navajowhite;*/
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+.repo-item.available-formats .views-field-field-publisher-format {
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -2551,8 +2604,16 @@ span.daisy-icon-login {
 /* @group flag-bookshelf */
 .node-repository-item .bookshelf-add-wrapper,
 .view-repository-search .bookshelf-add-wrapper  {
-	float: right !important;
-	padding: 5px;
+  float: left;
+  padding: 5px 5px 5px 10px;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  .node-repository-item .bookshelf-add-wrapper,
+  .view-repository-search .bookshelf-add-wrapper  {
+    float: right;
+    padding-top: 12px;
+  }
 }
 
 .view-nnels-bookshelf-user-dashboard fieldset.container-inline {
@@ -2772,6 +2833,10 @@ span.daisy-icon-login {
 .view-contributed-videos .views-field.views-field-body {
 	width: 15rem;
 	margin-top: 1.5em;
+}
+
+img[title='Reading in EPUB'] {
+	height: 223px;
 }
 
 /* @end */

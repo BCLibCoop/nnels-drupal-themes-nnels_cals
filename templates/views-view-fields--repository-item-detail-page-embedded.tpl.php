@@ -24,7 +24,6 @@
  * @ingroup views_templates
  */
 ?>
-
 <?php
 /* Some Repository Items only use the external URL field ("Resource URL")
  * in place of File Resources.
@@ -40,19 +39,13 @@
  *  N   |  N   | Show Request (Sub-view result)
  */
 
-// Check property for the renderable View object might not exist before
-// un-arraying with reset
-
-$file_resource =
-  isset($row->_entity_properties['entity object']->field_file_resource['und'] ) ?
-  reset($row->_entity_properties['entity object']->field_file_resource['und']
-  ) : NULL
-;
-
-$url_external =
-  isset( $row->_entity_properties['entity object']->field_urls_external['und'] ) ?
-  reset( $row->_entity_properties['entity object']->field_urls_external['und'] ): NULL
-;
+// Use isset, property for the renderable View object might not exist.
+$file_resource = ( isset
+( $row->_field_data['nid']['entity']->field_file_resource ) ?
+  $row->_field_data['nid']['entity']->field_file_resource: NULL ) ;
+$url_external = ( isset
+( $row->field_field_urls_external[0]['raw']) ?
+  $row->field_field_urls_external[0]['raw'] : NULL );
 
 if ( ! empty($file_resource) ) {
   if ( ! empty($url_external) ) {
@@ -62,16 +55,15 @@ if ( ! empty($file_resource) ) {
     //FYUN: no action
   }
 } else {
-  if ( ! empty($url_external) ) {
-    //FNUY: hide request
-    //Set the sub-view markup to NULL
-    $fields['view'] = NULL;
-  } else {
-    //FNUN: Show request from empty result in subview
+    if ( ! empty($url_external) ) {
+      //FNUY: hide request
+      //handled in node--repository_item.tpl.php
+    } else {
+      //FNUN: Show Request
+      //handled in node--repository_item.tpl.php
   }
 }
 ?>
-
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
@@ -80,7 +72,7 @@ if ( ! empty($file_resource) ) {
   if (isset($field)): ?>
     <?php print $field->wrapper_prefix; ?>
       <?php print $field->label_html; ?>
-        <?php print $field->content; ?>
+      <?php print $field->content; ?>
     <?php print $field->wrapper_suffix; ?>
-  <?php endif; ?>
+<?php endif; ?>
 <?php endforeach; ?>

@@ -8,7 +8,7 @@
 
 	<?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
 		<section>
-			<?php print $flag_icon; ?>
+			<?php if (isset($flag_icon)) print $flag_icon; ?>
 			<?php print render($title_prefix); ?>
 			<?php if (!$page && $title): ?>
 				<h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -25,7 +25,8 @@
 	  //view downloaded files - called from NNELS_CALS_v001_preprocess_node_repository_item()
 	  //in template.php
 	?>
-	<?php if ($view_download_files): ?>
+	<?php if ( isset( $request_title ) ) print $request_title; ?>
+        <?php if ($view_download_files): ?>
 		<?php print $view_download_files; ?>
 	<?php endif; ?>
 
