@@ -2865,6 +2865,11 @@ img[title='Reading in EPUB'] {
 
 /* @format-info tooltip */
 
+
+h2.available-format {
+	display: inline-block;
+}
+
 .format-info[aria-label] {
 	position: relative;
 }
@@ -2879,7 +2884,7 @@ a.format-info:hover [role="tooltip"] {
 	font-weight: normal;
 	width: 10rem;
 	color: #0E3E6C;
-	padding: 0px 5px;
+	padding: 5px 5px;
 	overflow: visible;
 	border-left: 6px solid #b34d00;
 	-webkit-border-radius: 2px;
@@ -2894,7 +2899,8 @@ a.format-info:hover [role="tooltip"] {
 
 a.format-info {
 	display: inline-block;
-	padding: 5px 5px 5px 0px;
+	padding: 5px;
+	vertical-align: bottom;
 }
 
 .view-field-collection-view-repo-files .views-field-field-s3-file-upload .field-content {
