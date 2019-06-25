@@ -2074,14 +2074,14 @@ span.daisy-icon-login {
 
 .repo-item.available-formats .views-field-field-s3-file-upload {
 	float: left;
-	width: 60%;
+	/*width: 60%;*/
 	margin: 0;
 	padding: 0;
 	display: inline-block;
 }
 @media screen and (max-width: 30rem) { /* 480px */
 	.repo-item.available-formats .views-field-field-s3-file-upload {
-		width: 95%;
+		/*width: 95%;*/
 	}
 }
 
@@ -2898,7 +2898,7 @@ a.format-info {
 }
 
 .view-field-collection-view-repo-files .views-field-field-s3-file-upload .field-content {
-	display: inline-block;
+	/*display: inline-block;*/
 }
 
 /* @end */

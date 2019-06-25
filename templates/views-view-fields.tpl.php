@@ -25,15 +25,19 @@
  */
 ?>
 <?php
-/** Produce an accessible format information tooltip for S3 File Uploads */
-if (! empty($fields['field_s3_file_upload']->content) ) {
+/** Produce an accessible format information tooltip for S3 File Uploads on
+ * Embed 5 (Repo Items Detail)
+ */
+if (! empty($fields['field_s3_file_upload']->content)
+  && $view->name == 'field_collection_view_repo_files'
+  && $view->current_display == 'embed_5' ) {
   $format_info =
     '<a class="format-info" href="/help/formats" aria-label="NNELS formats guide" 
 aria-describedby="format-info-tooltip">
     <i class="fa fa-question-circle"></i>
     <div role="tooltip" id="format-info-tooltip">NNELS formats guide</div></a>';
 
-  $fields['field_s3_file_upload']->content .= $format_info;
+  $fields['field_s3_file_upload']->wrapper_suffix .= $format_info;
 }
 ?>
 <?php foreach ($fields as $id => $field):?>
