@@ -25,11 +25,14 @@
  */
 ?>
 <?php
-if (! empty($fields['field_s3_file_upload']->content)) {
+/** Produce an accessible format information tooltip for S3 File Uploads */
+if (! empty($fields['field_s3_file_upload']->content) ) {
   $format_info =
-    '<a class="format-info" href="/help/formats" aria-label="Guide to formats" role="tooltip">
-    <i class="fa fa-question-circle" aria-hidden="true"></i>
-    </a>';
+    '<a class="format-info" href="/help/formats" aria-label="NNELS formats guide" 
+aria-describedby="format-info-tooltip">
+    <i class="fa fa-question-circle"></i>
+    <div role="tooltip" id="format-info-tooltip">NNELS formats guide</div></a>';
+
   $fields['field_s3_file_upload']->content .= $format_info;
 }
 ?>

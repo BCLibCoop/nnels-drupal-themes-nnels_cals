@@ -2866,46 +2866,39 @@ img[title='Reading in EPUB'] {
 /* @format-info tooltip */
 
 .format-info[aria-label] {
-		position: relative;
+	position: relative;
 }
 
-.format-info[aria-label]:after {
-		content: attr(aria-label);
-		display: none;
-		position: absolute;
-		top: 110%;
-		left: 10px;
-		z-index: 5000;
-		pointer-events: none;
-		padding: 8px 10px;
-		line-height: 15px;
-		white-space: nowrap;
-		text-decoration: none;
-		text-indent: 0;
-		overflow: visible;
-		font-size: .9em;
-		font-weight: normal;
-		color: #fff;
-		text-shadow: 1px 0 1px #888;
-		background-color: #0074bd;
-    border-left: 6px solid #f69231;
-		-webkit-border-radius: 2px;
-		border-radius: 2px;
-		-webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
-		box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+a.format-info:focus [role="tooltip"],
+a.format-info:hover [role="tooltip"] {
+	position: absolute;
+	display: block;
+	top: 70%;
+	left: 20px;
+	font-size: .9em;
+	font-weight: normal;
+	width: 10rem;
+	color: #0E3E6C;
+	padding: 0px 5px;
+	overflow: visible;
+	border-left: 6px solid #b34d00;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+	box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
 }
 
-a.format-info:focus {
-  	outline:1px dashed #E92C6C;
-}
-
-.format-info[aria-label]:hover:after, [aria-label]:focus:after {
-		display: block;
+[role="tooltip"] {
+	display: none;
 }
 
 a.format-info {
-	 	display: inline-block;
-    padding: 8px 5px 5px 0px;
+	display: inline-block;
+	padding: 5px 5px 5px 0px;
+}
+
+.view-field-collection-view-repo-files .views-field-field-s3-file-upload .field-content {
+	display: inline-block;
 }
 
 /* @end */
