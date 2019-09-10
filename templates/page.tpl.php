@@ -14,7 +14,7 @@
 	</header>
 
 	<div id="navigation">
-		<nav id="main-navigation" role="navigation">
+		<nav id="main-navigation">
 			<?php print render($page['navigation']); ?>
 		</nav>
 	</div><!-- /#navigation -->
