@@ -46,7 +46,8 @@
 			<li><a href="#main-content" class="element-invisible element-focusable">
 				skip to main content</a>
 			</li>
-			<?php if ( count(block_list('sidebar_first')) ): ?>
+			<!--Check if > 1 block becuase a single block is the spacer block, not secondary nav-->
+			<?php if ( count(block_list('sidebar_first') > 1) ): ?>
 			<!-- include secondary links if there are sidebar blocks -->
 			  <li><a href="#secondary-navigation" class="element-invisible element-focusable">
 				  skip to secondary navigation</a>

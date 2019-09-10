@@ -64,6 +64,7 @@
 
 		<?php if ($sidebar_first || $sidebar_second): ?>
 			<aside class="sidebars">
+				<!--TO DO: Do not generate this link if the only block in $sidebar_first is the "spacer block" (id="block-block-14")-->
 				<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
