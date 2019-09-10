@@ -22,10 +22,12 @@
 	</div>
 	<!-- /#navigation -->
 
-	<div id="main">
+	<div id="main" role="main">
 
 			<?php print render($page['admin_nav']); ?>
 			<?php print $messages; ?>
+
+			<a id="main-content" class="element-invisible">Main content</a>
 
 		<?php if ($page['front_side']): ?>
 		<div id="front-side-content">
@@ -33,7 +35,7 @@
 		</div>
 		<?php endif; ?>
 
-		<div id="content" class="column" role="main">
+		<div id="content" class="column">
 
 			<?php print render($tabs); ?>
 
@@ -46,8 +48,6 @@
 			<?php print render($page['help']); ?>
 
 			<?php print render($page['highlighted']); ?>
-
-			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php if ($title): ?>
 				<h1 class="title" id="page-title"><?php print $title; ?></h1>
