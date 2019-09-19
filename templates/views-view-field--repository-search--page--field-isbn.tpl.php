@@ -43,4 +43,4 @@ else {
   );
 }
 ?>
-<?php print l($image, 'node/' . $row->entity, array('html' => TRUE)); ?>
+<?php print $image; ?>
