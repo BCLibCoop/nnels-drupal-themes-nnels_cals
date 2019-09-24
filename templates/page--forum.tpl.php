@@ -67,6 +67,7 @@
 				<!--Only generate skip link if there is a navigation menu in sidebar_first-->
 				<!--block_14 is the spacer block; any other block is secondary nav-->
 				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
+					<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
 					<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
 				<?php endif; ?>
 				<?php print $sidebar_first; ?>
