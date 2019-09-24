@@ -65,9 +65,10 @@
 
 		<?php if ($sidebar_first || $sidebar_second): ?>
 			<aside class="sidebars">
-				<?php dpm($page['sidebar_first'], "This is: \$page['sidebar_first']") ?>
+				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
 				<!--TO DO: Do not generate this link if the only block in $sidebar_first is the "spacer block" (id="block-block-14")-->
 				<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
+				<?php endif; ?>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
 			</aside><!-- /.sidebars -->
