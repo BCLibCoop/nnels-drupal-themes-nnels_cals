@@ -48,10 +48,12 @@
 			</li>
 			<!--Only generate skip link if there is a navigation menu in sidebar_first-->
 			<?php if ( count(block_list('sidebar_first')) ): ?>
+				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
 				<!-- include secondary links if there are sidebar blocks -->
 			  <li><a href="#secondary-navigation" class="element-invisible element-focusable">
 				  skip to secondary navigation</a>
 			  </li>
+			<?php endif; ?>
 			<?php endif; ?>
 		</ul>
 	<?php endif; ?>
