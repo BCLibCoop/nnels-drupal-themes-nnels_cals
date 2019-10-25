@@ -36,19 +36,19 @@
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 	<?php if ($skip_link_text && $skip_link_anchor): ?>
-		<ul id="skip-link" class="element-invisible element-focusable">
-			<li><a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable">
+		<ul id="skip-link">
+			<li class="element-invisible element-focusable"><a href="#<?php print $skip_link_anchor; ?>">
 				<?php print $skip_link_text; ?></a>
 			</li>
-			<li><a href="#search-navigation" class="element-invisible element-focusable">
+			<li class="element-invisible element-focusable"><a href="#search-navigation">
 				skip to main search</a>
 			</li>
-			<li><a href="#main-content" class="element-invisible element-focusable">
+			<li class="element-invisible element-focusable"><a href="#main-content">
 				skip to main content</a>
 			</li>
 			<?php if ( count(block_list('sidebar_first')) ): ?>
 			<!-- include secondary links if there are sidebar blocks -->
-			  <li><a href="#secondary-navigation" class="element-invisible element-focusable">
+			  <li class="element-invisible element-focusable"><a href="#secondary-navigation">
 				  skip to secondary navigation</a>
 			  </li>
 			<?php endif; ?>
