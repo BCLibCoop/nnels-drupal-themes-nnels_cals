@@ -1011,6 +1011,10 @@ article.node-article .field-items h3 em {
 	padding: 5px;
 	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
 }
+.search-results .views-field-title-field > h3 {
+	margin: 0px;
+	font: normal normal normal 20px/24px 'clear_sansbold', sans-serif;
+}
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
   .search-results .views-field-title-field {
