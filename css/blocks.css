@@ -525,11 +525,11 @@
 }
 
 .facet-search.creator {
-	
+
 }
 
 .facet-search.genre {
-	
+
 }
 
 /* In support of facet checkbox mode */
@@ -803,6 +803,10 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
         background: #FFFFFF;
         border: 1px solid #336699;
         height: 35px;
+}
+
+.block-ajax-reset .item-list ul {
+	margin: 2px 0;
 }
 
 .block-ajax-reset .item-list li {
