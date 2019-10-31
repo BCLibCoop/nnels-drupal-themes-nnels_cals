@@ -837,7 +837,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 }
 
 .ajax-facets-submit-all-link {
-    	display: none;
+    	display: none !important;
 }
 
 /* @end*/
