@@ -793,6 +793,8 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 .block-current-search.search-reset-filters,
 .block-ajax-reset {
 	clear: left;
+	width: 240px;
+	max-width: 100%;
 }
 
 .search-reset-filters .reset-filters-link-wrapper,
@@ -803,10 +805,13 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
         background: #FFFFFF;
         border: 1px solid #336699;
         height: 35px;
+        margin-top: 5px;
 }
 
 .block-ajax-reset .item-list ul {
 	margin: 2px 0;
+	padding: 0px;
+	text-align: center;
 }
 
 .block-ajax-reset .item-list li {
@@ -832,7 +837,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 }
 
 .ajax-facets-submit-all-link {
-    	visibility: hidden;
+    	display: none;
 }
 
 /* @end*/
