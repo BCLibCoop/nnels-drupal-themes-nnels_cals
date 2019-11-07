@@ -36,16 +36,13 @@
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 	<?php if ($skip_link_text && $skip_link_anchor): ?>
-		<ul id="skip-link" class="element-invisible">
-			<li><a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable">
+		<div id="skip-link">
+			<a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable">
 				<?php print $skip_link_text; ?></a>
-			</li>
-			<li><a href="#search-navigation" class="element-invisible element-focusable">
+			<a href="#search-navigation" class="element-invisible element-focusable">
 				skip to main search</a>
-			</li>
-			<li><a href="#main-content" class="element-invisible element-focusable">
+			<a href="#main-content" class="element-invisible element-focusable">
 				skip to main content</a>
-			</li>
 			<?php if ( count(block_list('sidebar_first')) ): ?>
 				<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
 				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
@@ -54,7 +51,7 @@
 				  </li>
 				<?php endif; ?>
 			<?php endif; ?>
-		</ul>
+		</div>
 	<?php endif; ?>
 
 	<?php print $page_top; ?>

@@ -24,14 +24,14 @@ body {
 	display: block;
 	width: 100%;
 	padding: 2px 0 3px 0;
-	/*text-align: center;*/
-	background-color: #666;
+	text-align: center;
+	background-color: #cc0000;
 	color: #fff;
 }
 
 #skip-link a:hover,
 #skip-link a:visited:hover {
-	color: orangered;
+	text-decoration: underline;
 }
 
 
@@ -276,7 +276,7 @@ body {
 }
 
 /* at 600px */
-@media screen and (max-width: 37.8rem) { 
+@media screen and (max-width: 37.8rem) {
 	#main {
 		padding-left: 0.5rem;
 	}
@@ -313,7 +313,7 @@ body {
 	width: 20%;
 }
 .sidebar-first .region-sidebar-first,
-.spacer-block, 
+.spacer-block,
 .secondary-navigation {
 	max-width: 100%;
 }
