@@ -18,6 +18,23 @@
 	</div><!-- /#navigation -->
 
 	<div id="main">
+		<?php
+			// Render the sidebars to see if there's anything in them.
+			$sidebar_first	= render($page['sidebar_first']);
+			$sidebar_second = render($page['sidebar_second']);
+		?>
+
+		<?php if ($sidebar_first || $sidebar_second): ?>
+			<div class="sidebars">
+				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
+					<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
+					<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
+				<?php endif; ?>
+				<?php print $sidebar_first; ?>
+				<?php print $sidebar_second; ?>
+			</div><!-- /.sidebars -->
+		<?php endif; ?>
+		
 		<div id="content" class="column" role="main">
 
 			<?php //print $breadcrumb; ?>
@@ -54,23 +71,6 @@
 
 			<?php print $feed_icons; ?>
 		</div><!-- /#content -->
-
-		<?php
-			// Render the sidebars to see if there's anything in them.
-			$sidebar_first	= render($page['sidebar_first']);
-			$sidebar_second = render($page['sidebar_second']);
-		?>
-
-		<?php if ($sidebar_first || $sidebar_second): ?>
-			<div class="sidebars">
-				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
-					<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
-					<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
-				<?php endif; ?>
-				<?php print $sidebar_first; ?>
-				<?php print $sidebar_second; ?>
-			</div><!-- /.sidebars -->
-		<?php endif; ?>
 
 	</div><!-- /#main -->
 
