@@ -30,6 +30,7 @@ if ($jacket) {
     'image',
     array(
       'path' => image_style_path('book_cover__50x75_', $file->uri),
+      'alt'  => '',
     )
   );
 }
@@ -38,9 +39,9 @@ else {
     'image',
     array(
       'path' => '/sites/default/modules/nnels_content_cafe/img/blank.gif',
-      'alt'  => $entity->title,
+      'alt'  => '',
     )
   );
 }
 ?>
-<?php print l($image, 'node/' . $row->entity, array('html' => TRUE)); ?>
+<?php print $image; ?>
