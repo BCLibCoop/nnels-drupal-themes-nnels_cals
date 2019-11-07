@@ -46,9 +46,8 @@
 			<?php if ( count(block_list('sidebar_first')) ): ?>
 				<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
 				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
-				  <li><a href="#secondary-navigation" class="element-invisible element-focusable">
+				  <a href="#secondary-navigation" class="element-invisible element-focusable">
 					  skip to secondary navigation</a>
-				  </li>
 				<?php endif; ?>
 			<?php endif; ?>
 		</div>
