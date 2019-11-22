@@ -1036,6 +1036,7 @@ article.node-article .field-items h3 em {
 .search-results .views-field-field-dc-creator,
 .search-results .views-field-body-value,
 .search-results .views-field-field-keyword-index,
+.search-results .views-field-view-1,
 .search-results .views-field-field-genre,
 .search-results .views-field-view,
 .search-results .views-field-field-dc-edition,
@@ -1049,6 +1050,7 @@ article.node-article .field-items h3 em {
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
   .search-results .views-field-field-dc-creator,
+  .search-results .views-field-view-1,
   .search-results .views-field-body-value,
   .search-results .views-field-field-genre
   .search-results .views-field-field-urls-external {
@@ -2476,6 +2478,7 @@ span.daisy-icon-login {
 .repo-item.detail .views-field-field-dc-contributor,
 .repo-item.detail .view-field-collection-view-edition-statement .views-row,
 .repo-item.detail .views-field-field-subject,
+.repo-item.detail .views-field-view-1,
 .repo-item.detail .views-field-field-genre,
 .repo-item.detail .views-field-field-publisher,
 .repo-item.detail .views-field-field-iso-language,
