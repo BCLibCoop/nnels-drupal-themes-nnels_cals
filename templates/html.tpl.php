@@ -40,14 +40,14 @@
 			<a href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable">
 				<?php print $skip_link_text; ?></a>
 			<a href="#search-navigation" class="element-invisible element-focusable">
-				skip to main search</a>
+				Skip to main search</a>
 			<a href="#main-content" class="element-invisible element-focusable">
-				skip to main content</a>
+				Skip to main content</a>
 			<?php if ( count(block_list('sidebar_first')) ): ?>
 				<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
 				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
 				  <a href="#secondary-navigation" class="element-invisible element-focusable">
-					  skip to secondary navigation</a>
+					  Skip to secondary navigation</a>
 				<?php endif; ?>
 			<?php endif; ?>
 		</div>
