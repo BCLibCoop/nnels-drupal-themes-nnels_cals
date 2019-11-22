@@ -1039,7 +1039,7 @@ article.node-article .field-items h3 em {
 .search-results .views-field-view-1,
 .search-results .views-field-field-genre,
 .search-results .views-field-view,
-.search-results .views-field-field-dc-edition,
+/*.search-results .views-field-field-dc-edition,*/
 .search-results .views-field-field-urls-external {
 	/*background-color: bisque;*/
   float: left;
