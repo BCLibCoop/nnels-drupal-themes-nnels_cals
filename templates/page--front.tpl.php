@@ -8,7 +8,7 @@
 		<?php print render($page['header']); ?>
 
     <div id="search">
-      <nav id="search-navigation" role="navigation">
+      <nav id="search-navigation" role="search">
         <?php print render($page['search']); ?>
       </nav>
     </div>
