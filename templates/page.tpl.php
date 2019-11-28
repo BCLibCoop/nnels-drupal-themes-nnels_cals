@@ -36,6 +36,7 @@
 		<?php endif; ?>
 
 		<div id="content" class="column" role="main">
+			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php print $breadcrumb; ?>
 
@@ -54,8 +55,6 @@
 			<?php print render($page['help']); ?>
 
 			<?php print render($page['highlighted']); ?>
-
-			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php print render($title_prefix); ?>
 

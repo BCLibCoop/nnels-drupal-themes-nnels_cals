@@ -21,11 +21,10 @@
 	<!-- /#navigation -->
 
 	<div id="main" role="main">
+		<a id="main-content" class="element-invisible">Main content</a>
 
-			<?php print render($page['admin_nav']); ?>
-			<?php print $messages; ?>
-
-			<a id="main-content" class="element-invisible">Main content</a>
+		<?php print render($page['admin_nav']); ?>
+		<?php print $messages; ?>
 
 		<?php if ($page['front_side']): ?>
 		<div id="front-side-content">
