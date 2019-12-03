@@ -19,11 +19,11 @@
 		<?php print render($page['navigation']); ?>
 	</div><!-- /#navigation -->
 
+	<?php print $breadcrumb; ?>
+
 	<div id="main">
 		<div id="content" class="column" role="main">
-			<a id="main-content"></a>
-
-			<?php print $breadcrumb; ?>
+			<a id="main-content"></a>			
 
 			<?php print render($tabs); ?>
 

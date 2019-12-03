@@ -35,10 +35,10 @@
 			</div><!-- /.sidebars -->
 		<?php endif; ?>
 
+		<?php print $breadcrumb; ?>
+
 		<div id="content" class="column" role="main">
 			<a id="main-content" class="element-invisible">Main content</a>
-
-			<?php print $breadcrumb; ?>
 
 			<?php print render($page['admin_nav']); ?>
 
