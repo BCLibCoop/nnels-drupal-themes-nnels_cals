@@ -36,9 +36,10 @@
 		<?php endif; ?>
 
 		<div id="content" class="column" role="main">
-			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php print $breadcrumb; ?>
+
+			<a id="main-content" class="element-invisible">Main content</a>
 
 			<?php print render($page['admin_nav']); ?>
 
