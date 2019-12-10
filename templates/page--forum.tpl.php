@@ -1,7 +1,7 @@
 <?php
 /** page--forum.tpl.php **/
 ?>
-<!-- 
+<!--
 <h1>FORUM PAGES</h1>
  -->
 <div id="page">
@@ -9,22 +9,22 @@
     <?php print render($page['utility']); ?>
 		<?php print render($page['header']); ?>
     <div id="search">
-      <nav id="search-navigation" role="navigation">
+      <nav id="search-navigation" role="search">
         <?php print render($page['search']); ?>
       </nav>
     </div><!-- /#search -->
 	</header>
 
 	<div id="navigation">
-		<nav id="main-navigation" role="navigation">
-			<?php print render($page['navigation']); ?>
-		</nav>
+		<?php print render($page['navigation']); ?>
 	</div><!-- /#navigation -->
 
 	<div id="main">
 		<div id="content" class="column" role="main">
-
+			
 			<?php print $breadcrumb; ?>
+
+			<a id="main-content"></a>
 
 			<?php print render($tabs); ?>
 
@@ -33,8 +33,6 @@
 			<?php print render($page['help']); ?>
 
 			<?php print render($page['highlighted']); ?>
-
-			<a id="main-content"></a>
 
 			<?php print render($title_prefix); ?>
 
@@ -63,11 +61,14 @@
 		?>
 
 		<?php if ($sidebar_first || $sidebar_second): ?>
-			<aside class="sidebars">
-				<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
+			<div class="sidebars">
+				<?php if ( !(count(block_list('sidebar_first')) == 1 && array_keys(block_list('sidebar_first'))[0] == "block_14")): ?>
+					<!--Generate skip link if there is a navigation menu in sidebar_first, i.e. not just "block_14" (spacer)-->
+					<a id="secondary-navigation" class="element-invisible">Sidebar menu</a>
+				<?php endif; ?>
 				<?php print $sidebar_first; ?>
 				<?php print $sidebar_second; ?>
-			</aside><!-- /.sidebars -->
+			</div><!-- /.sidebars -->
 		<?php endif; ?>
 
 	</div><!-- /#main -->
