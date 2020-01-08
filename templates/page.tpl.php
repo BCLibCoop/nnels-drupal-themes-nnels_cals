@@ -38,7 +38,6 @@
 		<div id="content" class="column" role="main">
 
 			<?php print $breadcrumb; ?>
-			<?php print dpm($breadcrumb);?>
 
 			<a id="main-content" class="element-invisible">Main content</a>
 
