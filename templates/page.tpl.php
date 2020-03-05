@@ -35,9 +35,9 @@
 			</div><!-- /.sidebars -->
 		<?php endif; ?>
 
-		<div id="content" class="column" role="main">
-
 			<?php print $breadcrumb; ?>
+
+		<div id="content" class="column" role="main">
 
 			<a id="main-content" class="element-invisible">Main content</a>
 
