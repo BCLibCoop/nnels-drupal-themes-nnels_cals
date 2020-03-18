@@ -27,6 +27,7 @@
 #block-pagestyle-form {
 	left: 0px;
 	margin: 10px 0 10px 0;
+	padding: 10px 0 5px 5px;
 	position: absolute;
 	top: 0px;
   width: 90%;	
