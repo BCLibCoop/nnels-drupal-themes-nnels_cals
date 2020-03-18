@@ -26,10 +26,11 @@
 /* @group pagestyle - colour contrast selector */
 #block-pagestyle-form {
 	left: 0px;
-	margin: 10px 10px 10px 0;
+	right: 0px;
+	margin: 10px;
 	position: absolute;
 	top: 5px;
-  width: 90%;	
+  width: 80%;	
 
 }
 /*** 605+ ***/
