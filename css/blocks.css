@@ -29,11 +29,11 @@
   padding: 10px 0 5px 0;
 	margin: 10px 10px 10px 0;
 	position: absolute;
-	top: 5px;
+	top: 0px;
   width: 100%;	
 }
 /*** 605+ ***/
-@media screen and (max-width: 51.3124rem) {
+@media screen and (min-width: 51.3124rem) {
   #block-pagestyle-form {
     display: block;
     left: 0px;
