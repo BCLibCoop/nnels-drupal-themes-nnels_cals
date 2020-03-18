@@ -27,6 +27,10 @@
 #block-pagestyle-form {
 	left: 0px;
   margin: 10px 10px 10px 0;
+<<<<<<< HEAD
+=======
+	padding: 10px 0 5px 0;
+>>>>>>> 695db4c66303320e83432f8f5b6b0c44cd62dc83
 	position: absolute;
 	top: 5px;
 	width: 100%;
