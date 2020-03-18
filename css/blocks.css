@@ -26,11 +26,10 @@
 /* @group pagestyle - colour contrast selector */
 #block-pagestyle-form {
 	left: 0px;
-	margin: 10px 0 10px 0;
-	padding: 10px 0 5px 0;
+	margin: 10px 10px 10px 0;
 	position: absolute;
 	top: 0px;
-  width: 110%;	
+  width: 100%;	
 }
 /*** 605+ ***/
 @media screen and (min-width: 51.3124rem) {
@@ -284,7 +283,7 @@
   left: 0px;
   margin: 10px 10px 10px 0;
   position: absolute;
-  top: 88px;
+  top: 82px;
   width: 90%;
 }
 /*** 605+ ***/
