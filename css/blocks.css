@@ -26,8 +26,7 @@
 /* @group pagestyle - colour contrast selector */
 #block-pagestyle-form {
 	left: 0px;
-  padding: 10px 0 5px 0;
-	margin: 10px 10px 10px 0;
+	margin: 10px 0 10px 0;
 	position: absolute;
 	top: 0px;
   width: 100%;	
