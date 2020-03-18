@@ -32,7 +32,7 @@
   width: 100%;	
 }
 /*** 605+ ***/
-@media screen and (min-width: 37.8125rem) {
+@media screen and (max-width: 51.3124rem) {
   #block-pagestyle-form {
     display: block;
     left: 0px;
