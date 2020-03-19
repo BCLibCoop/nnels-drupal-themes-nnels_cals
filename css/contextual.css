@@ -214,7 +214,7 @@ ul.contextual-links li a {
   color: #333 !important;
   display: block;
   margin: 0.25em 0;
-  padding: 0.25em 0.5em 0.25em 0.5em;
+  padding: 0.25em 1em 0.25em 0.5em;
 }
 ul.contextual-links li a:hover {
   background-color: #bfdcee;
