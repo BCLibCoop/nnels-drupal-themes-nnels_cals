@@ -29,7 +29,7 @@
   margin: 10px 10px 10px 0;
 	position: absolute;
 	top: 5px;
-	width: auto;
+	width: 100%;
 }
 /*** 605+ ***/
 @media screen and (min-width: 51.3124rem) {
