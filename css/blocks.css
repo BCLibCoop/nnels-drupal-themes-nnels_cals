@@ -27,10 +27,6 @@
 #block-pagestyle-form {
 	left: 0px;
   margin: 10px 10px 10px 0;
-<<<<<<< HEAD
-=======
-	padding: 10px 0 5px 0;
->>>>>>> 695db4c66303320e83432f8f5b6b0c44cd62dc83
 	position: absolute;
 	top: 5px;
 	width: 100%;
@@ -357,11 +353,11 @@
   width: 90%
 }
 #block-nnels-bookshelf-bookshelf-button {
-  top: 88px;
+  top: 122px;
 }
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
-  top: 47px;
+  top: 82px;
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
