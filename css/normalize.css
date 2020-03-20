@@ -555,7 +555,7 @@ td {
 }
 
 /* Invisible elements in Library Sign-UP run off the page, fixed here */
-tr.odd tr.even td div label.element-invisible {
+.webform-client-form-89333 div.webform-component table.webform-grid tr.odd, tr.even td.webform-grid-option div.form-item label.element-invisible {
 	white-space: normal;
 }
 
