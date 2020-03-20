@@ -554,6 +554,11 @@ td {
 	padding: 5px;
 }
 
+/* Invisible elements in Library Sign-UP run off the page, fixed here */
+tr.odd tr.even td div label.element-invisible {
+	white-space: normal;
+}
+
 /* @end */
 
 /* @group warning, messages, error, help */
