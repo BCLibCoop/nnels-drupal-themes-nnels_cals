@@ -62,8 +62,8 @@
 #block-pagestyle-form div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
   width: 105px;
-	text-overflow: clip;
 }
+
 #block-pagestyle-form label {
   padding: 0 10px 0 0;
 }
