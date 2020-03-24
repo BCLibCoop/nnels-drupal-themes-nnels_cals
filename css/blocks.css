@@ -58,11 +58,11 @@
 }
 #block-pagestyle-form .block-title {
 	font-size: 1rem;
-	text-overflow: clip;
 }
 #block-pagestyle-form div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
   width: 105px;
+	overflow: hidden;
 }
 #block-pagestyle-form label {
   padding: 0 10px 0 0;
