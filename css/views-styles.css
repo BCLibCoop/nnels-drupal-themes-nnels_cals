@@ -663,7 +663,7 @@ article.node-article .field-items h3 em {
 /* Stops text running of screen in Collections */
 @media screen and (max-width: 56.7rem) {
 	span.views-field-field-file-resource li.views-row {
-		width: 85%;
+		width: 80%;
 	}
 }
 
