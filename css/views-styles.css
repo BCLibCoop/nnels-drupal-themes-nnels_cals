@@ -660,6 +660,13 @@ article.node-article .field-items h3 em {
 	border: 0px solid #336699;
 }
 
+/* Stops text running of screen in Collections */
+@media screen and (max-width: 56.7rem) {
+	span.views-field-field-file-resource li.views-row {
+		width: 85%;
+	}
+}
+
 /* at 907px */
 @media screen and (max-width: 56.7rem) {
   .recently-added .view-list-ul li {
