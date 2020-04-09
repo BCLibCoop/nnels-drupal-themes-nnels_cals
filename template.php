@@ -168,6 +168,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
 	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/externalsearch.css', array('group' => CSS_THEME, 'type' => 'file'));
+  drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/tota11y.min.js');
 
   //Create custom Piwik event with user's organization and bind to download links to track downloads per org
 	global $user;
@@ -217,7 +218,7 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
   }
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
-    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/move_promote_flag.min.js');
+    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/make_flags_tabs.min.js');
   }
 }
 
@@ -343,6 +344,10 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
 			    flag_create_link('bookshelf', $nid) .
 			    '</div>';
   }
+  //Request File link
+  if ( empty( $variables['field_file_resource'] ) && empty( $variables['field_urls_external'] ) ) {
+    $variables['request_title'] = '<span class="no-file-request-title"><a href="/request-production">Request this title</a></span>';
+  }
 }
 
 // */
@@ -404,4 +409,37 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
  */
 function NNELS_CALS_v001_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ * @param $variables
+ */
+function NNELS_CALS_v001_preprocess_videojs(&$variables) {
+  $track = array();
+  $caption_lang = $variables['entity']->language; //Default to video language
+  $user_lang = $variables['user']->language ?: 'en';
+
+  if ($captions = reset($variables['entity']->field_s3_file_upload)) {
+    foreach($captions as $caption) {
+      //Replace var with lang from standard filename
+      $caption_lang = explode('.', explode('_', $caption['filename'])[1])[0] ?:
+        '';
+
+      if ($caption['filemime'] == "text/vtt") {
+
+        module_load_include('inc', 'cals_s3', 'cals_s3.NNELSStreamWrapper.class');
+        $track['src']['safe'] = (new \Drupal\cals_s3\NNELSStreamWrapper)
+          ->make_url($caption['uri']);
+
+        $track['filemime']['safe'] = $caption['filemime'];
+        $track['kind'] = 'captions';
+        $track['label'] = language_list()[$caption_lang]->name ?: $caption['filename'];
+        $track['langcode'] = language_list()[$caption_lang]->language ?: 'und';
+
+        $variables['tracks'][] = $track;
+        unset($track);
+      }
+    }
+  }
 }

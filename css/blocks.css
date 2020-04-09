@@ -525,11 +525,11 @@
 }
 
 .facet-search.creator {
-	
+
 }
 
 .facet-search.genre {
-	
+
 }
 
 /* In support of facet checkbox mode */
@@ -793,6 +793,8 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 .block-current-search.search-reset-filters,
 .block-ajax-reset {
 	clear: left;
+	width: 240px;
+	max-width: 100%;
 }
 
 .search-reset-filters .reset-filters-link-wrapper,
@@ -802,7 +804,13 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
         color: #333333;
         background: #FFFFFF;
         border: 1px solid #336699;
-        height: 35px;
+        margin-top: 5px;
+}
+
+.block-ajax-reset .item-list ul {
+	margin: 2px 0;
+	padding: 0px;
+	text-align: center;
 }
 
 .block-ajax-reset .item-list li {
@@ -828,7 +836,7 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 }
 
 .ajax-facets-submit-all-link {
-    	visibility: hidden;
+    	display: none !important;
 }
 
 /* @end*/
@@ -847,3 +855,63 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 .block-webform h2.node-title {
     display: none;
 }
+
+/** EU Cookie Compliance **/
+
+div#sliding-popup.sliding-popup-bottom {
+    border-top: 2px solid #061C3E;
+    font-weight: normal !important;
+}
+
+.agree-button.eu-cookie-compliance-secondary-button {
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    color: #000;
+    font-family: Arial,sans-serif;
+    font-weight: bold;
+    /*padding: 4px 8px;*/
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFF;
+    color: #FFFFFF;
+    padding: 4px !important;
+}
+.decline-button.eu-cookie-compliance-default-button {
+    padding: 4px !important;
+}
+
+#sliding-popup button.decline-button:focus,
+#sliding-popup button.decline-button:hover,
+#sliding-popup button.agree-button:focus,
+#sliding-popup button.agree-button:hover {
+    color: #b34d00 !important;
+    border: 1px solid #061C3E !important;
+    padding: 3px;
+}
+
+/* Cover block on repository item node view */
+body.node-type-repository-item #content h1.title {
+  margin-bottom: 20px;
+}
+body.no_jacket #block-views-content-cafe-cover-block {
+  display: none;
+}
+body.has_jacket #block-views-content-cafe-cover-block {
+  margin: 0 auto;
+  max-width: 200px;
+}
+/*** 605+ ***/
+@media screen and (min-width: 37.8125rem) {
+  body.has_jacket #block-views-content-cafe-cover-block {
+    display: inline-block;
+    margin-right: -1%;
+    vertical-align: top;
+    width: 25%;
+  }
+  body.has_jacket article.node-repository-item {
+    display: inline-block;
+    margin-left: 2%;
+    vertical-align: top;
+    width: 73%;
+  }
+}
+>>>>>>> 3da4e349bba24b9743195a1897f0456bbead23e3
