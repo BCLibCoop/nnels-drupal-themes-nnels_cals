@@ -110,12 +110,13 @@
   width: 60%;
 }
 .header-logo a.home-link {
-  display: none;
+ /* display: none;*/
 }
 .header-logo h1.site-title {
-  font-size: 1.5rem;
+/*  font-size: 1.5rem;
   line-height: 1.7rem;
-  margin: 5px;
+  margin: 5px; */
+  display: none;
 }
 .header-logo h2.site-subtitle {
   display: none;
@@ -550,6 +551,12 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 	font-family: "clear_sansregular", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.facetapi-facetapi-ajax-checkboxes .form-item input.facet-multiselect-checkbox {
+	margin-right: 5px;
+	vertical-align: baseline;
+	box-shadow: 0px 2px 3px 1px #336699;
 }
 
 .facetapi-facetapi-ajax-checkboxes .form-item.form-type-checkbox:hover {
