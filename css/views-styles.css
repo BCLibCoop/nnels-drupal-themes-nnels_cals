@@ -2912,6 +2912,10 @@ a.format-info {
 	vertical-align: bottom;
 }
 
+.repo-item div.format-ordering {
+	float: right;
+}
+
 .view-field-collection-view-repo-files .views-field-field-s3-file-upload .field-content {
 	/*display: inline-block;*/
 }
