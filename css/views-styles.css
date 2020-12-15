@@ -1038,6 +1038,7 @@ article.node-article .field-items h3 em {
 .search-results .views-field-field-keyword-index,
 .search-results .views-field-view-1,
 .search-results .views-field-field-genre,
+.search-results .views-field-field-genre-harmonized,
 .search-results .views-field-view,
 /*.search-results .views-field-field-dc-edition,*/
 .search-results .views-field-field-urls-external {
@@ -1052,7 +1053,8 @@ article.node-article .field-items h3 em {
   .search-results .views-field-field-dc-creator,
   .search-results .views-field-view-1,
   .search-results .views-field-body-value,
-  .search-results .views-field-field-genre
+  .search-results .views-field-field-genre,
+  .search-results .views-field-field-genre-harmonized,
   .search-results .views-field-field-urls-external {
     width: 85%;
   }
@@ -1060,9 +1062,10 @@ article.node-article .field-items h3 em {
   .search-results .views-field-view-1,
   .search-results .views-field-body-value,
   .search-results .views-field-field-genre,
+  .search-results .views-field-field-genre-harmonized,
   .search-results .views-field-field-urls-external {
    /* margin-left: 65px;*/
-    margin-left: 4em;
+    margin-left: 4.8em;
   }
 }
 .search-results .views-field-body-value h3 {
@@ -2480,6 +2483,7 @@ span.daisy-icon-login {
 .repo-item.detail .views-field-field-subject,
 .repo-item.detail .views-field-view-1,
 .repo-item.detail .views-field-field-genre,
+.repo-item.detail .views-field-field-genre-harmonized,
 .repo-item.detail .views-field-field-publisher,
 .repo-item.detail .views-field-field-iso-language,
 .repo-item.detail .views-field-field-isbn-audio,
@@ -2918,6 +2922,10 @@ a.format-info {
 
 .view-field-collection-view-repo-files .views-field-field-s3-file-upload .field-content {
 	/*display: inline-block;*/
+}
+
+.views-field-view.solr-embed-file-field-collection {
+    margin-left: 1em;
 }
 
 /* @end */
