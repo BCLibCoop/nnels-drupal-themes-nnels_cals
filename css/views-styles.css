@@ -2097,9 +2097,12 @@ span.daisy-icon-login {
 	}
 }
 
+.repo-item.available-formats div.file-size-warning-wrapper {
+	  margin: 1% -2% 0 0;
+}
 .repo-item.available-formats div.file-size-warning-wrapper,
 .multi-file-embed div.file-size-warning-wrapper {
-  margin: 1% 1% 0 0;
+	margin: 1% 7% 0 0;
   padding: 5px;
   float: right;
   font-size: 90%;
