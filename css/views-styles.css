@@ -1061,6 +1061,7 @@ article.node-article .field-items h3 em {
 
   .search-results .views-field-view-1,
   .search-results .views-field-body-value,
+  .search-results .views-field-field-dc-creator,
   .search-results .views-field-field-genre,
   .search-results .views-field-field-genre-harmonized,
   .search-results .views-field-field-urls-external {
@@ -2098,7 +2099,7 @@ span.daisy-icon-login {
 
 .repo-item.available-formats div.file-size-warning-wrapper,
 .multi-file-embed div.file-size-warning-wrapper {
-  margin: 1% 10% 0 0;
+  margin: 1% 1% 0 0;
   padding: 5px;
   float: right;
   font-size: 90%;
