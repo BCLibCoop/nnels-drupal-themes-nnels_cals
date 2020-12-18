@@ -1061,12 +1061,15 @@ article.node-article .field-items h3 em {
 
   .search-results .views-field-view-1,
   .search-results .views-field-body-value,
-  .search-results .views-field-field-dc-creator,
   .search-results .views-field-field-genre,
   .search-results .views-field-field-genre-harmonized,
   .search-results .views-field-field-urls-external {
    /* margin-left: 65px;*/
-    margin-left: 4.8em;
+    /*margin-left: 4.8em;*/
+  }
+
+  .search-results .views-field-field-dc-creator {
+  	margin-left: 0.5em;
   }
 }
 .search-results .views-field-body-value h3 {
