@@ -284,9 +284,10 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
 function NNELS_CALS_v001_form_alter(&$form, &$form_state, $form_id) {
 
   // Alter the page style form - put the label on the left.
-  if ($form_id == 'pagestyle_form') {
-    $form['pagestyle_select']['#prefix'] = $form['pagestyle_select']['#suffix'];
-    unset($form['pagestyle_select']['#suffix']);
+  if ($form_id == 'pagestyle_form' &&
+    isset($form['pagestyle_select']['#suffix']) ) {
+      $form['pagestyle_select']['#prefix'] = $form['pagestyle_select']['#suffix'];
+      unset($form['pagestyle_select']['#suffix']);
   }
 }
 
