@@ -408,12 +408,39 @@ body.i18n-fr .main-navigation a {
 	clear: both;
 	float: left;
 	width: 100%;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	margin: 0;
 	padding: 0;
-	overflow-wrap: break-word;
+}
+
+.footer-nnels-partnerships p {
+	/*background-color: palegreen;*/
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px 0 0 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.footer-nnels-partnerships a {
+	/*background-color: gold;*/
+	display: block;
+	margin: 0;
+	padding: 5px;
+	font-size: 0.75rem;
+	line-height: 0.875rem;
+	color: #333333;
+	border-right: 1px;
+}
+
+.footer-nnels-partnerships p a img {
+	/*background-color: rosybrown;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	border-right: 0px;
 }
 
 .footer-nnels-partnerships a:hover {
@@ -421,6 +448,8 @@ body.i18n-fr .main-navigation a {
 	/*color: #FFFFFF;*/
 	color: #b34d00;
 }
+
+/* @end */
 
 /* @group pager */
 
