@@ -412,6 +412,11 @@ body.i18n-fr .main-navigation a {
 	padding: 0;
 }
 
+.footer-nnels-partnerships div {
+	float: left;
+	margin-top: 20px;
+}
+
 .footer-nnels-partnerships p a img {
 	align-items: center;
 	height: 40px;
