@@ -414,7 +414,7 @@ body.i18n-fr .main-navigation a {
 	padding: 0;
 }
 
-.footer-navigation-copyright ul.menu {
+.footer-navigation-partnerships ul.menu {
 	/*background-color: palegreen;*/
 	display: block;
 	float: left;
@@ -424,7 +424,7 @@ body.i18n-fr .main-navigation a {
 	list-style-image: none;
 }
 
-.footer-navigation-copyright ul.menu li {
+.footer-nnels-partnerships  ul.menu li {
 	/*background-color: rosybrown;*/
 	float: left;
 	margin: 0;
@@ -433,7 +433,7 @@ body.i18n-fr .main-navigation a {
 	list-style-image: none;
 }
 
-.footer-navigation-copyright a {
+.footer-nnels-partnerships a {
 	/*background-color: gold;*/
 	display: block;
 	margin: 0;
@@ -442,7 +442,7 @@ body.i18n-fr .main-navigation a {
 	line-height: 0.875rem;
 }
 
-.footer-navigation-copyright a:hover {
+.footer-nnels-partnerships a:hover {
 	/*background-color: limegreen;*/
 	/*color: #FFFFFF;*/
 	color: #b34d00;
