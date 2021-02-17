@@ -413,15 +413,41 @@ body.i18n-fr .main-navigation a {
 	margin: 0;
 	padding: 0;
 }
-	
-.footer-nnels-partnerships a {
+
+.footer-navigation-copyright ul.menu {
+	/*background-color: palegreen;*/
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 5px 0 0 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.footer-navigation-copyright ul.menu li {
+	/*background-color: rosybrown;*/
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+.footer-navigation-copyright a {
 	/*background-color: gold;*/
 	display: block;
 	margin: 0;
-	padding: 20px;
+	padding: 5px;
 	font-size: 0.75rem;
 	line-height: 0.875rem;
 }
+
+.footer-navigation-copyright a:hover {
+	/*background-color: limegreen;*/
+	/*color: #FFFFFF;*/
+	color: #b34d00;
+}
+
 .footer-nnels-partnerships a img {
 	float: left;
 	height: 40px;
