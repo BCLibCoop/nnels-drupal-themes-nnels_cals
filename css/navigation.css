@@ -402,6 +402,33 @@ body.i18n-fr .main-navigation a {
 
 /* @end */
 
+/* @group footer-nnels-partnerships */
+
+.footer-nnels-partnerships {
+	/*background-color: gold;*/
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+	
+.footer-nnels-partnerships a {
+	/*background-color: gold;*/
+	display: block;
+	margin: 0;
+	padding: 20px;
+	font-size: 0.75rem;
+	line-height: 0.875rem;
+}
+.footer-nnels-partnerships a img {
+	float: left;
+	height: 40px;
+	width: auto;
+	margin: 20px;
+}
+
 /* @group pager */
 
 .item-list .pager {
