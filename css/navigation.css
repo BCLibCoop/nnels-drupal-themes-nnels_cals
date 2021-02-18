@@ -409,11 +409,12 @@ body.i18n-fr .main-navigation a {
 	float: left;
 	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
+	postition: relative;
 }
 
 .footer-partnerships a {
-	margin: 0;
+	margin: 0 30px;
 	padding: 5px;
 }
 
