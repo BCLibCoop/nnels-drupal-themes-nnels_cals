@@ -416,26 +416,7 @@ body.i18n-fr .main-navigation a {
 .footer-partnerships a {
 	margin: 0 30px;
 	padding: 5px;
-}
-
-.footer-partnerships #w3c-partnership {
-	width: 60px;
-	height: 40px;
-}
-
-.footer-partnerships #daisy-partnership {
-	width: 40px;
-	height: 40px;
-}
-
-.footer-partnerships #abc-partnership {
-	width: 97px;
-	height: 40px;
-}
-
-.footer-partnerships #edrlab-partnership {
-	width: 40px;
-	height: 40px;
+	display: inline;
 }
 
 .footer-partnerships a:hover {
