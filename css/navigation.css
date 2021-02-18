@@ -405,7 +405,7 @@ body.i18n-fr .main-navigation a {
 /* @group footer-partnerships */
 
 .footer-partnerships {
-	clear: both;
+	clear: left;
 	float: left;
 	width: 100%;
 	margin: 0;
@@ -413,28 +413,27 @@ body.i18n-fr .main-navigation a {
 }
 
 .footer-partnerships a {
-	display: block;
 	margin: 0;
 	padding: 5px;
 }
 
 .footer-partnerships #w3c-partnership {
-	width: auto;
+	width: 60px;
 	height: 40px;
 }
 
 .footer-partnerships #daisy-partnership {
-	width: auto;
+	width: 40px;
 	height: 40px;
 }
 
 .footer-partnerships #abc-partnership {
-	width: auto;
+	width: 97px;
 	height: 40px;
 }
 
 .footer-partnerships #edrlab-partnership {
-	width: auto;
+	width: 40px;
 	height: 40px;
 }
 
