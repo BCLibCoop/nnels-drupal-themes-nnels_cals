@@ -407,6 +407,7 @@ body.i18n-fr .main-navigation a {
 .footer-partnerships {
 	clear: left;
 	float: left;
+	display: inline-block;
 	width: 100%;
 	margin: 0;
 	padding: 10px;
@@ -416,7 +417,6 @@ body.i18n-fr .main-navigation a {
 .footer-partnerships a {
 	margin: 0 30px;
 	padding: 5px;
-	display: inline;
 }
 
 .footer-partnerships a:hover {
