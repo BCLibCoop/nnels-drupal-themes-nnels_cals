@@ -402,6 +402,50 @@ body.i18n-fr .main-navigation a {
 
 /* @end */
 
+/* @group footer-partnerships */
+
+.footer-partnerships {
+	clear: both;
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-partnerships a {
+	display: block;
+	margin: 0;
+	padding: 5px;
+}
+
+.footer-partnerships #w3c-partnership {
+	width: auto;
+	height: 40px;
+}
+
+.footer-partnerships #daisy-partnership {
+	width: auto;
+	height: 40px;
+}
+
+.footer-partnerships #abc-partnership {
+	width: auto;
+	height: 40px;
+}
+
+.footer-partnerships #edrlab-partnership {
+	width: auto;
+	height: 40px;
+}
+
+.footer-partnerships a:hover {
+	/*background-color: limegreen;*/
+	/*color: #FFFFFF;*/
+	color: #b34d00;
+}
+
+/* @end */
+
 /* @group pager */
 
 .item-list .pager {
