@@ -405,12 +405,12 @@ body.i18n-fr .main-navigation a {
 /* @group footer-partnerships */
 
 .footer-partnerships {
-	clear: both;
+	clear: left;
 	float: left;
-	display: block;
-	width: 100%;
-	margin: 10px 0 0 0;
-	padding: 0;
+	position: relative;
+	width: 100%
+	margin: 0;
+	padding: 10px;
 }
 
 .footer-partnerships p {
