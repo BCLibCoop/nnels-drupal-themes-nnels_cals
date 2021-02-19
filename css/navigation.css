@@ -23,7 +23,7 @@
   left: 0px;
   margin: 10px 10px 10px 0;
   position: absolute;
-  top: 5px;
+  top: 42px;
   width: 90%;
 }
 /*** 605+ ***/
@@ -401,6 +401,31 @@ body.i18n-fr .main-navigation a {
 }
 
 /* @end */
+
+/* @group footer-partnerships 
+
+.footer-partnerships {
+	clear: left;
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 10px;
+}
+
+.footer-partnerships a {
+	float: left;
+	margin: 0 30px;
+	padding: 5px;
+}
+
+.footer-partnerships a:hover {
+	/*background-color: limegreen;*/
+	/*color: #FFFFFF;
+	color: #b34d00;
+}
+
+@end */
 
 /* @group pager */
 

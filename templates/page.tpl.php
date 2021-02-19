@@ -36,7 +36,7 @@
 		<?php endif; ?>
 
 		<div id="content" class="column" role="main">
-
+			
 			<?php print $breadcrumb; ?>
 
 			<a id="main-content" class="element-invisible">Main content</a>

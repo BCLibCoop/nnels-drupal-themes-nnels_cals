@@ -72,6 +72,10 @@ form table .item-list ul {
 	padding: 0;
 }
 
+.webform-component-checkboxes input.form-checkbox {
+	box-shadow: 0px 2px 3px 1px #336699;
+}
+
 .form-submit {
 }
 

@@ -25,10 +25,14 @@
 
 /* @group pagestyle - colour contrast selector */
 #block-pagestyle-form {
-  display: none;
+	left: 0px;
+  margin: 10px 10px 10px 0;
+	position: absolute;
+	top: 4px;
+	width: 100%;
 }
 /*** 605+ ***/
-@media screen and (min-width: 37.8125rem) {
+@media screen and (min-width: 51.3124rem) {
   #block-pagestyle-form {
     display: block;
     left: 0px;
@@ -57,8 +61,9 @@
 }
 #block-pagestyle-form div.pagestyle_list select#edit-pagestyle-select {
 	margin-bottom: 0;
-  width: 100px;
+  width: 105px;
 }
+
 #block-pagestyle-form label {
   padding: 0 10px 0 0;
 }
@@ -105,12 +110,13 @@
   width: 60%;
 }
 .header-logo a.home-link {
-  display: none;
+ /* display: none;*/
 }
 .header-logo h1.site-title {
-  font-size: 1.5rem;
+/*  font-size: 1.5rem;
   line-height: 1.7rem;
-  margin: 5px;
+  margin: 5px; */
+  display: none;
 }
 .header-logo h2.site-subtitle {
   display: none;
@@ -279,7 +285,7 @@
   left: 0px;
   margin: 10px 10px 10px 0;
   position: absolute;
-  top: 47px;
+  top: 82px;
   width: 90%;
 }
 /*** 605+ ***/
@@ -349,11 +355,11 @@
   width: 90%
 }
 #block-nnels-bookshelf-bookshelf-button {
-  top: 88px;
+  top: 122px;
 }
 #block-logintoboggan-logintoboggan-logged-in,
 .user-logged-in {
-  top: 47px;
+  top: 82px;
 }
 /*** 605+ ***/
 @media screen and (min-width: 37.8125rem) {
@@ -545,6 +551,12 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 	font-family: "clear_sansregular", sans-serif;
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.facetapi-facetapi-ajax-checkboxes .form-item input.facet-multiselect-checkbox {
+	margin-right: 5px;
+	vertical-align: baseline;
+	box-shadow: 0px 2px 3px 1px #336699;
 }
 
 .facetapi-facetapi-ajax-checkboxes .form-item.form-type-checkbox:hover {
