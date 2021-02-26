@@ -60,12 +60,12 @@
  *   api.drupal.org website is a good place to find which file contains which
  *   function.) Then you can copy the original function in its entirety and
  *   paste it in this template.php file, changing the prefix from theme_ to
- *   NNELS_CALS_v001_. For example:
+ *   NNELS_Bootstrap_. For example:
  *
  *     original, found in modules/field/field.module: theme_field()
- *     theme override, found in template.php: NNELS_CALS_v001_field()
+ *     theme override, found in template.php: NNELS_Bootstrap_field()
  *
- *   where NNELS_CALS_v001 is the name of your sub-theme. For example, the
+ *   where NNELS_Bootstrap is the name of your sub-theme. For example, the
  *   zen_classic theme would define a zen_classic_field() function.
  *
  *   Note that base themes can also override theme functions. And those
@@ -111,12 +111,12 @@
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_maintenance_page(&$variables, $hook) {
   // When a variable is manipulated or added in preprocess_html or
   // preprocess_page, that same work is probably needed for the maintenance page
   // as well, so we can just re-use those functions to do that work here.
-  NNELS_CALS_v001_preprocess_html($variables, $hook);
-  NNELS_CALS_v001_preprocess_page($variables, $hook);
+  NNELS_Bootstrap_preprocess_html($variables, $hook);
+  NNELS_Bootstrap_preprocess_page($variables, $hook);
 }
 // */
 
@@ -128,7 +128,7 @@ function NNELS_CALS_v001_preprocess_maintenance_page(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_html(&$variables, $hook) {
 
   // Add the page style currently selected as a class on the body. This way the
   // header buttons can be styled properly.
@@ -146,14 +146,14 @@ function NNELS_CALS_v001_preprocess_html(&$variables, $hook) {
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function */
-function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_page(&$variables, $hook) {
   //$variables['sample_variable'] = t('Lorem ipsum.');
   switch($_SERVER['HTTP_HOST']) {
     case "dev.nnels.ca":
     	global $language;
     	//dpm($language->name);
     	drupal_set_message(t("NB: DEVEL server!"), "status");
-    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_Bootstrap') . '/css/dev-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	if(isset($_SESSION['calsauthen_target_driver']) ) {
 	  		dpm("driver: " .$_SESSION['calsauthen_target_driver']);
 	  		dpm("org: " . $_SESSION['calsauthen_target_organization']);
@@ -162,67 +162,68 @@ function NNELS_CALS_v001_preprocess_page(&$variables, $hook) {
 
     case "staging.nnels.ca":
     	drupal_set_message(t("NB: STAGING server!"), "status");
-    	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
+    	drupal_add_css(drupal_get_path('theme', 'NNELS_Bootstrap') . '/css/staging-overrides.css', array('group' => CSS_THEME, 'type' => 'file'));
     	break;
 
   }
   //if($_SERVER['HTTP_HOST'] == 'http://dev.nnels.ca') drupal_set_title("DEV SERVER");
-	drupal_add_css(drupal_get_path('theme', 'NNELS_CALS_v001') . '/css/externalsearch.css', array('group' => CSS_THEME, 'type' => 'file'));
-  drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/tota11y.min.js');
+	//drupal_add_css(drupal_get_path('theme', 'NNELS_Bootstrap') .
+  // '/css/externalsearch.css', array('group' => CSS_THEME, 'type' => 'file'));
+    drupal_add_js(drupal_get_path('theme', 'NNELS_Bootstrap') . '/js/tota11y.min.js');
 
   //Create custom Piwik event with user's organization and bind to download links to track downloads per org
-	global $user;
-	$token = "[current-user:field_organization]";
-        $org = token_replace($token, array('user' => $user));
-	$bclc = "BC Libraries Cooperative";
-        if (strcmp($org, $token) == 0) {
-        	$org = "No organization";
-        }
-
-  //Only track for non-BCLC accounts
-	if (!(strcmp($org, $bclc)) == 0) {
-      drupal_add_js(
-                    'Drupal.behaviors.nnelsDownloadsByOrg = {
-                            attach: function (context, settings) {
-                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
-                                                   _paq.push(["trackEvent", "Downloads S3", "Orgs", "'.$org.'"]);
-                                            });
-                                    }
-                    };',
-                    array(
-                            'type' => 'inline',
-                            'scope' => 'footer'
-                    )
-    );
-
-    //Track clicks on downloads by title and nid by Custom Dimension and Event methods
-
-    //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
-    if ( isset($variables['node']->title) ) {
-      $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
-      drupal_add_js(
-                      'Drupal.behaviors.nnelsDownloadsByTitle = {
-                              attach: function (context, settings) {
-                                              jQuery(".views-field-field-s3-file-upload span a").click(function () {
-                                                     _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
-                                                     _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
-                                              });
-                                      }
-                      };',
-                      array(
-                              'type' => 'inline',
-                              'scope' => 'footer'
-                      )
-      );
-  	}
-  }
+//	global $user;
+//	$token = "[current-user:field_organization]";
+//        $org = token_replace($token, array('user' => $user));
+//	$bclc = "BC Libraries Cooperative";
+//        if (strcmp($org, $token) == 0) {
+//        	$org = "No organization";
+//        }
+//
+//  //Only track for non-BCLC accounts
+//	if (!(strcmp($org, $bclc)) == 0) {
+//      drupal_add_js(
+//                    'Drupal.behaviors.nnelsDownloadsByOrg = {
+//                            attach: function (context, settings) {
+//                                            jQuery(".views-field-field-s3-file-upload span a").click(function () {
+//                                                   _paq.push(["trackEvent", "Downloads S3", "Orgs", "'.$org.'"]);
+//                                            });
+//                                    }
+//                    };',
+//                    array(
+//                            'type' => 'inline',
+//                            'scope' => 'footer'
+//                    )
+//    );
+//
+//    //Track clicks on downloads by title and nid by Custom Dimension and Event methods
+//
+//    //Prepare title value, attempt to truncate to 60 chars on word boundary, 30 otherwise
+//    if ( isset($variables['node']->title) ) {
+//      $title = truncate_utf8( trim( $variables['node']->title ), 60, TRUE, TRUE, 30);
+//      drupal_add_js(
+//                      'Drupal.behaviors.nnelsDownloadsByTitle = {
+//                              attach: function (context, settings) {
+//                                              jQuery(".views-field-field-s3-file-upload span a").click(function () {
+//                                                     _paq.push(["trackEvent", "Downloads S3", "Titles", "'.$title.' ('.$variables['node']->nid.')"]);
+//                                                     _paq.push(["setCustomDimension", 1, "'.$title.' ('.$variables['node']->nid.')"]);
+//                                              });
+//                                      }
+//                      };',
+//                      array(
+//                              'type' => 'inline',
+//                              'scope' => 'footer'
+//                      )
+//      );
+//  	}
+//  }
 
   if (isset($variables['node']) && $variables['node']->type == 'repository_item') {
-    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/make_flags_tabs.min.js');
+    drupal_add_js(drupal_get_path('theme', 'NNELS_Bootstrap') . '/js/make_flags_tabs.min.js');
   }
 }
 
-function NNELS_CALS_v001_preprocess_block(&$vars) {
+function NNELS_Bootstrap_preprocess_block(&$vars) {
 
   if($vars['block']->module == 'facetapi') {
 
@@ -274,14 +275,14 @@ function NNELS_CALS_v001_preprocess_block(&$vars) {
   }
 
   if ($vars['block_html_id'] == 'block-views-repository-items-front-page-bra' || $vars['block_html_id'] == 'block-views-repository-items-front-page-bmd') {
-    drupal_add_js(drupal_get_path('theme', 'NNELS_CALS_v001') . '/js/uniform_height.min.js');
+    drupal_add_js(drupal_get_path('theme', 'NNELS_Bootstrap') . '/js/uniform_height.min.js');
   }
 }
 
 /**
  * Implements hook_form_alter().
  */
-function NNELS_CALS_v001_form_alter(&$form, &$form_state, $form_id) {
+function NNELS_Bootstrap_form_alter(&$form, &$form_state, $form_id) {
 
   // Alter the page style form - put the label on the left.
   if ($form_id == 'pagestyle_form' &&
@@ -302,7 +303,7 @@ function NNELS_CALS_v001_form_alter(&$form, &$form_state, $form_id) {
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function */
-function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_node(&$variables, $hook) {
   $function = __FUNCTION__ . '_' . $variables['node']->type;
   if (function_exists($function)) {
     $function($variables, $hook);
@@ -317,7 +318,7 @@ function NNELS_CALS_v001_preprocess_node(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("node" in this case.)
  */
-function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_node_repository_item(&$variables, $hook) {
 	global $user;
 	$nid = $variables['nid'];
   //roles that are allowed to edit / update S3 files. Probably want to update this to a permission
@@ -362,7 +363,7 @@ function NNELS_CALS_v001_preprocess_node_repository_item(&$variables, $hook) {
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function NNELS_CALS_v001_preprocess_comment(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_comment(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
@@ -376,7 +377,7 @@ function NNELS_CALS_v001_preprocess_comment(&$variables, $hook) {
  *   The name of the template being rendered ("region" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function NNELS_CALS_v001_preprocess_region(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_region(&$variables, $hook) {
   // Don't use Zen's region--sidebar.tpl.php template for sidebars.
   //if (strpos($variables['region'], 'sidebar_') === 0) {
   //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
@@ -393,7 +394,7 @@ function NNELS_CALS_v001_preprocess_region(&$variables, $hook) {
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
-function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
+function NNELS_Bootstrap_preprocess_block(&$variables, $hook) {
   // Add a count to all the blocks in the region.
   // $variables['classes_array'][] = 'count-' . $variables['block_id'];
 
@@ -408,39 +409,6 @@ function NNELS_CALS_v001_preprocess_block(&$variables, $hook) {
 /**
  * Theme the loggedinblock that shows for logged-in users.
  */
-function NNELS_CALS_v001_lt_loggedinblock($variables){
+function NNELS_Bootstrap_lt_loggedinblock($variables){
   return theme('username', array('account' => $variables['account'])) .'  '. l(t('Log Out'), 'user/logout');
-}
-
-/**
- * Implements hook_preprocess_HOOK()
- * @param $variables
- */
-function NNELS_CALS_v001_preprocess_videojs(&$variables) {
-  $track = array();
-  $caption_lang = $variables['entity']->language; //Default to video language
-  $user_lang = $variables['user']->language ?: 'en';
-
-  if ($captions = reset($variables['entity']->field_s3_file_upload)) {
-    foreach($captions as $caption) {
-      //Replace var with lang from standard filename
-      $caption_lang = explode('.', explode('_', $caption['filename'])[1])[0] ?:
-        '';
-
-      if ($caption['filemime'] == "text/vtt") {
-
-        module_load_include('inc', 'cals_s3', 'cals_s3.NNELSStreamWrapper.class');
-        $track['src']['safe'] = (new \Drupal\cals_s3\NNELSStreamWrapper)
-          ->make_url($caption['uri']);
-
-        $track['filemime']['safe'] = $caption['filemime'];
-        $track['kind'] = 'captions';
-        $track['label'] = language_list()[$caption_lang]->name ?: $caption['filename'];
-        $track['langcode'] = language_list()[$caption_lang]->language ?: 'und';
-
-        $variables['tracks'][] = $track;
-        unset($track);
-      }
-    }
-  }
 }

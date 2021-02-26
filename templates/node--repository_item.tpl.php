@@ -22,7 +22,7 @@
 	<?php endif; ?>
 	
 	<?php
-	  //view downloaded files - called from NNELS_CALS_v001_preprocess_node_repository_item()
+	  //view downloaded files - called from NNELS_Bootstrap_preprocess_node_repository_item()
 	  //in template.php
 	?>
 	<?php if ( isset( $request_title ) ) print $request_title; ?>

@@ -1,0 +1,5 @@
+name        = NNELS_Bootstrap
+description = NNELS Bootstrap drupal 7 sub-theme
+core        = 7.x
+php = 5.3.0
+base theme  = bootstrap

@@ -7,7 +7,7 @@
  * @param $form_state
  *   A keyed array containing the current state of the form.
  */
-function NNELS_CALS_v001_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
+function NNELS_Bootstrap_form_system_theme_settings_alter(&$form, &$form_state, $form_id = NULL)  {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
     return;
@@ -16,10 +16,10 @@ function NNELS_CALS_v001_form_system_theme_settings_alter(&$form, &$form_state, 
   // Create the form using Forms API: http://api.drupal.org/api/7
 
   /* -- Delete this line if you want to use this setting
-  $form['NNELS_CALS_v001_example'] = array(
+  $form['NNELS_Bootstrap_example'] = array(
     '#type'          => 'checkbox',
-    '#title'         => t('NNELS_CALS_v001 sample setting'),
-    '#default_value' => theme_get_setting('NNELS_CALS_v001_example'),
+    '#title'         => t('NNELS_Bootstrap sample setting'),
+    '#default_value' => theme_get_setting('NNELS_Bootstrap_example'),
     '#description'   => t("This option doesn't do anything; it's just an example."),
   );
   // */
