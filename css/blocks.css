@@ -262,6 +262,7 @@
     font-size: 2.2rem;
     line-height: 2.4rem;
     width: 70%;
+        margin-top: 0.75em;
   }
   body.i18n-fr .header-logo h1.site-title {
     font-size: 1.9rem;
@@ -674,9 +675,9 @@ ul.facetapi-facetapi-checkbox-links.facetapi-processed,
 /* @group block-block-2 - copyright/contact */
 
 #block-block-2 {
-	float: right;
+	#float: right;
 	margin: 0;
-	width: 30%;
+	width: 90%;
 	min-width: 300px;
 	vertical-align: top;
 	padding: 0;
