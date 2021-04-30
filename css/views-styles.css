@@ -2213,20 +2213,12 @@ span.daisy-icon-login {
 	padding: 0;
 }
 .repo-item.available-formats .views-field-field-accessibility-tags .field-content .item-list ul li {
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
 	display: inline;
 	float: none;
 	margin: 0;
-	padding: 0;
-}
-.repo-item.available-formats .views-field-field-accessibility-tags .field-content .taxonomy-term-description {
-	display: inline-block;
-	background-color: #FFFFFF;
-	border: 1px solid #336699;
-	margin: 0;
 	padding: 3px 10px;
-}
-.repo-item.available-formats .views-field-field-accessibility-tags .field-content .taxonomy-term-description p {
-	margin: 0;
 }
 
 .repo-item.available-formats .views-field-field-accrual-method div.field-content,
