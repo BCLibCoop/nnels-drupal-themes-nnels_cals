@@ -2946,8 +2946,11 @@ a.format-info {
     margin-left: 1em;
 }
 
+.certified-icon {
+	float: left;
+}
 .certified-icon img {
-	margin: 0 0 0 10px;
+	margin: 0 10px 0 5px;
 	vertical-align: middle;
 	width: 40px;
 }
