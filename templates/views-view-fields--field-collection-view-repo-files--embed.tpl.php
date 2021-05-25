@@ -31,7 +31,7 @@
   <?php endif; ?>
 
   <?php if ($id == 'field_accessibility_tags'): ?>
-    <div class='views-field views-field-field-accessibility-tags' role='region' aria-label='accessibility features'>
+    <div class='views-field views-field-field-accessibility-tags'>
     <?php print $field->label_html; ?>
     <?php print $field->content; ?>
     </div>
