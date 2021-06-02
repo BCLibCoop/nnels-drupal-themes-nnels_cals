@@ -1065,7 +1065,7 @@ article.node-article .field-items h3 em {
   .search-results .views-field-field-genre-harmonized,
   .search-results .views-field-field-urls-external {
    /* margin-left: 65px;*/
-    margin-left: 4.8em;
+   	margin-left: 4.8em;
   }
    .search-results .views-field-field-dc-creator {
    margin-left: 0.5em;
@@ -2102,7 +2102,7 @@ span.daisy-icon-login {
 
 .repo-item.available-formats div.file-size-warning-wrapper,
 .multi-file-embed div.file-size-warning-wrapper {
-  margin: 1% 10% 0 0;
+	margin: 1% 7% 0 0;
   padding: 5px;
   float: right;
   font-size: 90%;
@@ -2201,11 +2201,29 @@ span.daisy-icon-login {
 	padding: 5px;
 }
 
-.repo-item.available-formats .views-field-field-accrual-method {
+.repo-item.available-formats .views-field-field-accrual-method,
+.repo-item.available-formats .views-field-field-accessibility-tags {
 	float: left;
 	width: 100%;
 	margin: 0;
 	padding: 5px;
+}
+.repo-item.available-formats .views-field-field-accessibility-tags .field-content .item-list {
+	display: inline;
+}
+.repo-item.available-formats .views-field-field-accessibility-tags .field-content .item-list ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+.repo-item.available-formats .views-field-field-accessibility-tags .field-content .item-list ul li {
+	background-color: #FFFFFF;
+	border: 1px solid #336699;
+	display: inline-block;
+	float: none;
+	margin: 0 0 6px 0;
+	padding: 3px 10px;
+	width: auto;
 }
 
 .repo-item.available-formats .views-field-field-accrual-method div.field-content,
@@ -2641,7 +2659,6 @@ span.daisy-icon-login {
 	display: none;
 }
 
-
 /* @end */
 
 
@@ -2931,6 +2948,15 @@ a.format-info {
 
 .views-field-view.solr-embed-file-field-collection {
     margin-left: 1em;
+}
+
+.certified-icon {
+	float: left;
+}
+.certified-icon img {
+	margin: 0 10px 0 5px;
+	vertical-align: middle;
+	width: 40px;
 }
 
 /* @end */
