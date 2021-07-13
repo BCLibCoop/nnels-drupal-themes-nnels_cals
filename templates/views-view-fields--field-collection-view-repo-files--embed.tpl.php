@@ -30,11 +30,13 @@
     <?php print $field->separator; ?>
   <?php endif; ?>
 
-  <?php if ($id == 'field_accessibility_tags'): ?>
-    <div class='views-field views-field-field-accessibility-tags'>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-    </div>
+  <?php if ($id == 'field_accessibility_summary'): ?>
+    <?php if (!empty($row->field_field_accessibility_summary)): ?>
+      <?php print $field->wrapper_prefix; ?>
+      <?php print $field->label_html; ?>
+      <?php print $field->content; ?>
+      <?php print $field->wrapper_suffix; ?>
+    <?php endif; ?>
   <?php else: ?>
     <?php print $field->wrapper_prefix; ?>
       <?php print $field->label_html; ?>
