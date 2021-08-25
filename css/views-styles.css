@@ -2194,7 +2194,8 @@ span.daisy-icon-login {
 
 .repo-item.available-formats .views-field-field-running-time,
 .repo-item.available-formats .views-field-field-availability-status,
-.repo-item.available-formats .views-field-field-accessibility-summary  {
+.repo-item.available-formats .views-field-field-accessibility-summary,
+.repo-item.available-formats .views-field-field-certified-accessible-by  {
 	/*background-color: cadetblue;*/
 	float: left;
 	width: 100%;
