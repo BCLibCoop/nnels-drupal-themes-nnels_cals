@@ -255,4 +255,21 @@ td.menu-disabled {
 	background-color: #EEEEEE;
 }
 
+div.form-item:nth-child(47) > label:nth-child(2) {
+  padding: 1em;
+  font-size: 1em;
+}
+
+#edit-legal-accept {
+  transform: scale(2);
+  margin-left: 0.5em;
+}
+
+#edit-submit {
+  width: 100%;
+  height: 3em;
+  font-weight: bold;
+  border: 3px solid;
+}
+
 /* @end */

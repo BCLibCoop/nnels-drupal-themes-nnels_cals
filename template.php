@@ -444,3 +444,35 @@ function NNELS_CALS_v001_preprocess_videojs(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function NNELS_CALS_v001_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form['account']['pass'])) {
+    // 1. Get the default process handlers for the password_confirm element.
+    $info = element_info('password_confirm');
+    $process = isset($info['#process']) ? $info['#process'] : array();
+
+    // 2. Add our custom process handler to the list.
+    $process[] = 'NNELS_CALS_v001_unmask_password_process';
+
+    // 3. Assign the merged list back to the form element.
+    $form['account']['pass']['#process'] = $process;
+  }
+}
+
+/**
+ * Custom process handler to change password fields to textfields.
+ */
+function NNELS_CALS_v001_unmask_password_process($element, &$form_state, $complete_form) {
+  // Change the sub-elements (pass1 and pass2) to textfields so they are visible.
+  if (isset($element['pass1'])) {
+    $element['pass1']['#type'] = 'textfield';
+  }
+  if (isset($element['pass2'])) {
+    $element['pass2']['#type'] = 'textfield';
+  }
+
+  return $element;
+}
